@@ -1,0 +1,25 @@
+<header class="site-header" role="banner">
+  <div class="site-wrapper">
+    <h1 class="logo"><a href="/"><svg class="icon icon-logo" aria-hidden="true" role="presentation"><use xlink:href="#logo"/></svg></a></h1>
+    <nav class="site-nav" role="navigation">
+      <ul class="links">
+        {% for navItem in site.data.navigation.navItems %}
+          <li {% if page.url contains navItem.path %} class="current" {% endif %}>
+            <a href="{{ navItem.path }}">{{ navItem.title }}</a>
+            {% if navItem.children %}
+              <ul class="children">
+                <div class="children-wrap">
+                  {% for childItem in navItem.children %}
+                    <li {% if page.url == childItem.path %} class="current" {% endif %}>
+                      <a href="{{ childItem.path }}">{{ childItem.title }}</a>
+                    </li>
+                  {% endfor %}
+                </div>
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

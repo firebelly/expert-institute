@@ -1,0 +1,35 @@
+// Variables
+
+// Colors
+$colors: (
+  white: #ffffff,
+  gray: #f8f8f8,
+  gray-mid: #dae3df,
+  gray-dark: #a3acad,
+  black: #333333,
+  blue: #1a2d94,
+  blue-light: #1733e7,
+  blue-dark: #1e305e,
+  gold: #b78d5a,
+  green: #80d6a9,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+// Breakpoints
+$breakpoint-sm: 520px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1000px;
+$breakpoint-nav: 1100px;
+$breakpoint-xl: 1200px;
+
+// Site Wrapper
+$sitewrapper: 1380px;
+
+// Padding/spacing
+$beat: 10px;
+$padding-sm: 30px;
+$padding-md: $padding-sm * 2;
+$padding-lg: $padding-sm * 4;

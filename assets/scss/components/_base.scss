@@ -1,0 +1,46 @@
+//base styles
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  @include p1;
+  color: color(blue-dark);
+	background: color(white);
+}
+
+a {
+	color: inherit;
+}
+
+img {
+  height: auto;
+	max-width: 100%;
+}
+
+.site-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  @include clearfix();
+  padding: 0 $padding-sm;
+  max-width: $sitewrapper;
+  @include media-md {
+    padding: 0 $padding-md;
+  }
+}
+
+// Sections
+.section {
+  padding-top: $padding-sm;
+  padding-bottom: $padding-sm;
+
+  @include media-md {
+    padding-top: $padding-md;
+    padding-bottom: $padding-md;
+  }
+}

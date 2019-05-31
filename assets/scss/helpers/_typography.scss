@@ -1,0 +1,134 @@
+// Typography
+
+// @font-face
+@font-face {
+  font-family: 'Ginto Nord';
+  src: url('../fonts/GintoNordTrial-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ginto Nord';
+  src: url('../fonts/GintoNordTrial-RegularIta.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ginto Normal';
+  src: url('../fonts/GintoNormalTrial-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ginto Normal';
+  src: url('../fonts/GintoNormalTrial-RegularIta.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+// Font-family mixins
+/// example:
+/// @mixin font-display {
+///   font-style: normal;
+///   font-weight: normal;
+///   font-family: 'Custom Font Family';
+/// }
+
+/// Mixin to allow us to concisely define all aspects of a paragraph style (except for family.)
+/// @param {number} $size - Font size specified in pixels (without 'px')
+/// @param {number} $lh - Line height specified in pixels (without 'px')
+/// @param {number} $ls [0em] - Letter spacing
+/// @param {number or string} $w [normal] - Font weight
+/// @param {string} $tt [none] - Text transform
+/// @example scss - Used as a shortcut in defining a paragraph style...
+///   @mixin h1 {
+///     @include font-display; // The font face
+///     @include paragraph-style (12, 16, $ls: .075em, $tt: uppercase); // Other properties
+///   }
+@mixin paragraph-style ($size, $lh, $ls: 0em, $w: normal, $tt: none) {
+  font-size: #{$size}px;
+  line-height: ($lh / $size);
+  letter-spacing: $ls;
+  text-transform: $tt;
+  font-weight: $w;
+}
+
+// Type Style Mixins + Classes
+/// example:
+/// @mixin h1 {
+///   @include font-display;
+///   @include paragraph-style(31, 40, -.010322581em);
+///   @include media-md {
+///     @include paragraph-style(96, 96, -.005208333em);
+///   }
+/// }
+/// .h1 {
+///   @include h1;
+/// }
+
+// h1
+@mixin h1 {
+  font-family: 'Stanley', serif;
+  @include paragraph-style(40, 42);
+
+  @include media-md {
+    @include paragraph-style(63, 66);
+  }
+}
+.h1 {
+  @include h1;
+}
+
+// h2
+@mixin h2 {
+  font-family: 'Stanley', serif;
+  @include paragraph-style(32, 36);
+
+  @include media-md {
+    @include paragraph-style(54, 60);
+  }
+}
+.h2 {
+  @include h2;
+}
+
+// h3
+@mixin h3 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  font-family: 'Ginto Nord', serif;
+  @include paragraph-style(12, 24, 0, normal, uppercase);
+
+  @include media-md {
+    @include paragraph-style(13, 24, 0, normal, uppercase);
+  }
+}
+.h3 {
+  @include h3;
+}
+
+// p1
+@mixin p1 {
+  font-family: 'Ginto Normal', sans-serif;
+  @include paragraph-style(16, 24);
+
+  @include media-md {
+    @include paragraph-style(18, 24);
+  }
+}
+.p1 {
+  @include p1;
+}
+
+// p2
+@mixin p2 {
+  font-family: 'Ginto Normal', sans-serif;
+  @include paragraph-style(24, 30);
+
+  @include media-md {
+    @include paragraph-style(36, 42);
+  }
+}
+.p2 {
+  @include p2;
+}
