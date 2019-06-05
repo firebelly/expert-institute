@@ -59,6 +59,7 @@
   .site-nav {
     left: 0;
     top: 100%;
+    opacity: 0;
     width: 100%;
     overflow: auto;
     position: absolute;
@@ -66,9 +67,11 @@
     background: color(white);
     transform: translateY(-120%);
     max-height: calc(100vh - #{$header-sm});
-    transition: transform .25s $slide-easing;
+    transition: transform .25s $slide-easing, opacity 0s ease-out .26s;
     &.-active {
+      opacity: 1;
       transform: translateY(0);
+      transition: transform .25s $slide-easing, opacity 0s ease-out 0s;
     }
 
     ul {
