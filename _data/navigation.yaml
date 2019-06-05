@@ -1,4 +1,70 @@
 # Manual Navigation Setup
-navItems:
-  - title: About
+primaryNav:
+  - title: Services
+    path: /services/
+    children:
+      - title: Expert Witness Search
+        path: /services/expert-witness-search/
+      - title: Case Clinics
+        path: /services/case-clinics/
+      - title: Challenge Studies
+        path: /services/challenge-studies/
+      - title: Phone Consultations
+        path: /services/phone-consultations/
+
+  - title: Process
+    path: /process/
+    children:
+      - title: How It Works
+        path: /process/how-it-works/
+      - title: Pricing
+        path: /process/pricing/
+      - title: Partnership Program
+        path: /process/partnership-program/
+      - title: Become an Expert
+        path: /process/become-an-expert/
+      - title: Request a Witness
+        path: /process/request-a-witness/
+
+  - title: Outcomes
+    path: /outcomes/
+    children:
+      - title: Measurable Impact
+        path: /outcomes/measurable-impact/
+      - title: Case Studies
+        path: /outcomes/case-studies/
+
+secondaryNav:
+  - title: About EI
     path: /about/
+    children:
+      - title: Our Story
+        path: /about/our-story/
+      - title: Our Team
+        path: /about/our-team/
+      - title: Locations
+        path: /about/locations/
+      - title: Careers
+        path: /about/careers/
+
+  - title: Resources
+    path: /resources/
+    children:
+      - title: Expert Witness Directory
+        path: /resources/expert-witness-directory/
+      - title: Expert Witness Fees
+        path: /resources/expert-witness-fees/
+      - title: White Papers
+        path: /resources/white-papters/
+      - title: Webinars
+        path: /resources/webinars/
+      - title: Insights
+        path: /resources/insights/
+
+footerNav:
+  - title: Privacy Policy
+    path: /privacy-policy/
+  - title: Compoliance
+    path: /compliance/
+  - title: Terms & Conditions
+    path: /terms-and-conditions/

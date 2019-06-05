@@ -78,29 +78,29 @@ $column-width: 100% / $columns;
   .grid-item {
     flex-basis: auto;
   }
-  .med-one-fourth {
+  .md-one-fourth {
     max-width: 25%;
     flex-basis: 25%;
   }
-  .med-one-third {
+  .md-one-third {
     flex-basis: 33.3333333%;
     max-width: 33.3333333%;
   }
-  .med-one-half {
+  .md-one-half {
     flex-basis: 50%;
     max-width: 50%;
   }
-  .med-two-thirds {
+  .md-two-thirds {
     flex-basis: 66.6666667%;
     max-width: 66.6666667%;
   }
-  .med-three-fourths {
+  .md-three-fourths {
     flex-basis: 75%;
     max-width: 75%;
   }
   // Order classes
   @for $i from 0 through 6 {
-    .med-order-#{$i} {
+    .md-order-#{$i} {
       order: $i;
     }
   }

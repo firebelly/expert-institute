@@ -1,0 +1,35 @@
+// Buttons
+
+.button {
+  @extend .button-reset;
+  @include p1;
+  line-height: 1;
+  text-align: center;
+  color: color(white);
+  border-radius: 24px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 9px 18px 11px;
+  text-transform: capitalize;
+  background-color: color(blue-light);
+  @include media-md {
+    line-height: 1;
+    padding: 13px 30px 17px;
+  }
+
+  // Full-width
+  &.-full {
+    width: 100%;
+  }
+
+  // Color Variations
+  &.-green {
+    color: color(blue);
+    background-color: color(green);
+  }
+
+  &.-gold {
+    color: color(white);
+    background-color: color(gold);
+  }
+}

@@ -1,9 +1,213 @@
 // Header
 
 .site-header {
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  height: $header-sm;
+  background-color: color(white);
+
+  @include media-md {
+    height: $header-md;
+  }
+
+  > .-inner {
+    height: 100%;
+    position: relative;
+
+    .-top {
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      align-items: center;
+      background-color: color(white);
+    }
+  }
+
   .logo {
+    margin: 0;
+    line-height: 18px;
+    display: inline-block;
+
+    a {
+      vertical-align: top;
+      display: inline-block;
+    }
+
     svg {
+      height: 18px;
+      width: 182px;
+      display: block;
       fill: color(blue-light);
+    }
+
+    @include media-md {
+      line-height: 24px;
+
+      svg {
+        height: 24px;
+        width: 243px;
+      }
+    }
+  }
+
+  .site-nav {
+    left: 0;
+    top: 100%;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    padding-bottom: 36px;
+    background: color(white);
+    transform: translateY(-120%);
+    max-height: calc(100vh - #{$header-sm});
+    transition: transform .25s $slide-easing;
+    &.-active {
+      transform: translateY(0);
+    }
+
+    ul {
+      @extend .semantic-list;
+
+      .nav-sub-level {
+        display: none;
+        padding: 22px 50px;
+        background-color: color(gray);
+
+        a {
+          @include paragraph-style(18, 48);
+        }
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .nav-parent-label {
+      display: flex;
+      padding: 10px $padding-sm;
+      justify-content: space-between;
+      .icon-arrow-down {
+        width: 14px;
+        height: 7px;
+        align-self: center;
+        transition: transform .2s ease-out;
+      }
+      &.-active {
+        .icon-arrow-down {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .primary-nav {
+      // Parent Items
+      .nav-parent-label {
+        @include p2;
+        color: color(blue-light);
+
+        .icon-arrow-down {
+          fill: color(blue-light)
+        }
+      }
+    }
+
+    .secondary-nav {
+      margin: 56px 0 22px;
+
+      .nav-parent-label {
+        color: color(gray-dark);
+        font-family: 'Ginto Nord', serif;
+        @include paragraph-style(12, 24, 0, normal, uppercase);
+
+        .icon-arrow-down {
+          fill: color(gray-dark);
+        }
+
+        @include media-nav {
+          @include paragraph-style(13, 24, 0, normal, uppercase);
+        }
+      }
+    }
+
+    .searchform {
+      margin: 0 $padding-sm;
+    }
+
+    @include media-md {
+      display: block;
+    }
+  }
+
+  // Nav Toggle
+  .nav-toggle {
+    @extend .button-reset;
+    top: 50%;
+    padding: 0;
+    width: 24px;
+    height: 13px;
+    cursor: pointer;
+    right: $padding-sm;
+    position: absolute;
+    transform: translateY(-50%);
+
+    .lines {
+      left: 0;
+      top: 50%;
+      width: 24px;
+      height: 1px;
+      position: absolute;
+      display: inline-block;
+      background-color: color(blue-dark);
+      transition: background-color .2s ease-out;
+
+      &::before,
+      &::after {
+        left: 0;
+        width: 100%;
+        height: 1px;
+        content: '';
+        position: absolute;
+        transition: transform .2s ease-out;
+        background-color: color(blue-dark);
+      }
+
+      &::before {
+        top: -6px;
+      }
+      &::after {
+        top:  6px;
+      }
+    }
+
+    &.-active {
+      right: $padding-sm - 2px;
+
+      .lines {
+        transition: none;
+        background-color: transparent;
+        &::before,
+        &::after {
+          top: 0;
+        }
+        &::before {
+          transform: rotate(-45deg);
+        }
+        &::after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    @include media-md {
+      right: $padding-md;
     }
   }
 }

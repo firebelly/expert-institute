@@ -33,3 +33,10 @@ $beat: 10px;
 $padding-sm: 30px;
 $padding-md: $padding-sm * 2;
 $padding-lg: $padding-sm * 4;
+
+// Header Heights
+$header-sm: 60px;
+$header-md: 84px;
+
+// Transitions
+$slide-easing: cubic-bezier(0.65, 0, 0.35, 1);

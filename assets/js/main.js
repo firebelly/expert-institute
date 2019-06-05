@@ -1,12 +1,17 @@
 /*jshint latedef:false*/
 
 //=include "../bower_components/jquery/dist/jquery.js"
+//=include "../bower_components/flickity/dist/flickity.pkgd.min.js"
+//=include "../bower_components/flickity-bg-lazyload/bg-lazyload.js"
+//=include "../bower_components/velocity/velocity.min.js"
 
 var Main = (function($) {
 
   var $document,
       $window,
       $body,
+      $siteHeader,
+      $siteNav,
       breakpointIndicatorString,
       breakpoint_xl,
       breakpoint_nav,
@@ -23,6 +28,8 @@ var Main = (function($) {
     $document = $(document);
     $window = $(window);
     $body = $('body');
+    $siteHeader = $('#site-header');
+    $siteNav = $('#site-nav');
 
     // Set screen size vars
     _resize();
@@ -31,7 +38,10 @@ var Main = (function($) {
     transitionElements = [];
 
     // Init functions
-    _testInit();
+    _initSmoothScroll();
+    _initActiveToggle();
+    _initSiteNav();
+    _initFormFunctions();
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -42,8 +52,118 @@ var Main = (function($) {
 
   } // end init()
 
-  function _testInit() {
-    console.log('Testing testing testing...is this thing on?');
+  function _scrollBody(element, offset, duration, delay) {
+    var headerOffset = $siteHeader.outerHeight();
+    if (typeof offset === "undefined" || offset === null) {
+      offset = headerOffset;
+    }
+    if (typeof duration === "undefined" || duration === null) {
+      duration = 300;
+    }
+
+    if ($(element).length) {
+      isAnimating = true;
+      element.velocity("scroll", {
+        duration: duration,
+        delay: delay,
+        offset: -offset,
+        complete: function(elements) {
+          isAnimating = false;
+        }
+      }, "easeOutSine");
+    }
+  }
+
+  function _disableScroll() {
+    var st = $(window).scrollTop();
+    $body.attr('data-st', st);
+    $body.addClass('no-scroll');
+    $body.css('top', -st);
+  }
+
+  function _enableScroll() {
+    $body.removeClass('no-scroll');
+    $body.css('top', '');
+    $(window).scrollTop($body.attr('data-st'));
+    $body.attr('data-st', '');
+  }
+
+  function _getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  };
+
+  function _initSmoothScroll() {
+    $(document).on('click', '.smooth-scroll', function(e) {
+      e.preventDefault();
+      _scrollBody($($(this).attr('href')));
+    });
+  }
+
+  function _initActiveToggle() {
+    $(document).on('click', '[data-active-toggle]', function(e) {
+      $(this).toggleClass('-active');
+      if ($(this).attr('data-active-toggle') !== '') {
+        $($(this).attr('data-active-toggle')).toggleClass('-active');
+      }
+    });
+  }
+
+  function _initSiteNav() {
+    // Insert mobile nav, and apply functionality
+    $siteHeader.find('.-inner .-top').append('<button class="nav-toggle" aria-hidden="true" data-active-toggle="#site-nav"><span class="lines"></span></button>');
+
+    $siteNav.on('click', '.nav-parent-label', function(e) {
+
+      if (!breakpoint_nav) {
+        e.preventDefault();
+        var $childNav = $(this).next('.nav-sub-level');
+
+        if ($(this).is('.-active')) {
+          $childNav.velocity('slideUp', { duration: 250, easing: 'easeOutSine' });
+        } else {
+          $siteNav.find('.nav-parent-label.-active + .nav-sub-level').velocity('slideUp', { duration: 250, easing: 'easeOutSine' });
+          $siteNav.find('.nav-parent-label.-active').not($(this)).removeClass('-active');
+          $childNav.velocity('slideDown', { duration: 250, easing: 'easeOutSine' });
+        }
+      }
+    });
+
+    // Nav Toggle Functions
+    // $('.nav-toggle').on('click', function() {
+    //   if ($(this).is('.-active')) {
+    //     _hideSiteOverlay();
+    //   } else {
+    //     _showSiteOverlay();
+    //   }
+    // });
+
+    // Close when clicking away from nav
+    $(document).on('click touchend', '.site-nav-main.-active', function(e) {
+      if (!$(e.target).parents('ul').length && !$(e.target).parents('.header-search-wrap').length && !$(e.target).is('ul') && !$(e.target).is('.header-search-wrap')) {
+        _closeSiteNav();
+        // _hideSiteOverlay();
+      }
+    });
+  }
+
+  function _closeSiteNav() {
+    if (!$siteNav.is('.-active')) {
+      return;
+    }
+
+    $siteNav.removeClass('-active');
+    $('.nav-toggle').removeClass('-active');
+  }
+
+  function _initFormFunctions() {
+    $('form .input-wrap input, form .input-wrap button[type="submit"]').on('focus', function(e) {
+      $(this).closest('.input-wrap').addClass('-focus');
+    }).on('blur', function(e) {
+      $(this).closest('.input-wrap').removeClass('-focus');
+    });
   }
 
   // Disabling transitions on certain elements on resize

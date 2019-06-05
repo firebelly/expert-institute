@@ -9,8 +9,12 @@ html {
 
 body {
   @include p1;
+  padding-top: $header-sm;
   color: color(blue-dark);
 	background: color(white);
+  @include media-md {
+    padding-top: $header-md;
+  }
 }
 
 a {

@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <title> | The Expert Institute</title>
+  <title> | Expert Institute</title>
   <link rel="canonical" href="">
-  <meta property="og:title" content=" | The Expert Institute" />
+  <meta property="og:title" content=" | Expert Institute" />
   <meta property="og:image" content="hero-image.jpg" />
   <link rel="stylesheet" href="/dist/css/main.css">
   <script src=""></script>
@@ -27,15 +27,108 @@
 </head>
   <body class="url_404 layout_default ">
     <div id="breakpoint-indicator"></div>
-    <header class="site-header" role="banner">
-  <div class="site-wrapper">
-    <h1 class="logo"><a href="/"><svg class="icon icon-logo" aria-hidden="true" role="presentation"><use xlink:href="#logo"/></svg></a></h1>
-    <nav class="site-nav" role="navigation">
-      <ul class="links">
+    <header id="site-header" class="site-header" role="banner">
+  <div class="-inner">
+    <div class="-top site-wrapper">
+      <h1 class="logo"><a href="/"><svg class="icon icon-logo" aria-hidden="true" role="presentation"><use xlink:href="#logo"/></svg></a></h1>
+    </div>
+    <nav id="site-nav" class="site-nav" role="navigation">
+      <ul class="primary-nav">
           <li >
-            <a href="/about/">About</a>
+            <a href="/services/" class="nav-parent-label" data-active-toggle>Services <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>
+              <ul class="nav-sub-level">
+                  <li >
+                    <a href="/services/expert-witness-search/">Expert Witness Search</a>
+                  </li>
+                  <li >
+                    <a href="/services/case-clinics/">Case Clinics</a>
+                  </li>
+                  <li >
+                    <a href="/services/challenge-studies/">Challenge Studies</a>
+                  </li>
+                  <li >
+                    <a href="/services/phone-consultations/">Phone Consultations</a>
+                  </li>
+              </ul>
+          </li>
+          <li >
+            <a href="/process/" class="nav-parent-label" data-active-toggle>Process <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>
+              <ul class="nav-sub-level">
+                  <li >
+                    <a href="/process/how-it-works/">How It Works</a>
+                  </li>
+                  <li >
+                    <a href="/process/pricing/">Pricing</a>
+                  </li>
+                  <li >
+                    <a href="/process/partnership-program/">Partnership Program</a>
+                  </li>
+                  <li >
+                    <a href="/process/become-an-expert/">Become an Expert</a>
+                  </li>
+                  <li >
+                    <a href="/process/request-a-witness/">Request a Witness</a>
+                  </li>
+              </ul>
+          </li>
+          <li >
+            <a href="/outcomes/" class="nav-parent-label" data-active-toggle>Outcomes <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>
+              <ul class="nav-sub-level">
+                  <li >
+                    <a href="/outcomes/measurable-impact/">Measurable Impact</a>
+                  </li>
+                  <li >
+                    <a href="/outcomes/case-studies/">Case Studies</a>
+                  </li>
+              </ul>
           </li>
       </ul>
+      <ul class="secondary-nav">
+          <li >
+            <a href="/about/" class="nav-parent-label" data-active-toggle>About EI <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>
+              <ul class="nav-sub-level">
+                  <li >
+                    <a href="/about/our-story/">Our Story</a>
+                  </li>
+                  <li >
+                    <a href="/about/our-team/">Our Team</a>
+                  </li>
+                  <li >
+                    <a href="/about/locations/">Locations</a>
+                  </li>
+                  <li >
+                    <a href="/about/careers/">Careers</a>
+                  </li>
+              </ul>
+          </li>
+          <li >
+            <a href="/resources/" class="nav-parent-label" data-active-toggle>Resources <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>
+              <ul class="nav-sub-level">
+                  <li >
+                    <a href="/resources/expert-witness-directory/">Expert Witness Directory</a>
+                  </li>
+                  <li >
+                    <a href="/resources/expert-witness-fees/">Expert Witness Fees</a>
+                  </li>
+                  <li >
+                    <a href="/resources/white-papters/">White Papers</a>
+                  </li>
+                  <li >
+                    <a href="/resources/webinars/">Webinars</a>
+                  </li>
+                  <li >
+                    <a href="/resources/insights/">Insights</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+      <form action="" id="searchform" class="searchform">
+  <div class="input-wrap">
+    <label for="s">Search</label>
+    <input id="s" type="search">
+  </div>
+  <button class="submit" type="submit"><span class="visuallyhidden">submit</span><svg class="icon icon-search" aria-hidden="true" role="presentation"><use xlink:href="#icon-search"/></svg></button>
+</form>
     </nav>
   </div>
 </header>
@@ -63,7 +156,7 @@
   <div class="site-wrapper">
     <div class="grid">
       <div class="site-info col-1-4">
-        <p class="copyright">Copyright The Expert Institute 2019</p>
+        <p class="copyright">© 2019 Expert Institute</p>
       </div>
       <div class="rwjf col-1-2">
         <a href="http://www.rwjf.org/" class="rwjf-logo">
@@ -72,6 +165,19 @@
       </div>
     </div>
   </div>
+  <nav class="footer-nav" id="footer-nav">
+    <ul class="secondary-nav">
+        <li >
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </li>
+        <li >
+          <a href="/compliance/">Compoliance</a>
+        </li>
+        <li >
+          <a href="/terms-and-conditions/">Terms & Conditions</a>
+        </li>
+    </ul>
+  </nav>
 </footer>
 <script src="/dist/js/main.js"></script>
   </body>
