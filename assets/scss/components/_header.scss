@@ -120,7 +120,7 @@
     }
 
     .secondary-nav {
-      margin: 56px 0 22px;
+      margin: 56px 0 0;
 
       .nav-parent-label {
         color: color(gray-dark);
@@ -138,7 +138,7 @@
     }
 
     .searchform {
-      margin: 0 $padding-sm;
+      margin: 36px $padding-sm 0;
     }
 
     @include media-md {
