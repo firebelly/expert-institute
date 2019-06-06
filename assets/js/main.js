@@ -113,7 +113,7 @@ var Main = (function($) {
 
   function _initSiteNav() {
     // Insert mobile nav, and apply functionality
-    $siteHeader.find('.-inner .-top').append('<button class="nav-toggle" aria-hidden="true" data-active-toggle="#site-nav"><span class="lines"></span></button>');
+    $siteHeader.find('.-inner .-top').append('<button class="nav-toggle" aria-hidden="true" data-active-toggle="#site-nav"><svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 13.5"><path class="line top left" d="M0 0h12v1.5H0z"/><path class="line top right" d="M12 0h12v1.5H12z"/><path class="line middle" d="M0 6h24v1.5H0z"/><path class="line bottom left" d="M0 12h12v1.5H0z"/><path class="line bottom right" d="M12 12h12v1.5H12z"/></svg></button>');
 
     $siteNav.on('click', '.nav-parent-label', function(e) {
 
@@ -131,20 +131,19 @@ var Main = (function($) {
       }
     });
 
-    // Nav Toggle Functions
-    // $('.nav-toggle').on('click', function() {
-    //   if ($(this).is('.-active')) {
-    //     _hideSiteOverlay();
-    //   } else {
-    //     _showSiteOverlay();
-    //   }
-    // });
+    // Disable Scroll When Nav is Open
+    $(document).on('click', '.nav-toggle', function() {
+      if ($(this).is('.-active')) {
+        _disableScroll();
+      } else {
+        _enableScroll();
+      }
+    });
 
     // Close when clicking away from nav
     $(document).on('click touchend', '.site-nav-main.-active', function(e) {
       if (!$(e.target).parents('ul').length && !$(e.target).parents('.header-search-wrap').length && !$(e.target).is('ul') && !$(e.target).is('.header-search-wrap')) {
         _closeSiteNav();
-        // _hideSiteOverlay();
       }
     });
   }

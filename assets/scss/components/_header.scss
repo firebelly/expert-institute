@@ -8,7 +8,7 @@
   height: $header-sm;
   background-color: color(white);
 
-  @include media-md {
+  @include media-nav {
     height: $header-md;
   }
 
@@ -46,7 +46,7 @@
       fill: color(blue-light);
     }
 
-    @include media-md {
+    @include media-nav {
       line-height: 24px;
 
       svg {
@@ -61,12 +61,14 @@
     top: 100%;
     opacity: 0;
     width: 100%;
+    display: flex;
     overflow: auto;
+    padding: 36px 0;
     position: absolute;
-    padding-bottom: 36px;
+    flex-direction: column;
     background: color(white);
     transform: translateY(-120%);
-    max-height: calc(100vh - #{$header-sm});
+    height: calc(100vh - #{$header-sm});
     transition: transform .25s $slide-easing, opacity 0s ease-out .26s;
     &.-active {
       opacity: 1;
@@ -113,11 +115,16 @@
     .primary-nav {
       // Parent Items
       .nav-parent-label {
-        @include p2;
         color: color(blue-light);
+        @include paragraph-style(24, 30);
 
         .icon-arrow-down {
           fill: color(blue-light)
+        }
+
+        @include media-nav {
+          color: color(blue-dark);
+          @include paragraph-style(18, 24);
         }
       }
     }
@@ -140,11 +147,19 @@
       }
     }
 
-    .searchform {
-      margin: 36px $padding-sm 0;
+
+    .nav-search {
+      flex-grow: 1;
+      display: flex;
+      align-items: flex-end;
+      padding: 36px $padding-sm 0;
+
+      form {
+        width: 100%;
+      }
     }
 
-    @include media-md {
+    @include media-nav {
       display: block;
     }
   }
@@ -161,55 +176,64 @@
     position: absolute;
     transform: translateY(-50%);
 
-    .lines {
-      left: 0;
-      top: 50%;
-      width: 24px;
-      height: 1px;
-      position: absolute;
-      display: inline-block;
-      background-color: color(blue-dark);
-      transition: background-color .2s ease-out;
-
-      &::before,
-      &::after {
-        left: 0;
-        width: 100%;
-        height: 1px;
-        content: '';
-        position: absolute;
-        transition: transform .2s ease-out;
-        background-color: color(blue-dark);
+    svg {
+      overflow: visible;
+      path {
       }
+    }
 
-      &::before {
-        top: -6px;
+    .line {
+      fill: color(blue-dark);
+      transition: transform .2s ease-out;
+
+      &.top {
+        &.left {
+          transform-origin: top left;
+        }
+        &.right {
+          transform-origin: top right;
+        }
       }
-      &::after {
-        top:  6px;
+      &.middle {
+        transform-origin: center center;
+      }
+      &.bottom {
+        &.left {
+          transform-origin: bottom left;
+        }
+        &.right {
+          transform-origin: bottom right;
+        }
       }
     }
 
     &.-active {
-      right: $padding-sm - 2px;
 
-      .lines {
-        transition: none;
-        background-color: transparent;
-        &::before,
-        &::after {
-          top: 0;
+      .line {
+        &.top {
+          &.left {
+            transform: rotate(45deg) translate(2px, -5px);
+          }
+          &.right {
+            transform: rotate(-45deg) translate(-1px, -4px);
+          }
         }
-        &::before {
-          transform: rotate(-45deg);
+        &.bottom {
+          &.left {
+            transform: rotate(-45deg) translate(2px, 5px);
+          }
+          &.right {
+            transform: rotate(45deg) translate(-1px, 4px);
+          }
         }
-        &::after {
-          transform: rotate(45deg);
+
+        &.middle {
+          transform: scaleX(0);
         }
       }
     }
 
-    @include media-md {
+    @include media-nav {
       right: $padding-md;
     }
   }
