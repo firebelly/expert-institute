@@ -170,16 +170,15 @@
     top: 50%;
     padding: 0;
     width: 24px;
-    height: 13px;
+    height: 14px;
     cursor: pointer;
     right: $padding-sm;
     position: absolute;
     transform: translateY(-50%);
 
     svg {
+      display: block;
       overflow: visible;
-      path {
-      }
     }
 
     .line {
