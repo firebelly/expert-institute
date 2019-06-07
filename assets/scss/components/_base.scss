@@ -12,7 +12,7 @@ body {
   padding-top: $header-sm;
   color: color(blue-dark);
 	background: color(white);
-  @include media-md {
+  @include media-nav {
     padding-top: $header-md;
   }
 }
@@ -35,6 +35,9 @@ img {
   max-width: $sitewrapper;
   @include media-md {
     padding: 0 $padding-md;
+  }
+  @include media-nav {
+    padding: 0 $padding-lg;
   }
 }
 

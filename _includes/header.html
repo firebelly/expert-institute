@@ -4,7 +4,7 @@
       <h1 class="logo"><a href="/"><svg class="icon icon-logo" aria-hidden="true" role="presentation"><use xlink:href="#logo"/></svg></a></h1>
     </div>
     <nav id="site-nav" class="site-nav" role="navigation">
-      <ul class="primary-nav">
+      <ul id="primary-nav" class="primary-nav">
         {% for navItem in site.data.navigation.primaryNav %}
           <li {% if page.url contains navItem.path %} class="-current" {% endif %}>
             <a href="{{ navItem.path }}" class="nav-parent-label" data-active-toggle>{{ navItem.title }} <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>
@@ -21,7 +21,11 @@
         {% endfor %}
       </ul>
 
-      <ul class="secondary-nav">
+      <div class="nav-utility-container">
+        <a href="request-an-expert" class="request-an-expert button hollow">Request An Expert</a>
+      </div>
+
+      <ul id="secondary-nav" class="secondary-nav">
         {% for navItem in site.data.navigation.secondaryNav %}
           <li {% if page.url contains navItem.path %} class="current" {% endif %}>
             <a href="{{ navItem.path }}" class="nav-parent-label" data-active-toggle>{{ navItem.title }} <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>

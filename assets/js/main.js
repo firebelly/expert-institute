@@ -35,7 +35,7 @@ var Main = (function($) {
     _resize();
 
     // Transition elements to enable/disable on resize
-    transitionElements = [];
+    transitionElements = [$siteNav];
 
     // Init functions
     _initSmoothScroll();
@@ -112,8 +112,14 @@ var Main = (function($) {
   }
 
   function _initSiteNav() {
+    var navToggle = '<button class="nav-toggle" aria-hidden="true" data-active-toggle="#site-nav"><svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 13.5"><path class="line top left" d="M0 0h12v1.5H0z"/><path class="line top right" d="M12 0h12v1.5H12z"/><path class="line middle" d="M0 6h24v1.5H0z"/><path class="line bottom left" d="M0 12h12v1.5H0z"/><path class="line bottom right" d="M12 12h12v1.5H12z"/></svg></button>';
     // Insert mobile nav, and apply functionality
-    $siteHeader.find('.-inner .-top').append('<button class="nav-toggle" aria-hidden="true" data-active-toggle="#site-nav"><svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 13.5"><path class="line top left" d="M0 0h12v1.5H0z"/><path class="line top right" d="M12 0h12v1.5H12z"/><path class="line middle" d="M0 6h24v1.5H0z"/><path class="line bottom left" d="M0 12h12v1.5H0z"/><path class="line bottom right" d="M12 12h12v1.5H12z"/></svg></button>');
+    $siteHeader.find('.-inner .-top').append(navToggle);
+    var $mobileNavToggle = $siteHeader.find('.nav-toggle');
+    $mobileNavToggle.addClass('mobile-nav-toggle').attr('data-active-toggle', '#site-nav');
+    $siteNav.find('.nav-utility-container').append(navToggle);
+    var $secondaryNavToggle = $siteNav.find('.nav-toggle');
+    $secondaryNavToggle.addClass('secondary-nav-toggle').attr('data-active-toggle','#secondary-nav');
 
     $siteNav.on('click', '.nav-parent-label', function(e) {
 
@@ -133,10 +139,12 @@ var Main = (function($) {
 
     // Disable Scroll When Nav is Open
     $(document).on('click', '.nav-toggle', function() {
-      if ($(this).is('.-active')) {
-        _disableScroll();
-      } else {
-        _enableScroll();
+      if (!breakpoint_nav) {
+        if ($(this).is('.-active')) {
+          _disableScroll();
+        } else {
+          _enableScroll();
+        }
       }
     });
 
