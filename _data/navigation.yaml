@@ -26,13 +26,13 @@ primaryNav:
       - title: Request a Witness
         path: /process/request-a-witness/
 
-  - title: Outcomes
-    path: /outcomes/
+  - title: Results
+    path: /results/
     children:
       - title: Measurable Impact
-        path: /outcomes/measurable-impact/
+        path: /results/measurable-impact/
       - title: Case Studies
-        path: /outcomes/case-studies/
+        path: /results/case-studies/
 
 secondaryNav:
   - title: About EI

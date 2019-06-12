@@ -30,6 +30,7 @@ var Main = (function($) {
     $body = $('body');
     $siteHeader = $('#site-header');
     $siteNav = $('#site-nav');
+    $secondaryNav = $('#secondary-nav');
 
     // Set screen size vars
     _resize();
@@ -46,7 +47,7 @@ var Main = (function($) {
     // Esc handlers
     $(document).keyup(function(e) {
       if (e.keyCode === 27) {
-
+        _closeSiteNav();
       }
     });
 
@@ -93,7 +94,7 @@ var Main = (function($) {
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
     var results = regex.exec(location.search);
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-  };
+  }
 
   function _initSmoothScroll() {
     $(document).on('click', '.smooth-scroll', function(e) {
@@ -113,16 +114,19 @@ var Main = (function($) {
 
   function _initSiteNav() {
     var navToggle = '<button class="nav-toggle" aria-hidden="true" data-active-toggle="#site-nav"><svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 13.5"><path class="line top left" d="M0 0h12v1.5H0z"/><path class="line top right" d="M12 0h12v1.5H12z"/><path class="line middle" d="M0 6h24v1.5H0z"/><path class="line bottom left" d="M0 12h12v1.5H0z"/><path class="line bottom right" d="M12 12h12v1.5H12z"/></svg></button>';
-    // Insert mobile nav, and apply functionality
+
+    // Insert nav toggles for mobile small and large screens
     $siteHeader.find('.-inner .-top').append(navToggle);
     var $mobileNavToggle = $siteHeader.find('.nav-toggle');
     $mobileNavToggle.addClass('mobile-nav-toggle').attr('data-active-toggle', '#site-nav');
-    $siteNav.find('.nav-utility-container').append(navToggle);
+    $('.nav-utility-container').append(navToggle);
     var $secondaryNavToggle = $siteNav.find('.nav-toggle');
     $secondaryNavToggle.addClass('secondary-nav-toggle').attr('data-active-toggle','#secondary-nav');
+    // Insert svg icon for large-screen open nav visual
+    $('.nav-utility-container').append('<svg class="secondary-nav-indicator icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg>')
 
+    // Sub-nav functionality
     $siteNav.on('click', '.nav-parent-label', function(e) {
-
       if (!breakpoint_nav) {
         e.preventDefault();
         var $childNav = $(this).next('.nav-sub-level');
@@ -134,6 +138,35 @@ var Main = (function($) {
           $siteNav.find('.nav-parent-label.-active').not($(this)).removeClass('-active');
           $childNav.velocity('slideDown', { duration: 250, easing: 'easeOutSine' });
         }
+      }
+    });
+
+    // Adding sub-nav backdrop for large screen
+    $siteHeader.append('<div class="sub-nav-backdrop"></div>');
+
+    var closeSubNavBackdrop;
+
+    // Expanding height of sub-nav when hovering on
+    // top-level items on large screen
+    $('#primary-nav .top-level').on('mouseenter', function(){
+      window.clearTimeout(closeSubNavBackdrop);
+      var subNavHeight = $(this).find('.nav-sub-level').outerHeight();
+      $('.sub-nav-backdrop').css('height', subNavHeight);
+      if ($('#secondary-nav').is('.-active')) {
+        $('.secondary-nav-toggle, #secondary-nav').removeClass('-active');
+      }
+    }).on('mouseleave', function() {
+      closeSubNavBackdrop =  window.setTimeout(function() {
+        $('.sub-nav-backdrop').css('height', '0');
+      }, 150);
+    });
+
+    // Expanding height of sub-nav when clicking on secondary-nav
+    $(document).on('click', '.mobile-nav-toggle, .secondary-nav-toggle', function() {
+      if ($(this).is('.-active')) {
+        $body.addClass('nav-open');
+      } else {
+        $body.removeClass('nav-open');
       }
     });
 
@@ -149,20 +182,23 @@ var Main = (function($) {
     });
 
     // Close when clicking away from nav
-    $(document).on('click touchend', '.site-nav-main.-active', function(e) {
-      if (!$(e.target).parents('ul').length && !$(e.target).parents('.header-search-wrap').length && !$(e.target).is('ul') && !$(e.target).is('.header-search-wrap')) {
+    $(document).on('click touchend', 'body.nav-open', function(e) {
+      if (breakpoint_nav && !$(e.target).parents('.site-nav').length) {
         _closeSiteNav();
       }
     });
   }
 
   function _closeSiteNav() {
-    if (!$siteNav.is('.-active')) {
+    if (!$body.is('.nav-open')) {
       return;
     }
-
+    $body.removeClass('nav-open');
     $siteNav.removeClass('-active');
+    $secondaryNav.removeClass('-active');
     $('.nav-toggle').removeClass('-active');
+    $('.secondary-nav-toggle').removeClass('-active');
+    _enableScroll();
   }
 
   function _initFormFunctions() {
@@ -206,6 +242,17 @@ var Main = (function($) {
 
     // Disable transitions when resizing
     _disableTransitions();
+
+    // Close Nav
+    if ($siteNav.is('.-active') && breakpoint_nav) {
+      _closeSiteNav();
+    }
+
+    // Reset inline styles for navigation for medium breakpoint
+    if (breakpoint_nav && $('.site-nav .nav-sub-level')[0].hasAttribute('style')) {
+      $('.site-nav .nav-parent-label.-active').removeClass('-active');
+      $('.site-nav .nav-sub-level[style]').attr('style', '');
+    }
 
     // Functions to run on resize end
     clearTimeout(resizeTimer);

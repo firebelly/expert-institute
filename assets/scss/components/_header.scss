@@ -36,6 +36,7 @@
 
       .-top {
         margin: 0;
+        z-index: 2;
         padding: 0;
         position: relative;
         width: columns(7,17);
@@ -95,15 +96,16 @@
     background: color(white);
     transform: translateY(-120%);
     height: calc(100vh - #{$header-sm});
-    transition: transform .25s $slide-easing, opacity 0s ease-out .26s;
+    transition: transform .25s $slide-easing, opacity 0s .26s;
     &.-active {
       opacity: 1;
       transform: translateY(0);
-      transition: transform .25s $slide-easing, opacity 0s ease-out 0s;
+      transition: transform .25s $slide-easing, opacity 0s 0s;
     }
 
     @include media-nav {
       top: 0;
+      z-index: 1;
       opacity: 1;
       padding: 0;
       width: 100%;
@@ -115,6 +117,16 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      &::after {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        content: '';
+        position: fixed;
+        height: $header-md;
+        background-color: color(white);
+      }
     }
 
     ul {
@@ -128,6 +140,52 @@
         a {
           @include paragraph-style(18, 48);
         }
+
+        @include media-nav {
+          opacity: 0;
+          display: block;
+          padding: 40px 0;
+          pointer-events: none;
+          background-color: transparent;
+
+          > li.-current {
+            a {
+              color: color(blue-light);
+              span {
+                border-bottom-color: color(blue-light);
+              }
+            }
+          }
+
+          li {
+            opacity: 0;
+            transition: none;
+            transform: translateY(-15%);
+          }
+
+          a {
+            position: relative;
+            white-space: nowrap;
+            span {
+              padding-bottom: 2px;
+              border-bottom: 1px solid transparent;
+            }
+
+            &:hover,
+            &:focus {
+              color: color(blue-light);
+              span {
+                border-bottom-color: color(blue-light);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .top-level.-current {
+      > a {
+        color: color(blue-light);
       }
     }
 
@@ -167,17 +225,27 @@
       @include media-nav {
         display: flex;
 
+        > li + li {
+          margin-left: $padding-sm;
+        }
+
         li {
           position: relative;
-          + li {
-            margin-left: $padding-sm;
-          }
+
           &:hover {
             .icon {
               opacity: 1;
             }
             .nav-sub-level {
-              display: block;
+              opacity: 1;
+              pointer-events: auto;
+              @for $i from 1 through 10 {
+                li:nth-child(#{$i}) {
+                  opacity: 1;
+                  transform: none;
+                  transition: opacity .25s #{$i * .08}s ease-out, transform .25s #{$i * .08}s ease-out;
+                }
+              }
             }
           }
         }
@@ -211,6 +279,22 @@
     .nav-utility-container {
       display: flex;
       align-items: center;
+
+      .secondary-nav-indicator {
+        display: none;
+      }
+
+      @include media-nav {
+        .secondary-nav-indicator {
+          bottom: 0;
+          right: 4px;
+          width: 14px;
+          height: 7px;
+          position: absolute;
+          fill: color(blue-light);
+          transform: rotate(180deg);
+        }
+      }
     }
 
     // Request an expert button
@@ -230,11 +314,21 @@
       @include media-nav {
         display: block;
         margin-left: $padding-sm;
+
+        &.-active {
+          + .secondary-nav-indicator {
+            display: block;
+          }
+        }
       }
     }
 
     .secondary-nav {
       margin: 56px 0 0;
+
+      .secondary-nav-search {
+        display: none;
+      }
 
       .nav-parent-label {
         color: color(gray-dark);
@@ -247,22 +341,73 @@
       }
 
       @include media-nav {
+        left: 0;
         right: 0;
-        top: 100%;
         margin: 0;
         opacity: 0;
-        position: absolute;
+        z-index: -2;
+        top: $header-md;
+        position: fixed;
         pointer-events: none;
         transform: translateY(-100%);
+        background-color: color(gray);
+        transition: transform .25s $slide-easing, opacity 0s .26s;
 
         &.-active {
           opacity: 1;
           pointer-events: auto;
           transform: translateY(0);
+          transition: transform .25s $slide-easing, opacity 0s 0s;
+
+          .nav-sub-level {
+            opacity: 1;
+            pointer-events: auto;
+            @for $i from 1 through 10 {
+              li:nth-child(#{$i}) {
+                opacity: 1;
+                transform: none;
+                transition: opacity .25s #{$i * .08}s ease-out, transform .25s #{$i * .08}s ease-out;
+              }
+            }
+          }
+        }
+
+        .-inner {
+          display: flex;
+          width: 100%;
+          margin: 0 auto;
+          position: relative;
+          padding: 0 $padding-lg;
+          max-width: $sitewrapper;
+          justify-content: flex-end;
+          > li {
+            padding-top: 58px;
+            text-align: right;
+            width: columns(6,17);
+          }
+        }
+
+
+        .secondary-nav-search {
+          display: block;
+          padding-top: 60px;
+          width: columns(5,17);
         }
 
         .nav-parent-label {
+          padding: 0;
+          display: block;
           @include paragraph-style(13, 24, 0, normal, uppercase);
+          .icon {
+            display: none;
+          }
+        }
+
+        .nav-sub-level {
+          padding-top: 0;
+          a {
+            display: inline-block;
+          }
         }
       }
     }
@@ -281,6 +426,22 @@
       @include media-nav {
         display: none;
       }
+    }
+  }
+
+  // Sub-nav backdrop
+  .sub-nav-backdrop {
+    display: none;
+
+    @include media-nav {
+      left: 0;
+      top: 100%;
+      height: 0;
+      width: 100%;
+      display: block;
+      position: absolute;
+      background-color: color(gray);
+      transition: height .25s ease-out;
     }
   }
 

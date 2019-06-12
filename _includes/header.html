@@ -6,13 +6,13 @@
     <nav id="site-nav" class="site-nav" role="navigation">
       <ul id="primary-nav" class="primary-nav">
         {% for navItem in site.data.navigation.primaryNav %}
-          <li {% if page.url contains navItem.path %} class="-current" {% endif %}>
+          <li class="top-level {% if page.url contains navItem.path %} -current{% endif %}">
             <a href="{{ navItem.path }}" class="nav-parent-label" data-active-toggle>{{ navItem.title }} <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>
             {% if navItem.children %}
               <ul class="nav-sub-level">
                 {% for childItem in navItem.children %}
                   <li {% if page.url == childItem.path %} class="-current" {% endif %}>
-                    <a href="{{ childItem.path }}">{{ childItem.title }}</a>
+                    <a href="{{ childItem.path }}"><span>{{ childItem.title }}</span></a>
                   </li>
                 {% endfor %}
               </ul>
@@ -26,20 +26,26 @@
       </div>
 
       <ul id="secondary-nav" class="secondary-nav">
-        {% for navItem in site.data.navigation.secondaryNav %}
-          <li {% if page.url contains navItem.path %} class="current" {% endif %}>
-            <a href="{{ navItem.path }}" class="nav-parent-label" data-active-toggle>{{ navItem.title }} <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>
-            {% if navItem.children %}
-              <ul class="nav-sub-level">
-                {% for childItem in navItem.children %}
-                  <li {% if page.url == childItem.path %} class="current" {% endif %}>
-                    <a href="{{ childItem.path }}">{{ childItem.title }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
+        <div class="-inner">
+          <div class="secondary-nav-search">
+            {% include searchform.html %}
+          </div>
+
+          {% for navItem in site.data.navigation.secondaryNav %}
+            <li class="top-level {% if page.url contains navItem.path %} -current{% endif %}">
+              <a href="{{ navItem.path }}" class="nav-parent-label" data-active-toggle>{{ navItem.title }} <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></a>
+              {% if navItem.children %}
+                <ul class="nav-sub-level">
+                  {% for childItem in navItem.children %}
+                    <li {% if page.url == childItem.path %} class="current" {% endif %}>
+                      <a href="{{ childItem.path }}"><span>{{ childItem.title }}</span></a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </div>
       </ul>
 
       <div class="nav-search">
