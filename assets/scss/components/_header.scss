@@ -129,6 +129,10 @@
       }
     }
 
+    @include media-xl {
+      justify-content: flex-end;
+    }
+
     ul {
       @extend .semantic-list;
 
@@ -272,6 +276,10 @@
           position: absolute;
         }
       }
+
+      @include media-xl {
+        order: 0;
+      }
     }
 
     // Nav Utility Container
@@ -294,6 +302,11 @@
           fill: color(blue-light);
           transform: rotate(180deg);
         }
+      }
+
+      @include media-xl {
+        order: 3;
+        margin-left: 40px;
       }
     }
 
@@ -321,6 +334,10 @@
           }
         }
       }
+
+      @include media-xl {
+        display: none;
+      }
     }
 
     .secondary-nav {
@@ -337,6 +354,22 @@
 
         .icon-arrow-down {
           fill: color(gray-dark);
+        }
+      }
+
+      .search-toggle {
+        width: 22px;
+        height: 22px;
+        padding: 4px;
+        display: none;
+        cursor: pointer;
+        @extend .button-reset;
+
+        .icon {
+          width: 14px;
+          height: 14px;
+          display: block;
+          fill: color(blue-dark);
         }
       }
 
@@ -373,8 +406,8 @@
         }
 
         .-inner {
-          display: flex;
           width: 100%;
+          display: flex;
           margin: 0 auto;
           position: relative;
           padding: 0 $padding-lg;
@@ -408,6 +441,85 @@
           a {
             display: inline-block;
           }
+        }
+      }
+
+      @include media-xl {
+        order: 1;
+        top: auto;
+        z-index: 1;
+        opacity: 1;
+        transform: none;
+        background: none;
+        position: relative;
+        pointer-events: auto;
+        margin-left: columns(2, 17);
+
+        .-inner {
+          padding: 0;
+          align-items: center;
+
+          > li {
+            width: auto;
+            padding-top: 0;
+            text-align: left;
+          }
+        }
+
+        .secondary-nav-search {
+          display: none;
+        }
+
+        .top-level {
+          + .top-level {
+            margin-left: 26px;
+          }
+
+          &:hover {
+            .icon {
+              display: block;
+            }
+            .nav-sub-level {
+              opacity: 1;
+              pointer-events: auto;
+              @for $i from 1 through 10 {
+                li:nth-child(#{$i}) {
+                  opacity: 1;
+                  transform: none;
+                  transition: opacity .25s #{$i * .08}s ease-out, transform .25s #{$i * .08}s ease-out;
+                }
+              }
+            }
+          }
+        }
+
+        .nav-parent-label {
+          font-size: 18px;
+          height: $header-md;
+          position: relative;
+          text-transform: none;
+          @include ginto-normal;
+          color: color(blue-dark);
+          line-height: $header-md;
+
+          .icon {
+            left: 50%;
+            bottom: 0;
+            position: absolute;
+            fill: color(blue-light);
+            transform: rotate(180deg) translateX(50%);
+          }
+        }
+
+        .nav-sub-level {
+          opacity: 0;
+          padding: 40px 0;
+          position: absolute;
+        }
+
+        .search-toggle {
+          display: block;
+          margin-left: 22px;
         }
       }
     }

@@ -35,7 +35,7 @@ primaryNav:
         path: /results/case-studies/
 
 secondaryNav:
-  - title: About EI
+  - title: About
     path: /about/
     children:
       - title: Our Story

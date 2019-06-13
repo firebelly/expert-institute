@@ -123,7 +123,7 @@ var Main = (function($) {
     var $secondaryNavToggle = $siteNav.find('.nav-toggle');
     $secondaryNavToggle.addClass('secondary-nav-toggle').attr('data-active-toggle','#secondary-nav');
     // Insert svg icon for large-screen open nav visual
-    $('.nav-utility-container').append('<svg class="secondary-nav-indicator icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg>')
+    $('.nav-utility-container').append('<svg class="secondary-nav-indicator icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg>');
 
     // Sub-nav functionality
     $siteNav.on('click', '.nav-parent-label', function(e) {
@@ -148,7 +148,11 @@ var Main = (function($) {
 
     // Expanding height of sub-nav when hovering on
     // top-level items on large screen
-    $('#primary-nav .top-level').on('mouseenter', function(){
+    $('.top-level').on('mouseenter', function(){
+      if ($(this).parents('#secondary-nav').length && !breakpoint_xl) {
+        console.log('hey');
+        return;
+      }
       window.clearTimeout(closeSubNavBackdrop);
       var subNavHeight = $(this).find('.nav-sub-level').outerHeight();
       $('.sub-nav-backdrop').css('height', subNavHeight);
