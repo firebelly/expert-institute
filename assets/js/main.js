@@ -36,7 +36,7 @@ var Main = (function($) {
     _resize();
 
     // Transition elements to enable/disable on resize
-    transitionElements = [$siteNav];
+    transitionElements = [$siteNav, $secondaryNav];
 
     // Init functions
     _initSmoothScroll();

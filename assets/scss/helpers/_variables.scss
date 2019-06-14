@@ -21,18 +21,18 @@ $colors: (
 // Breakpoints
 $breakpoint-sm: 520px;
 $breakpoint-md: 768px;
-$breakpoint-lg: 1000px;
+$breakpoint-lg: 900px;
 $breakpoint-nav: 1100px;
-$breakpoint-xl: 1260px;
-
-// Site Wrapper
-$sitewrapper: 1380px;
+$breakpoint-xl: 1346px;
 
 // Padding/spacing
 $beat: 10px;
 $padding-sm: 30px;
 $padding-md: $padding-sm * 2;
 $padding-lg: $padding-sm * 4;
+
+// Site Wrapper
+$sitewrapper: 1380px + ($padding-lg * 2);
 
 // Header Heights
 $header-sm: 60px;
