@@ -43,9 +43,11 @@
       }
     }
 
-    @include media-xl {
+    @include media-nav {
       padding: 0 $padding-lg;
+    }
 
+    @include media-xl {
       .-top {
         width: columns(7,17);
       }
@@ -157,11 +159,15 @@
 
       .nav-sub-level {
         display: none;
-        padding: 22px 50px;
         background-color: color(gray);
+        padding: 22px $padding-sm 22px 50px;
 
         a {
           @include paragraph-style(18, 48);
+        }
+
+        @include media-md {
+          padding: 22px $padding-md 22px 80px;
         }
 
         @include media-lg {
@@ -241,6 +247,7 @@
     .primary-nav {
       // Parent Items
       .nav-parent-label {
+        @include smooth;
         color: color(blue-light);
         @include paragraph-style(24, 30);
 
@@ -338,6 +345,10 @@
       @include media-xl {
         order: 3;
         margin-left: 40px;
+
+        .secondary-nav-indicator {
+          display: none;
+        }
       }
     }
 
@@ -360,15 +371,17 @@
         display: block;
         margin-left: $padding-sm;
 
-        &.-active {
-          + .secondary-nav-indicator {
-            display: block;
-          }
+        &.-active + .secondary-nav-indicator {
+          display: block;
         }
       }
 
       @include media-xl {
         display: none;
+
+        &.-active + .secondary-nav-indicator {
+          display: none;
+        }
       }
     }
 
@@ -390,18 +403,21 @@
       }
 
       .search-toggle {
-        width: 22px;
-        height: 22px;
-        padding: 4px;
+        width: 32px;
         display: none;
+        padding: 0 10px;
         cursor: pointer;
+        height: $header-md;
         @extend .button-reset;
 
         .icon {
+          top: 3px;
+          fill: none;
           width: 14px;
           height: 14px;
           display: block;
-          fill: color(blue-dark);
+          position: relative;
+          fill: color(blue-light);
         }
       }
 
@@ -442,7 +458,7 @@
           display: flex;
           margin: 0 auto;
           position: relative;
-          padding: 0 $padding-lg;
+          padding: 0 $padding-md;
           max-width: $sitewrapper;
           justify-content: flex-end;
           > li {
@@ -478,6 +494,10 @@
 
       @include media-nav {
         top: $header-md;
+
+        .-inner {
+          padding: 0 $padding-lg;
+        }
       }
 
       @include media-xl {
@@ -530,13 +550,10 @@
         }
 
         .nav-parent-label {
-          font-size: 18px;
           height: $header-md;
           position: relative;
-          text-transform: none;
-          @include ginto-normal;
           color: color(blue-dark);
-          line-height: $header-md;
+          line-height: $header-md + 5px;
 
           .icon {
             left: 50%;
@@ -555,7 +572,7 @@
 
         .search-toggle {
           display: block;
-          margin-left: 22px;
+          margin-left: 12px;
         }
       }
     }
@@ -573,6 +590,27 @@
 
       @include media-lg {
         display: none;
+      }
+
+      @include media-xl {
+        left: 0;
+        opacity: 0;
+        top: -100%;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        position: fixed;
+        pointer-events: none;
+        max-width: $sitewrapper;
+        padding: 54px $padding-lg;
+        transform: translateY(-10%);
+        transition: transform .25s .15s ease-out, opacity .25s .15s ease-out;
+        &.-active {
+          opacity: 1;
+          top: $header-md;
+          pointer-events: auto;
+          transform: translate(0);
+        }
       }
     }
   }

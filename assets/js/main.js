@@ -12,6 +12,9 @@ var Main = (function($) {
       $body,
       $siteHeader,
       $siteNav,
+      $navSearch,
+      closeSubNavBackdrop,
+      openNavSearch,
       breakpointIndicatorString,
       breakpoint_xl,
       breakpoint_nav,
@@ -31,6 +34,7 @@ var Main = (function($) {
     $siteHeader = $('#site-header');
     $siteNav = $('#site-nav');
     $secondaryNav = $('#secondary-nav');
+    $navSearch = $('.nav-search');
 
     // Set screen size vars
     _resize();
@@ -122,7 +126,7 @@ var Main = (function($) {
     $('.nav-utility-container').append(navToggle);
     var $secondaryNavToggle = $siteNav.find('.nav-toggle');
     $secondaryNavToggle.addClass('secondary-nav-toggle').attr('data-active-toggle','#secondary-nav');
-    // Insert svg icon for large-screen open nav visual
+    // Insert svg icon for large-screen offsetpen nav visual
     $('.nav-utility-container').append('<svg class="secondary-nav-indicator icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg>');
 
     // Sub-nav functionality
@@ -144,29 +148,39 @@ var Main = (function($) {
     // Adding sub-nav backdrop for large screen
     $siteHeader.append('<div class="sub-nav-backdrop"></div>');
 
-    var closeSubNavBackdrop;
-
     // Expanding height of sub-nav when hovering on
     // top-level items on large screen
     $('.top-level').on('mouseenter', function(){
       if ($(this).parents('#secondary-nav').length && !breakpoint_xl) {
-        console.log('hey');
         return;
       }
       window.clearTimeout(closeSubNavBackdrop);
       var subNavHeight = $(this).find('.nav-sub-level').outerHeight();
-      $('.sub-nav-backdrop').css('height', subNavHeight);
-      if ($('#secondary-nav').is('.-active')) {
-        $('.secondary-nav-toggle, #secondary-nav').removeClass('-active');
-      }
+      _expandNavBackdrop(subNavHeight);
     }).on('mouseleave', function() {
-      closeSubNavBackdrop =  window.setTimeout(function() {
-        $('.sub-nav-backdrop').css('height', '0');
-      }, 150);
+      _closeNavBackdrop();
+    });
+
+    // Expanding nav search when hovering over search toggle
+    $('.search-toggle').on('mouseenter', function(){
+      _openNavSearch();
+      window.clearTimeout(closeSubNavBackdrop);
+      var navSearchHeight = $navSearch.outerHeight();
+      _expandNavBackdrop(navSearchHeight);
+    }).on('mouseleave', function() {
+      if (!$('.nav-search').is(':hover')) {
+        _closeNavSearch();
+      }
+    });
+
+    $('.nav-search').on('mouseleave', function() {
+      if (!$('.search-toggle').is(':hover')) {
+        _closeNavSearch();
+      }
     });
 
     // Expanding height of sub-nav when clicking on secondary-nav
-    $(document).on('click', '.mobile-nav-toggle, .secondary-nav-toggle', function() {
+    $(document).on('click', '.mobile-nav-toggle, .secondary-nav-toggle, .search-toggle', function() {
       if ($(this).is('.-active')) {
         $body.addClass('nav-open');
       } else {
@@ -193,6 +207,19 @@ var Main = (function($) {
     });
   }
 
+  function _expandNavBackdrop(height) {
+    $('.sub-nav-backdrop').css('height', height);
+    if ($('#secondary-nav').is('.-active')) {
+      $('.secondary-nav-toggle, #secondary-nav').removeClass('-active');
+    }
+  }
+
+  function _closeNavBackdrop() {
+    closeSubNavBackdrop =  window.setTimeout(function() {
+      $('.sub-nav-backdrop').css('height', '0');
+    }, 150);
+  }
+
   function _closeSiteNav() {
     if (!$body.is('.nav-open')) {
       return;
@@ -203,6 +230,15 @@ var Main = (function($) {
     $('.nav-toggle').removeClass('-active');
     $('.secondary-nav-toggle').removeClass('-active');
     _enableScroll();
+  }
+
+  function _openNavSearch() {
+    $navSearch.addClass('-active');
+  }
+
+  function _closeNavSearch() {
+    $navSearch.removeClass('-active');
+    _closeNavBackdrop();
   }
 
   function _initFormFunctions() {
