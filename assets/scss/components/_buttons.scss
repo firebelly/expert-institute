@@ -4,6 +4,7 @@
   @extend .button-reset;
   @include p1;
   line-height: 1;
+  @include smooth;
   text-align: center;
   color: color(white);
   border-radius: 24px;

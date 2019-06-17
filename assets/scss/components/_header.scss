@@ -163,6 +163,7 @@
         padding: 22px $padding-sm 22px 50px;
 
         a {
+          @include smooth;
           @include paragraph-style(18, 48);
         }
 
@@ -260,14 +261,13 @@
         display: flex;
         margin: 0 auto;
 
-        > li + li {
-          margin-left: $padding-sm;
-        }
-
         li {
           position: relative;
 
           &:hover {
+            .nav-parent-label {
+              color: color(blue-light);
+            }
             .icon {
               opacity: 1;
             }
@@ -286,12 +286,12 @@
         }
 
         .nav-parent-label {
-          @include paragraph-style(18, 24);
-          padding: 0 2px;
+          font-size: 18px;
           height: $header-sm;
           position: relative;
-          line-height: $header-sm;
           color: color(blue-dark);
+          line-height: $header-sm - 4px;
+          padding: 0 #{$padding-sm / 2};
 
           .icon {
             left: 50%;
@@ -305,13 +305,14 @@
         // Sub-menu
         .nav-sub-level {
           position: absolute;
+          padding-left: $padding-sm / 2;
         }
       }
 
       @include media-nav {
         .nav-parent-label {
           height: $header-md;
-          line-height: $header-md;
+          line-height: $header-md - 4px;
         }
       }
 
@@ -356,7 +357,7 @@
     .request-an-expert {
       display: none;
       white-space: nowrap;
-      padding: 7px 16px 9px;
+      padding: 6px 16px 10px;
 
       @include media-lg {
         display: block;
@@ -509,7 +510,7 @@
         background: none;
         position: relative;
         pointer-events: auto;
-        margin-left: columns(2, 17);
+        margin-left: calc(#{columns(2, 17)} - #{$padding-sm});
 
         .-inner {
           padding: 0;
@@ -527,11 +528,14 @@
         }
 
         .top-level {
-          + .top-level {
-            margin-left: 26px;
+          .nav-parent-label {
+            padding: 0 13px;
           }
 
           &:hover {
+            .nav-parent-label {
+              color: color(blue-light);
+            }
             .icon {
               display: block;
             }
@@ -553,7 +557,7 @@
           height: $header-md;
           position: relative;
           color: color(blue-dark);
-          line-height: $header-md + 5px;
+          line-height: $header-md + 2px;
 
           .icon {
             left: 50%;
@@ -566,13 +570,13 @@
 
         .nav-sub-level {
           opacity: 0;
-          padding: 40px 0;
           position: absolute;
+          padding: 40px 0 40px 13px;
         }
 
         .search-toggle {
           display: block;
-          margin-left: 12px;
+          padding-left: 13px;
         }
       }
     }
