@@ -233,10 +233,12 @@ var Main = (function($) {
   }
 
   function _openNavSearch() {
+    $('.search-toggle').addClass('search-active');
     $navSearch.addClass('-active');
   }
 
   function _closeNavSearch() {
+    $('.search-toggle').removeClass('search-active');
     $navSearch.removeClass('-active');
     _closeNavBackdrop();
   }
@@ -246,6 +248,11 @@ var Main = (function($) {
       $(this).closest('.input-wrap').addClass('-focus');
     }).on('blur', function(e) {
       $(this).closest('.input-wrap').removeClass('-focus');
+      if($(this).val()) {
+        $(this).closest('.input-wrap').addClass('-filled');
+      } else {
+        $(this).closest('.input-wrap').removeClass('-filled');
+      }
     });
   }
 

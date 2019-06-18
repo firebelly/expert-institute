@@ -404,21 +404,29 @@
       }
 
       .search-toggle {
-        width: 32px;
+        width: 50px;
         display: none;
-        padding: 0 10px;
         cursor: pointer;
         height: $header-md;
         @extend .button-reset;
+        padding: 0 10px 0 26px;
 
         .icon {
-          top: 3px;
+          top: 1px;
           fill: none;
           width: 14px;
           height: 14px;
           display: block;
           position: relative;
-          fill: color(blue-light);
+          fill: color(blue-dark);
+        }
+
+        &:hover,
+        &:focus,
+        &.search-active {
+          .icon {
+            fill: color(blue-light);
+          }
         }
       }
 
@@ -528,12 +536,14 @@
         }
 
         .top-level {
-          .nav-parent-label {
-            padding: 0 13px;
-
-            &:last-of-type {
+          &:last-of-type {
+            a {
               padding-right: 0;
             }
+          }
+
+          .nav-parent-label {
+            padding: 0 13px;
           }
 
           &:hover {
@@ -580,7 +590,6 @@
 
         .search-toggle {
           display: block;
-          padding-left: 26px;
         }
       }
     }
