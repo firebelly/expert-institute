@@ -53,3 +53,14 @@
     outline: none;
   }
 }
+
+// Input reset
+.input-reset {
+  border: none;
+  appearance: none;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+}

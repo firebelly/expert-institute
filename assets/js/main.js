@@ -130,7 +130,7 @@ var Main = (function($) {
     $('.nav-utility-container').append('<svg class="secondary-nav-indicator icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg>');
 
     // Sub-nav functionality
-    $siteNav.on('click', '.nav-parent-label', function(e) {
+    $siteNav.on('click', '#site-nav .nav-parent-label', function(e) {
       if (!breakpoint_nav) {
         e.preventDefault();
         var $childNav = $(this).next('.nav-sub-level');
@@ -150,7 +150,7 @@ var Main = (function($) {
 
     // Expanding height of sub-nav when hovering on
     // top-level items on large screen
-    $('.top-level').on('mouseenter', function(){
+    $('#site-header .top-level').on('mouseenter', function(){
       if ($(this).parents('#secondary-nav').length && !breakpoint_xl) {
         return;
       }
@@ -244,7 +244,7 @@ var Main = (function($) {
   }
 
   function _initFormFunctions() {
-    $('form .input-wrap input, form .input-wrap button[type="submit"]').on('focus', function(e) {
+    $('.input-wrap input, .input-wrap textarea,.input-wrap button[type="submit"]').on('focus', function(e) {
       $(this).closest('.input-wrap').addClass('-focus');
     }).on('blur', function(e) {
       $(this).closest('.input-wrap').removeClass('-focus');

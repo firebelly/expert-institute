@@ -3,15 +3,17 @@
 // Colors
 $colors: (
   white: #ffffff,
-  gray: #f8f8f8,
-  gray-mid: #dae3df,
-  gray-dark: #a3acad,
+  gray-light: #f8f8f8,
+  gray: #dae3df,
+  gray-mid: #a3acad,
+  gray-dark: #8d9394,
   black: #333333,
   blue: #1a2d94,
   blue-light: #1733e7,
   blue-dark: #1e305e,
   gold: #b78d5a,
-  green: #80d6a9,
+  teal: #80d6a9,
+  red: #e24444
 );
 
 @function color($color-name) {

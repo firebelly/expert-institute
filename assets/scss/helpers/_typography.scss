@@ -25,6 +25,18 @@
   font-weight: 500;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Ginto Normal Light';
+  src: url('../fonts/GintoNormalTrial-Light.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ginto Normal Light';
+  src: url('../fonts/GintoNormalTrial-LightIta.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
 
 // Font-family mixins
 @mixin font-display {
@@ -34,6 +46,9 @@
 }
 @mixin ginto-normal {
   font-family: 'Ginto Normal', sans-serif;
+}
+@mixin ginto-normal-light {
+  font-family: 'Ginto Normal Light', sans-serif;
 }
 @mixin ginto-nord {
   font-family: 'Ginto Nord', sans-serif;
@@ -112,6 +127,19 @@
   @include h3;
 }
 
+// h3-simple
+@mixin h3-simple {
+  @include ginto-nord;
+  @include paragraph-style(12, 24, 0, normal, uppercase);
+
+  @include media-md {
+    @include paragraph-style(13, 24, 0, normal, uppercase);
+  }
+}
+.h3-simple {
+  @include h3-simple;
+}
+
 // p1
 @mixin p1 {
   @include ginto-normal;
@@ -123,6 +151,15 @@
 }
 .p1 {
   @include p1;
+}
+
+// p1-small variation
+@mixin p1-small {
+  @include ginto-normal;
+  @include paragraph-style(16, 24);
+}
+.p1-small {
+  @include p1-small;
 }
 
 // p2

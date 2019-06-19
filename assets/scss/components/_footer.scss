@@ -1,5 +1,264 @@
 // Footer
 
 .site-footer {
-  
+  padding: 60px 0 0;
+  background-color: color(gray-light);
+
+  @include media-md {
+    padding: 120px 0 12px;
+  }
+
+  h4,
+  h5 {
+    margin: 0 0 10px;
+    @include h3-simple;
+    color: color(blue-dark);
+  }
+
+  p,
+  a:not(.button) {
+    color: color(gray-dark);
+    @include ginto-normal-light;
+    @include paragraph-style(16, 24);
+  }
+
+  a:not(.button) {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: color(blue-light);
+      text-decoration: underline;
+    }
+  }
+
+  .expert-ctas {
+    margin-bottom: 45px;
+
+    p {
+      margin: 0;
+      text-align: center;
+
+      + p {
+        margin-top: 18px;
+      }
+    }
+
+    @include media-md {
+      margin-top: 40px;
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h4 {
+      flex-basis: 100%;
+    }
+
+    p {
+      margin: 0;
+      line-height: 18px;
+    }
+
+    .address,
+    > div {
+      max-width: 50%;
+      flex-basis: 50%;
+
+      p + p {
+        margin-top: 15px;
+      }
+    }
+
+    @include media-md {
+      display: block;
+
+      h4 {
+        margin-bottom: 13px;
+      }
+
+      .address,
+      > div {
+        max-width: none;
+      }
+
+      .address {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  .footer-nav {
+    ul {
+      @extend .semantic-list;
+    }
+
+    .top-level {
+      padding-right: 26px;
+      margin-bottom: 48px;
+    }
+
+    .nav-sub-level {
+      li + li {
+        margin-top: 12px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .-bottom {
+    margin-top: $padding-md;
+
+    .-inner {
+      display: flex;
+      padding-top: 17px;
+      padding-bottom: 24px;
+      justify-content: space-between;
+      border-top: 1px solid color(gray);
+    }
+
+    @include media-md {
+      margin-top: 185px;
+
+      .-inner {
+        padding-top: 15px;
+        padding-bottom: 13px;
+
+        > div {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin: 0;
+
+    @include media-md {
+      margin-right: 76px;
+    }
+  }
+
+  .footer-utility-nav {
+    ul {
+      @extend .semantic-list;
+
+      li {
+        display: block;
+        margin-top: 12px;
+      }
+    }
+
+    a {
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    @include media-md {
+      ul {
+        @include clearfix;
+        li {
+          float: left;
+          margin-top: 0;
+          + li {
+            margin-left: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    @extend .semantic-list;
+
+    li + li {
+      margin-left: 12px;
+    }
+
+    a {
+      display: block;
+      &:hover,
+      &:focus {
+        .icon {
+          fill: color(blue-light);
+        }
+      }
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      fill: color(gray-dark);
+    }
+  }
+
+  // Newsletter signup
+  .newsletter {
+    margin: 52px 0;
+
+    h4 {
+      margin-bottom: 36px;
+    }
+
+    @include media-md {
+      margin-top: 78px;
+    }
+  }
+  .newsletter-signup {
+    display: flex;
+    align-items: flex-end;
+
+    .input-wrap {
+      flex-grow: 1;
+      margin-right: 18px;
+    }
+
+    label {
+      left: 0;
+      top: auto;
+      bottom: 7px;
+      @include p1-small;
+      color: color(gray-dark);
+      @include ginto-normal-light;
+    }
+
+    input {
+      @extend .input-reset;
+      border-radius: 0;
+      padding: 0 0 6px;
+      @include p1-small;
+      @include ginto-normal-light;
+      border-bottom: 1px solid color(gray-dark);
+
+      &:focus,
+      &:active {
+        border-bottom-color: color(blue-light);
+      }
+    }
+
+    button.submit {
+      margin: 0;
+    }
+
+    @include media-md {
+      .input-wrap {
+        max-width: 50%;
+        flex-basis: 50%;
+        margin-right: 0;
+        padding-right: $padding-md;
+      }
+    }
+  }
 }

@@ -1,0 +1,62 @@
+// Forms
+
+form {
+  position: relative;
+
+  .input-wrap {
+    position: relative;
+    &.-focus,
+    &.-filled {
+      label {
+        display: none;
+      }
+    }
+
+    label {
+      top: 13px;
+      left: 20px;
+      position: absolute;
+    }
+
+    + .input-wrap {
+      margin-top: 12px;
+    }
+  }
+
+  input,
+  textarea {
+    @extend .input-reset;
+    @include p1;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 6px;
+    color: color(blue-dark);
+    background-color: color(white);
+
+    &[type="text"],
+    &[type="tel"],
+    &[type="number"] {
+      height: 48px;
+    }
+
+    &:focus,
+    &:active {
+      border: 1px solid color(gray-mid);
+    }
+
+    &.error {
+      border: 1px solid color(red);
+    }
+  }
+
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    padding-top: 10px;
+    min-height: 126px;
+  }
+
+  button.submit {
+    margin-top: 60px;
+  }
+}

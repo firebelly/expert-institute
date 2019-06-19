@@ -89,7 +89,7 @@
       <ul id="secondary-nav" class="secondary-nav">
         <div class="-inner">
           <div class="secondary-nav-search">
-            <form action="" id="searchform" class="searchform">
+            <form action="" id="search-form" class="search-form">
   <div class="input-wrap">
     <label for="s">Search</label>
     <input id="s" type="search">
@@ -138,7 +138,7 @@
         </div>
       </ul>
       <div class="nav-search">
-        <form action="" id="searchform" class="searchform">
+        <form action="" id="search-form" class="search-form">
   <div class="input-wrap">
     <label for="s">Search</label>
     <input id="s" type="search">
@@ -153,31 +153,155 @@
       <p>This is the process page.</p>
     </main>
     <footer class="site-footer" role="contentinfo">
-  <div class="site-wrapper">
-    <div class="grid">
-      <div class="site-info col-1-4">
-        <p class="copyright">© 2019 Expert Institute</p>
+  <div class="-top site-wrapper">
+    <div class="-inner grid">
+      <div class="site-info col-md-1-2">
+        <div class="grid">
+          <div class="expert-ctas col-md-1-2 md-order-1">
+            <p><a href="request-an-expert" class="button -small">Request an Expert</a></p>
+            <p><a href="become-an-expert" class="button -small -teal">Become an Expert</a></p>
+          </div>
+          <div class="contact col-md-1-2 md-order-0">
+            <h4>Contact</h4>
+            <p class="address">
+              <span class="street-address">48 Wall Street<br> 32nd Floor</span><br>
+              <span class="city">New York</span>, <span class="region">NY</span> <span class="postal-code">10005</span>
+            </p>
+            <div>
+              <p class="phone">1-888-858-9511</p>
+              <p class="email"><a href="mailto:info@expertinstitute.com">info@expertinstitute.com</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h4>Subscribe To Our Newsletter</h4>
+          <form action="" id="newsletter-signup" class="newsletter-signup">
+  <div class="input-wrap">
+    <label for="email">Email</label>
+    <input id="email" type="search">
+  </div>
+  <button class="submit button hollow -small -gray-dark" type="submit">Subscribe</button>
+</form>
+        </div>
       </div>
-      <div class="rwjf col-1-2">
-        <a href="http://www.rwjf.org/" class="rwjf-logo">
-          <svg class="icon rwjf" title="Robert Wood Johnson Foundation" role="img"><use xlink:href="#rwjf" /></svg>
-        </a>
-      </div>
+      <nav id="footer-nav" class="footer-nav col-md-1-2">
+        <ul id="footer-primary-nav" class="footer-primary-nav grid">
+            <li class="top-level col-1-2 col-md-1-3 ">
+              <h5>Services</h5>
+                <ul class="nav-sub-level">
+                    <li >
+                      <a href="/services/expert-witness-search/"><span>Expert Witness Search</span></a>
+                    </li>
+                    <li >
+                      <a href="/services/case-clinics/"><span>Case Clinics</span></a>
+                    </li>
+                    <li >
+                      <a href="/services/challenge-studies/"><span>Challenge Studies</span></a>
+                    </li>
+                    <li >
+                      <a href="/services/phone-consultations/"><span>Phone Consultations</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="top-level col-1-2 col-md-1-3  -current">
+              <h5>Process</h5>
+                <ul class="nav-sub-level">
+                    <li >
+                      <a href="/process/how-it-works/"><span>How It Works</span></a>
+                    </li>
+                    <li >
+                      <a href="/process/pricing/"><span>Pricing</span></a>
+                    </li>
+                    <li >
+                      <a href="/process/partnership-program/"><span>Partnership Program</span></a>
+                    </li>
+                    <li >
+                      <a href="/process/become-an-expert/"><span>Become an Expert</span></a>
+                    </li>
+                    <li >
+                      <a href="/process/request-a-witness/"><span>Request a Witness</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="top-level col-1-2 col-md-1-3 ">
+              <h5>Results</h5>
+                <ul class="nav-sub-level">
+                    <li >
+                      <a href="/results/measurable-impact/"><span>Measurable Impact</span></a>
+                    </li>
+                    <li >
+                      <a href="/results/case-studies/"><span>Case Studies</span></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul id="footer-secondary-nav" class="footer-secondary-nav grid">
+            <li class="top-level col-1-2 col-md-1-3 ">
+              <h5>About</h5>
+                <ul class="nav-sub-level">
+                    <li >
+                      <a href="/about/our-story/"><span>Our Story</span></a>
+                    </li>
+                    <li >
+                      <a href="/about/our-team/"><span>Our Team</span></a>
+                    </li>
+                    <li >
+                      <a href="/about/locations/"><span>Locations</span></a>
+                    </li>
+                    <li >
+                      <a href="/about/careers/"><span>Careers</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="top-level col-1-2 col-md-1-3 ">
+              <h5>Resources</h5>
+                <ul class="nav-sub-level">
+                    <li >
+                      <a href="/resources/expert-witness-directory/"><span>Expert Witness Directory</span></a>
+                    </li>
+                    <li >
+                      <a href="/resources/expert-witness-fees/"><span>Expert Witness Fees</span></a>
+                    </li>
+                    <li >
+                      <a href="/resources/white-papters/"><span>White Papers</span></a>
+                    </li>
+                    <li >
+                      <a href="/resources/webinars/"><span>Webinars</span></a>
+                    </li>
+                    <li >
+                      <a href="/resources/insights/"><span>Insights</span></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
     </div>
   </div>
-  <nav class="footer-nav" id="footer-nav">
-    <ul class="secondary-nav">
-        <li >
-          <a href="/privacy-policy/">Privacy Policy</a>
-        </li>
-        <li >
-          <a href="/compliance/">Compoliance</a>
-        </li>
-        <li >
-          <a href="/terms-and-conditions/">Terms & Conditions</a>
-        </li>
-    </ul>
-  </nav>
+  <div class="-bottom site-wrapper">
+    <div class="-inner">
+      <div>
+        <p class="copyright">© 2019 Expert Institute</p>
+        <nav class="footer-utility-nav" id="footer-utility-nav">
+          <ul class="legal-nav">
+              <li >
+                <a href="/privacy-policy/">Privacy Policy</a>
+              </li>
+              <li >
+                <a href="/compliance/">Compoliance</a>
+              </li>
+              <li >
+                <a href="/terms-and-conditions/">Terms & Conditions</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="social-links">
+        <li class="col-1-2 md-auto"><a href="https://www.facebook.com/TheExpertInstitute" target="_blank" rel="noopener"><span class="visuallyhidden">facebook</span><svg class="icon icon-facebook" aria-hidden="true" role="presentation"><use xlink:href="#icon-facebook"/></svg></a></li>
+        <li class="col-1-2 md-auto"><a href="https://twitter.com/TheExpertInst" target="_blank" rel="noopener"><span class="visuallyhidden">twitter</span><svg class="icon icon-twitter" aria-hidden="true" role="presentation"><use xlink:href="#icon-twitter"/></svg></a></li>
+        <li class="col-1-2 md-auto"><a href="https://www.linkedin.com/company/the-expert-institute/" target="_blank" rel="noopener"><span class="visuallyhidden">linkedin</span><svg class="icon icon-linkedin" aria-hidden="true" role="presentation"><use xlink:href="#icon-linkedin"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
 </footer>
 <script src="/dist/js/main.js"></script>
   </body>

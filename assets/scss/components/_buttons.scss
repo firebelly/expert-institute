@@ -5,6 +5,7 @@
   @include p1;
   line-height: 1;
   @include smooth;
+  cursor: pointer;
   text-align: center;
   color: color(white);
   border-radius: 24px;
@@ -32,6 +33,10 @@
   &.-full {
     width: 100%;
   }
+  &.-small {
+    font-size: 16px;
+    padding: 6px 16px 10px;
+  }
 
   // Color Variations
   @each $color, $value in $colors {
@@ -44,11 +49,18 @@
         color: $value;
         background-color: transparent;
       }
+
+      &.hollow {
+        &:hover,
+        &:focus {
+          color: color(white);
+        }
+      }
     }
   }
 
-  &.-green {
-    color: color(blue);
+  &.-teal {
+    color: color(blue-dark);
   }
   &.-gold {
     color: color(white);

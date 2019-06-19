@@ -159,7 +159,7 @@
 
       .nav-sub-level {
         display: none;
-        background-color: color(gray);
+        background-color: color(gray-light);
         padding: 22px $padding-sm 22px 50px;
 
         a {
@@ -394,12 +394,12 @@
       }
 
       .nav-parent-label {
-        color: color(gray-dark);
+        color: color(gray-mid);
         font-family: 'Ginto Nord', serif;
         @include paragraph-style(12, 24, 0, normal, uppercase);
 
         .icon-arrow-down {
-          fill: color(gray-dark);
+          fill: color(gray-mid);
         }
       }
 
@@ -440,7 +440,7 @@
         position: fixed;
         pointer-events: none;
         transform: translateY(-100%);
-        background-color: color(gray);
+        background-color: color(gray-light);
         transition: transform .25s $slide-easing, opacity 0s .26s;
 
         &.-active {
@@ -643,7 +643,7 @@
       width: 100%;
       display: block;
       position: absolute;
-      background-color: color(gray);
+      background-color: color(gray-light);
       transition: height .25s ease-out;
     }
   }
@@ -659,6 +659,12 @@
     svg {
       display: block;
       overflow: visible;
+    }
+
+    &:hover {
+      .line {
+        fill: color(blue-light);
+      }
     }
 
     .line {
