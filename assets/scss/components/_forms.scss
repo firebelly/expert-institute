@@ -16,6 +16,7 @@ form {
       top: 13px;
       left: 20px;
       position: absolute;
+      pointer-events: none;
     }
 
     + .input-wrap {

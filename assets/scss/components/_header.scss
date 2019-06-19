@@ -225,7 +225,9 @@
     }
 
     .nav-parent-label {
+      margin: 0;
       display: flex;
+      cursor: pointer;
       padding: 10px $padding-sm;
       justify-content: space-between;
       .icon-arrow-down {
@@ -603,6 +605,16 @@
 
       form {
         width: 100%;
+
+        .input-wrap {
+          label {
+            top: 50%;
+          }
+        }
+
+        button.submit {
+          margin-top: 0;
+        }
       }
 
       @include media-lg {

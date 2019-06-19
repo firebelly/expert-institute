@@ -130,7 +130,7 @@ var Main = (function($) {
     $('.nav-utility-container').append('<svg class="secondary-nav-indicator icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg>');
 
     // Sub-nav functionality
-    $siteNav.on('click', '#site-nav .nav-parent-label', function(e) {
+    $siteNav.on('click', '.nav-parent-label', function(e) {
       if (!breakpoint_nav) {
         e.preventDefault();
         var $childNav = $(this).next('.nav-sub-level');
