@@ -256,6 +256,11 @@ var Main = (function($) {
         $(this).closest('.input-wrap').removeClass('-filled');
       }
     });
+
+    // Select functionality
+    $('select').on('change', function(e) {
+      $(this).closest('.select-wrap').addClass('-filled');
+    });
   }
 
   // Disabling transitions on certain elements on resize

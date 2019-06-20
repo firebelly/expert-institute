@@ -39,6 +39,14 @@ headerText: Everyone deserves to live the healthiest life possible
                     <label for="number">Phone Number</label>
                     <input id="number" type="tel">
                 </div>
+                <div class="input-wrap select-wrap">
+                    <label for="caseType">Case Type</label>
+                    <select name="caseType" id="caseType">
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                    </select>
+                </div>
                 <div class="input-wrap">
                     <label for="message">Tell Us About Your Case</label>
                     <textarea id="message" rows="5"></textarea>
