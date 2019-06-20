@@ -104,8 +104,8 @@
     width: 100%;
     display: flex;
     overflow: auto;
-    padding: 36px 0;
     position: absolute;
+    padding: 36px 0 98px;
     flex-direction: column;
     background: color(white);
     transform: translateY(-120%);
@@ -600,6 +600,7 @@
     .nav-search {
       flex-grow: 1;
       display: flex;
+      min-height: 120px;
       align-items: flex-end;
       padding: 36px $padding-sm 0;
 
@@ -629,6 +630,7 @@
         margin: 0 auto;
         display: block;
         position: fixed;
+        min-height: 1px;
         pointer-events: none;
         max-width: $sitewrapper;
         padding: 54px $padding-lg;

@@ -164,13 +164,12 @@ var Main = (function($) {
     // Expanding nav search when hovering over search toggle
     $('.search-toggle').on('mouseenter', function(){
       _openNavSearch();
-      window.clearTimeout(closeSubNavBackdrop);
-      var navSearchHeight = $navSearch.outerHeight();
-      _expandNavBackdrop(navSearchHeight);
     }).on('mouseleave', function() {
       if (!$('.nav-search').is(':hover')) {
         _closeNavSearch();
       }
+    }).on('click', function() {
+      $navSearch.find('input').focus();
     });
 
     $('.nav-search').on('mouseleave', function() {
@@ -235,6 +234,9 @@ var Main = (function($) {
   function _openNavSearch() {
     $('.search-toggle').addClass('search-active');
     $navSearch.addClass('-active');
+    window.clearTimeout(closeSubNavBackdrop);
+    var navSearchHeight = $navSearch.outerHeight();
+    _expandNavBackdrop(navSearchHeight);
   }
 
   function _closeNavSearch() {
