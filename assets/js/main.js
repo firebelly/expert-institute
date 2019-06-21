@@ -47,6 +47,7 @@ var Main = (function($) {
     _initActiveToggle();
     _initSiteNav();
     _initFormFunctions();
+    _initHoverPairs();
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -260,6 +261,25 @@ var Main = (function($) {
     // Select functionality
     $('select').on('change', function(e) {
       $(this).closest('.select-wrap').addClass('-filled');
+    });
+  }
+
+  function _initHoverPairs() {
+    $(document).on('mouseenter', '[data-hover-pair]', function(e) {
+      var hoverPair = $(this).attr('data-hover-pair');
+      $('[data-hover-pair="'+hoverPair+'"]').addClass('-hover');
+    }).on('mouseleave', '[data-hover-pair]', function(e) {
+      var hoverPair = $(this).attr('data-hover-pair');
+      $('[data-hover-pair="'+hoverPair+'"]').removeClass('-hover');
+    });
+
+    // Card-specific hover pairs
+    $(document).on('mouseenter', '.card-title a, .card-cta a', function() {
+      var $card = $(this).closest('.card');
+      $card.find('.card-title a, .card-cta a').addClass('-hover');
+    }).on('mouseleave', '.card-title a, .card-cta a', function() {
+      var $card = $(this).closest('.card');
+      $card.find('.card-title a, .card-cta a').removeClass('-hover');
     });
   }
 

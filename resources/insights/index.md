@@ -13,7 +13,7 @@ layout: default
                             <h5 class="card-date">April 30, 2019</h5>
                             <h5 class="card-tag"><a href="#">News</a></h5>
                         </div>
-                        <h1 class="card-title">An Attorney’s Guide To Finding, Retaining & Consulting Neurosurgery Expert Witnesses</h1>
+                        <h1 class="card-title"><a href="#">An Attorney’s Guide To Finding, Retaining & Consulting Neurosurgery Expert Witnesses</a></h1>
                     </header>
                     <div class="card-body">
                         <div class="card-text">
@@ -23,7 +23,7 @@ layout: default
                     <div class="card-cta">
                         <a href="#" class="button hollow -gray-mid">Read More</a>
                     </div>
-                    <div class="card-image" style="background-image:url('/dist/images/4.18.19-blog-neurosurgeons-800x400.jpg');"></div>
+                    <div class="card-image"><div class="image" style="background-image:url('/dist/images/4.18.19-blog-neurosurgeons-800x400.jpg');"></div></div>
                 </div>
             </article>
             <article class="card col-lg-1-2">
@@ -33,7 +33,7 @@ layout: default
                             <h5 class="card-date">April 11, 2019</h5>
                             <h5 class="card-tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
-                        <h1 class="card-title">Litigation to Watch: Boeing 737 Max Jet Lawsuits</h1>
+                        <h1 class="card-title"><a href="#">Litigation to Watch: Boeing 737 Max Jet Lawsuits</a></h1>
                     </header>
                     <div class="card-body">
                         <div class="card-text">
@@ -52,7 +52,7 @@ layout: default
                             <h5 class="card-date">April 30, 2019</h5>
                             <h5 class="card-tag"><a href="#">News</a></h5>
                         </div>
-                        <h1 class="card-title">Objections to Expert Testimony: What You Need to Know</h1>
+                        <h1 class="card-title"><a href="#">Objections to Expert Testimony: What You Need to Know</a></h1>
                     </header>
                     <div class="card-body">
                         <div class="card-text">
@@ -71,7 +71,7 @@ layout: default
                             <h5 class="card-date">April 11, 2019</h5>
                             <h5 class="card-tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
-                        <h1 class="card-title">Engineering Expert Witnesses: A Litigation Guide</h1>
+                        <h1 class="card-title"><a href="#">Engineering Expert Witnesses: A Litigation Guide</a></h1>
                     </header>
                     <div class="card-body">
                         <div class="card-text">
@@ -81,7 +81,7 @@ layout: default
                     <div class="card-cta">
                         <a href="#" class="button hollow -gray-mid">Read More</a>
                     </div>
-                    <div class="card-image" style="background-image:url('/dist/images/2.7.19-blog-engineering-litigation-guide-800x400.jpg');"></div>
+                    <div class="card-image"><div class="image" style="background-image:url('/dist/images/2.7.19-blog-engineering-litigation-guide-800x400.jpg');"></div></div>
                 </div>
             </article>
             <article class="card col-lg-1-2">
@@ -91,7 +91,7 @@ layout: default
                             <h5 class="card-date">April 30, 2019</h5>
                             <h5 class="card-tag"><a href="#">News</a></h5>
                         </div>
-                        <h1 class="card-title">An Attorney’s Guide To Finding, Retaining & Consulting Neurosurgery Expert Witnesses</h1>
+                        <h1 class="card-title"><a href="#">An Attorney’s Guide To Finding, Retaining & Consulting Neurosurgery Expert Witnesses</a></h1>
                     </header>
                     <div class="card-body">
                         <div class="card-text">
@@ -110,7 +110,7 @@ layout: default
                             <h5 class="card-date">April 11, 2019</h5>
                             <h5 class="card-tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
-                        <h1 class="card-title">Litigation to Watch: Boeing 737 Max Jet Lawsuits</h1>
+                        <h1 class="card-title"><a href="#">Litigation to Watch: Boeing 737 Max Jet Lawsuits</a></h1>
                     </header>
                     <div class="card-body">
                         <div class="card-text">
@@ -120,7 +120,7 @@ layout: default
                     <div class="card-cta">
                         <a href="#" class="button hollow -gray-mid">Read More</a>
                     </div>
-                    <div class="card-image" style="background-image:url('/dist/images/4.11.19-blog-737-crashes-800x400.jpg');"></div>
+                    <div class="card-image"><div class="image" style="background-image:url('/dist/images/4.11.19-blog-737-crashes-800x400.jpg');"></div></div>
                 </div>
             </article>
             <article class="card with-image col-lg-1-2">
@@ -130,7 +130,7 @@ layout: default
                             <h5 class="card-date">April 30, 2019</h5>
                             <h5 class="card-tag"><a href="#">News</a></h5>
                         </div>
-                        <h1 class="card-title">Objections to Expert Testimony: What You Need to Know</h1>
+                        <h1 class="card-title"><a href="#">Objections to Expert Testimony: What You Need to Know</a></h1>
                     </header>
                     <div class="card-body">
                         <div class="card-text">
@@ -140,7 +140,7 @@ layout: default
                     <div class="card-cta">
                         <a href="#" class="button hollow -gray-mid">Read More</a>
                     </div>
-                    <div class="card-image" style="background-image:url('/dist/images/3.21.19-blog-objections-800x400.jpg');"></div>
+                    <div class="card-image"><div class="image" style="background-image:url('/dist/images/3.21.19-blog-objections-800x400.jpg');"></div></div>
                 </div>
             </article>
             <article class="card col-lg-1-2">
@@ -150,7 +150,7 @@ layout: default
                             <h5 class="card-date">April 11, 2019</h5>
                             <h5 class="card-tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
-                        <h1 class="card-title">Engineering Expert Witnesses: A Litigation Guide</h1>
+                        <h1 class="card-title"><a href="#">Engineering Expert Witnesses: A Litigation Guide</a></h1>
                     </header>
                     <div class="card-body">
                         <div class="card-text">

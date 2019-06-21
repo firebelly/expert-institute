@@ -74,6 +74,23 @@
     @include p2;
     margin: 33px 0 46px;
     @include font-smoothing;
+
+    @include media-lg {
+      @include paragraph-style(24, 30);
+    }
+
+    @include media-xl {
+      @include paragraph-style(36, 42);
+    }
+
+    a {
+      text-decoration: none;
+      &.-hover,
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
   }
 
   &-body {
@@ -99,12 +116,27 @@
     display: flex;
     position: relative;
     align-items: flex-end;
+
+    .button {
+      @include media-lg {
+        @include button-small;
+      }
+      @include media-xl {
+        @include button-regular;
+      }
+    }
   }
 
   // Card with Image Variation
   &.with-image {
     > .-inner {
       padding-bottom: $padding-lg;
+    }
+
+    &:hover {
+      .card-image .image {
+        transform: scale(1.1);
+      }
     }
 
     @include media-md {
@@ -126,11 +158,22 @@
     bottom: 0;
     z-index: 0;
     width: 100%;
+    overflow: hidden;
     position: absolute;
-    background-size: cover;
     height: $padding-lg + 19px;
-    transform-origin: top right;
-    background-position: center center;
+
+    .image {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+      background-size: 100% auto;
+      transform-origin: center center;
+      transition: transform 7s ease-out;
+      background-position: center center;
+    }
+
     &::after {
       top: 0;
       left: 0;
@@ -147,6 +190,11 @@
       left: auto;
       width: 55%;
       height: auto;
+
+      .image {
+        background-size: auto 100%;
+      }
+
       &::after {
         bottom: 0;
       }

@@ -16,6 +16,7 @@
   border: 1px solid color(blue-light);
   background-color: color(blue-light);
 
+  &.-hover,
   &:hover,
   &:focus {
     color: color(blue-light);
@@ -26,7 +27,6 @@
     line-height: 1;
     padding: 13px 30px 17px;
   }
-
 
   // Style Variations
   // Full-width
@@ -44,6 +44,7 @@
       border-color: $value;
       background-color: $value;
 
+      &.-hover,
       &:hover,
       &:focus {
         color: $value;
@@ -51,6 +52,7 @@
       }
 
       &.hollow {
+        &.-hover,
         &:hover,
         &:focus {
           color: color(white);
@@ -72,6 +74,7 @@
     color: color(blue-light);
     background-color: transparent;
 
+    &.-hover,
     &:hover,
     &:focus {
       color: color(white);
@@ -85,4 +88,17 @@
       }
     }
   }
+}
+
+// Button size mixins
+@mixin button-full {
+  width: 100%;
+}
+@mixin button-small {
+  font-size: 16px;
+  padding: 6px 16px 10px;
+}
+@mixin button-regular {
+  font-size: 18px;
+  padding: 9px 18px 11px;
 }
