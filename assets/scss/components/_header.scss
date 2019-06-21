@@ -163,8 +163,29 @@
         padding: 22px $padding-sm 22px 50px;
 
         a {
-          @include smooth;
+          @include font-smoothing;
           @include paragraph-style(18, 48);
+          span {
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+          }
+
+          &:hover,
+          &:focus {
+            color: color(blue-light);
+            span {
+              border-bottom-color: color(blue-light);
+            }
+          }
+        }
+
+        > li.-current {
+          a {
+            color: color(blue-light);
+            span {
+              border-bottom-color: color(blue-light);
+            }
+          }
         }
 
         @include media-md {
@@ -178,15 +199,6 @@
           pointer-events: none;
           background-color: transparent;
 
-          > li.-current {
-            a {
-              color: color(blue-light);
-              span {
-                border-bottom-color: color(blue-light);
-              }
-            }
-          }
-
           li {
             opacity: 0;
             transition: none;
@@ -196,18 +208,6 @@
           a {
             position: relative;
             white-space: nowrap;
-            span {
-              padding-bottom: 2px;
-              border-bottom: 1px solid transparent;
-            }
-
-            &:hover,
-            &:focus {
-              color: color(blue-light);
-              span {
-                border-bottom-color: color(blue-light);
-              }
-            }
           }
         }
       }
@@ -250,7 +250,7 @@
     .primary-nav {
       // Parent Items
       .nav-parent-label {
-        @include smooth;
+        @include font-smoothing;
         color: color(blue-light);
         @include paragraph-style(24, 30);
 
@@ -393,6 +393,14 @@
 
       .secondary-nav-search {
         display: none;
+      }
+
+      .top-level {
+        &.-current {
+          .nav-parent-label {
+            color: color(blue-light);
+          }
+        }
       }
 
       .nav-parent-label {

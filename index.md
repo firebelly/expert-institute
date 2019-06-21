@@ -1,7 +1,6 @@
 ---
 title: Home
 layout: default
-headerText: Everyone deserves to live the healthiest life possible
 ---
 
 <div class="section background-blue-dark color-white">

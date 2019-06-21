@@ -4,7 +4,6 @@
   @extend .button-reset;
   @include p1;
   line-height: 1;
-  @include smooth;
   cursor: pointer;
   text-align: center;
   color: color(white);
@@ -12,6 +11,7 @@
   display: inline-block;
   text-decoration: none;
   padding: 9px 18px 11px;
+  @include font-smoothing;
   text-transform: capitalize;
   border: 1px solid color(blue-light);
   background-color: color(blue-light);

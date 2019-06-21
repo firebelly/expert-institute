@@ -1,0 +1,155 @@
+// Card Styles
+
+.card-grid {
+  @extend .grid;
+  @extend .spaced;
+  margin-bottom: -$padding-sm;
+
+  @include media-md {
+    margin-bottom: -$padding-md;
+  }
+}
+
+.card {
+  margin-bottom: $padding-sm;
+
+  > .-inner {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    padding: $padding-sm;
+    flex-direction: column;
+    background-color: color(gray-light);
+  }
+
+  @include media-md {
+    margin-bottom: $padding-md;
+
+    > .-inner {
+      padding: 44px $padding-md $padding-md;
+    }
+  }
+
+  &-header {
+    z-index: 1;
+    position: relative;
+  }
+
+  &-meta {
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    border-bottom: 1px solid color(blue-light);
+
+    h5 {
+      margin: 0;
+      @include h3-simple;
+
+      &.card-date {
+        color: color(blue-light);
+        padding-right: $padding-sm / 2;
+      }
+      &.card-tag {
+        text-align: right;
+        padding-left: $padding-sm / 2;
+
+        &,
+        a {
+          color: color(gray-mid);
+        }
+
+        a {
+          &:hover,
+          &:focus {
+            color: color(blue-light);
+          }
+        }
+      }
+    }
+  }
+
+  &-title {
+    @include p2;
+    margin: 33px 0 46px;
+    @include font-smoothing;
+  }
+
+  &-body {
+    z-index: 1;
+    position: relative;
+  }
+
+  &-text {
+    margin-bottom: 67px;
+
+    p {
+      margin: 0;
+
+      + p {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  &-cta {
+    z-index: 1;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+  }
+
+  // Card with Image Variation
+  &.with-image {
+    > .-inner {
+      padding-bottom: $padding-lg;
+    }
+
+    @include media-md {
+      > .-inner {
+        padding-bottom: $padding-md;
+      }
+
+      .card-title {
+        padding-right: 20%;
+      }
+      .card-body {
+        padding-right: 35%;
+      }
+    }
+  }
+
+  &-image {
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    height: $padding-lg + 19px;
+    transform-origin: top right;
+    background-position: center center;
+    &::after {
+      top: 0;
+      left: 0;
+      width: 100%;
+      content: '';
+      position: absolute;
+      bottom: $padding-sm;
+      background-image: linear-gradient(to right bottom, color(gray-light) 0%, color(gray-light) 50%, transparent 50%);
+    }
+
+    @include media-md {
+      top: 72px;
+      right: 0;
+      left: auto;
+      width: 55%;
+      height: auto;
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+}

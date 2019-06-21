@@ -6,7 +6,7 @@
     <nav id="site-nav" class="site-nav" role="navigation">
       <ul id="primary-nav" class="primary-nav">
         {% for navItem in site.data.navigation.primaryNav %}
-          <li class="top-level {% if page.url contains navItem.path %} -current{% endif %}">
+          <li class="top-level{% if page.url contains navItem.path %} -current{% endif %}">
             <h4 class="nav-parent-label" data-active-toggle>{{ navItem.title }} <svg class="icon icon-arrow-down" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-down"/></svg></h4>
             {% if navItem.children %}
               <ul class="nav-sub-level">
@@ -37,7 +37,7 @@
               {% if navItem.children %}
                 <ul class="nav-sub-level">
                   {% for childItem in navItem.children %}
-                    <li {% if page.url == childItem.path %} class="current" {% endif %}>
+                    <li {% if page.url == childItem.path %} class="-current" {% endif %}>
                       <a href="{{ childItem.path }}"><span>{{ childItem.title }}</span></a>
                     </li>
                   {% endfor %}
