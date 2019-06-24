@@ -131,13 +131,13 @@
   &.with-image {
     > .-inner {
       padding-bottom: $padding-lg;
-    }
-
-    &:hover {
-      .card-image .image {
-        transform: scale(1.1);
+      &:hover {
+        .card-image .image {
+          transform: scale3d(1.1,1.1,1);
+        }
       }
     }
+
 
     @include media-md {
       > .-inner {
@@ -170,8 +170,8 @@
       position: absolute;
       background-size: 100% auto;
       transform-origin: center center;
-      transition: transform 7s ease-out;
       background-position: center center;
+      transition: transform .5s $slide-easing;
     }
 
     &::after {

@@ -5,6 +5,38 @@ layout: default
 
 <div class="section">
     <div class="site-wrapper">
+        <div class="grid">
+            <form action="#" id="filters" class="-outlined grid spaced col-md-2-3">
+                <div class="col-md-1-2">                
+                    <div class="select-wrap">
+                        <label for="postType">Post Type</label>
+                        <select name="postType" id="postType">
+                            <option value="postTypeOne">Post Type One</option>
+                            <option value="postTypeTwo">Post Type Two</option>
+                            <option value="postTypeThree">Post Type Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-1-2">                
+                    <div class="select-wrap">
+                        <label for="specialty">Specialty</label>
+                        <select name="specialty" id="specialty">
+                            <option value="specialtyOne">Specialty One</option>
+                            <option value="specialtyTwo">Specialty Two</option>
+                            <option value="specialtyThree">Specialty Three</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="filter-search col-md-1-3">
+                search
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="site-wrapper">
         <div class="card-grid">
             <article class="card with-image col-lg-1-2">
                 <div class="-inner">

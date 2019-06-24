@@ -53,11 +53,22 @@ form {
     min-height: 126px;
   }
 
+  // Outline variation
+  &.-outlined {
+    input,
+    textarea,
+    select {
+      border: 1px solid color(gray);
+    }
+  }
+
   // Custom select style
   .select-wrap {
     margin: 0;
     padding: 0;
     position: relative;
+    @extend .input-wrap;
+
     select {
       color: transparent;
       &:focus {
