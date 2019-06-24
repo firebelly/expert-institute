@@ -52,14 +52,6 @@
   }
 
   .contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    h4 {
-      flex-basis: 100%;
-    }
-
     p {
       margin: 0;
       line-height: 18px;
@@ -67,11 +59,32 @@
 
     .address,
     > div {
-      max-width: 50%;
-      flex-basis: 50%;
-
       p + p {
         margin-top: 15px;
+      }
+    }
+
+    .address {
+      margin-bottom: 18px;
+    }
+
+    @include media-sm {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .address {
+        margin-bottom: 0;
+      }
+
+      h4 {
+        flex-basis: 100%;
+      }
+
+      .address,
+      > div {
+        max-width: 50%;
+        flex-basis: 50%;
       }
     }
 

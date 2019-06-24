@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 
-<div class="section background-blue-dark color-white">
+<div class="section padded background-blue-dark color-white">
     <div class="site-wrapper grid">
         <div class="col-md-1-2">        
             <h3 class="h3">Elite expertise, tailored to every case</h3>
@@ -16,7 +16,7 @@ layout: default
     </div>
 </div>
 
-<div class="section background-gray-light">
+<div class="section padded background-gray-light">
     <div class="site-wrapper grid right-aligned">
         <div class="col-md-1-2">        
             <h3 class="h3 color-gray-mid">Elite expertise, tailored to every case</h3>
@@ -56,7 +56,7 @@ layout: default
     </div>
 </div>
 
-<div class="section background-gold color-white">
+<div class="section padded background-gold color-white">
     <div class="site-wrapper grid">
         <div class="col-md-1-2">        
             <h3 class="h3">Elite expertise, tailored to every case</h3>
@@ -69,7 +69,7 @@ layout: default
     </div>
 </div>
 
-<div class="section background-green">
+<div class="section padded background-green">
     <div class="site-wrapper grid right-aligned">
         <div class="col-md-1-2">        
             <h3 class="h3">Elite expertise, tailored to every case</h3>

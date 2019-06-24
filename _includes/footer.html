@@ -1,7 +1,7 @@
 <footer class="site-footer" role="contentinfo">
 
   <div class="-top site-wrapper">
-    <div class="-inner grid">
+    <div class="-inner grid spaced">
 
       <div class="site-info col-md-1-2">
         <div class="grid">
@@ -32,7 +32,7 @@
       <nav id="footer-nav" class="footer-nav col-md-1-2">
         <ul id="footer-primary-nav" class="footer-primary-nav grid">
           {% for navItem in site.data.navigation.primaryNav %}
-            <li class="top-level col-1-2 col-md-1-3 {% if page.url contains navItem.path %} -current{% endif %}">
+            <li class="top-level col-1-2 col-md-1-2 col-xl-1-3 {% if page.url contains navItem.path %} -current{% endif %}">
               <h5>{{ navItem.title }}</h5>
               {% if navItem.children %}
                 <ul class="nav-sub-level">
@@ -49,7 +49,7 @@
 
         <ul id="footer-secondary-nav" class="footer-secondary-nav grid">
           {% for navItem in site.data.navigation.secondaryNav %}
-            <li class="top-level col-1-2 col-md-1-3 {% if page.url contains navItem.path %} -current{% endif %}">
+            <li class="top-level col-1-2 col-md-1-2 col-xl-1-3 {% if page.url contains navItem.path %} -current{% endif %}">
               <h5>{{ navItem.title }}</h5>
               {% if navItem.children %}
                 <ul class="nav-sub-level">
