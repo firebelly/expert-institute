@@ -171,7 +171,7 @@
       background-size: 100% auto;
       transform-origin: center center;
       background-position: center center;
-      transition: transform .5s $slide-easing;
+      transition: transform .5s $image-easing;
     }
 
     &::after {
