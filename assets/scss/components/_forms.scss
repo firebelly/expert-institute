@@ -99,3 +99,21 @@ form {
     margin-top: 60px;
   }
 }
+
+// Insights Filters
+.insights-filters {
+  [class*='col-'] {
+    margin-bottom: $padding-sm;
+
+    @include media-md {
+      margin-bottom: 0;
+      padding-right: $padding-md / 2;
+
+      &:last-of-type {
+        padding-right: 0;
+        padding-left: $padding-md / 2;
+      }
+    }
+  }
+
+}

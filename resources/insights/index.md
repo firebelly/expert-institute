@@ -3,10 +3,10 @@ title: Insights
 layout: default
 ---
 
-<div class="section">
+<div class="section padded-top">
     <div class="site-wrapper">
-        <div class="grid">
-            <form action="#" id="filters" class="-outlined grid spaced col-md-2-3">
+        <div class="grid spaced">
+            <form action="#" id="filters" class="insights-filters -outlined grid col-md-2-3">
                 <div class="col-md-1-2">                
                     <div class="select-wrap">
                         <label for="postType">Post Type</label>
@@ -29,13 +29,13 @@ layout: default
                 </div>
             </form>
             <div class="filter-search col-md-1-3">
-                search
+                {% include searchform.html %}
             </div>
         </div>
     </div>
 </div>
 
-<div class="section">
+<div class="section padded">
     <div class="site-wrapper">
         <div class="card-grid">
             <article class="card with-image col-lg-1-2">
