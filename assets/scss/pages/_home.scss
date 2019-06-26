@@ -17,6 +17,12 @@ body.home {
   }
 
   .search-section {
+    .section-content {
+      .section-cta {
+        text-align: center;
+      }
+    }
+
     .search-list {
       @extend .semantic-list;
 
@@ -102,6 +108,18 @@ body.home {
         > * {
           z-index: 1;
           position: relative;
+        }
+
+        .section-cta {
+          margin: 0;
+          left: 100%;
+          bottom: 210px;
+          text-align: left;
+          position: absolute;
+
+          a {
+            white-space: nowrap;
+          }
         }
       }
 

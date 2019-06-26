@@ -47,6 +47,7 @@ bodyClasses: home
                     </div>
                 </li> 
             </ul>
+            <p class="section-cta"><a href="process/how-it-works" class="button -gold">How It Works</a></p>
         </div>
     </div>
 </div>
