@@ -24,11 +24,11 @@ $column-width: 100% / $columns;
     flex-basis: 100%;
   }
 
-  &.right-aligned {
+  &.align-right {
     flex-direction: row-reverse;
   }
 
-  &.align-flex-start {
+  &.align-left {
     align-items: flex-start;
   }
 

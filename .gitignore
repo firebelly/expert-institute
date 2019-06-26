@@ -18,6 +18,7 @@ assets/css
 dist
 bower_components
 !_build/dist
+fonts
 
 # notes
 .notes

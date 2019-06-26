@@ -48,6 +48,7 @@ var Main = (function($) {
     _initSiteNav();
     _initFormFunctions();
     _initHoverPairs();
+    _initSectionAngles();
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -281,6 +282,10 @@ var Main = (function($) {
       var $card = $(this).closest('.card');
       $card.find('.card-title a, .card-cta a').removeClass('-hover');
     });
+  }
+
+  function _initSectionAngles() {
+
   }
 
   // Disabling transitions on certain elements on resize

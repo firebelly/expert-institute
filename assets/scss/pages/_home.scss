@@ -1,5 +1,120 @@
 // Home page
 
-.home {
-  // styles
+body.home {
+  .intro-section {
+
+    @include media-md {
+      .section-background {
+        width: columns(14,23);
+      }
+
+      .section-content {
+        padding: 228px 0 168px;
+        max-width: columns(9,23);
+        flex-basis: columns(9,23);
+      }
+    }
+  }
+
+  .search-section {
+    .search-list {
+      @extend .semantic-list;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+
+        + li {
+          margin-top: 84px;
+        }
+      }
+
+      .number, .text h4 {
+        @include h2;
+      }
+
+      .number {
+        color: color(gold);
+        display: inline-block;
+        min-width: columns(1,11);
+        flex-basis: columns(1,11);
+        margin-left: columns(1,11);
+      }
+
+      .text {
+        h4 {
+          margin: 0;
+        }
+      }
+    }
+
+    @include media-md {
+      overflow: hidden;
+
+      .section-background {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        position: absolute;
+        width: columns(11,23);
+        background-size: cover;
+        background-position: right top;
+      }
+
+      .block-subtitle {
+        top: 0;
+        z-index: 1;
+        width: auto;
+        margin: 96px 0 0;
+        left: $padding-lg;
+        right: $padding-lg;
+        position: absolute;
+      }
+
+      .section-content {
+        position: relative;
+        max-width: columns(14,23);
+        flex-basis: columns(14,23);
+        padding: 268px columns(3,23) 210px 0;
+        &::before {
+          top: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 0;
+          width: 100%;
+          content: '';
+          position: absolute;
+          background-color: color(white);
+        }
+        &::after {
+          top: 0;
+          right: 0;
+          content: "";
+          height: 100%;
+          width: 2000px;
+          position: absolute;
+          transform-origin: top right;
+          background-color: color(white);
+          transform: rotate(55deg) translateX(100%);
+        }
+
+        > * {
+          z-index: 1;
+          position: relative;
+        }
+      }
+
+      .search-list {
+        .icon {
+          max-width: columns(2,11);
+          flex-basis: columns(2,11);
+        }
+        .number,
+        .text h4 {
+          @include paragraph-style(36, 42);
+        }
+      }
+    }
+  }
 }

@@ -43,6 +43,8 @@ img {
 
 // Sections
 .section {
+  position: relative;
+
   &.padded {
     padding-top: $padding-sm;
     padding-bottom: $padding-sm;
