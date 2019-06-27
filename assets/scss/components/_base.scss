@@ -40,32 +40,3 @@ img {
     padding: 0 $padding-lg;
   }
 }
-
-// Sections
-.section {
-  position: relative;
-
-  &.padded {
-    padding-top: $padding-sm;
-    padding-bottom: $padding-sm;
-  }
-  &.padded-top {
-    padding-top: $padding-sm;
-  }
-  &.padded-bottom {
-    padding-bottom: $padding-sm;
-  }
-
-  @include media-md {
-    &.padded {
-      padding-top: $padding-md;
-      padding-bottom: $padding-md;
-    }
-    &.padded-top {
-      padding-top: $padding-md;
-    }
-    &.padded-bottom {
-      padding-bottom: $padding-md;
-    }
-  }
-}

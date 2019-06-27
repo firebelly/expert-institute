@@ -1,9 +1,22 @@
 // Home page
 
 body.home {
+
   .intro-section {
+    > .-inner {
+      position: relative;
+    }
+
+    .section-content {
+      padding: $padding-sm;
+    }
 
     @include media-md {
+      > .-inner {
+        max-width: $sitewrapper;
+        padding: 0 $padding-md;
+      }
+
       .section-background {
         width: columns(14,23);
       }
@@ -14,9 +27,17 @@ body.home {
         flex-basis: columns(9,23);
       }
     }
+
+    @include media-nav {
+      > .-inner {
+        padding: 0 $padding-lg;
+      }
+    }
   }
 
   .search-section {
+    padding-top: $padding-sm;
+
     .section-content {
       .section-cta {
         text-align: center;
@@ -24,18 +45,21 @@ body.home {
     }
 
     .search-list {
+      margin-bottom: 90px;
       @extend .semantic-list;
 
       li {
         display: flex;
-        align-items: flex-start;
-
-        + li {
-          margin-top: 84px;
-        }
+        flex-wrap: wrap;
+        margin-top: 84px;
+        align-items: flex-end;
       }
 
-      .number, .text h4 {
+      .icon {
+        max-width: 146px;
+      }
+
+      .number, h4 {
         @include h2;
       }
 
@@ -47,14 +71,17 @@ body.home {
         margin-left: columns(1,11);
       }
 
-      .text {
-        h4 {
-          margin: 0;
-        }
+      h4 {
+        margin: 0;
+      }
+
+      p {
+        margin: 10px 0 0;
       }
     }
 
     @include media-md {
+      padding: 0;
       overflow: hidden;
 
       .section-background {
@@ -68,7 +95,7 @@ body.home {
         background-position: right top;
       }
 
-      .block-subtitle {
+      .section-label {
         top: 0;
         z-index: 1;
         width: auto;
@@ -110,6 +137,10 @@ body.home {
           position: relative;
         }
 
+        .search-list {
+
+        }
+
         .section-cta {
           margin: 0;
           left: 100%;
@@ -124,13 +155,42 @@ body.home {
       }
 
       .search-list {
+        margin-bottom: 0;
+
+        li {
+          margin-top: 0;
+          position: relative;
+          align-items: flex-start;
+          + li {
+            margin-top: 84px;
+          }
+        }
+
         .icon {
+          top: 0;
+          left: 0;
+          position: absolute;
           max-width: columns(2,11);
           flex-basis: columns(2,11);
         }
+
+        .number {
+          margin-left: columns(3,11);
+        }
+
         .number,
-        .text h4 {
+        h4 {
           @include paragraph-style(36, 42);
+        }
+
+        h4,
+        p {
+          max-width: columns(7,11);
+          flex-basis: columns(7,11);
+        }
+
+        p {
+          margin: 14px 0 0 columns(4,11);
         }
       }
     }

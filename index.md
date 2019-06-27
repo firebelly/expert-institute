@@ -6,10 +6,10 @@ bodyClasses: home
 
 <div class="intro-section section showcase-section elbow-section -blue-dark">
     <div class="section-background" style="background-image:url('dist/images/jc-gellidon-1386352-unsplash.jpg');"></div>
-    <div class="site-wrapper grid align-right">
+    <div class="-inner grid align-right">
         <div class="section-content">
             <div class="section-angle"><svg class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.8 852"><path d="M239.8 852L49.2 581.5c-65.7-93.2-65.7-217.7 0-310.9L239.8 0"/></svg></div>
-            <h3 class="block-subtitle">Elite expertise, tailored to every case</h3>
+            <h3 class="section-label">Elite expertise, tailored to every case</h3>
             <h1 class="block-title">Connect with the expert witness you need to win your case.</h1>
             <p class="block-cta"><a href="#" class="button -teal">Request an expert</a></p>
         </div>
@@ -19,36 +19,36 @@ bodyClasses: home
 <div class="search-section section background-white">
     <div class="section-background" style="background-image:url('dist/images/2097489.jpg');"></div>
     <div class="site-wrapper grid">
-        <h3 class="block-subtitle">A Custom Search Each Time</h3>
+        <h3 class="section-label">A Custom Search Each Time</h3>
         <div class="section-content">
             <ul class="search-list">
                 <li>
                     <img src="dist/images/search-search.svg" class="icon" aria-hidden="true">
                     <span class="number">1</span>
-                    <div class="text">
-                        <h4>Search</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, seddiam nonummy nibh euismod.</p>
-                    </div>
+                    <h4>Search</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, seddiam nonummy nibh euismod.</p>
                 </li>
                 <li>
                     <img src="dist/images/search-select.svg" class="icon" aria-hidden="true">
                     <span class="number">2</span>
-                    <div class="text">
-                        <h4>Select</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tincidunt ut laoree.</p>
-                    </div>
+                    <h4>Select</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, tincidunt ut laoree.</p>
                 </li>
                 <li>
                     <img src="dist/images/search-retain.svg" class="icon" aria-hidden="true">
                     <span class="number">3</span>
-                    <div class="text">
-                        <h4>Retain</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                    </div>
+                    <h4>Retain</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
                 </li> 
             </ul>
             <p class="section-cta"><a href="process/how-it-works" class="button -gold">How It Works</a></p>
         </div>
+    </div>
+</div>
+
+<div class="title-section section background-white">
+    <div class="site-wrapper">
+        <h3 class="section-label">Our Services</h3>
     </div>
 </div>
 
