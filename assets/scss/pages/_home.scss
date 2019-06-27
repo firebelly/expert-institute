@@ -3,22 +3,61 @@
 body.home {
 
   .intro-section {
+    padding-bottom: 230px;
+
     > .-inner {
       position: relative;
     }
 
     .section-content {
-      padding: $padding-sm;
+      padding: $padding-sm $padding-sm 0;
+    }
+
+    .section-background {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 230px;
+      position: absolute;
+      background-position: center right;
+      &::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: '';
+        bottom: 50px;
+        position: absolute;
+        background-image: linear-gradient(to right bottom, color(blue-dark) 0%, color(blue-dark) 50%, transparent 50%);
+      }
+    }
+
+    .block-cta {
+      margin: 0 0 -42px;
+
+      .button {
+        color: color(blue);
+        &.-hover,
+        &:hover,
+        &:focus {
+          color: color(teal);
+        }
+      }
     }
 
     @include media-md {
+      padding-bottom: 0;
+
       > .-inner {
         max-width: $sitewrapper;
         padding: 0 $padding-md;
       }
 
       .section-background {
+        height: 100%;
         width: columns(14,23);
+        &::before {
+          display: none;
+        }
       }
 
       .section-content {
