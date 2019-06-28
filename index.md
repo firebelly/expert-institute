@@ -85,3 +85,51 @@ bodyClasses: home
         </div>
     </div>
 </div>
+
+<div class="section block-centered-text">
+    <div class="site-wrapper">
+        <div class="section-content">
+            <h1 class="block-title">Driven by Technology,<br> Powered by Expertise</h1>
+            <p>Our proprietary software identifies the perfect expert for your case, regardless of their courtroom experience.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section padded expert-directory-section">
+    <div class="site-wrapper grid">
+        <h3 class="section-label">Expert Directory</h3>
+        <div class="grid">        
+            <div class="section-text col-md-1-2">
+                <p>Search our expert witness directory to find highly credentialed expert witnesses across all disciplines, industries, and locations.</p>
+            </div>
+            <div class="col-md-1-2">
+                <form id="medical-expert-search" class="expert-search -outlined" action="#">
+                    <div class="select-wrap">
+                        <label for="medicalExpertSearch">Medical</label>
+                        <select name="medicalExpertSearch" id="medicalExpertSearch">
+                            <option value="option1">Option One</option>
+                            <option value="option2">Option Two</option>
+                            <option value="option3">Option Three</option>
+                            <option value="option4">Option Four</option>
+                            <option value="option5">Option Five</option>
+                        </select>
+                    </div>
+                    <button type="search" class="button">Search</button>
+                </form>
+                <form id="non-medical-expert-search" class="expert-search -outlined" action="#">
+                    <div class="select-wrap">
+                        <label for="nonMedicalExpertSearch">Non-Medical</label>
+                        <select name="nonMedicalExpertSearch" id="nonMedicalExpertSearch">
+                            <option value="option1">Option One</option>
+                            <option value="option2">Option Two</option>
+                            <option value="option3">Option Three</option>
+                            <option value="option4">Option Four</option>
+                            <option value="option5">Option Five</option>
+                        </select>
+                    </div>
+                    <button type="search" class="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

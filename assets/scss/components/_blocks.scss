@@ -9,3 +9,33 @@
     margin-bottom: $padding-md - 16px;
   }
 }
+
+// Block classes used for common block styles,
+// with specific block- classes for indivudual blocks
+.block {
+
+  // Centered text block
+  &-centered-text {
+    padding: 96px 0;
+    text-align: center;
+
+    .section-content {
+      margin: 0 auto;
+      max-width: 660px;
+    }
+
+    p {
+      margin: 30px 0 0;
+      color: color(gray-dark);
+    }
+
+    @include media-md {
+      padding: 296px 0;
+
+      p {
+        margin: 52px #{columns(2,23)} 0;
+      }
+    }
+  }
+
+}

@@ -46,7 +46,7 @@ body.home {
     }
 
     @include media-md {
-      padding-bottom: 0;
+      padding: 0;
 
       > .-inner {
         flex-direction: row-reverse;
@@ -238,6 +238,56 @@ body.home {
 
         p {
           margin: 14px 0 0 columns(4,11);
+        }
+      }
+    }
+  }
+
+  .expert-directory-section {
+
+    .section-text {
+      p {
+        margin: 0;
+
+        + p {
+          margin-top: $padding-sm;
+        }
+      }
+    }
+
+    form.expert-search {
+      display: flex;
+
+      + form.expert-search {
+        margin-top: $padding-sm;
+      }
+
+      .select-wrap {
+        flex-grow: 1;
+      }
+
+      button {
+        margin-left: $padding-sm;
+      }
+    }
+
+    @include media-md {
+      .section-text {
+        @include font-display;
+        @include paragraph-style(36,42);
+
+        p + p {
+          margin-top: 48px;
+        }
+      }
+
+      form.expert-search {
+        + form.expert-search {
+          margin-top: 48px;
+        }
+
+        button {
+          margin-left: $padding-md;
         }
       }
     }
