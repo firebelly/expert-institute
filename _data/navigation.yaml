@@ -23,8 +23,8 @@ primaryNav:
         path: /process/partnership-program/
       - title: Become an Expert
         path: /process/become-an-expert/
-      - title: Request a Witness
-        path: /process/request-a-witness/
+      - title: Request an Expert
+        path: /process/request-an-expert/
 
   - title: Results
     path: /results/

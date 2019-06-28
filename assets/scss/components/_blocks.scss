@@ -6,7 +6,6 @@
   margin: 0 0 $padding-sm;
 
   @include media-md {
-    margin-bottom: $padding-md;
+    margin-bottom: $padding-md - 16px;
   }
 }
-

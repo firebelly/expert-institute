@@ -48,8 +48,7 @@ body.home {
       padding-bottom: 0;
 
       > .-inner {
-        max-width: $sitewrapper;
-        padding: 0 $padding-md;
+        flex-direction: row-reverse;
       }
 
       .section-background {
@@ -64,6 +63,14 @@ body.home {
         padding: 228px 0 168px;
         max-width: columns(9,23);
         flex-basis: columns(9,23);
+
+        .section-elbow {
+          &,
+          .elbow {
+            left: auto;
+            right: 100%;
+          }
+        }
       }
     }
 

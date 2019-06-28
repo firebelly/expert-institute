@@ -63,13 +63,20 @@
     &.-#{$color} {
       background-color: $value;
       .section-content {
+        color: color(white);
         background-color: $value;
 
-        @if $color == 'blue-dark' {
-          color: color(white);
-          @include font-smoothing;
+        .section-elbow svg {
+          fill: $value;
         }
       }
+    }
+  }
+
+  // Teal Background sections get blue-dark text
+  &.-teal {
+    .section-content {
+      color: color(blue-dark);
     }
   }
 
@@ -81,10 +88,26 @@
     background-size: cover;
   }
 
+  .section-content {
+    .block-title {
+      @include h2;
+    }
+  }
+
+  .section-elbow {
+    display: none;
+  }
+
   @include media-md {
+    > .-inner {
+      margin: 0 auto;
+      padding: 0 $padding-md;
+      max-width: $sitewrapper;
+    }
+
     .section-background {
       top: 0;
-      left: 0;
+      right: 0;
       height: 100%;
       width: columns(1,2);
       background-position: center center;
@@ -92,40 +115,74 @@
 
     .section-content {
       position: relative;
-      padding: $padding-lg 0;
       max-width: columns(1,2);
       flex-basis: columns(1,2);
-    }
-  }
-}
+      padding: $padding-lg #{columns(2.25,23)} $padding-lg #{columns(2,23)};
 
-// Section with angled "elbow" element
-.elbow-section {
-  @each $color, $value in $colors {
-    &.-#{$color} {
-      .section-angle svg {
-        fill: $value;
+      > * {
+        z-index: 1;
+        position: relative;
+      }
+
+      .section-elbow {
+        top: 0;
+        left: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        .elbow {
+          top: 0;
+          left: 100%;
+          height: 100%;
+          position: absolute;
+        }
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .block-cta {
+        margin-top: 100px;
       }
     }
-  }
 
-  .section-angle {
-    display: none;
-  }
-
-  @include media-md {
-    .section-angle {
-      top: 0;
-      right: 100%;
-      height: 100%;
-      display: block;
-      position: absolute;
-
-      .angle {
+    // Top and bottom sections
+    &.-top,
+    &.-bottom {
+      .section-background {
+        left: 0;
+      }
+      .-inner {
+        flex-direction: row-reverse;
+      }
+      .section-content {
+        padding-right: columns(2,23);
+        padding-left: columns(2.25,23);
+      }
+      .section-content::after {
         top: 0;
+        content: '';
         right: 100%;
+        width: 400%;
         height: 100%;
         position: absolute;
+        background-color: inherit;
+      }
+    }
+
+    // Top
+    &.-top {
+      .section-content::after {
+        transform: rotate(55deg);
+        transform-origin: bottom right;
+      }
+    }
+    // Bottom
+    &.-bottom {
+      .section-content::after {
+        transform: rotate(-55deg);
+        transform-origin: top right;
       }
     }
   }
