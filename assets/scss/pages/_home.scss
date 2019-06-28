@@ -3,13 +3,14 @@
 body.home {
 
   .intro-section {
-    padding-bottom: 230px;
+    padding: $padding-sm 0 230px;
 
     > .-inner {
       position: relative;
     }
 
     .section-content {
+      text-align: left;
       padding: $padding-sm $padding-sm 0;
     }
 
