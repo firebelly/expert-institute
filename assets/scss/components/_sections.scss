@@ -58,16 +58,29 @@
 .showcase-section {
   overflow: hidden;
   position: relative;
+  padding: $padding-md $padding-sm 228px;
 
   @each $color, $value in $colors {
     &.-#{$color} {
       background-color: $value;
+
+      .section-background::before {
+        background-image: linear-gradient(to right bottom, $value 0%, $value 50%, transparent 50%);
+      }
+
       .section-content {
         color: color(white);
         background-color: $value;
 
         .section-elbow svg {
           fill: $value;
+        }
+      }
+
+      // -middle showcase sections
+      &.-middle {
+        .section-background::before {
+          background-image: linear-gradient(to left bottom, $value 0%, $value 50%, transparent 50%);
         }
       }
     }
@@ -81,16 +94,33 @@
   }
 
   .section-background {
+    left: 0;
     bottom: 0;
     width: 100%;
     height: 230px;
     position: absolute;
     background-size: cover;
+    &::before {
+      top: 0;
+      left: 0;
+      width: 100%;
+      content: '';
+      bottom: 50px;
+      position: absolute;
+    }
   }
 
   .section-content {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+
     .block-title {
       @include h2;
+    }
+
+    .block-cta {
+      margin: 42px 0 -42px;
     }
   }
 
@@ -99,6 +129,8 @@
   }
 
   @include media-md {
+    padding: 0;
+
     > .-inner {
       margin: 0 auto;
       padding: 0 $padding-md;
@@ -108,12 +140,17 @@
     .section-background {
       top: 0;
       right: 0;
+      left: auto;
       height: 100%;
       width: columns(1,2);
       background-position: center center;
+      &::before {
+        display: none;
+      }
     }
 
     .section-content {
+      text-align: left;
       position: relative;
       max-width: columns(1,2);
       flex-basis: columns(1,2);
@@ -143,7 +180,7 @@
       }
 
       .block-cta {
-        margin-top: 100px;
+        margin: 100px 0 0;
       }
     }
 
