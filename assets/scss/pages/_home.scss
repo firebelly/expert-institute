@@ -247,7 +247,7 @@ body.home {
     @include media-md {
       overflow: visible;
 
-      .-inner {
+      .overflow-wrap {
         overflow: hidden;
       }
 
@@ -264,11 +264,11 @@ body.home {
           z-index: 1;
           width: 88%;
           content: "";
-          height: 200%;
+          height: 400%;
           position: absolute;
           transform-origin: top left;
           background-color: color(gray);
-          transform: rotate(35deg) translate(-100%, 50%);
+          transform: rotate(35deg) translate(-100%, 30%);
         }
       }
 

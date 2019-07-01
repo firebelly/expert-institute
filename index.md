@@ -76,7 +76,7 @@ bodyClasses: home
 </div>
 
 <div class="showcase-section -bottom section -teal">
-    <div class="-inner">    
+    <div class="overflow-wrap">    
         <div class="section-background" style="background-image:url('dist/images/toa-heftiba-644511-unsplash.jpg');"></div>
         <div class="-inner grid">
             <div class="section-content">        
