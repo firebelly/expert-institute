@@ -95,10 +95,10 @@ bodyClasses: home
     </div>
 </div>
 
-<div class="section padded expert-directory-section">
+<div class="section expert-directory-section">
     <div class="site-wrapper grid">
         <h3 class="section-label">Expert Directory</h3>
-        <div class="grid">        
+        <div class="section-content grid">        
             <div class="section-text col-md-1-2">
                 <p>Search our expert witness directory to find highly credentialed expert witnesses across all disciplines, industries, and locations.</p>
             </div>

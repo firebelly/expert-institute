@@ -245,7 +245,17 @@ body.home {
 
   .expert-directory-section {
 
+    .section-label {
+      margin-bottom: 0;
+    }
+
+    .section-content {
+      padding: $padding-sm 0 96px;
+    }
+
     .section-text {
+      margin-bottom: 42px;
+
       p {
         margin: 0;
 
@@ -272,6 +282,20 @@ body.home {
     }
 
     @include media-md {
+
+      .section-content {
+        padding: 102px 0 186px;
+
+        > .col-md-1-2 {
+          padding-right: columns(1.5,23);
+
+          &:last-of-type {
+            padding-right: 0;
+            padding-left: columns(1.5,23);
+          }
+        }
+      }
+
       .section-text {
         @include font-display;
         @include paragraph-style(36,42);
