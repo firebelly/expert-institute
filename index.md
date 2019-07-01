@@ -76,14 +76,17 @@ bodyClasses: home
 </div>
 
 <div class="showcase-section -bottom section -teal">
-    <div class="section-background" style="background-image:url('dist/images/toa-heftiba-644511-unsplash.jpg');"></div>
-    <div class="-inner grid">
-        <div class="section-content">        
-            <h1 class="block-title">Uncover Gatekeeping Challenges</h1>
-            <p>We outline the admissibility history of any expert’s testimony to give you a leg up in the courtroom.</p>
-            <p class="block-cta"><a href="#" class="button">Challenge Studies</a></p>
+    <div class="-inner">    
+        <div class="section-background" style="background-image:url('dist/images/toa-heftiba-644511-unsplash.jpg');"></div>
+        <div class="-inner grid">
+            <div class="section-content">        
+                <h1 class="block-title">Uncover Gatekeeping Challenges</h1>
+                <p>We outline the admissibility history of any expert’s testimony to give you a leg up in the courtroom.</p>
+                <p class="block-cta"><a href="#" class="button">Challenge Studies</a></p>
+            </div>
         </div>
     </div>
+    <div class="after-shape"></div>
 </div>
 
 <div class="section block-centered-text">

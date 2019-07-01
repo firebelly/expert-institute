@@ -243,6 +243,38 @@ body.home {
     }
   }
 
+  .showcase-section.-bottom {
+    @include media-md {
+      overflow: visible;
+
+      .-inner {
+        overflow: hidden;
+      }
+
+      .after-shape {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+        &::before {
+          top: 0;
+          left: 50%;
+          z-index: 1;
+          width: 88%;
+          content: "";
+          height: 200%;
+          position: absolute;
+          transform-origin: top left;
+          background-color: color(gray);
+          transform: rotate(35deg) translate(-100%, 50%);
+        }
+      }
+
+    }
+  }
+
   .expert-directory-section {
 
     .section-label {
