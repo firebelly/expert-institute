@@ -48,7 +48,7 @@ var Main = (function($) {
     _initSiteNav();
     _initFormFunctions();
     _initHoverPairs();
-    _initSectionAngles();
+    _initFlickityCarousels();
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -284,8 +284,12 @@ var Main = (function($) {
     });
   }
 
-  function _initSectionAngles() {
-
+  function _initFlickityCarousels() {
+    $('.carousel').flickity({
+      groupCells: true,
+      prevNextButtons: false,
+      cellAlign: 'center'
+    });
   }
 
   // Disabling transitions on certain elements on resize
