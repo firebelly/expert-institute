@@ -2,6 +2,10 @@
 // adjustments made to flickity default styles
 
 .carousel {
+  .flickity-viewport {
+    transition: height .2s ease-out;
+  }
+
   .flickity-page-dots {
     bottom: 0;
 
@@ -9,6 +13,7 @@
       opacity: 1;
       width: 12px;
       height: 12px;
+      margin: 0 6px;
       background: none;
       border: 1px solid color(blue-light);
 

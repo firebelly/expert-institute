@@ -143,32 +143,40 @@ bodyClasses: home
         <div class="section-content">
             <div class="carousel two-up">
                 <blockquote class="testimonial">
-                    <p>Expert Institute helps me tackle some of my most difficult cases. They quickly respond to my inquiries and schedule appointments to accommodate my deadlines.</p>
-                    <footer>
-                        <img src="dist/images/avatar.jpg" alt="Portrait of Terry Garmey" class="testimonial-photo">
-                        <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
-                    </footer>
+                    <div class="-inner">                    
+                        <p>Expert Institute helps me tackle some of my most difficult cases. They quickly respond to my inquiries and schedule appointments to accommodate my deadlines.</p>
+                        <footer>
+                            <img src="dist/images/avatar.jpg" alt="Portrait of Terry Garmey" class="testimonial-photo">
+                            <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
+                        </footer>
+                    </div>
                 </blockquote>
                 <blockquote class="testimonial">
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                    <footer>
-                        <div class="testimonial-photo"><img src="dist/images/avatar.jpg" alt="Portrait of Terry Garmey" class="testimonial-photo"></div>
-                        <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
-                    </footer>
-                </blockquote>
-                            <blockquote class="testimonial">
-                    <p>Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                    <footer>
-                        <img src="dist/images/avatar.jpg" alt="Portrait of Terry Garmey" class="testimonial-photo">
-                        <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
-                    </footer>
+                    <div class="-inner">                    
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                        <footer>
+                            <div class="testimonial-photo"><img src="dist/images/avatar.jpg" alt="Portrait of Terry Garmey" class="testimonial-photo"></div>
+                            <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
+                        </footer>
+                    </div>
                 </blockquote>
                 <blockquote class="testimonial">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod..</p>
-                    <footer>
-                        <div class="testimonial-photo"><img src="dist/images/avatar.jpg" alt="Portrait of Terry Garmey" class="testimonial-photo"></div>
-                        <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
-                    </footer>
+                    <div class="-inner">
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        <footer>
+                            <img src="dist/images/avatar.jpg" alt="Portrait of Terry Garmey" class="testimonial-photo">
+                            <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
+                        </footer>
+                    </div>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <div class="-inner">                    
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod..</p>
+                        <footer>
+                            <div class="testimonial-photo"><img src="dist/images/avatar.jpg" alt="Portrait of Terry Garmey" class="testimonial-photo"></div>
+                            <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
+                        </footer>
+                    </div>
                 </blockquote>
             </div>
         </div>

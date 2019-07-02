@@ -288,7 +288,8 @@ var Main = (function($) {
     $('.carousel').flickity({
       groupCells: true,
       prevNextButtons: false,
-      cellAlign: 'center'
+      cellAlign: 'center',
+      adaptiveHeight: true
     });
   }
 
