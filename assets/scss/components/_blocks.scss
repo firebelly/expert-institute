@@ -164,6 +164,7 @@
         .testimonial-photo {
           width: 90px;
           height: 90px;
+          min-width: 90px;
         }
       }
     }
@@ -172,9 +173,9 @@
     .carousel.two-up {
 
       @include media-md {
-        margin-left: -90px;
         padding-bottom: 100px;
-        width: calc(100% + 180px);
+        margin-left: -#{columns(1.5,23)};
+        width: calc(100% + #{columns(3,23)});
 
         .flickity-page-dots {
           bottom: 0;
@@ -184,7 +185,7 @@
 
         .testimonial {
           width: 50%;
-          padding: 0 90px;
+          padding: 0 columns(1.5,26);
 
           p {
             padding-top: 24px;
