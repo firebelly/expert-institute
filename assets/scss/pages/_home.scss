@@ -111,7 +111,37 @@ body.home {
       }
 
       .icon {
+        width: 100%;
         max-width: 146px;
+
+        .blue-stroke,
+        .gold-stroke {
+          fill: none;
+          stroke-width: 1.5;
+          stroke-miterlimit: 10;
+          stroke: color(blue-dark);
+        }
+
+        .gold-stroke {
+          stroke: color(gold);
+        }
+
+        &.search-search {
+          #open {
+            // visibility: visible;
+            animation: search-search-open 2s steps(20) infinite;
+          }
+
+          #mid {
+            // visibility: hidden;
+            animation: search-search-mid 2s steps(20) infinite;
+          }
+
+          #closed {
+            // visibility: hidden;
+            animation: search-search-closed 2s steps(20) infinite;
+          }
+        }
       }
 
       .number, h4 {
