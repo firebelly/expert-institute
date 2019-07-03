@@ -73,7 +73,6 @@
   &-title {
     @include p2;
     margin: 33px 0 46px;
-    @include font-smoothing;
 
     @include media-lg {
       @include paragraph-style(24, 30);

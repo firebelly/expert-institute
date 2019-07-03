@@ -61,7 +61,7 @@ body.home {
       }
 
       .section-content {
-        padding: 228px 0 168px;
+        padding: 222px 0 168px;
         max-width: columns(9,23);
         flex-basis: columns(9,23);
 
@@ -72,6 +72,14 @@ body.home {
             right: 100%;
           }
         }
+      }
+
+      .block-title {
+        margin-bottom: 84px;
+      }
+
+      .block-cta {
+        margin-bottom: 0;
       }
     }
 
@@ -184,10 +192,6 @@ body.home {
           position: relative;
         }
 
-        .search-list {
-
-        }
-
         .section-cta {
           margin: 0;
           left: 100%;
@@ -209,13 +213,13 @@ body.home {
           position: relative;
           align-items: flex-start;
           + li {
-            margin-top: 84px;
+            margin-top: 90px;
           }
         }
 
         .icon {
-          top: 0;
           left: 0;
+          top: -16px;
           position: absolute;
           max-width: columns(2,11);
           flex-basis: columns(2,11);

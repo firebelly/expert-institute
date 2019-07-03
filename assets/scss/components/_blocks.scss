@@ -27,6 +27,7 @@
     p {
       margin: 30px 0 0;
       color: color(gray-dark);
+      @include ginto-normal-light;
     }
 
     @include media-md {

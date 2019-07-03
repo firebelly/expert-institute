@@ -92,6 +92,12 @@
       color: color(blue-dark);
     }
   }
+  // Gold Background sections get Ginto Normal Light for text
+  &.-gold {
+    .section-content p {
+      @include ginto-normal-light;
+    }
+  }
 
   .section-background {
     left: 0;
@@ -154,7 +160,7 @@
       position: relative;
       max-width: columns(1,2);
       flex-basis: columns(1,2);
-      padding: $padding-lg #{columns(2.25,23)} $padding-lg #{columns(2,23)};
+      padding: 180px #{columns(2.25,23)} 180px #{columns(2,23)};
 
       > * {
         z-index: 1;
@@ -173,6 +179,10 @@
           height: 100%;
           position: absolute;
         }
+      }
+
+      .block-title {
+        margin-bottom: 45px;
       }
 
       p {

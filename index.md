@@ -103,7 +103,7 @@ bodyClasses: home
         <h3 class="section-label">Expert Directory</h3>
         <div class="section-content grid">        
             <div class="section-text col-md-1-2">
-                <p>Search our expert witness directory to find highly credentialed expert witnesses across all disciplines, industries, and locations.</p>
+                <p>Search our expert witness directory to find highly credentialed expert witnesses across all disciplines, industries, and locations.</p>
             </div>
             <div class="col-md-1-2">
                 <form id="medical-expert-search" class="expert-search -outlined" action="#">
