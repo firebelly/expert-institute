@@ -92,8 +92,10 @@
       color: color(blue-dark);
     }
   }
-  // Gold Background sections get Ginto Normal Light for text
-  &.-gold {
+  // Gold, and Blue Background sections get Ginto Normal Light for text
+  &.-gold,
+  &.-blue-sky,
+  &.-blue-dark {
     .section-content p {
       @include ginto-normal-light;
     }
