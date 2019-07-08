@@ -129,17 +129,17 @@ body.home {
         &.search-search {
           #open {
             // visibility: visible;
-            animation: search-search-open 2s steps(20) infinite;
+            animation: search-search-open 4s steps(50) infinite;
           }
 
           #mid {
             // visibility: hidden;
-            animation: search-search-mid 2s steps(20) infinite;
+            animation: search-search-mid 4s steps(50) infinite;
           }
 
           #closed {
             // visibility: hidden;
-            animation: search-search-closed 2s steps(20) infinite;
+            animation: search-search-closed 4s steps(50) infinite;
           }
         }
       }
