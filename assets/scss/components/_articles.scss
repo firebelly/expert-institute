@@ -14,11 +14,11 @@
       margin: 0;
       @include h3-simple;
 
-      &.card-date {
+      &.date {
         color: color(blue-light);
         padding-right: $padding-sm / 2;
       }
-      &.card-tag {
+      &.tag {
         text-align: right;
         padding-left: $padding-sm / 2;
 

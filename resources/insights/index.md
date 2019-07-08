@@ -13,8 +13,8 @@ layout: default
             <div class="-inner">            
                 <header class="header-article-header">
                     <div class="header-article-meta">
-                        <h5 class="header-article-date">May 7, 2019</h5>
-                        <h5 class="header-article-tag"><a href="#">News</a></h5>
+                        <h5 class="date">May 7, 2019</h5>
+                        <h5 class="tag"><a href="#">News</a></h5>
                     </div>
                     <h1 class="header-article-title"><a href="#">Legal Cannabis Gives Rise to Product Liability Class Actions in the US and Canada</a></h1>
                 </header>
@@ -70,8 +70,8 @@ layout: default
                 <div class="-inner">
                     <header class="card-header">
                         <div class="card-meta">
-                            <h5 class="card-date">April 30, 2019</h5>
-                            <h5 class="card-tag"><a href="#">News</a></h5>
+                            <h5 class="date">April 30, 2019</h5>
+                            <h5 class="tag"><a href="#">News</a></h5>
                         </div>
                         <h1 class="card-title"><a href="#">An Attorney’s Guide To Finding, Retaining & Consulting Neurosurgery Expert Witnesses</a></h1>
                     </header>
@@ -90,8 +90,8 @@ layout: default
                 <div class="-inner">
                     <header class="card-header">
                         <div class="card-meta">
-                            <h5 class="card-date">April 11, 2019</h5>
-                            <h5 class="card-tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
+                            <h5 class="date">April 11, 2019</h5>
+                            <h5 class="tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
                         <h1 class="card-title"><a href="#">Litigation to Watch: Boeing 737 Max Jet Lawsuits</a></h1>
                     </header>
@@ -109,8 +109,8 @@ layout: default
                 <div class="-inner">
                     <header class="card-header">
                         <div class="card-meta">
-                            <h5 class="card-date">April 30, 2019</h5>
-                            <h5 class="card-tag"><a href="#">News</a></h5>
+                            <h5 class="date">April 30, 2019</h5>
+                            <h5 class="tag"><a href="#">News</a></h5>
                         </div>
                         <h1 class="card-title"><a href="#">Objections to Expert Testimony: What You Need to Know</a></h1>
                     </header>
@@ -128,8 +128,8 @@ layout: default
                 <div class="-inner">
                     <header class="card-header">
                         <div class="card-meta">
-                            <h5 class="card-date">April 11, 2019</h5>
-                            <h5 class="card-tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
+                            <h5 class="date">April 11, 2019</h5>
+                            <h5 class="tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
                         <h1 class="card-title"><a href="#">Engineering Expert Witnesses: A Litigation Guide</a></h1>
                     </header>
@@ -148,8 +148,8 @@ layout: default
                 <div class="-inner">
                     <header class="card-header">
                         <div class="card-meta">
-                            <h5 class="card-date">April 30, 2019</h5>
-                            <h5 class="card-tag"><a href="#">News</a></h5>
+                            <h5 class="date">April 30, 2019</h5>
+                            <h5 class="tag"><a href="#">News</a></h5>
                         </div>
                         <h1 class="card-title"><a href="#">An Attorney’s Guide To Finding, Retaining & Consulting Neurosurgery Expert Witnesses</a></h1>
                     </header>
@@ -167,8 +167,8 @@ layout: default
                 <div class="-inner">
                     <header class="card-header">
                         <div class="card-meta">
-                            <h5 class="card-date">April 11, 2019</h5>
-                            <h5 class="card-tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
+                            <h5 class="date">April 11, 2019</h5>
+                            <h5 class="tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
                         <h1 class="card-title"><a href="#">Litigation to Watch: Boeing 737 Max Jet Lawsuits</a></h1>
                     </header>
@@ -187,8 +187,8 @@ layout: default
                 <div class="-inner">
                     <header class="card-header">
                         <div class="card-meta">
-                            <h5 class="card-date">April 30, 2019</h5>
-                            <h5 class="card-tag"><a href="#">News</a></h5>
+                            <h5 class="date">April 30, 2019</h5>
+                            <h5 class="tag"><a href="#">News</a></h5>
                         </div>
                         <h1 class="card-title"><a href="#">Objections to Expert Testimony: What You Need to Know</a></h1>
                     </header>
@@ -207,8 +207,8 @@ layout: default
                 <div class="-inner">
                     <header class="card-header">
                         <div class="card-meta">
-                            <h5 class="card-date">April 11, 2019</h5>
-                            <h5 class="card-tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
+                            <h5 class="date">April 11, 2019</h5>
+                            <h5 class="tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
                         <h1 class="card-title"><a href="#">Engineering Expert Witnesses: A Litigation Guide</a></h1>
                     </header>
