@@ -119,6 +119,9 @@ body.home {
           fill: none;
           stroke-width: 1.5;
           stroke-miterlimit: 10;
+        }
+
+        .blue-stroke {
           stroke: color(blue-dark);
         }
 
@@ -126,20 +129,37 @@ body.home {
           stroke: color(gold);
         }
 
+        .blue-fill {
+          fill: color(blue-dark);
+        }
+
+        .gold-fill {
+          fill: color(gold);
+        }
+
         &.search-search {
           #open {
-            // visibility: visible;
             animation: search-search-open 4s steps(50) infinite;
           }
 
           #mid {
-            // visibility: hidden;
             animation: search-search-mid 4s steps(50) infinite;
           }
 
           #closed {
-            // visibility: hidden;
             animation: search-search-closed 4s steps(50) infinite;
+          }
+        }
+
+        &.search-select {
+          #left {
+            animation: search-select-left 4s steps(50) infinite;
+          }
+          #middle {
+            animation: search-select-middle 4s steps(50) infinite;
+          }
+          #right {
+            animation: search-select-right 4s forwards infinite;
           }
         }
       }
