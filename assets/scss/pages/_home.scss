@@ -153,13 +153,13 @@ body.home {
 
         &.search-select {
           #left {
-            animation: search-select-left 4s steps(50) infinite;
+            animation: search-select-left 6s forwards infinite;
           }
           #middle {
-            animation: search-select-middle 4s steps(50) infinite;
+            animation: search-select-middle 6s forwards infinite;
           }
           #right {
-            animation: search-select-right 4s forwards infinite;
+            animation: search-select-right 6s forwards infinite;
           }
         }
       }
