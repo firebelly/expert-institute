@@ -2,7 +2,7 @@
 
 body.home {
 
-  .intro-section {
+  .page-header {
     padding: $padding-sm 0 230px;
 
     > .-inner {
@@ -160,6 +160,29 @@ body.home {
           }
           #right {
             animation: search-select-right 6s forwards infinite;
+          }
+        }
+
+        &.search-retain {
+          &.short {
+            stroke-dasharray: 12;
+            stroke-dashoffset: 12;
+            animation: stroke-offset .25s linear forwards infinite;
+          }
+          &.medium {
+            stroke-dasharray: 25;
+            stroke-dashoffset: 25;
+            animation: stroke-offset .25s .25s linear forwards infinite;
+          }
+          &.long {
+            stroke-dasharray: 26;
+            stroke-dashoffset: 26;
+            animation: stroke-offset .25s .75s linear forwards infinite;
+          }
+          &.longest {
+            stroke-dasharray: 30;
+            stroke-dashoffset: 30;
+            animation: stroke-offset .25s .55s linear forwards infinite;
           }
         }
       }

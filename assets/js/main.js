@@ -248,9 +248,9 @@ var Main = (function($) {
   }
 
   function _initFormFunctions() {
-    $('.input-wrap input, .input-wrap textarea,.input-wrap button[type="submit"]').on('focus', function(e) {
+    $('.input-wrap input, .input-wrap textarea,.input-wrap button[type="submit"], .select-wrap select').on('focus', function() {
       $(this).closest('.input-wrap').addClass('-focus');
-    }).on('blur', function(e) {
+    }).on('blur', function() {
       $(this).closest('.input-wrap').removeClass('-focus');
       if($(this).val()) {
         $(this).closest('.input-wrap').addClass('-filled');
@@ -260,7 +260,7 @@ var Main = (function($) {
     });
 
     // Select functionality
-    $('select').on('change', function(e) {
+    $('.select-wrap select').on('change', function() {
       $(this).closest('.select-wrap').addClass('-filled');
     });
   }

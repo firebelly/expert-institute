@@ -1,0 +1,95 @@
+// Page Styles
+//
+// common page elements, such as page headers (and variations)
+
+.page-header {
+  overflow: hidden;
+  position: relative;
+  background-color: color(white);
+
+  // With Swoop
+  &.swooped {
+    margin-bottom: $padding-md;
+
+    .header-background {
+      background-size: cover;
+      background-position: center center;
+    }
+
+    @include media-md {
+      margin-bottom: $padding-lg;
+
+      .header-background {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        max-width: columns(15,23);
+        flex-basis: columns(15,23);
+      }
+
+      .header-swoop {
+        max-width: columns(15,23);
+        flex-basis: columns(15,23);
+        margin-right: -#{columns(1,23)};
+
+        &::after {
+          top: 0;
+          bottom: 0;
+          left: 100%;
+          content: '';
+          position: absolute;
+          width: columns(8,15);
+          background-color: color(white);
+        }
+      }
+
+      .header-text {
+        z-index: 1;
+        position: relative;
+        padding-top: 200px;
+        max-width: columns(9,23);
+        flex-basis: columns(9,23);
+
+        .-inner {
+          background-color: color(white);
+        }
+      }
+    }
+  }
+
+  &.carousel-header {
+
+  }
+
+
+  .header-swoop {
+    position: relative;
+
+    .swoop {
+      right: 0;
+      bottom: -1px;
+      height: 100%;
+      position: absolute;
+      fill: color(white);
+    }
+
+    &.-right {
+      .swoop {
+        left: 0;
+        right: auto;
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+  .header-article {
+    @include article-card-styles;
+
+    &-title {
+      @include h2;
+    }
+  }
+
+}
