@@ -7,16 +7,27 @@
   position: relative;
   background-color: color(white);
 
-  // With Swoop
+  // With Swoop (https://d.pr/i/ii1084)
   &.swooped {
     margin-bottom: $padding-md;
 
     .header-background {
+      height: 230px;
+      position: relative;
       background-size: cover;
       background-position: center center;
+      &::before {
+        left: 0;
+        bottom: 0;
+        top: 50px;
+        width: 100%;
+        content: '';
+        position: absolute;
+        background-image: linear-gradient(to right top, color(white) 0%, color(white) 50%, transparent 50%);
+      }
     }
 
-    @include media-md {
+    @include media-lg {
       margin-bottom: $padding-lg;
 
       .header-background {
@@ -24,9 +35,13 @@
         left: 0;
         bottom: 0;
         width: 100%;
+        height: 100%;
         position: absolute;
         max-width: columns(15,23);
         flex-basis: columns(15,23);
+        &::before {
+          display: none;
+        }
       }
 
       .header-swoop {
