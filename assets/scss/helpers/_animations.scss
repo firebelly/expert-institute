@@ -30,18 +30,18 @@
 
 // Homepage Search Selection Icon
 @keyframes search-select-left {
-  0%, 62%, 86%, 100% {
+  0%, 60%, 84%, 100% {
     opacity: 1;
   }
-  66%, 82% {
+  64%, 80% {
     opacity: 0;
   }
 }
 @keyframes search-select-middle {
-  0%, 59%, 83%, 100% {
+  0%, 58%, 82%, 100% {
     opacity: 1;
   }
-  63%, 79% {
+  62%, 78% {
     opacity: 0;
   }
 }
@@ -56,35 +56,35 @@
 
 // Homepage Search Retain Icons
 @keyframes search-retain-short {
-  5%, 70% {
+  3%, 80% {
     stroke-dashoffset: 0;
   }
-  0%, 75% {
-    stroke-dashoffset: 12;
+  83%, 100% {
+    stroke-dashoffset: -12;
   }
 }
 @keyframes search-retain-medium {
-  5%, 70% {
+  3%, 80% {
     stroke-dashoffset: 0;
   }
-  0%, 75% {
-    stroke-dashoffset: 25;
+  83%, 100% {
+    stroke-dashoffset: -25;
   }
 }
 @keyframes search-retain-long {
-  5%, 70% {
+  3%, 80% {
     stroke-dashoffset: 0;
   }
-  0%, 75% {
-    stroke-dashoffset: 26;
+  83%, 100% {
+    stroke-dashoffset: -26;
   }
 }
 @keyframes search-retain-longest {
-  5%, 70% {
+  3%, 80% {
     stroke-dashoffset: 0;
   }
-  0%, 75% {
-    stroke-dashoffset: 30;
+  83%, 100% {
+    stroke-dashoffset: -30;
   }
 }
 

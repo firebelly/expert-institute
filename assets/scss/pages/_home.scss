@@ -167,22 +167,22 @@ body.home {
           .short {
             stroke-dasharray: 12;
             stroke-dashoffset: 12;
-            animation: search-retain-short 6s 1s linear forwards infinite;
+            animation: search-retain-short 6s 1s linear infinite;
           }
           .medium {
             stroke-dasharray: 25;
             stroke-dashoffset: 25;
-            animation: search-retain-medium 6s 1.1s linear forwards infinite;
+            animation: search-retain-medium 6s 1.15s linear infinite;
           }
           .long {
             stroke-dasharray: 26;
             stroke-dashoffset: 26;
-            animation: search-retain-long 6s 1.3s linear forwards infinite;
+            animation: search-retain-long 6s 1.45s linear infinite;
           }
           .longest {
             stroke-dasharray: 30;
             stroke-dashoffset: 30;
-            animation: search-retain-longest 6s 1.2s linear forwards infinite;
+            animation: search-retain-longest 6s 1.3s linear infinite;
           }
         }
       }
