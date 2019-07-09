@@ -89,6 +89,19 @@
 
     &-title {
       @include h2;
+
+      a {
+        &.-hover,
+        &:hover,
+        &:focus {
+          background-image: linear-gradient(to top,transparent 6px, color(blue-dark) 6px, color(blue-dark) 8px,transparent 0);
+
+          @include media-md {
+            background-image: linear-gradient(to top,transparent 9px, color(blue-dark) 9px, color(blue-dark) 11px,transparent 0);
+
+          }
+        }
+      }
     }
   }
 

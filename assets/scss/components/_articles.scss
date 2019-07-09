@@ -41,21 +41,31 @@
     @include p2;
     margin: 33px 0 46px;
 
+    a {
+      text-decoration: none;
+      &.-hover,
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(to top,transparent 2px, color(blue-dark) 2px, color(blue-dark) 4px,transparent 0);
+      }
+    }
+
+    @include media-md {
+      a {
+        &.-hover,
+        &:hover,
+        &:focus {
+          background-image: linear-gradient(to top,transparent 3px, color(blue-dark) 3px, color(blue-dark) 5px,transparent 0);
+        }
+      }
+    }
+
     @include media-lg {
       @include paragraph-style(24, 30);
     }
 
     @include media-xl {
       @include paragraph-style(36, 42);
-    }
-
-    a {
-      text-decoration: none;
-      &.-hover,
-      &:hover,
-      &:focus {
-        background-image: linear-gradient(to top,transparent .07em, color(blue-dark) .07em, color(blue-dark) .15em,transparent 0);
-      }
     }
   }
 
