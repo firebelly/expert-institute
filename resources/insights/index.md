@@ -225,3 +225,9 @@ layout: default
         </div>
     </div>
 </div>
+
+<div class="section padded-bottom">
+    <div class="site-wrapper">
+        <p class="align-center"><button class="load-more button hollow">Load More</button></p>
+    </div>
+</div>
