@@ -97,6 +97,18 @@
 
     .header-article {
       width: 100%;
+
+      .-inner {
+        opacity: 0;
+        transition: opacity .75s ease-out;
+      }
+
+      &.is-selected {
+        .-inner {
+          opacity: 1;
+          transition: opacity .75s .25s ease-out;
+        }
+      }
     }
 
     .flickity-page-dots {

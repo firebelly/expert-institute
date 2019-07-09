@@ -2,6 +2,8 @@
 
 //=include "../bower_components/jquery/dist/jquery.js"
 //=include "../bower_components/flickity/dist/flickity.pkgd.min.js"
+//=include "../bower_components/flickity-fade/flickity-fade.js"
+//=include "../bower_components/flickity-bg-lazyload/bg-lazyload.js"
 //=include "../bower_components/flickity-bg-lazyload/bg-lazyload.js"
 //=include "../bower_components/velocity/velocity.min.js"
 
@@ -297,10 +299,14 @@ var Main = (function($) {
       prevNextButtons: false,
       pageDots: false,
       setGallerySize: false,
-      asNavFor: '.text-carousel'
+      asNavFor: '.text-carousel',
+      fade: true,
+      bgLazyLoad: true
     });
     $('.carousel-header .text-carousel').flickity({
       prevNextButtons: false,
+      autoPlay: 4000,
+      wrapAround: true
     });
   }
 
