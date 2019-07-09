@@ -54,7 +54,41 @@
   }
 }
 
-// General svg stroke animation (Homepage Search Reatain Icon)
+// Homepage Search Retain Icons
+@keyframes search-retain-short {
+  5%, 70% {
+    stroke-dashoffset: 0;
+  }
+  0%, 75% {
+    stroke-dashoffset: 12;
+  }
+}
+@keyframes search-retain-medium {
+  5%, 70% {
+    stroke-dashoffset: 0;
+  }
+  0%, 75% {
+    stroke-dashoffset: 25;
+  }
+}
+@keyframes search-retain-long {
+  5%, 70% {
+    stroke-dashoffset: 0;
+  }
+  0%, 75% {
+    stroke-dashoffset: 26;
+  }
+}
+@keyframes search-retain-longest {
+  5%, 70% {
+    stroke-dashoffset: 0;
+  }
+  0%, 75% {
+    stroke-dashoffset: 30;
+  }
+}
+
+// General svg stroke animation
 @keyframes stroke-offset {
   to {
     stroke-dashoffset: 0;

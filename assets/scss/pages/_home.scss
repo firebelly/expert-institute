@@ -164,25 +164,25 @@ body.home {
         }
 
         &.search-retain {
-          &.short {
+          .short {
             stroke-dasharray: 12;
             stroke-dashoffset: 12;
-            animation: stroke-offset .25s linear forwards infinite;
+            animation: search-retain-short 6s 1s linear forwards infinite;
           }
-          &.medium {
+          .medium {
             stroke-dasharray: 25;
             stroke-dashoffset: 25;
-            animation: stroke-offset .25s .25s linear forwards infinite;
+            animation: search-retain-medium 6s 1.1s linear forwards infinite;
           }
-          &.long {
+          .long {
             stroke-dasharray: 26;
             stroke-dashoffset: 26;
-            animation: stroke-offset .25s .75s linear forwards infinite;
+            animation: search-retain-long 6s 1.3s linear forwards infinite;
           }
-          &.longest {
+          .longest {
             stroke-dasharray: 30;
             stroke-dashoffset: 30;
-            animation: stroke-offset .25s .55s linear forwards infinite;
+            animation: search-retain-longest 6s 1.2s linear forwards infinite;
           }
         }
       }
