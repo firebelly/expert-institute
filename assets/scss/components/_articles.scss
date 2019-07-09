@@ -54,7 +54,7 @@
       &.-hover,
       &:hover,
       &:focus {
-        text-decoration: underline;
+        background-image: linear-gradient(to top,transparent .07em, color(blue-dark) .07em, color(blue-dark) .15em,transparent 0);
       }
     }
   }
