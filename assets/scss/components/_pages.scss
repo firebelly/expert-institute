@@ -8,7 +8,8 @@
   background-color: color(white);
 
   // With Swoop (https://d.pr/i/ii1084)
-  &.swooped {
+  &.swooped,
+  &.carousel-header {
     margin-bottom: $padding-md;
 
     .header-background {
@@ -20,6 +21,7 @@
         left: 0;
         bottom: 0;
         top: 50px;
+        z-index: 1;
         width: 100%;
         content: '';
         position: absolute;
@@ -75,7 +77,45 @@
   }
 
   &.carousel-header {
+    .image-carousel {
+      .image {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
 
+    .text-carousel {
+      .flickity-viewport {
+        z-index: 1;
+      }
+    }
+
+    .header-article {
+      width: 100%;
+    }
+
+    .flickity-page-dots {
+      z-index: 1;
+      top: -50px;
+      bottom: auto;
+      text-align: left;
+    }
+
+    @include media-lg {
+      .flickity-page-dots {
+        right: 0;
+        top: auto;
+        bottom: 0;
+        z-index: 0;
+        text-align: center;
+        width: columns(23,9);
+      }
+    }
   }
 
 
@@ -88,14 +128,6 @@
       height: 100%;
       position: absolute;
       fill: color(white);
-    }
-
-    &.-right {
-      .swoop {
-        left: 0;
-        right: auto;
-        transform: scaleX(-1);
-      }
     }
   }
 

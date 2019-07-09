@@ -291,6 +291,17 @@ var Main = (function($) {
       cellAlign: 'center',
       adaptiveHeight: true
     });
+
+    // Page Header Carousels
+    $('.carousel-header .image-carousel').flickity({
+      prevNextButtons: false,
+      pageDots: false,
+      setGallerySize: false,
+      asNavFor: '.text-carousel'
+    });
+    $('.carousel-header .text-carousel').flickity({
+      prevNextButtons: false,
+    });
   }
 
   // Disabling transitions on certain elements on resize

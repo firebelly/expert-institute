@@ -3,31 +3,39 @@ title: Insights
 layout: default
 ---
 
-<div class="page-header swooped">
-    <div class="header-background" style="background-image:url('/dist/images/5.7.19-blog-legal-cannabis-800x400.jpg');"></div>
+<div class="page-header carousel-header">
+    <div class="header-background image-carousel">
+        {% for post in site.posts %}
+            <div class="image" style="background-image:url('{{ post.imageUrl }}');"></div>
+        {% endfor %}
+    </div>
     <div class="site-wrapper grid">
         <div class="header-swoop">
             <svg class="swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 673.8 756"><path d="M673.8 756H0c87.7 0 169.9-42.6 220.5-114.2L673.8 0v756z"/></svg>
         </div>
-        <article class="header-text header-article">
-            <div class="-inner">            
-                <header class="header-article-header">
-                    <div class="header-article-meta">
-                        <h5 class="date">May 7, 2019</h5>
-                        <h5 class="tag"><a href="#">News</a></h5>
+        <div class="header-text text-carousel">
+            {% for post in site.posts %}
+                <article class="header-article">
+                    <div class="-inner">            
+                        <header class="header-article-header">
+                            <div class="header-article-meta">
+                                <h5 class="date">{{ post.date | date: "%B %d, %Y" }}</h5>
+                                <h5 class="tag"><a href="#">{{ post.categories[0] }}</a></h5>
+                            </div>
+                            <h1 class="header-article-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                        </header>
+                        <div class="header-article-body">
+                            <div class="header-article-text">
+                                <p>{{ post.postExcerpt }}...</p>
+                            </div>
+                        </div>
+                        <div class="header-article-cta">
+                            <a href="{{ post.url }}" class="button hollow -gray-mid">Read More</a>
+                        </div>
                     </div>
-                    <h1 class="header-article-title"><a href="#">Legal Cannabis Gives Rise to Product Liability Class Actions in the US and Canada</a></h1>
-                </header>
-                <div class="header-article-body">
-                    <div class="header-article-text">
-                        <p>For several decades, most legal actions involving cannabis were focused in the field of criminal law. However, as marijuana becomes legal for medical and recreational use in an ever-increasing number of US cities and states...</p>
-                    </div>
-                </div>
-                <div class="header-article-cta">
-                    <a href="#" class="button hollow -gray-mid">Read More</a>
-                </div>
-            </div>
-        </article>
+                </article>
+              {% endfor %}
+        </div>
     </div>
 </div>
 

@@ -1,7 +1,8 @@
 // Carousels
 // adjustments made to flickity default styles
 
-.carousel {
+.carousel,
+.carousel-header {
   .flickity-viewport {
     transition: height .2s ease-out;
   }
