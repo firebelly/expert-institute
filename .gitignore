@@ -20,5 +20,6 @@ bower_components
 !_build/dist
 fonts
 
-# notes
+# notes/todos
 .notes
+.todo
