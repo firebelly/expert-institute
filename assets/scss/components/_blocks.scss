@@ -97,6 +97,7 @@
       }
 
       .testimonial-photo {
+        overflow: hidden;
         position: relative;
         border-radius: 50%;
         width: $padding-md;

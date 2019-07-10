@@ -291,7 +291,9 @@ var Main = (function($) {
       groupCells: true,
       prevNextButtons: false,
       cellAlign: 'center',
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      autoPlay: 4000,
+      wrapAround: true
     });
 
     // Page Header Carousels

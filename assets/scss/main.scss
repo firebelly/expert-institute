@@ -20,10 +20,10 @@
 @import "components/base";
 @import "components/buttons";
 @import "components/forms";
+@import "components/common";
 @import "components/search-form";
 @import "components/header";
 @import "components/footer";
-@import "components/articles";
 @import "components/pages";
 @import "components/cards";
 @import "components/carousels";
@@ -32,3 +32,4 @@
 
 // Pages
 @import "pages/home";
+@import "pages/single-post";

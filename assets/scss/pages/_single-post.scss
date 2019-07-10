@@ -1,0 +1,13 @@
+// Single Post
+//
+// This template is shared between single blog posts and bio posts
+
+body.single-post {
+  .post-content {
+
+    @include media-lg {
+      min-width: 600px;
+      max-width: columns(13,23);
+    }
+  }
+}

@@ -8,6 +8,7 @@
   background-color: color(white);
 
   // With Swoop (https://d.pr/i/ii1084)
+  // carousel headers share the same swoop styles
   &.swooped,
   &.carousel-header {
     margin-bottom: $padding-md;
@@ -26,6 +27,18 @@
         content: '';
         position: absolute;
         background-image: linear-gradient(to right top, color(white) 0%, color(white) 50%, transparent 50%);
+      }
+    }
+
+    .header-swoop {
+      position: relative;
+
+      .swoop {
+        right: 0;
+        bottom: -1px;
+        height: 100%;
+        position: absolute;
+        fill: color(white);
       }
     }
 
@@ -68,14 +81,64 @@
         padding-top: 200px;
         max-width: columns(9,23);
         flex-basis: columns(9,23);
+      }
+    }
 
-        .-inner {
-          background-color: color(white);
+    // And right-sided swooped headers
+    &.-right {
+      .header-text {
+        .header-meta {
+          margin-bottom: $padding-sm;
+        }
+      }
+
+      @include media-lg {
+        margin-bottom: 0;
+
+        .header-background {
+          right: 0;
+          left: auto;
+        }
+
+        .header-swoop {
+          order: 1;
+          max-width: columns(13,23);
+          flex-basis: columns(13,23);
+
+          &::after {
+            left: auto;
+            right: 100%;
+            width: columns(11,15);
+          }
+
+          .swoop {
+            left: -1px;
+            right: auto;
+            transform: scaleX(-1);
+          }
+        }
+
+        .header-text {
+          order: 0;
+          padding-top: 120px;
+          max-width: columns(11, 23);
+          flex-basis: columns(11, 23);
+          margin-right: -#{columns(2,23)};
+
+          .header-meta {
+            margin-bottom: 86px;
+            margin-right: columns(2,11);
+          }
+
+          .title {
+            margin-bottom: 0;
+          }
         }
       }
     }
   }
 
+  // Page headers with carousels
   &.carousel-header {
     .image-carousel {
       .image {
@@ -130,38 +193,112 @@
     }
   }
 
+  // Header Text
+  .header-text {
+    p {
+      margin: 0;
+      color: color(gray-dark);
 
-  .header-swoop {
-    position: relative;
+      + p {
+        margin-top: 1em;
+      }
+    }
 
-    .swoop {
-      right: 0;
-      bottom: -1px;
-      height: 100%;
-      position: absolute;
-      fill: color(white);
+    .author {
+      display: flex;
+      align-items: center;
+      margin-top: $padding-sm;
+
+      .author-photo {
+        overflow: hidden;
+        position: relative;
+        border-radius: 50%;
+        width: $padding-sm * 3;
+        height: $padding-sm * 3;
+
+        img {
+          top: 0;
+          left: 50%;
+          width: auto;
+          min-width: 100%;
+          min-height: 100%;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+      }
+
+      .author-text {
+        margin-left: $padding-sm;
+
+        .author-label {
+          margin: 0;
+          @include h3-simple;
+          color: color(blue-dark);
+        }
+
+        .author-name {
+          margin: 0;
+          font-weight: normal;
+
+          a {
+            text-decoration: none;
+            color: color(blue-light);
+            &:hover,
+            &:focus {
+              border-bottom: 1px solid;
+            }
+          }
+        }
+      }
+
+      @include media-lg {
+        margin-top: 140px;
+        margin-bottom: 40px;
+      }
     }
   }
 
-  .header-article {
-    @include article-card-styles;
+  .title {
+    @include h2;
+    margin: 0 0 $padding-sm;
 
-    &-title {
-      @include h2;
+    a {
+      text-decoration: none;
+      &.-hover,
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(to top,transparent 6px, color(blue-dark) 6px, color(blue-dark) 8px,transparent 0);
+      }
+    }
+
+    @include media-md {
+      margin-bottom: $padding-md;
 
       a {
         &.-hover,
         &:hover,
         &:focus {
-          background-image: linear-gradient(to top,transparent 6px, color(blue-dark) 6px, color(blue-dark) 8px,transparent 0);
-
-          @include media-md {
-            background-image: linear-gradient(to top,transparent 9px, color(blue-dark) 9px, color(blue-dark) 11px,transparent 0);
-
-          }
+          background-image: linear-gradient(to top,transparent 9px, color(blue-dark) 9px, color(blue-dark) 11px,transparent 0);
         }
       }
     }
   }
+
+  // Header Articles
+  // as appears as carousel items on the insights page
+  .header-article {
+    .header-meta {
+      margin-bottom: $padding-sm;
+    }
+
+    .cta {
+      margin-top: $padding-md;
+
+      @include media-md {
+        margin-top: $padding-md;
+      }
+    }
+  }
+
 
 }

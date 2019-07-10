@@ -17,19 +17,17 @@ layout: default
             {% for post in site.posts %}
                 <article class="header-article">
                     <div class="-inner">            
-                        <header class="header-article-header">
-                            <div class="header-article-meta">
+                        <header>
+                            <div class="header-meta">
                                 <h5 class="date">{{ post.date | date: "%B %d, %Y" }}</h5>
                                 <h5 class="tag"><a href="#">{{ post.categories[0] }}</a></h5>
                             </div>
-                            <h1 class="header-article-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                            <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
                         </header>
                         <div class="header-article-body">
-                            <div class="header-article-text">
-                                <p>{{ post.postExcerpt }}...</p>
-                            </div>
+                            <p>{{ post.postExcerpt | truncate: 160 }}</p>
                         </div>
-                        <div class="header-article-cta">
+                        <div class="cta">
                             <a href="{{ post.url }}" class="button hollow -gray-mid">Read More</a>
                         </div>
                     </div>
@@ -77,7 +75,7 @@ layout: default
             <article class="card with-image col-lg-1-2">
                 <div class="-inner">
                     <header class="card-header">
-                        <div class="card-meta">
+                        <div class="header-meta">
                             <h5 class="date">April 30, 2019</h5>
                             <h5 class="tag"><a href="#">News</a></h5>
                         </div>
@@ -97,7 +95,7 @@ layout: default
             <article class="card col-lg-1-2">
                 <div class="-inner">
                     <header class="card-header">
-                        <div class="card-meta">
+                        <div class="header-meta">
                             <h5 class="date">April 11, 2019</h5>
                             <h5 class="tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
@@ -116,7 +114,7 @@ layout: default
             <article class="card col-lg-1-2">
                 <div class="-inner">
                     <header class="card-header">
-                        <div class="card-meta">
+                        <div class="header-meta">
                             <h5 class="date">April 30, 2019</h5>
                             <h5 class="tag"><a href="#">News</a></h5>
                         </div>
@@ -135,7 +133,7 @@ layout: default
             <article class="card with-image col-lg-1-2">
                 <div class="-inner">
                     <header class="card-header">
-                        <div class="card-meta">
+                        <div class="header-meta">
                             <h5 class="date">April 11, 2019</h5>
                             <h5 class="tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
@@ -155,7 +153,7 @@ layout: default
             <article class="card col-lg-1-2">
                 <div class="-inner">
                     <header class="card-header">
-                        <div class="card-meta">
+                        <div class="header-meta">
                             <h5 class="date">April 30, 2019</h5>
                             <h5 class="tag"><a href="#">News</a></h5>
                         </div>
@@ -174,7 +172,7 @@ layout: default
             <article class="card with-image col-lg-1-2">
                 <div class="-inner">
                     <header class="card-header">
-                        <div class="card-meta">
+                        <div class="header-meta">
                             <h5 class="date">April 11, 2019</h5>
                             <h5 class="tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>
@@ -194,7 +192,7 @@ layout: default
             <article class="card with-image col-lg-1-2">
                 <div class="-inner">
                     <header class="card-header">
-                        <div class="card-meta">
+                        <div class="header-meta">
                             <h5 class="date">April 30, 2019</h5>
                             <h5 class="tag"><a href="#">News</a></h5>
                         </div>
@@ -214,7 +212,7 @@ layout: default
             <article class="card col-lg-1-2">
                 <div class="-inner">
                     <header class="card-header">
-                        <div class="card-meta">
+                        <div class="header-meta">
                             <h5 class="date">April 11, 2019</h5>
                             <h5 class="tag"><a href="#">Litigation Monitor</a>, <a href="#">Another Tag</a></h5>
                         </div>

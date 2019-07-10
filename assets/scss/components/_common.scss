@@ -1,0 +1,38 @@
+// Common
+//
+// Styles and micro components used in various contexts
+
+// Header Meta
+// used in cards and in article headers
+.header-meta {
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: space-between;
+  border-bottom: 1px solid color(blue-light);
+
+  h5 {
+    margin: 0;
+    @include h3-simple;
+
+    &.date {
+      color: color(blue-light);
+      padding-right: $padding-sm / 2;
+    }
+    &.tag {
+      text-align: right;
+      padding-left: $padding-sm / 2;
+
+      &,
+      a {
+        color: color(gray-mid);
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: color(blue-light);
+        }
+      }
+    }
+  }
+}
