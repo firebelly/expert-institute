@@ -17,6 +17,7 @@
   }
 
   h3, h4, h5, h6 {
+    margin-bottom: 0;
     @include h3-simple;
     color: color(blue-light);
   }
@@ -26,7 +27,55 @@
   }
 
   p {
-    margin-bottom: 24px;
+    margin: 0 0 24px;
+  }
+
+  blockquote {
+    padding: 0;
+    margin: $padding-md 0;
+
+    &::before {
+      content: '“';
+      display: block;
+      @include font-display;
+      color: color(blue-light);
+      margin-bottom: -$padding-sm;
+      @include paragraph-style(90, 90);
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      @include h2;
+    }
+
+    @include media-md {
+      margin: $padding-lg 0;
+    }
+  }
+
+  figure {
+    display: table;
+    margin: $padding-md 0;
+
+    img {
+      max-width: 100%;
+      display: inline-block;
+    }
+
+    figcaption {
+      margin-top: 34px;
+      @include h3-simple;
+      caption-side: bottom;
+      display: table-caption;
+      color: color(gray-dark);
+      padding-right: columns(4,17);
+    }
+
+    @include media-md {
+      max-width: 1020px;
+      margin: 90px 0 100px;
+    }
   }
 
 }
