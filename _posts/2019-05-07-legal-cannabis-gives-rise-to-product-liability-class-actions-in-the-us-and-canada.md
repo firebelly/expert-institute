@@ -24,27 +24,27 @@ imageUrl: "/dist/images/5.7.19-blog-legal-cannabis-800x400.jpg"
 
 
 <div class="post-carousel">
-    <figure>
+    <figure class="landscape">
         <div class="image">
-            <img data-flickity-lazyload="/dist/images/5.7.19-blog-legal-cannabis-800x400.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+            <img data-flickity-lazyload="/dist/images/blog-post_01.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
         </div>
         <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Cras justo odio.</figcaption>
     </figure>
-    <figure>
+    <figure class="portrait">
         <div class="image">
-            <img data-flickity-lazyload="/dist/images/get-budding-GbXiiO6OrJs-unsplash.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+            <img data-flickity-lazyload="/dist/images/blog-post_02.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
         </div>
         <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</figcaption>
     </figure>
-    <figure>
+    <figure class="landscape">
         <div class="image">
-            <img data-flickity-lazyload="/dist/images/5.7.19-blog-legal-cannabis-800x400.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+            <img data-flickity-lazyload="/dist/images/blog-post_01.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
         </div>
         <figcaption>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</figcaption>
     </figure>
-    <figure>
+    <figure class="portrait">
         <div class="image">
-            <img data-flickity-lazyload="/dist/images/get-budding-GbXiiO6OrJs-unsplash.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+            <img data-flickity-lazyload="/dist/images/blog-post_02.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
         </div>
         <figcaption>Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</figcaption>
     </figure>

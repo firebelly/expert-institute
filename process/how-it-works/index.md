@@ -5,5 +5,7 @@ bodyClasses: how-it-works template-a
 ---
 
 <section class="section">
-  <h1>Testing</h1>
+    <div class="site-wrapper">
+      <h1>Testing</h1>
+    </div>
 </section>

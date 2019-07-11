@@ -316,7 +316,8 @@ var Main = (function($) {
       prevNextButtons: false,
       lazyLoad: 2,
       pageDots: false,
-      cellAlign: 'left'
+      cellAlign: 'left',
+      adaptiveHeight: true
     });
   }
 
