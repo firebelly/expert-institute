@@ -31,8 +31,8 @@ primaryNav:
     children:
       - title: Measurable Impact
         path: /results/measurable-impact/
-      - title: Case Studies
-        path: /results/case-studies/
+      - title: Client Testimonials
+        path: /results/client-testimonials/
 
 secondaryNav:
   - title: About
@@ -58,6 +58,8 @@ secondaryNav:
         path: /resources/white-papters/
       - title: Webinars
         path: /resources/webinars/
+      - title: Case Studies
+        path: /resources/case-studies/
       - title: Insights
         path: /resources/insights/
 
