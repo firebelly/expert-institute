@@ -41,7 +41,8 @@ body.single-post {
       display: table;
       margin: 0 #{$padding-sm / 4};
 
-      &.portrait {
+      &.portrait,
+      &.square {
         .image {
           position: relative;
           &::after {
@@ -53,10 +54,16 @@ body.single-post {
             position: absolute;
             pointer-events: none;
             transition: opacity .2s ease-out;
-            background-image: linear-gradient(to top, color(white) 50%, rgba(color(white),0) 60%, rgba(color(white),0));
             background-position: 0 0;
           }
         }
+      }
+
+      &.portrait .image::after {
+        background-image: linear-gradient(to top, color(white) 50%, rgba(color(white),0) 60%, rgba(color(white),0));
+      }
+      &.square .image::after {
+        background-image: linear-gradient(to top, color(white) 33%, rgba(color(white),0) 43%, rgba(color(white),0));
       }
 
       .image {
@@ -115,6 +122,16 @@ body.single-post {
           width: 50%;
           .image {
             padding-bottom: 133.3333%;
+            &::after {
+              display: none;
+            }
+          }
+        }
+
+        &.square {
+          width: 66.6666%;
+          .image {
+            padding-bottom: 100%;
             &::after {
               display: none;
             }

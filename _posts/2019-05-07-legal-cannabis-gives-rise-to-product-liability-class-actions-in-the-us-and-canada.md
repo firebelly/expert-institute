@@ -36,11 +36,23 @@ imageUrl: "/dist/images/5.7.19-blog-legal-cannabis-800x400.jpg"
         </div>
         <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</figcaption>
     </figure>
+    <figure class="square">
+        <div class="image">
+            <img data-flickity-lazyload="/dist/images/blog-post_03.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+        </div>
+        <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</figcaption>
+    </figure>
     <figure class="landscape">
         <div class="image">
             <img data-flickity-lazyload="/dist/images/blog-post_01.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
         </div>
         <figcaption>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</figcaption>
+    </figure>
+    <figure class="square">
+        <div class="image">
+            <img data-flickity-lazyload="/dist/images/blog-post_03.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+        </div>
+        <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</figcaption>
     </figure>
     <figure class="portrait">
         <div class="image">
