@@ -1,0 +1,32 @@
+// User-content
+//
+// Class applied to content areas that will likely be added
+// via the rich text editor, and therefore open to a large
+// array of markup — post content as an example
+
+.user-content {
+
+  h1, h2 {
+    @include h2;
+    margin: 76px 0 20px;
+    color: color(blue-light);
+
+    @include media-md {
+      @include paragraph-style(36, 42);
+    }
+  }
+
+  h3, h4, h5, h6 {
+    @include h3-simple;
+    color: color(blue-light);
+  }
+
+  a {
+    color: color(blue-light);
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+
+}

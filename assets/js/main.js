@@ -310,6 +310,14 @@ var Main = (function($) {
       autoPlay: 4000,
       wrapAround: true
     });
+
+    // Post Carousels
+    $('.post-carousel').flickity({
+      prevNextButtons: false,
+      lazyLoad: 2,
+      pageDots: false,
+      cellAlign: 'left'
+    });
   }
 
   // Disabling transitions on certain elements on resize

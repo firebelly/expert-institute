@@ -4,7 +4,7 @@ layout: default
 bodyClasses: home
 ---
 
-<div class="page-header showcase-section -blue-dark">
+<div class="page-header showcase-section -blue">
     <div class="section-background" style="background-image:url('dist/images/jc-gellidon-1386352-unsplash.jpg');"></div>
     <div class="-inner grid">
         <div class="section-content">
