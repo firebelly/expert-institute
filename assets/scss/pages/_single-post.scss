@@ -26,6 +26,11 @@ body.single-post {
   .post-carousel {
     margin: $padding-md 0;
 
+    + .post-content {
+      z-index: 1;
+      position: relative;
+    }
+
     .flickity-viewport {
       overflow: visible;
       transition: height .2s ease-out;
