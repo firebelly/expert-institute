@@ -4,7 +4,6 @@
 //=include "../bower_components/flickity/dist/flickity.pkgd.min.js"
 //=include "../bower_components/flickity-fade/flickity-fade.js"
 //=include "../bower_components/flickity-bg-lazyload/bg-lazyload.js"
-//=include "../bower_components/flickity-bg-lazyload/bg-lazyload.js"
 //=include "../bower_components/velocity/velocity.min.js"
 
 var Main = (function($) {
@@ -321,9 +320,15 @@ var Main = (function($) {
     });
 
     // Post Carousels
+    // trigger layout ready class when lazyloaded images load
+    $('.post-carousel').on('lazyLoad.flickity', function() {
+      $(this).addClass('layout-ready');
+    });
+
     $('.post-carousel').flickity({
       prevNextButtons: false,
       lazyLoad: 2,
+      imagesLoaded: true,
       pageDots: false,
       cellAlign: 'left',
       adaptiveHeight: true

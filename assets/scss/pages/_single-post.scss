@@ -32,8 +32,18 @@ body.single-post {
     }
 
     .flickity-viewport {
+      height: 0;
+      opacity: 0;
       overflow: visible;
-      transition: height .2s ease-out;
+      padding-bottom: 66.6666%;
+      transition: height .2s ease-out, opacity .4s ease-out;
+    }
+
+    &.layout-ready {
+      .flickity-viewport {
+        opacity: 1;
+        padding-bottom: 0;
+      }
     }
 
     figure {

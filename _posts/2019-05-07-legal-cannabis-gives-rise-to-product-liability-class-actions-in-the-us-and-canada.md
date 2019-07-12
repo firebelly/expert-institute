@@ -23,7 +23,7 @@ imageUrl: "/dist/images/5.7.19-blog-legal-cannabis-800x400.jpg"
 </div>
 
 
-<div class="post-carousel">
+<div class="post-carousel carousel-fadein">
     <figure class="landscape">
         <div class="image">
             <img data-flickity-lazyload="/dist/images/blog-post_01.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
