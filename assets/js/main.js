@@ -1,6 +1,7 @@
 /*jshint latedef:false*/
 
 //=include "../bower_components/jquery/dist/jquery.js"
+//=include "../bower_components/jquery.fitvids/jquery.fitvids.js"
 //=include "../bower_components/flickity/dist/flickity.pkgd.min.js"
 //=include "../bower_components/flickity-fade/flickity-fade.js"
 //=include "../bower_components/flickity-bg-lazyload/bg-lazyload.js"
@@ -39,6 +40,9 @@ var Main = (function($) {
 
     // Set screen size vars
     _resize();
+
+    // Fit them vids!
+    $('main').fitVids();
 
     // Transition elements to enable/disable on resize
     transitionElements = [$siteNav, $secondaryNav];
