@@ -141,7 +141,7 @@ bodyClasses: home
     <div class="site-wrapper">
         <h3 class="section-label">Testimonials</h3>
         <div class="section-content">
-            <div class="carousel two-up">
+            <div class="carousel two-up carousel-fadein">
                 <blockquote class="testimonial">
                     <div class="-inner">                    
                         <p>Expert Institute helps me tackle some of my most difficult cases. They quickly respond to my inquiries and schedule appointments to accommodate my deadlines.</p>

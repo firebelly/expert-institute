@@ -287,6 +287,15 @@ var Main = (function($) {
   }
 
   function _initFlickityCarousels() {
+    // Fade in carousel to hide FOUC
+    var $fadeInCarousels = $('.carousel-fadein');
+    $fadeInCarousels.each(function() {
+      $(this).on('ready.flickity', function() {
+        $(this).removeClass('carousel-fadein');
+      });
+    });
+
+    // General Carousels (testimonials for example)
     $('.carousel').flickity({
       groupCells: true,
       prevNextButtons: false,

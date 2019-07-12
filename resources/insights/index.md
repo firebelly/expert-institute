@@ -4,7 +4,7 @@ layout: default
 ---
 
 <div class="page-header carousel-header">
-    <div class="header-background image-carousel">
+    <div class="header-background image-carousel carousel-fadein">
         {% for post in site.posts %}
             <div class="image" style="background-image:url('{{ post.imageUrl }}');"></div>
         {% endfor %}
@@ -13,7 +13,7 @@ layout: default
         <div class="header-swoop">
             <svg class="swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 673.8 756"><path d="M673.8 756H0c87.7 0 169.9-42.6 220.5-114.2L673.8 0v756z"/></svg>
         </div>
-        <div class="header-text text-carousel">
+        <div class="header-text text-carousel carousel-fadein">
             {% for post in site.posts %}
                 <article class="header-article">
                     <div class="-inner">            

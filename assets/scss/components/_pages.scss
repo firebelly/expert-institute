@@ -145,10 +145,15 @@
         top: 0;
         left: 0;
         bottom: 0;
+        opacity: 0;
         width: 100%;
         position: absolute;
         background-size: cover;
         background-position: center center;
+
+        &.is-selected {
+          opacity: 1;
+        }
       }
     }
 
@@ -182,6 +187,10 @@
     }
 
     @include media-lg {
+      .text-carousel {
+        min-height: 800px;
+      }
+
       .flickity-page-dots {
         right: 0;
         top: auto;

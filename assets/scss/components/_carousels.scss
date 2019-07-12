@@ -24,3 +24,11 @@
     }
   }
 }
+
+// Carousels to be faded in to hide FOUC
+.carousel-fadein {
+  .flickity-viewport {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+}
