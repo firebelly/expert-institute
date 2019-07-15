@@ -303,6 +303,32 @@
   // Angled Page Headers (https://d.pr/i/p1LHmy)
   &.angled {
 
+    // Colors
+    @each $color, $value in $colors {
+      &.-#{$color} {
+        background-color: $value;
+
+        .header-text {
+          .subtitle,
+          p {
+            color: color(blue-dark);
+          }
+          .title {
+            color: color(white);
+          }
+          &::after {
+            background-color: $value;
+          }
+        }
+
+        + .section {
+          .section-label {
+            color: color(blue-dark);
+          }
+        }
+      }
+    }
+
     .header-background {
       background-size: cover;
       background-position: center center;
@@ -386,7 +412,7 @@
           position: absolute;
           transform-origin: top right;
           background-color: color(gray);
-          transform: rotate(-35deg) translate(100%,-30%);
+          transform: rotate(-35deg) translate(100%,30%);
         }
       }
     }

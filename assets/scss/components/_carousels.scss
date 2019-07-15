@@ -62,7 +62,5 @@
 
   @include media-md {
     padding: $padding-md 0;
-    margin-left: -$padding-sm;
-    width: calc(100% + #{$padding-sm});
   }
 }

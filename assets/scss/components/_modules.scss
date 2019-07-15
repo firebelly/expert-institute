@@ -20,6 +20,10 @@
   .item-image {
     width: 100%;
     padding: 0 $padding-sm;
+
+    img {
+      max-width: 220px;
+    }
   }
 
   .item-title {

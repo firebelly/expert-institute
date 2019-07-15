@@ -220,6 +220,21 @@
       }
     }
 
+    // Regular Page Showcase Section
+    &:not(.-top):not(.-bottom) {
+      .section-content::after {
+        bottom: 0;
+        left: 100%;
+        content: '';
+        width: 400%;
+        height: 100%;
+        position: absolute;
+        background-color: inherit;
+        transform: rotate(-55deg);
+        transform-origin: bottom left;
+      }
+    }
+
     // Top
     &.-top {
       .section-content::after {
