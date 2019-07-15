@@ -16,12 +16,11 @@
 
   // Centered text block
   &-centered-text {
-    padding: 96px 0;
-    text-align: center;
 
     .section-content {
-      margin: 0 auto;
       max-width: 660px;
+      margin: 96px auto;
+      text-align: center;
     }
 
     p {
@@ -31,7 +30,13 @@
     }
 
     @include media-md {
-      padding: 296px 0;
+      .section-content {
+        margin: 296px auto;
+
+        + .section-content {
+          margin-top: -116px;
+        }
+      }
 
       p {
         margin: 52px #{columns(2,23)} 0;

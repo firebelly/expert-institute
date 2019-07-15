@@ -1,0 +1,65 @@
+// Modules
+//
+// Inidividual modules styled independent of where they appear
+
+// Item Showcase Module (https://d.pr/i/nGdIbe)
+.module-item-showcase {
+  @extend .grid;
+  @extend .grid.spaced;
+  text-align: center;
+
+  .item {
+    margin-bottom: $padding-md;
+  }
+
+  .item-image,
+  .item-title {
+    margin: 0 auto $padding-sm;
+  }
+
+  .item-image {
+    width: 100%;
+    padding: 0 $padding-sm;
+  }
+
+  .item-title {
+    @include h2;
+  }
+
+  .item-text {
+    color: color(gray-dark);
+  }
+
+  .item-cta {
+    margin: $padding-sm auto 0;
+  }
+
+  @include media-md {
+    .item {
+      display: flex;
+      margin-bottom: 144px;
+      flex-direction: column;
+    }
+
+    .item-image,
+    .item-title {
+      margin-bottom: $padding-md;
+    }
+
+    .item-image {
+      padding: 0 $padding-md;
+    }
+
+    .item-title {
+      @include paragraph-style(36,42);
+    }
+
+    .item-cta {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      margin-top: $padding-md;
+      justify-content: flex-end;
+    }
+  }
+}

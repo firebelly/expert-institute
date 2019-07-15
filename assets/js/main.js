@@ -328,7 +328,7 @@ var Main = (function($) {
     $('.post-carousel').on('lazyLoad.flickity', function() {
       $(this).addClass('layout-ready');
     });
-
+    // Initialize post carousels
     $('.post-carousel').flickity({
       prevNextButtons: false,
       lazyLoad: 2,

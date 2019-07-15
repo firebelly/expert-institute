@@ -2,10 +2,108 @@
 //
 // common page elements, such as page headers (and variations)
 
+// Page Header
 .page-header {
   overflow: hidden;
   position: relative;
   background-color: color(white);
+
+  // Header Text
+  .header-text {
+    p {
+      margin: 0;
+      color: color(gray-dark);
+
+      + p {
+        margin-top: 1em;
+      }
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      margin-top: $padding-sm;
+
+      .author-photo {
+        overflow: hidden;
+        position: relative;
+        border-radius: 50%;
+        width: $padding-sm * 3;
+        height: $padding-sm * 3;
+
+        img {
+          top: 0;
+          left: 50%;
+          width: auto;
+          min-width: 100%;
+          min-height: 100%;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+      }
+
+      .author-text {
+        margin-left: $padding-sm;
+
+        .author-label {
+          margin: 0;
+          @include h3-simple;
+          color: color(blue-dark);
+        }
+
+        .author-name {
+          margin: 0;
+          font-weight: normal;
+
+          a {
+            text-decoration: none;
+            color: color(blue-light);
+            &:hover,
+            &:focus {
+              border-bottom: 1px solid;
+            }
+          }
+        }
+      }
+
+      @include media-lg {
+        margin-top: 140px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .title {
+    @include h2;
+    margin: 0 0 $padding-sm;
+
+    a {
+      text-decoration: none;
+      &.-hover,
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(to top,transparent 6px, color(blue-dark) 6px, color(blue-dark) 8px,transparent 0);
+      }
+    }
+
+    @include media-md {
+      margin-bottom: $padding-md;
+
+      a {
+        &.-hover,
+        &:hover,
+        &:focus {
+          background-image: linear-gradient(to top,transparent 9px, color(blue-dark) 9px, color(blue-dark) 11px,transparent 0);
+        }
+      }
+    }
+  }
+
+  .subtitle {
+    margin: 0;
+    @include h3;
+    color: color(blue-light);
+  }
 
   // With Swoop (https://d.pr/i/ii1084)
   // carousel headers share the same swoop styles
@@ -202,92 +300,93 @@
     }
   }
 
-  // Header Text
-  .header-text {
-    p {
-      margin: 0;
-      color: color(gray-dark);
+  // Angled Page Headers (https://d.pr/i/p1LHmy)
+  &.angled {
 
-      + p {
-        margin-top: 1em;
-      }
+    .header-background {
+      background-size: cover;
+      background-position: center center;
     }
 
-    .author {
-      display: flex;
-      align-items: center;
-      margin-top: $padding-sm;
+    .header-text {
+      padding: $padding-sm 0;
 
-      .author-photo {
-        overflow: hidden;
-        position: relative;
-        border-radius: 50%;
-        width: $padding-sm * 3;
-        height: $padding-sm * 3;
-
-        img {
-          top: 0;
-          left: 50%;
-          width: auto;
-          min-width: 100%;
-          min-height: 100%;
-          position: absolute;
-          transform: translateX(-50%);
-        }
-      }
-
-      .author-text {
-        margin-left: $padding-sm;
-
-        .author-label {
-          margin: 0;
-          @include h3-simple;
-          color: color(blue-dark);
-        }
-
-        .author-name {
-          margin: 0;
-          font-weight: normal;
-
-          a {
-            text-decoration: none;
-            color: color(blue-light);
-            &:hover,
-            &:focus {
-              border-bottom: 1px solid;
-            }
-          }
-        }
-      }
-
-      @include media-lg {
-        margin-top: 140px;
-        margin-bottom: 40px;
-      }
-    }
-  }
-
-  .title {
-    @include h2;
-    margin: 0 0 $padding-sm;
-
-    a {
-      text-decoration: none;
-      &.-hover,
-      &:hover,
-      &:focus {
-        background-image: linear-gradient(to top,transparent 6px, color(blue-dark) 6px, color(blue-dark) 8px,transparent 0);
+      .title {
+        margin-top: $padding-md;
       }
     }
 
     @include media-md {
-      margin-bottom: $padding-md;
+      overflow: visible;
 
-      a {
-        &.-hover,
-        &:hover,
-        &:focus {
-          background-image: linear-gradient(to top,transparent 9px, color(blue-dark) 9px, color(blue-dark) 11px,transparent 0);
+      + .section {
+        .section-label {
+          position: relative;
+          transform: translateY(-100%);
+        }
+        .section-content {
+          padding-top: $padding-lg;
+        }
+      }
+
+      .overflow-wrap {
+        overflow: hidden;
+      }
+
+      .header-background {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        position: absolute;
+      }
+
+      .header-text {
+        order: 0;
+        max-width: 50%;
+        flex-basis: 50%;
+        position: relative;
+        padding: $padding-lg columns(2,23) 280px 0;
+        &::after {
+          top: 0;
+          left: 100%;
+          content: '';
+          width: 400%;
+          height: 100%;
+          position: absolute;
+          transform: rotate(55deg);
+          transform-origin: top left;
+          background-color: color(white);
+        }
+
+        > .-inner {
+          z-index: 1;
+          position: relative;
+        }
+
+        .title {
+          margin: 74px 0 40px;
+        }
+      }
+
+      .after-shape {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+        &::before {
+          top: 0;
+          right: 50%;
+          z-index: 1;
+          width: 88%;
+          content: '';
+          height: 400%;
+          position: absolute;
+          transform-origin: top right;
+          background-color: color(gray);
+          transform: rotate(-35deg) translate(100%,-30%);
         }
       }
     }
@@ -308,6 +407,4 @@
       }
     }
   }
-
-
 }

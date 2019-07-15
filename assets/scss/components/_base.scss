@@ -9,6 +9,7 @@ html {
 
 body {
   @include p1;
+  overflow-x: hidden;
   @include font-smoothing;
   padding-top: $header-sm;
   color: color(blue-dark);

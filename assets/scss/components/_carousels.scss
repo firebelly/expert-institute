@@ -1,6 +1,14 @@
 // Carousels
 // adjustments made to flickity default styles
 
+// Carousels to be faded in to hide FOUC
+.carousel-fadein {
+  .flickity-viewport {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+}
+
 .carousel,
 .carousel-header {
   .flickity-viewport {
@@ -25,10 +33,36 @@
   }
 }
 
-// Carousels to be faded in to hide FOUC
-.carousel-fadein {
-  .flickity-viewport {
-    opacity: 0;
-    transition: opacity 1s ease-out;
+// Logo Carousel
+.logo-carousel {
+  padding: $padding-sm 0;
+
+  .flickity-slider {
+    display: flex;
+    align-items: center;
+  }
+
+  .flickity-page-dots {
+    top: 100%;
+  }
+
+  .logo {
+    padding: 0 $padding-sm;
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: auto;
+    max-width: 180px;
+    vertical-align: top;
+  }
+
+  @include media-md {
+    padding: $padding-md 0;
+    margin-left: -$padding-sm;
+    width: calc(100% + #{$padding-sm});
   }
 }
