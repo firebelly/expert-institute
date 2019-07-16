@@ -35,6 +35,10 @@
       background-color: color(gray-light);
     }
 
+    + .pricing-tier {
+      margin-top: $padding-sm;
+    }
+
     ul {
       @extend .semantic-list;
       margin-top: $padding-sm;
@@ -55,6 +59,10 @@
     @include media-md {
       > .-inner {
         padding: $padding-md;
+      }
+
+      + .pricing-tier {
+        margin-top: 0;
       }
     }
   }
