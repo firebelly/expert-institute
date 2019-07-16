@@ -32,6 +32,7 @@
 
   .item-text {
     color: color(gray-dark);
+    @include ginto-normal-light;
   }
 
   .item-cta {

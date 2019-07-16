@@ -9,27 +9,27 @@
   }
 }
 
+.flickity-page-dots {
+  bottom: 0;
+
+  .dot {
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    background: none;
+    border: 1px solid color(blue-light);
+
+    &.is-selected {
+      background-color: color(blue-light);
+    }
+  }
+}
+
 .carousel,
 .carousel-header {
   .flickity-viewport {
     transition: height .2s ease-out;
-  }
-
-  .flickity-page-dots {
-    bottom: 0;
-
-    .dot {
-      opacity: 1;
-      width: 12px;
-      height: 12px;
-      margin: 0 6px;
-      background: none;
-      border: 1px solid color(blue-light);
-
-      &.is-selected {
-        background-color: color(blue-light);
-      }
-    }
   }
 }
 

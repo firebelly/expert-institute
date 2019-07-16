@@ -13,6 +13,7 @@
     p {
       margin: 0;
       color: color(gray-dark);
+      @include ginto-normal-light;
 
       + p {
         margin-top: 1em;
@@ -357,6 +358,7 @@
       height: 230px;
       position: relative;
       background-size: cover;
+      background-color: color(gray);
       background-position: center top;
       &::before {
         left: 0;
