@@ -54,6 +54,7 @@ var Main = (function($) {
     _initFormFunctions();
     _initHoverPairs();
     _initFlickityCarousels();
+    _initAccordions();
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -345,6 +346,45 @@ var Main = (function($) {
       groupCells: true,
       contain: true
     });
+  }
+
+  function _initAccordions() {
+    // Activate/deactive functions
+    $('.accordion').each(function() {
+      var $accordion = $(this),
+          $toggle = $accordion.find('.accordion-toggle'),
+          $content = $accordion.find('.accordion-content');
+
+      $toggle.append('<svg class="expand-contract" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.1 7.1"><path d="M14.1 0H12L7.1 4.9 2.1 0H0l7.1 7.1z"/></svg>');
+
+      $toggle.on('click', function(e) {
+        if ($accordion.is('.-active')) {
+          _collapseAccordion($accordion);
+        } else {
+          _expandAccordion($accordion);
+        }
+      });
+    });
+  }
+
+  function _deactivateAccordion($accordion) {
+    $accordion.removeClass('-active');
+    $accordion.find('.expand-contract').removeClass('-active');
+  }
+
+  function _activateAccordion($accordion) {
+    $accordion.addClass('-active');
+    $accordion.find('.expand-contract').addClass('-active');
+  }
+
+  function _collapseAccordion($accordion) {
+    _deactivateAccordion($accordion);
+    $accordion.find('.accordion-content').slideUp(250);
+  }
+
+  function _expandAccordion($accordion) {
+    _activateAccordion($accordion);
+    $accordion.find('.accordion-content').slideDown(250);
   }
 
   // Disabling transitions on certain elements on resize

@@ -27,6 +27,13 @@
 }
 @font-face {
   font-family: 'Ginto Normal';
+  src: url('../fonts/GintoNormal-Bold.woff') format('woff'),
+       url('../fonts/GintoNormal-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ginto Normal';
   src: url('../fonts/GintoNormal-RegularIta.woff') format('woff'),
        url('../fonts/GintoNormal-RegularIta.woff2') format('woff2');
   font-weight: 500;

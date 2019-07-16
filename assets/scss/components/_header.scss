@@ -213,7 +213,8 @@
     }
 
     .top-level.-current {
-      > a {
+      > a,
+      .nav-parent-label {
         color: color(blue-light);
       }
     }

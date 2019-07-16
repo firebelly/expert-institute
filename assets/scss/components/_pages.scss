@@ -105,6 +105,30 @@
     color: color(blue-light);
   }
 
+  // Centered (https://d.pr/i/kActXy)
+  &.centered {
+    text-align: center;
+    padding: $padding-md 0;
+
+    .header-text {
+      margin: 0 auto;
+      max-width: 660px;
+    }
+
+    .subtitle {
+      border: none;
+    }
+
+    @include media-md {
+      padding: 114px 0 180px;
+
+      .title {
+        margin-top: 52px;
+        padding: 0 columns(1,11);
+      }
+    }
+  }
+
   // With Swoop (https://d.pr/i/ii1084)
   // carousel headers share the same swoop styles
   &.swooped,
