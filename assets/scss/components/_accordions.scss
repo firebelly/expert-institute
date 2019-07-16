@@ -4,11 +4,11 @@
   .accordion-toggle {
     margin: 0;
     z-index: 1;
+    line-height: 1;
     cursor: pointer;
-    line-height: 48px;
     position: relative;
-    padding-right: 40px;
     font-weight: normal;
+    padding: 14px 40px 15px 0;
     &::before {
       top: -1px;
       opacity: 0;

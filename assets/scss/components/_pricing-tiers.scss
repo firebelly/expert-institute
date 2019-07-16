@@ -58,11 +58,20 @@
 
     @include media-md {
       > .-inner {
+        height: 100%;
+        display: flex;
         padding: $padding-md;
+        flex-direction: column;
       }
 
       + .pricing-tier {
         margin-top: 0;
+      }
+
+      .cta {
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
       }
     }
   }
