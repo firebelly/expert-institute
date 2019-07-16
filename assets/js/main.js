@@ -337,6 +337,14 @@ var Main = (function($) {
       cellAlign: 'left',
       adaptiveHeight: true
     });
+
+    // Logo Carousels
+    $('.logo-carousel').flickity({
+      prevNextButtons: false,
+      imagesLoaded: true,
+      groupCells: true,
+      contain: true
+    });
   }
 
   // Disabling transitions on certain elements on resize

@@ -330,12 +330,24 @@
     }
 
     .header-background {
+      height: 230px;
+      position: relative;
       background-size: cover;
-      background-position: center center;
+      background-position: center top;
+      &::before {
+        left: 0;
+        bottom: 0;
+        top: 50px;
+        z-index: 1;
+        width: 100%;
+        content: '';
+        position: absolute;
+        background-image: linear-gradient(to right top, color(white) 0%, color(white) 50%, transparent 50%);
+      }
     }
 
     .header-text {
-      padding: $padding-sm 0;
+      padding: 0 0 $padding-sm;
 
       .title {
         margin-top: $padding-md;
@@ -364,7 +376,12 @@
         right: 0;
         bottom: 0;
         width: 50%;
+        height: 100%;
         position: absolute;
+        background-position: center right;
+        &::before {
+          display: none;
+        }
       }
 
       .header-text {

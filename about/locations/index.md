@@ -65,3 +65,16 @@ bodyClasses: locations template-a
         </div>
     </div>
 </section>
+
+<div class="section showcase-section -blue-dark">
+    <div class="overflow-wrap">    
+        <div class="section-background" style="background-image:url('/dist/images/2097489.jpg');"></div>
+        <div class="-inner grid">
+            <div class="section-content">        
+                <h1 class="block-title">Our Story</h1>
+                <p>We’re revolutionizing the way attorneys find and retain expert witnesses.</p>
+                <p class="block-cta"><a href="/about/our-story" class="button">Learn About Us</a></p>
+            </div>
+        </div>
+    </div>
+</div>

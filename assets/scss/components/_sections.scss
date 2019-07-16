@@ -100,6 +100,12 @@
       @include ginto-normal-light;
     }
   }
+  // Dark Blue sections get gold buttons
+  &.-blue-dark {
+    .block-cta .button {
+      @extend .-gold;
+    }
+  }
 
   .section-background {
     left: 0;

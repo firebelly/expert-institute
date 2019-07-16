@@ -36,6 +36,7 @@
 // Logo Carousel
 .logo-carousel {
   padding: $padding-sm 0;
+  margin: 0 0 $padding-md;
 
   .flickity-slider {
     display: flex;
@@ -62,5 +63,6 @@
 
   @include media-md {
     padding: $padding-md 0;
+    margin: 0 0 $padding-md;
   }
 }

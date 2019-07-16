@@ -21,10 +21,10 @@ primaryNav:
         path: /process/pricing/
       - title: Partnership Program
         path: /process/partnership-program/
-      - title: Become an Expert
-        path: /process/become-an-expert/
       - title: Request an Expert
         path: /process/request-an-expert/
+      - title: Become an Expert
+        path: /process/become-an-expert/
 
   - title: Results
     path: /results/
