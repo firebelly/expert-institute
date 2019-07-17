@@ -3,7 +3,7 @@ nameFirst: Raphael
 nameLast: Ventura
 title: Vice President
 education: B.S., Rutgers University
-email: raphael@theexpertinstitute.com
+email: raphael@expertinstitute.com
 categories: Sales
 social:
   - label: LinkedIn

@@ -3,7 +3,7 @@ nameFirst: Dan
 nameLast: Schultz
 title: Senior Director
 education: B.S., Washington University, M.B.A., Washburn University
-email: fcaracciolo@theexpertinstitute.com
+email: fcaracciolo@expertinstitute.com
 categories: Sales
 social:
   - label: LinkedIn

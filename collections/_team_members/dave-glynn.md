@@ -3,7 +3,7 @@ nameFirst: Dave
 nameLast: Glynn
 title: Vice President
 education: B.A., Georgetown University
-email: dave@theexpertinstitute.com
+email: dave@expertinstitute.com
 categories: Sales
 social:
   - label: LinkedIn

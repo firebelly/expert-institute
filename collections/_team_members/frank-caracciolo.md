@@ -3,7 +3,7 @@ nameFirst: Frank
 nameLast: Caracciolo
 title: Regional Sales Director
 education: B.A., Rowan University
-email: fcaracciolo@theexpertinstitute.com
+email: fcaracciolo@expertinstitute.com
 categories: Sales
 social:
   - label: LinkedIn

@@ -2,7 +2,7 @@
 nameFirst: Philipp
 nameLast: Stanislowski
 title: CTO
-email: philipp@theexpertinstitute.com
+email: philipp@expertinstitute.com
 categories: Leadership
 imageUrl: /dist/images/bios/Philipp-D1.jpg
 bioExcerpt: Praesent commodo cursus magna, vel scelerisque nisl consectetur et.

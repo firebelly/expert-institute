@@ -3,7 +3,7 @@ nameFirst: Paul
 nameLast: Lee
 title: Vice President
 education: B.A., Rutgers University
-email: paul@theexpertinstitute.com
+email: paul@expertinstitute.com
 categories: Sales
 social:
   - label: LinkedIn

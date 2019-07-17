@@ -1,7 +1,7 @@
 ---
 title: Our Team
 layout: default
-bodyClasses: our-team template-a
+bodyClasses: our-team
 ---
 
 <!-- create categories array-->
