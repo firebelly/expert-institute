@@ -10,17 +10,22 @@
   }
 
   .bio {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    margin-bottom: $padding-sm * 3;
+    height: 180px;
+    margin-bottom: 42px;
 
-    &:hover,
-    &.-hover {
-      .bio-name {
-        color: color(blue-light);
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+      &:hover,
+      &.-hover {
+        .bio-name {
+          color: color(blue-light);
+        }
       }
     }
+
 
     .bio-image {
       overflow: hidden;
@@ -68,11 +73,20 @@
       margin-top: $padding-sm;;
     }
 
+    @include media-sm {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      flex-dierction: column;
+    }
+
     @include media-md {
-      &:hover,
-      &.-hover {
-        .bio-image {
-          transform: scale(1.5);
+      a {
+        &:hover,
+        &.-hover {
+          .bio-image {
+            transform: scale(1.5);
+          }
         }
       }
 

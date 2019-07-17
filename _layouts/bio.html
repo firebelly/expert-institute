@@ -16,33 +16,33 @@ bodyClasses: single-bio
             <a href="/about/our-team">Team</a>
           </div>
           <h1 class="title">{{ page.nameFirst }}<br> {{ page.nameLast }}</h1>
-          <ul class="bio-meta">
+          <ul class="bio-meta grid spaced">
             {% if page.title %}
-              <li class="work-title">
+              <li class="work-title col-md-1-2">
                 <h6 class="label">Title</h6>
                 <h6 class="value">{{ page.title }}</h6>
               </li>
             {% endif %}
             {% if page.education %}
-              <li class="education">
+              <li class="education col-md-1-2">
                 <h6 class="label">Education</h6>
                 <h6 class="value">{{ page.education }}</h6>
               </li>
             {% endif %}
-            {% if page.email %}
-              <li class="email">
-                <h6 class="label">Email</h6>
-                <a href="mailto:{{ page.email }}" class="value">{{ page.email }}</a>
-              </li>
-            {% endif %}
             {% if page.categories %}
-              <li class="team">
+              <li class="team col-md-1-2">
                 <h6 class="label">Team</h6>
                 <h6 class="value">{{ page.categories[0] }}</h6>
               </li>
             {% endif %}
+            {% if page.email %}
+              <li class="email col-md-1-2">
+                <h6 class="label">Email</h6>
+                <a href="mailto:{{ page.email }}" class="value">{{ page.email }}</a>
+              </li>
+            {% endif %}
             {% if page.social %}
-              <li class="social">
+              <li class="social col-md-1-2">
                 <h6 class="label">Social</h6>
                 <ul class="value">
                   {% for network in page.social %}
@@ -52,7 +52,7 @@ bodyClasses: single-bio
               </li>
             {% endif %}
             {% if page.phone %}
-              <li class="phone">
+              <li class="phone col-md-1-2">
                 <h6 class="label">Phone</h6>
                 <h6 class="value">{{ page.phone }}</h6>
               </li>

@@ -389,13 +389,15 @@ var Main = (function($) {
   }
 
   function _initBioFunctions() {
-    $('.bio').on('mouseenter', function(e) {
-      if ($(this).find('.bio-excerpt').length) {
-        $(this).find('.bio-excerpt').velocity('slideDown', { duration: 250, easing: 'easeOutSine' });
+    $('.bio a').on('mouseenter', function() {
+      var $bio = $(this).closest('.bio');
+      if ($bio.find('.bio-excerpt').length) {
+        $bio.find('.bio-excerpt').velocity('slideDown', { duration: 250, easing: 'easeOutSine' });
       }
-    }).on('mouseleave', function(e) {
-      if ($(this).find('.bio-excerpt').length) {
-        $(this).find('.bio-excerpt').velocity('slideUp', { duration: 250, easing: 'easeOutSine' });
+    }).on('mouseleave', function() {
+      var $bio = $(this).closest('.bio');
+      if ($bio.find('.bio-excerpt').length) {
+        $bio.find('.bio-excerpt').velocity('slideUp', { duration: 250, easing: 'easeOutSine' });
       }
     });
   }
