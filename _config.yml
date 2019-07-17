@@ -24,6 +24,13 @@ destination: _build
 markdown: kramdown
 plugins:
 
+# Collections
+collections_dir: collections
+collections:
+  team_members:
+    output: true
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

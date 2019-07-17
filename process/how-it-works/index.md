@@ -83,14 +83,12 @@ bodyClasses: how-it-works template-a
 </div>
 
 <div class="section showcase-section -teal">
-    <div class="overflow-wrap">    
-        <div class="section-background" style="background-image:url('/dist/images/clem-onojeghuo-215220-unsplash.jpg');"></div>
-        <div class="-inner grid">
-            <div class="section-content">        
-                <h1 class="block-title">Measurable<br> Impact</h1>
-                <p>Learn how our best-in-class experts have helped attorneys recover billions of dollars for their clients.</p>
-                <p class="block-cta"><a href="/measurable-impact" class="button">Explore the Outcomes</a></p>
-            </div>
+    <div class="section-background" style="background-image:url('/dist/images/clem-onojeghuo-215220-unsplash.jpg');"></div>
+    <div class="-inner grid">
+        <div class="section-content">        
+            <h1 class="block-title">Measurable<br> Impact</h1>
+            <p>Learn how our best-in-class experts have helped attorneys recover billions of dollars for their clients.</p>
+            <p class="block-cta"><a href="/measurable-impact" class="button">Explore the Outcomes</a></p>
         </div>
     </div>
 </div>

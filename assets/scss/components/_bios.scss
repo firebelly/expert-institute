@@ -1,0 +1,80 @@
+// Bios
+
+.bio-grid {
+  @extend .grid;
+  @extend .grid.spaced;
+  margin-top: $padding-md;
+
+  @include media-md {
+    margin-top: $padding-lg;
+  }
+
+  .bio {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: $padding-sm * 3;
+
+    &:hover,
+    &.-hover {
+      .bio-image {
+        transform: scale(1.5);
+      }
+      .bio-name {
+        color: color(blue-light);
+      }
+    }
+
+    .bio-image {
+      overflow: hidden;
+      position: relative;
+      border-radius: 50%;
+      height: $padding-lg;
+      min-width: $padding-lg;
+      transition: transform .2s ease-out;
+
+      img {
+        top: 0;
+        left: 50%;
+        min-width: 150%;
+        min-height: 100%;
+        position: absolute;
+        transform: translateX(-50%);
+      }
+    }
+
+    .bio-text {
+      margin-left: $padding-sm;
+
+      > * {
+        margin: 0;
+        font-weight: normal;
+      }
+    }
+
+    .bio-name {
+      @include p1;
+    }
+
+    .bio-title {
+      @include h3-simple;
+      color: color(gray-dark);
+    }
+
+    .bio-department {
+      @include h3-simple;
+    }
+
+    .bio-excerpt {
+      display: none;
+      color: color(gray-dark);
+      margin-top: $padding-sm;;
+    }
+
+    @include media-md {
+      .bio-text {
+        margin-left: $padding-md;
+      }
+    }
+  }
+}

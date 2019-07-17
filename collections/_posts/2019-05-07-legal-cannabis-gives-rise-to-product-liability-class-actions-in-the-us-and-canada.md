@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title:  "Legal Cannabis Gives Rise to Product Liability Class Actions in the US and Canada"
 pageClasses: single-post
 categories: [news]

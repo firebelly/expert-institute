@@ -227,7 +227,7 @@
     }
 
     // Regular Page Showcase Section
-    &:not(.-top):not(.-middle):not(.-bottom) {
+    &:not(.-top):not(.-middle):not(.-bottom):not(.page-header) {
       .section-content::after {
         bottom: 0;
         left: 100%;

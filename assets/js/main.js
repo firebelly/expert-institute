@@ -55,6 +55,7 @@ var Main = (function($) {
     _initHoverPairs();
     _initFlickityCarousels();
     _initAccordions();
+    _initBioFunctions();
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -385,6 +386,18 @@ var Main = (function($) {
   function _expandAccordion($accordion) {
     _activateAccordion($accordion);
     $accordion.find('.accordion-content').slideDown(250);
+  }
+
+  function _initBioFunctions() {
+    $('.bio').on('mouseenter', function(e) {
+      if ($(this).find('.bio-excerpt').length) {
+        $(this).find('.bio-excerpt').velocity('slideDown', { duration: 250, easing: 'easeOutSine' });
+      }
+    }).on('mouseleave', function(e) {
+      if ($(this).find('.bio-excerpt').length) {
+        $(this).find('.bio-excerpt').velocity('slideUp', { duration: 250, easing: 'easeOutSine' });
+      }
+    });
   }
 
   // Disabling transitions on certain elements on resize

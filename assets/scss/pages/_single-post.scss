@@ -2,7 +2,8 @@
 //
 // This template is shared between single blog posts and bio posts
 
-body.single-post {
+body.single-post,
+body.single-bio {
   max-width: 100%;
   overflow-x: hidden;
 
@@ -158,6 +159,62 @@ body.single-post {
           width: 100%;
           position: absolute;
         }
+      }
+    }
+  }
+}
+
+// Single Bio Content
+body.single-bio {
+  .page-header.swooped.-right .header-text {
+    .title {
+      margin-bottom: $padding-sm;
+
+      @include media-md {
+        margin-bottom: $padding-lg;
+      }
+    }
+  }
+
+  .bio-meta {
+    display: flex;
+    flex-wrap: wrap;
+    @extend .semantic-list;
+
+    > li {
+      @extend .col-1-2;
+      @extend .col-md-1-3;
+      padding-right: $padding-sm;
+      margin-bottom: $padding-sm;
+
+      a {
+        &:hover,
+        &:focus {
+          color: color(blue-light);
+        }
+        &:visited {
+          color: color(gray-dark);
+        }
+      }
+    }
+
+    .label {
+      margin: 0;
+      @include h3-simple;
+      color: color(gray-dark);
+    }
+
+    .value {
+      margin: 0;
+      @include p1;
+      @extend .semantic-list;
+    }
+
+    @include media-md {
+      padding-bottom: 72px;
+
+      > li {
+        margin-bottom: $padding-md;
       }
     }
   }

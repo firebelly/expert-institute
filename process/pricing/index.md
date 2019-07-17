@@ -136,7 +136,7 @@ bodyClasses: pricing template-a
                     <div class="-inner">                    
                         <p>Expert Institute helps me tackle some of my most difficult cases. They quickly respond to my inquiries and schedule appointments to accommodate my deadlines.</p>
                         <footer>
-                            <div class="testimonial-photo"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
+                            <div class="testimonial-image"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
                             <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
                         </footer>
                     </div>
@@ -145,7 +145,7 @@ bodyClasses: pricing template-a
                     <div class="-inner">                    
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                         <footer>
-                            <div class="testimonial-photo"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
+                            <div class="testimonial-image"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
                             <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
                         </footer>
                     </div>
@@ -154,7 +154,7 @@ bodyClasses: pricing template-a
                     <div class="-inner">
                         <p>Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
                         <footer>
-                            <div class="testimonial-photo"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
+                            <div class="testimonial-image"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
                             <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
                         </footer>
                     </div>
@@ -163,7 +163,7 @@ bodyClasses: pricing template-a
                     <div class="-inner">                    
                         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod..</p>
                         <footer>
-                            <div class="testimonial-photo"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
+                            <div class="testimonial-image"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
                             <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
                         </footer>
                     </div>

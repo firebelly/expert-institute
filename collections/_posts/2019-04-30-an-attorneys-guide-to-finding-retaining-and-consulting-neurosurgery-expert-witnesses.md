@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title:  "An Attorney’s Guide To Finding, Retaining & Consulting Neurosurgery Expert Witnesses"
 pageClasses: single-post
 categories: [news]
