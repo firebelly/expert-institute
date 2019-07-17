@@ -17,9 +17,6 @@
 
     &:hover,
     &.-hover {
-      .bio-image {
-        transform: scale(1.5);
-      }
       .bio-name {
         color: color(blue-light);
       }
@@ -72,6 +69,13 @@
     }
 
     @include media-md {
+      &:hover,
+      &.-hover {
+        .bio-image {
+          transform: scale(1.5);
+        }
+      }
+
       .bio-text {
         margin-left: $padding-md;
       }
