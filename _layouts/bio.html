@@ -32,7 +32,7 @@ bodyClasses: single-bio
             {% if page.email %}
               <li class="email">
                 <h6 class="label">Email</h6>
-                <h6 class="value">{{ page.email }}</h6>
+                <a href="mailto:{{ page.email }}" class="value">{{ page.email }}</a>
               </li>
             {% endif %}
             {% if page.categories %}
