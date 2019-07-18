@@ -41,6 +41,131 @@
       padding: $padding-md 0;
     }
   }
+
+  // Color Swoop
+  &.colored-swoop {
+
+    //Colors
+    @each $color, $value in $colors {
+      &.-#{$color} {
+        .swoop {
+          &::after {
+            background-color: $value;
+          }
+          svg {
+            fill: $value;
+          }
+        }
+      }
+    }
+
+    > .-inner {
+      padding: 0;
+    }
+
+    .sub-title {
+      z-index: 1;
+      @include h3;
+      position: relative;
+      margin: 0 $padding-sm $padding-sm;
+    }
+
+    .text {
+      z-index: 1;
+      position: relative;
+      @extend .col-md-1-2;
+      padding: 0 $padding-sm;
+
+      &.-left {
+        padding-bottom: $padding-md;
+      }
+
+      &.-right {
+        padding-top: $padding-sm;
+        background-color: color(gray-light);
+
+        &::before {
+          left: 0;
+          width: 100%;
+          content: '';
+          bottom: 100%;
+          position: absolute;
+          height: $padding-md;
+          background-image: linear-gradient(to right top, color(gray-light) 0%, color(gray-light) 50%, transparent 50%);
+        }
+      }
+    }
+
+    .swoop {
+      display: none;
+
+      svg {
+        height: 100%;
+      }
+    }
+
+    @include media-md {
+      > .-inner {
+        padding: $padding-lg $padding-md 0;
+      }
+
+      .sub-title {
+        margin: 0 0 $padding-sm * 3 0;
+      }
+
+      .swoop {
+        bottom: 0;
+        right: 50%;
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: right;
+        position: absolute;
+        margin-right: -#{columns(2.5,23)};
+
+        &::after {
+          top: 0;
+          bottom: 0;
+          left: 100%;
+          content: '';
+          width: 100%;
+          position: absolute;
+        }
+      }
+
+      .text {
+        padding-left: 0;
+        padding-right: 0;
+
+        &.-left {
+          padding-bottom: 200px;
+        }
+
+        &.-right {
+          padding-top: 0;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    @include media-nav {
+      > .-inner {
+        padding-left: $padding-lg;
+        padding-right: $padding-lg;
+      }
+
+      .text {
+        &.-left {
+          padding-right: columns(4.5,23);
+        }
+        &.-right {
+          padding: 0 columns(2,23) 0 columns(2.5,23);
+        }
+      }
+    }
+  }
 }
 
 // Section Label

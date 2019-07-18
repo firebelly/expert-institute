@@ -136,6 +136,18 @@
   &.carousel-header {
     margin-bottom: $padding-md;
 
+    // Colors
+    @each $color, $value in $colors {
+      &.-#{$color} {
+        .header-text {
+          background-color: $value;
+        }
+        .header-swoop .swoop {
+          fill: $value;
+        }
+      }
+    }
+
     .header-background {
       height: 230px;
       position: relative;

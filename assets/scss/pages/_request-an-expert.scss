@@ -1,0 +1,146 @@
+// Request An Expert Page
+
+body.request-an-expert {
+  .page-header {
+    overflow: visible;
+
+    .sub-title {
+      color: color(blue-light);
+    }
+    .text.-left {
+      p {
+        color: color(blue-light);
+      }
+    }
+  }
+
+  // Sticky form
+  #sticky-form-container {
+    position: relative;
+
+    @include media-md {
+      &.sticky-surpassed {
+        .page-header {
+          &,
+          .text.-right,
+          > .-inner {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+  .sticky-form {
+
+    textarea {
+      resize: none;
+    }
+
+    @include media-md {
+      right: 0;
+      z-index: 1;
+      position: absolute;
+      left: columns(5,23);
+      pointer-events: none;
+
+      &.stuck-up,
+      &.stuck-down,
+      &.sticky-surpassed {
+        left: 50%;
+        width: 100%;
+        position: fixed;
+        padding: 0 $padding-md;
+        max-width: $sitewrapper;
+        transform: translateX(-50%);
+        top: $header-sm + $padding-md;
+
+        form {
+          float: right;
+          width: columns(9,23);
+        }
+      }
+
+      &.stuck-up {
+        top: auto;
+        bottom: $padding-md;
+      }
+
+      &.sticky-surpassed {
+        display: flex;
+        position: absolute;
+        bottom: $padding-md;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        form {
+          float: none;
+        }
+      }
+
+      form {
+        pointer-events: auto;
+      }
+    }
+
+
+    @include media-lg {
+      right: 0;
+      left: columns(5,23);
+
+      &.stuck-up,
+      &.stuck-down,
+      &.sticky-surpassed {
+
+        form {
+          width: columns(9,23);
+        }
+      }
+    }
+
+    @include media-nav {
+      left: columns(4,23);
+      right: columns(4,23);
+
+      &.stuck-up,
+      &.stuck-down,
+      &.sticky-surpassed {
+        padding: 0 $padding-lg;
+        top: $header-md + $padding-md;
+
+        form {
+          width: columns(7.5,23);
+          margin-right: columns(2,23);
+        }
+      }
+    }
+  }
+
+  .form-text {
+    .section-content {
+      p {
+        margin: 0;
+
+        &.h1 {
+          margin: 0 0 $padding-sm;
+        }
+      }
+
+      + .section-content {
+        margin-top: $padding-sm;
+      }
+    }
+
+    @include media-md {
+      padding-top: $padding-lg;
+
+      .section-content {
+        width: 50%;
+        padding-right: columns(2.5,23);
+
+        + .section-content {
+          margin-top: $padding-lg;
+        }
+      }
+    }
+  }
+}

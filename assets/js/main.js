@@ -6,6 +6,8 @@
 //=include "../bower_components/flickity-fade/flickity-fade.js"
 //=include "../bower_components/flickity-bg-lazyload/bg-lazyload.js"
 //=include "../bower_components/velocity/velocity.min.js"
+//=include "../bower_components/waypoints/lib/jquery.waypoints.js"
+//=include "../bower_components/waypoints/lib/shortcuts/sticky.js"
 
 var Main = (function($) {
 
@@ -56,6 +58,7 @@ var Main = (function($) {
     _initFlickityCarousels();
     _initAccordions();
     _initBioFunctions();
+    _initStickyElements();
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -399,6 +402,25 @@ var Main = (function($) {
       if ($bio.find('.bio-excerpt').length) {
         $bio.find('.bio-excerpt').velocity('slideUp', { duration: 250, easing: 'easeOutSine' });
       }
+    });
+  }
+
+  function _initStickyElements() {
+    $('.sticky-form').waypoint(function(direction) {
+      $('.sticky-form').toggleClass('stuck-down', direction === 'down');
+      $('.sticky-form').removeClass('stuck-up', direction === 'up');
+    },{
+      offset: function() {
+        return $siteHeader.outerHeight() + 60;
+      }
+    });
+
+    $('#sticky-form-container').waypoint(function(direction) {
+      $('.sticky-form').removeClass('stuck-down');
+      $('.sticky-form').toggleClass('stuck-up', direction === 'up');
+      $('#sticky-form-container, .sticky-form').toggleClass('sticky-surpassed', direction === 'down');
+    },{
+      offset: 'bottom-in-view'
     });
   }
 
