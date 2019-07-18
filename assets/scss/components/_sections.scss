@@ -215,7 +215,9 @@
   }
 
   // Teal Background sections get blue-dark text
-  &.-teal {
+  &.-teal,
+  &.-mint,
+  &.-gray {
     .section-content {
       color: color(blue-dark);
     }
