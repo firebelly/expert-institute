@@ -24,6 +24,24 @@
     background-color: color(gray-light);
   }
 
+  //Colors
+  @each $color, $value in $colors {
+    &.-#{$color} {
+      > .-inner {
+        background-color: $value;
+      }
+
+      .card-image::after {
+        background-image: linear-gradient(to right bottom, $value 0%, $value 50%, transparent 50%);
+      }
+    }
+  }
+
+  &.-gold,
+  &.-blue-dark {
+    color: color(white);
+  }
+
   @include media-md {
     margin-bottom: $padding-md;
 
@@ -172,12 +190,19 @@
       height: auto;
 
       .image {
-        background-size: auto 100%;
+        background-size: cover;
       }
 
       &::after {
         bottom: 0;
       }
+    }
+  }
+
+  // Showcase Card Variation (https://d.pr/i/D0OvJ8)
+  &.showcase-card {
+    .card-title {
+      @include h2;
     }
   }
 }
