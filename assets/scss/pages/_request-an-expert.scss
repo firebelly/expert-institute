@@ -138,7 +138,7 @@ body.request-an-expert {
         padding-right: columns(2.5,23);
 
         + .section-content {
-          margin-top: $padding-lg;
+          margin-top: $padding-lg * 2;
         }
       }
     }
