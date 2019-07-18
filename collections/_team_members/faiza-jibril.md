@@ -4,7 +4,7 @@ nameLast: Jibril
 title: Vice President
 education: B.SC, University of East Anglia, M.B.B.S., ABU
 email: faiza@expertinstitute.com
-categories: Sales
+team: Sales
 social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/faizapatten

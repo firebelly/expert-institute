@@ -358,6 +358,10 @@
           }
         }
 
+        .after-shape::before {
+          background-color: lighten($value,30%);
+        }
+
         + .section {
           .section-label {
             color: color(blue-dark);

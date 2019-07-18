@@ -1,6 +1,32 @@
 // Accordions
 
+// List of accordions
+.accordion-list {
+  @extend .semantic-list;
+
+  &.-light {
+    .accordion-toggle {
+      &::before {
+        background-color: color(gray-light);
+      }
+    }
+  }
+
+  li {
+    border-top: 1px solid color(gray);
+
+    &:last-of-type {
+      border-bottom: 1px solid color(gray);
+    }
+  }
+}
+
 .accordion {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+
   .accordion-toggle {
     margin: 0;
     z-index: 1;
@@ -48,6 +74,8 @@
 
     p {
       margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 

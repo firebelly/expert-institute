@@ -4,7 +4,7 @@ nameLast: Talve
 title: CEO / Managing Director
 education: B.S., Babson College
 email: michael@expertinstitute.com
-categories: Leadership
+team: Leadership
 social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/michael-talve-03aaa12

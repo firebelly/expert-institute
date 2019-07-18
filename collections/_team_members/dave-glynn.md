@@ -4,7 +4,7 @@ nameLast: Glynn
 title: Vice President
 education: B.A., Georgetown University
 email: dave@expertinstitute.com
-categories: Sales
+team: Sales
 social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/david-glynn-3b201123

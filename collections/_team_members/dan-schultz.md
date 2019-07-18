@@ -4,7 +4,7 @@ nameLast: Schultz
 title: Senior Director
 education: B.S., Washington University, M.B.A., Washburn University
 email: fcaracciolo@expertinstitute.com
-categories: Sales
+team: Sales
 social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/frank-caracciolo-nj/

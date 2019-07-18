@@ -189,8 +189,11 @@
     &.-#{$color} {
       background-color: $value;
 
-      .section-background::before {
-        background-image: linear-gradient(to right bottom, $value 0%, $value 50%, transparent 50%);
+      .section-background {
+        background-color: lighten($value,10%);
+        &::before {
+          background-image: linear-gradient(to right bottom, $value 0%, $value 50%, transparent 50%);
+        }
       }
 
       .section-content {
@@ -267,6 +270,26 @@
     display: none;
   }
 
+  // With actual image instead of background image
+  &.with-image {
+    padding-bottom: 400px;
+
+    .section-background {
+      height: 400px;
+
+      img {
+        left: 0;
+        top: 60%;
+        z-index: 2;
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        position: relative;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
   @include media-md {
     padding: 0;
 
@@ -327,6 +350,30 @@
       }
     }
 
+    // With actual image instead of background image
+    &.with-image {
+      padding: 0;
+
+      .section-background {
+        height: 100%;
+        img {
+          top: 50%;
+          left: $padding-md;
+          position: absolute;
+        }
+      }
+    }
+
+    // Middle Section
+    &.-middle {
+      .section-background {
+        img {
+          left: auto;
+          right: $padding-md;
+        }
+      }
+    }
+
     // Top and bottom sections
     &.-top,
     &.-bottom {
@@ -378,6 +425,33 @@
       .section-content::after {
         transform: rotate(-55deg);
         transform-origin: top right;
+      }
+    }
+  }
+
+  @include media-lg {
+    .section-background {
+      img {
+        left: $padding-lg;
+      }
+    }
+
+    // With actual image instead of background image
+    &.with-image {
+      .section-background {
+        img {
+          left: $padding-lg;
+        }
+      }
+    }
+
+    // Middle Section
+    &.-middle {
+      .section-background {
+        img {
+          left: auto;
+          right: $padding-lg;
+        }
       }
     }
   }

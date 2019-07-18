@@ -4,7 +4,7 @@ nameLast: Ventura
 title: Vice President
 education: B.S., Rutgers University
 email: raphael@expertinstitute.com
-categories: Sales
+team: Sales
 social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/raphael-ventura-3325a939

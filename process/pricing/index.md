@@ -24,7 +24,7 @@ bodyClasses: pricing template-a
                         <p>Starting at $2,500</p>
                     </header>
                     <p class="description">A customized search for the ideal expert witness includes:</p>
-                    <ul>
+                    <ul class="accordion-list">
                         <li class="accordion">
                             <h4 class="accordion-toggle">Unredacted Expert CV</h4>
                             <div class="accordion-content">
@@ -73,7 +73,7 @@ bodyClasses: pricing template-a
                         <p>Customized Pricing For Every Firm</p>
                     </header>
                     <p class="description">Access all of our premium expert witness services, on-demand:</p>
-                    <ul>
+                    <ul class="accordion-list">
                         <li class="accordion">
                             <h4 class="accordion-toggle">Expert Searches</h4>
                             <div class="accordion-content">

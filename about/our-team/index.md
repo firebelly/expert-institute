@@ -7,8 +7,8 @@ bodyClasses: our-team
 <!-- create categories array-->
 {% assign teams = "" | split:"|" %}
 {% for post in site.team_members %}
-    {% for category in post.categories %}
-        {% assign teams = teams | push: category | uniq %}
+    {% for team in post.team %}
+        {% assign teams = teams | push: team | uniq %}
     {% endfor %}
 {% endfor %}
 
@@ -29,7 +29,7 @@ bodyClasses: our-team
         <div class="bio-grid">
             {% assign members = site.team_members | sort: 'nameLast' %}
             {% for bio in members %}
-                {% if bio.categories contains team %}
+                {% if bio.team contains team %}
                     <div class="bio col-sm-1-2 col-xl-1-3">                    
                         <a href="{{ bio.url }}">
                             <div class="bio-image">

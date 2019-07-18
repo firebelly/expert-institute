@@ -40,16 +40,7 @@
     }
 
     ul {
-      @extend .semantic-list;
       margin-top: $padding-sm;
-
-      li {
-        border-top: 1px solid color(gray);
-
-        &:last-of-type {
-          border-bottom: 1px solid color(gray);
-        }
-      }
     }
 
     .cta {
@@ -75,5 +66,4 @@
       }
     }
   }
-
 }

@@ -4,7 +4,7 @@ nameLast: Lee
 title: Vice President
 education: B.A., Rutgers University
 email: paul@expertinstitute.com
-categories: Sales
+team: Sales
 social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/paul-lee-a663b430

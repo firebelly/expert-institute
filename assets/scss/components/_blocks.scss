@@ -21,6 +21,11 @@
       max-width: 660px;
       margin: 96px auto;
       text-align: center;
+
+      + .accordions {
+        margin-bottom: 96px;
+        margin-top: -$padding-md;
+      }
     }
 
     p {
@@ -29,17 +34,54 @@
       @include ginto-normal-light;
     }
 
+    .accordions {
+      max-width: 1020px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: $padding-md;
+
+      .accordion-list + .accordion-list {
+        margin-top: -1px;
+      }
+    }
+
     @include media-md {
       .section-content {
         margin: 296px auto;
 
-        + .section-content {
+        + .section-content,
+        + .accordions {
           margin-top: -116px;
+        }
+
+        + .accordions {
+          margin-bottom: 296px;
         }
       }
 
       p {
         margin: 52px #{columns(2,23)} 0;
+      }
+
+      .accordions {
+        margin-top: $padding-lg;
+
+        .accordion-list + .accordion-list {
+          margin-top: 0;
+        }
+      }
+    }
+
+    @include media-lg {
+      .accordions {
+        .col-md-1-2 {
+          padding-right: columns(3,34);
+
+          + .col-md-1-2 {
+            padding-right: $padding-sm;
+            padding-left: columns(3,34);
+          }
+        }
       }
     }
   }
