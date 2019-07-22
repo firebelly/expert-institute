@@ -1,0 +1,20 @@
+<div class="bio col-sm-1-2 col-xl-1-3">
+    <a href="{{ bio.url }}">
+        <div class="bio-image">
+            <img src="{{ bio.imageUrl }}" alt="Portrait of {{ bio.nameFirst }} {{ bio.nameLast }}">
+        </div>
+        <div class="bio-text">
+            <h3 class="bio-name">{{ bio.nameFirst }} {{ bio.nameLast }}</h3>
+            <h4 class="bio-title">{{ bio.title }}</h4>
+            <h5 class="bio-department">{{ team }}</h5>
+            <div class="bio-contact">
+                {% if bio.email %}
+                    <p class="bio-email">{{ bio.email }}</p>
+                {% endif %}
+                {% if bio.phone %}
+                    <p class="bio-phone">{{ bio.phone }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </a>
+</div>

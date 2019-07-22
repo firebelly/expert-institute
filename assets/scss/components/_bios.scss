@@ -15,11 +15,13 @@
 
     a {
       display: flex;
+      position: relative;
       align-items: center;
       text-decoration: none;
 
       &:hover,
       &.-hover {
+        z-index: 1;
         .bio-name {
           color: color(blue-light);
         }
@@ -33,7 +35,7 @@
       border-radius: 50%;
       height: $padding-lg;
       min-width: $padding-lg;
-      transition: transform .2s ease-out;
+      transition: transform .2s $image-easing;
 
       img {
         top: 0;
@@ -67,10 +69,15 @@
       @include h3-simple;
     }
 
-    .bio-excerpt {
+    .bio-contact {
       display: none;
+      margin-top: 26px;
       color: color(gray-dark);
-      margin-top: $padding-sm;;
+
+      p {
+        margin: 0;
+        @include p1-small;
+      }
     }
 
     @include media-sm {
@@ -85,7 +92,7 @@
         &:hover,
         &.-hover {
           .bio-image {
-            transform: scale(1.5);
+            transform: scale(1.25);
           }
         }
       }

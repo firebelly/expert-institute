@@ -43,6 +43,13 @@
       }
     }
 
+    .button.-teal {
+      &:hover,
+      &:focus {
+        color: color(blue-dark);
+      }
+    }
+
     @include media-md {
       margin-top: 40px;
       p {
@@ -240,8 +247,7 @@
 
     label {
       left: 0;
-      top: auto;
-      bottom: 7px;
+      top: 13px;
       @include p1-small;
       color: color(gray-dark);
       @include ginto-normal-light;
@@ -249,8 +255,8 @@
 
     input {
       @extend .input-reset;
+      padding: 12px 0 0;
       border-radius: 0;
-      padding: 0 0 6px;
       @include p1-small;
       @include ginto-normal-light;
       border-bottom: 1px solid color(gray-dark);

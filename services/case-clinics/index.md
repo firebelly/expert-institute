@@ -155,19 +155,7 @@ bodyClasses: case-clinics
         <div class="bio-grid">
             {% assign members = site.team_members | where: "team", "Sales" %}
             {% for bio in members %}
-                <div class="bio col-sm-1-2 col-xl-1-3">                    
-                    <a href="{{ bio.url }}">
-                        <div class="bio-image">
-                            <img src="{{ bio.imageUrl }}" alt="Portrait of {{ bio.nameFirst }} {{ bio.nameLast }}">
-                        </div>
-                        <div class="bio-text">
-                            <h3 class="bio-name">{{ bio.nameFirst }} {{ bio.nameLast }}</h3>
-                            <h4 class="bio-title">{{ bio.title }}</h4>
-                            <h5 class="bio-department">{{ team }}</h5>
-                            <p class="bio-excerpt">{{ bio.bioExcerpt }}</p>
-                        </div>
-                    </a>
-                </div>
+                {% include bio.html %}
             {% endfor %}
         </div>
     </div>

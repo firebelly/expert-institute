@@ -87,7 +87,7 @@ layout: default
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button hollow -gray-mid">Read More</a>
+                        <a href="#" class="button hollow">Read More</a>
                     </div>
                     <div class="card-image"><div class="image" style="background-image:url('/dist/images/4.18.19-blog-neurosurgeons-800x400.jpg');"></div></div>
                 </div>
@@ -107,7 +107,7 @@ layout: default
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button hollow -gray-mid">Read More</a>
+                        <a href="#" class="button hollow">Read More</a>
                     </div>
                 </div>
             </article>
@@ -126,7 +126,7 @@ layout: default
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button hollow -gray-mid">Read More</a>
+                        <a href="#" class="button hollow">Read More</a>
                     </div>
                 </div>
             </article>
@@ -145,7 +145,7 @@ layout: default
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button hollow -gray-mid">Read More</a>
+                        <a href="#" class="button hollow">Read More</a>
                     </div>
                     <div class="card-image"><div class="image" style="background-image:url('/dist/images/2.7.19-blog-engineering-litigation-guide-800x400.jpg');"></div></div>
                 </div>
@@ -165,7 +165,7 @@ layout: default
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button hollow -gray-mid">Read More</a>
+                        <a href="#" class="button hollow">Read More</a>
                     </div>
                 </div>
             </article>
@@ -184,7 +184,7 @@ layout: default
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button hollow -gray-mid">Read More</a>
+                        <a href="#" class="button hollow">Read More</a>
                     </div>
                     <div class="card-image"><div class="image" style="background-image:url('/dist/images/4.11.19-blog-737-crashes-800x400.jpg');"></div></div>
                 </div>
@@ -204,7 +204,7 @@ layout: default
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button hollow -gray-mid">Read More</a>
+                        <a href="#" class="button hollow">Read More</a>
                     </div>
                     <div class="card-image"><div class="image" style="background-image:url('/dist/images/3.21.19-blog-objections-800x400.jpg');"></div></div>
                 </div>
@@ -224,7 +224,7 @@ layout: default
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button hollow -gray-mid">Read More</a>
+                        <a href="#" class="button hollow">Read More</a>
                     </div>
                 </div>
             </article>

@@ -399,7 +399,7 @@
     @include media-md {
       overflow: visible;
 
-      + .section {
+      + .section:not(.block-centered-text) {
         .section-label {
           position: relative;
           transform: translateY(-100%);

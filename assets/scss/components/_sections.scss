@@ -23,7 +23,7 @@
   &.padded-bottom {
     padding-bottom: $padding-sm;
   }
-  &.padded-bototm-lg {
+  &.padded-bottom-lg {
     padding-bottom: $padding-lg;
   }
 
@@ -269,7 +269,8 @@
   &.-blue-soft,
   &.-mint,
   &.-gray,
-  &.-gray-light {
+  &.-gray-light,
+  &.-blue-sky {
     .section-content {
       color: color(blue-dark);
     }
