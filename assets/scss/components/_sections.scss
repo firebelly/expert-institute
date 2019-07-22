@@ -10,11 +10,21 @@
     padding-top: $padding-sm;
     padding-bottom: $padding-sm;
   }
+  &.padded-lg {
+    padding-top: $padding-md;
+    padding-bottom: $padding-md;
+  }
   &.padded-top {
     padding-top: $padding-sm;
   }
+  &.padded-top-lg {
+    padding-top: $padding-md;
+  }
   &.padded-bottom {
     padding-bottom: $padding-sm;
+  }
+  &.padded-bototm-lg {
+    padding-bottom: $padding-lg;
   }
 
   // Sections with just a subtitle
@@ -30,11 +40,21 @@
       padding-top: $padding-md;
       padding-bottom: $padding-md;
     }
+    &.padded-lg {
+      padding-top: $padding-lg;
+      padding-bottom: $padding-lg;
+    }
     &.padded-top {
       padding-top: $padding-md;
     }
+    &.padded-top-lg {
+      padding-top: $padding-lg;
+    }
     &.padded-bottom {
       padding-bottom: $padding-md;
+    }
+    &.padded-bottom-lg {
+      padding-bottom: $padding-lg;
     }
 
     &.title-section {
@@ -190,7 +210,7 @@
       background-color: $value;
 
       .section-background {
-        background-color: lighten($value,10%);
+        background-color: lighten($value,5%);
         &::before {
           background-image: linear-gradient(to right bottom, $value 0%, $value 50%, transparent 50%);
         }
@@ -205,6 +225,36 @@
         }
       }
 
+      // With Image
+      &.with-image {
+        // Middle sections get inverse setion colored
+        &.-middle {
+          background-color: color(white);
+          .section-background {
+            background-color: $value;
+            &::before {
+              background-image: linear-gradient(to left bottom, color(white) 0%, color(white) 50%, $value 50%);
+            }
+          }
+
+          @include media-md {
+            &,
+            .section-content {
+              background-color: color(white);
+            }
+            .section-elbow svg {
+              fill: color(white);
+            }
+          }
+        }
+
+        @include media-md {
+          .section-content {
+            background-color: $value;
+          }
+        }
+      }
+
       // -middle showcase sections
       &.-middle {
         .section-background::before {
@@ -216,8 +266,10 @@
 
   // Teal Background sections get blue-dark text
   &.-teal,
+  &.-blue-soft,
   &.-mint,
-  &.-gray {
+  &.-gray,
+  &.-gray-light {
     .section-content {
       color: color(blue-dark);
     }
@@ -274,9 +326,33 @@
 
   // With actual image instead of background image
   &.with-image {
-    padding-bottom: 400px;
+    padding-bottom: 0;
+
+    .section-content {
+      background-color: transparent;
+
+      .block-cta {
+        margin-bottom: 0;
+      }
+    }
+
+    .section-image {
+      z-index: 2;
+      text-align: center;
+      position: relative;
+      padding: $padding-md;
+
+      &.-vertical {
+        padding-bottom: 0;
+      }
+
+      img {
+        vertical-align: bottom;
+      }
+    }
 
     .section-background {
+      bottom: 0;
       height: 400px;
 
       img {
@@ -353,6 +429,25 @@
     }
 
     // With actual image instead of background image
+    .section-image {
+      display: flex;
+      max-width: 50%;
+      flex-basis: 50%;
+      justify-content: flex-end;
+      padding-right: columns(1.5,23);
+
+      img {
+        margin: auto;
+      }
+
+      &.-vertical {
+        align-items: flex-end;
+
+        img {
+          margin: 0;
+        }
+      }
+    }
     &.with-image {
       padding: 0;
 
@@ -364,10 +459,31 @@
           position: absolute;
         }
       }
+
+      // Vertical image with bottom-bleed
+      &.-vertical {
+        .section-background {
+          display: flex;
+          text-align: center;
+          padding-top: $padding-md;
+          img {
+            top: auto;
+            bottom: 0;
+            left: auto;
+            transform: none;
+            position: relative;
+          }
+        }
+      }
     }
 
     // Middle Section
     &.-middle {
+      .section-image {
+        padding-right: 0;
+        justify-content: flex-start;
+        padding-left: columns(1.5,23);
+      }
       .section-background {
         img {
           left: auto;

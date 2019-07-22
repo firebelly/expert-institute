@@ -201,8 +201,26 @@
 
   // Showcase Card Variation (https://d.pr/i/D0OvJ8)
   &.showcase-card {
+    &:not(.with-image) {
+      text-align: center;
+
+      .card-cta a {
+        margin: 0 auto;
+      }
+    }
+
     .card-title {
       @include h2;
+    }
+
+    @include media-md {
+      .card-image {
+        top: 0;
+        &::after {
+          width: auto;
+          right: $padding-md;
+        }
+      }
     }
   }
 }
