@@ -449,7 +449,7 @@ var Main = (function($) {
 
   function _initImageParallax() {
     $(window).on('scroll', function() {
-      var scrollIntervalID = setInterval(parallax, 10);
+      var scrollIntervalID = requestAnimationFrame(parallax);
     });
 
     function parallax() {
