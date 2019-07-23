@@ -191,11 +191,29 @@
 // Section Label
 .section-label {
   @include h3;
-  margin: 0 0 24px;
+  margin: 0;
   color: color(gray-mid);
 
+  &.margin-bottom {
+    margin-bottom: 24px;
+  }
+  &.margin-bottom-md {
+    margin-bottom: $padding-sm;
+  }
+  &.margin-bottom-lg {
+    margin-bottom: $padding-md;
+  }
+
   @include media-md {
-    margin-bottom: 42px;
+    &.margin-bottom {
+      margin-bottom: 42px;
+    }
+    &.margin-bottom-md {
+      margin-bottom: $padding-md;
+    }
+    &.margin-bottom-lg {
+      margin-bottom: $padding-lg;
+    }
   }
 }
 
@@ -267,6 +285,7 @@
   // Teal Background sections get blue-dark text
   &.-teal,
   &.-blue-soft,
+  &.-gold-soft,
   &.-mint,
   &.-gray,
   &.-gray-light,

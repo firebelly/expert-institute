@@ -4,21 +4,7 @@ layout: default
 bodyClasses: locations template-a
 ---
 
-<div class="page-header angled">
-    <div class="overflow-wrap">    
-        <div class="header-background" style="background-image:url('/dist/images/Expert_112087205_L.jpg');"></div>
-        <div class="site-wrapper grid">
-            <div class="header-text">
-                <div class="-inner">            
-                    <h3 class="subtitle">Locations</h3>
-                    <h1 class="title">A national firm that works where you are.</h1>
-                    <p>The Expert Institute has 3 locations to help serve our clients in all 50 states.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="after-shape"></div>
-</div>
+{% include page-header_angled.html image-url="/dist/images/Expert_112087205_L.jpg" headline="A national firm that works where you are." description="The Expert Institute has 3 locations to help serve our clients in all 50 states." %}
 
 <section class="section padded-bottom">
     <div class="site-wrapper">
@@ -66,13 +52,4 @@ bodyClasses: locations template-a
     </div>
 </section>
 
-<div class="section showcase-section -blue-dark">
-    <div class="section-background" style="background-image:url('/dist/images/2097489.jpg');"></div>
-    <div class="-inner grid">
-        <div class="section-content">        
-            <h1 class="block-title">Our Story</h1>
-            <p>We’re revolutionizing the way attorneys find and retain expert witnesses.</p>
-            <p class="block-cta"><a href="/about/our-story" class="button">Learn About Us</a></p>
-        </div>
-    </div>
-</div>
+{% include page-bottom-showcase.html color="blue-dark" image-path="/dist/images/2097489.jpg" title="Our Story" description="We’re revolutionizing the way attorneys find and retain expert witnesses." page-path="/about/our-story" button-text="Learn About Us" %}

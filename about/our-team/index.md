@@ -38,13 +38,4 @@ bodyClasses: our-team
 </div>    
 {% endfor %}
 
-<div class="section showcase-section -gold">
-    <div class="section-background" style="background-image:url('/dist/images/toa-heftiba-644511-unsplash.jpg');"></div>
-    <div class="-inner grid">
-        <div class="section-content">        
-            <h1 class="block-title">Join the Team</h1>
-            <p>Looking for career growth at a dynamic company? We’d like to hear from you.</p>
-            <p class="block-cta"><a href="/about/careers" class="button">View Open Positions</a></p>
-        </div>
-    </div>
-</div>
+{% include page-bottom-showcase.html color="gold" image-path="/dist/images/toa-heftiba-644511-unsplash.jpg" title="Join the Team" description="Looking for career growth at a dynamic company? We’d like to hear from you." page-path="/about/careers" button-text="View Open Positions" %}

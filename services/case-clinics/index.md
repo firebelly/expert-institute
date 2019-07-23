@@ -4,33 +4,19 @@ layout: default
 bodyClasses: case-clinics
 ---
 
-<div class="page-header angled -blue-sky">
-    <div class="overflow-wrap">    
-        <div class="header-background" style="background-image:url('/dist/images/Case-Clinic-Splash-XL_Partnership.jpg');"></div>
-        <div class="site-wrapper grid">
-            <div class="header-text">
-                <div class="-inner">            
-                    <h3 class="subtitle">{{ page.title }}</h3>
-                    <h1 class="title">Your On-Call Team of Medical Doctors</h1>
-                    <p>Augment your legal team with a panel of medical doctors. Rapidly screen cases for potential merit and develop winning strategies across the full spectrum of medical litigation.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="after-shape"></div>
-</div>
+{% include page-header_angled.html color="blue-sky" image-url="/dist/images/Case-Clinic-Splash-XL_Partnership.jpg" headline="Your On-Call Team of Medical Doctors" description="Augment your legal team with a panel of medical doctors. Rapidly screen cases for potential merit and develop winning strategies across the full spectrum of medical litigation." %}
 
 <div class="section block-centered-text">
     <div class="site-wrapper">
         <div class="section-content">
-            <h2 class="block-title">Unlock the Power of Comprehensive Medical Expertise</h2>
-            <p>With Case Clinics from Expert Institute, your team will gain on-demand access to medical doctors with extensive medico-legal experience. Quickly review multiple files, validate the merits of potential cases, or develop new case theories through direct consultation with medical professionals - all without the need to formally retain an expert.</p>
-            <p class="cta text-center"><a href="#" class="button">Learn More</a></p>
+            <h2 class="block-title animate-in">Unlock the Power of Comprehensive Medical Expertise</h2>
+            <p class="animate-in">With Case Clinics from Expert Institute, your team will gain on-demand access to medical doctors with extensive medico-legal experience. Quickly review multiple files, validate the merits of potential cases, or develop new case theories through direct consultation with medical professionals - all without the need to formally retain an expert.</p>
+            <p class="cta animate-in text-center"><a href="#" class="button">Learn More</a></p>
         </div>
     </div>
 </div>
 
-<div class="showcase-section with-image -top section -blue-soft">
+<div class="showcase-section with-image -top section parallax-image-container -blue-soft">
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">        
@@ -38,36 +24,34 @@ bodyClasses: case-clinics
             <p>Screen potential medical cases for merit before you decide to sign clients or budget resources to new matters.</p>
         </div>
         <div class="section-image -vertical">
-            <img src="/dist/images/case-clinics-1.png" alt="" width="421" height="624">
+            <img class="parallax-image" src="/dist/images/case-clinics-1.svg" alt="" width="421" height="624">
         </div>
     </div>
 </div>
 
-<div class="showcase-section with-image -middle section -gray-light">
+<div class="showcase-section with-image -middle section parallax-image-container -gray-light">
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">
             <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
-            <h1 class="block-title">Consult Our In-House Physicians</h1>
-            <p>Collaborate with our team of doctors to confirm the merits of any medical case, unpack technical concepts, and refine your case theory.</p>
-            <p class="block-cta"><a href="#" class="button">Learn More</a></p>
+            <h1 class="block-title">Refine Your Case Theory</h1>
+            <p>Roundtable files with our team to unpack technical concepts, explore alternative case theories, and hone in on winning strategies.</p>
         </div>
         <div class="section-image">
-            <img src="/dist/images/case-clinics-2.png" width="601" height="348" alt="">
+            <img class="parallax-image" src="/dist/images/case-clinics-2.png" width="601" height="348" alt="">
         </div>
     </div>
 </div>
 
-<div class="showcase-section with-image -bottom section -blue-sky">
+<div class="showcase-section with-image -bottom section parallax-image-container -blue-sky">
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">        
-            <h1 class="block-title">Uncover Gatekeeping Challenges</h1>
-            <p>We outline the admissibility history of any expert’s testimony to give you a leg up in the courtroom.</p>
-            <p class="block-cta"><a href="#" class="button">Learn More</a></p>
+            <h1 class="block-title">Enhance Your Courtroom Strategy</h1>
+            <p>Work with our physicians to develop technical questions that sharpen your performance during expert depositions or cross examinations.</p>
         </div>
         <div class="section-image">
-            <img src="/dist/images/case-clinics-3.png" width="721" height="526" alt="">
+            <img class="parallax-image" src="/dist/images/case-clinics-3.svg" width="721" height="526" alt="">
         </div>
     </div>
 </div>
@@ -75,8 +59,8 @@ bodyClasses: case-clinics
 <div class="section block-centered-text">
     <div class="site-wrapper">
         <div class="section-content">
-            <h3 class="block-title">In-House Case Clinic Team Specialties:</h3>
-            <p>Our medical team includes physicians trained in more than 10 different medical specialties, giving your firm access to comprehensive medical assessments of any case.</p>
+            <h3 class="block-title animate-in">In-House Case Clinic Team Specialties:</h3>
+            <p class="animate-in">Our medical team includes physicians trained in more than 10 different medical specialties, giving your firm access to comprehensive medical assessments of any case.</p>
         </div>
         <div class="accordions">
             <div class="grid spaced">            
@@ -151,7 +135,7 @@ bodyClasses: case-clinics
 
 <div class="section padded">
     <div class="site-wrapper">
-        <h2 class="section-label">Case Clinic Team</h2>
+        <h3 class="section-label">Case Clinic Team</h3>
         <div class="bio-grid">
             {% assign members = site.team_members | where: "team", "Sales" %}
             {% for bio in members %}
@@ -163,6 +147,7 @@ bodyClasses: case-clinics
 
 <div class="section padded block-stats padded-top-lg">
     <div class="site-wrapper">
+        <h3 class="section-label">In Numbers</h3>
         <div class="grid spaced">
             <div class="stat col-md-1-2 col-lg-1-3">
                 <h4 class="figure">907</h4>
@@ -214,7 +199,7 @@ bodyClasses: case-clinics
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button">Search</a>
+                        <a href="/services/expert-witness-search" class="button">Search</a>
                     </div>
                 </div>
             </article>
@@ -230,7 +215,7 @@ bodyClasses: case-clinics
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button">See the Reports</a>
+                        <a href="/services/challenge-studies" class="button">See the Reports</a>
                     </div>
                 </div>
             </article>
@@ -246,7 +231,7 @@ bodyClasses: case-clinics
                         </div>
                     </div>
                     <div class="card-cta">
-                        <a href="#" class="button -teal">View Our Pricing Model</a>
+                        <a href="/process/pricing" class="button -teal">View Our Pricing Model</a>
                     </div>
                 </div>
             </article>

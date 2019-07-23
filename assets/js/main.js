@@ -8,7 +8,6 @@
 //=include "../bower_components/velocity/velocity.min.js"
 //=include "../bower_components/waypoints/lib/jquery.waypoints.js"
 //=include "../bower_components/waypoints/lib/shortcuts/sticky.js"
-//=include "../bower_components/waypoints/lib/shortcuts/inview.js"
 
 var Main = (function($) {
 
@@ -456,6 +455,8 @@ var Main = (function($) {
     function parallax() {
       var $image = $('.parallax-image');
 
+      // Only run if on larger screen viewport,
+      // otherwise reset the transform
       if (!breakpoint_md) {
         $image.each(function() {
           $(this).css('transform', 'none');
@@ -464,21 +465,22 @@ var Main = (function($) {
       }
 
       $image.each(function() {
-        var sT = $(window).scrollTop();
+        var st = $(window).scrollTop();
         var imageTop = $(this).offset().top;
         var imageBottom = imageTop + $(this).outerHeight();
 
         // Wait til image is in view
-        if (imageTop > sT + $(window).outerHeight() || imageBottom < sT) {
+        if (imageTop > st + $(window).outerHeight() || imageBottom < st) {
           return;
         }
 
         var speed = 0.1;
         var $thisSection = $(this).closest('.parallax-image-container');
-        scrollRate = sT - ($thisSection.offset().top);
+        var scrollRate = st - ($thisSection.offset().top);
+        var yPos = scrollRate * speed;
 
         $(this).css({
-          'transform': 'translateY(' + scrollRate * speed + 'px)'
+          'transform': 'translate3d(0,' + yPos + 'px,0)'
         });
       });
     }

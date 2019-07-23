@@ -345,6 +345,10 @@
       &.-#{$color} {
         background-color: $value;
 
+        .header-background::before {
+          background-image: linear-gradient(to right top, $value 0%, $value 50%, transparent 50%);
+        }
+
         .header-text {
           .subtitle,
           p {
@@ -411,6 +415,7 @@
 
       .overflow-wrap {
         overflow: hidden;
+        position: relative;
       }
 
       .header-background {
@@ -423,6 +428,13 @@
         background-position: center right;
         &::before {
           display: none;
+        }
+      }
+
+      // Parallax images
+      &.parallax-image-container {
+        .header-background {
+          height: 120%;
         }
       }
 

@@ -19,7 +19,6 @@ form {
       left: 20px;
       position: absolute;
       pointer-events: none;
-      transition: top .1s ease-out, font-size .1s ease-out, color .1s ease-out;
     }
 
     .error-message {
@@ -61,11 +60,11 @@ form {
 
     &:focus,
     &:active {
-      border: 1px solid color(blue-light);
+      border-color: color(blue-light);
     }
 
     &.error {
-      border: 1px solid color(red);
+      border-color: color(red);
     }
   }
 
@@ -81,7 +80,16 @@ form {
     input,
     textarea,
     select {
-      border: 1px solid color(gray);
+      border-color: color(gray);
+
+      &:focus,
+      &:active {
+        border-color: color(blue-light);
+      }
+
+      &.error {
+        border-color: color(red);
+      }
     }
   }
 
@@ -125,6 +133,7 @@ form {
       color: transparent;
       &:focus {
         outline: none;
+
       }
     }
 
