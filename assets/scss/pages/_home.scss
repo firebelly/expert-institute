@@ -91,12 +91,12 @@ body.home {
   }
 
   .search-section {
-    padding-top: $padding-sm;
 
     .section-content {
       .section-cta {
         text-align: center;
       }
+
     }
 
     .search-list {
@@ -208,14 +208,19 @@ body.home {
       }
     }
 
+    .section-label.-bottom {
+      margin-top: $padding-md;
+    }
+
     @include media-md {
-      padding: 0;
+      padding-top: 0;
       overflow: hidden;
 
       .section-background {
         top: 0;
         right: 0;
         bottom: 0;
+        height: 120%;
         overflow: hidden;
         position: absolute;
         width: columns(11,23);
@@ -231,6 +236,11 @@ body.home {
         left: $padding-lg;
         right: $padding-lg;
         position: absolute;
+
+        &.-bottom {
+          top: auto;
+          bottom: 0;
+        }
       }
 
       .section-content {
