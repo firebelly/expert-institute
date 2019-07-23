@@ -61,6 +61,7 @@ var Main = (function($) {
     _initBioFunctions();
     _initStickyElements();
     _initInviewElements();
+    _initImageParallax();
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -444,6 +445,42 @@ var Main = (function($) {
         }
       });
     });
+  }
+
+  function _initImageParallax() {
+    $(window).on('scroll', function() {
+      var scrollIntervalID = setInterval(parallax, 10);
+    });
+
+    function parallax() {
+      var $image = $('.parallax-image');
+
+      if (!breakpoint_md) {
+        $image.each(function() {
+          $(this).css('transform', 'none');
+        });
+        return;
+      }
+
+      $image.each(function() {
+        var sT = $(window).scrollTop();
+        var imageTop = $(this).offset().top;
+        var imageBottom = imageTop + $(this).outerHeight();
+
+        // Wait til image is in view
+        if (imageTop > sT + $(window).outerHeight() || imageBottom < sT) {
+          return;
+        }
+
+        var speed = 0.1;
+        var $thisSection = $(this).closest('.parallax-image-container');
+        scrollRate = sT - ($thisSection.offset().top);
+
+        $(this).css({
+          'transform': 'translateY(' + scrollRate * speed + 'px)'
+        });
+      });
+    }
   }
 
   // Disabling transitions on certain elements on resize
