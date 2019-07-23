@@ -600,3 +600,101 @@
     }
   }
 }
+
+// Expert Directory Section
+.expert-directory-section {
+
+  .section-label {
+    margin-bottom: 0;
+  }
+
+  .section-content {
+    padding: $padding-sm 0 96px;
+  }
+
+  .section-text {
+    margin-bottom: 42px;
+
+    p {
+      margin: 0;
+
+      + p {
+        margin-top: $padding-sm;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+
+    + form {
+      margin-top: $padding-sm;
+    }
+
+    .select-wrap,
+    .input-wrap {
+      flex-grow: 1;
+    }
+
+    button {
+      margin-left: $padding-sm;
+    }
+  }
+
+  @include media-md {
+
+    .section-content {
+      padding: 102px 0 186px;
+
+      > .col-md-1-2 {
+        padding-right: columns(1.5,23);
+
+        &:last-of-type {
+          padding-right: 0;
+          padding-left: columns(1.5,23);
+        }
+      }
+    }
+
+    .section-text {
+      @include font-display;
+      @include paragraph-style(36,42);
+
+      p + p {
+        margin-top: 48px;
+      }
+    }
+
+    form {
+      flex-wrap: wrap;
+
+      + form {
+        margin-top: 48px;
+      }
+
+      .select-wrap,
+      .input-wrap {
+        flex-basis: 100%;
+      }
+
+      button {
+        margin-left: 0;
+        margin-top: $padding-sm;
+      }
+    }
+  }
+
+  @include media-lg {
+    form {
+      .select-wrap,
+      .input-wrap {
+        flex-basis: auto;
+      }
+
+      button {
+        margin-top: 0;
+        margin-left: $padding-md;
+      }
+    }
+  }
+}

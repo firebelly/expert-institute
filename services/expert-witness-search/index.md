@@ -64,11 +64,13 @@ bodyClasses: expert-search
     </div>
 </div>
 
-<div class="section padded-bottom-lg">
-    <div class="site-wrapper">
-        <h3 class="section-label margin-bottom-md">Expert Directory</h3>
-        <div class="section-content grid">
-            <p class="col-md-1-2">Search our expert witness directory to find highly credentialed expert witnesses across all disciplines, industries, and locations.</p>
+<div class="section expert-directory-section">
+    <div class="site-wrapper grid">
+        <h3 class="section-label">Expert Directory</h3>
+        <div class="section-content grid">        
+            <div class="section-text col-md-1-2">
+                <p>Search our expert witness directory to find highly credentialed expert witnesses across all disciplines, industries, and locations.</p>
+            </div>
             <div class="col-md-1-2">
                 <form id="expert-directory-search" class="expert-search -outlined" action="#">
                     <div class="input-wrap">
