@@ -56,9 +56,9 @@ bodyClasses: home
     <div class="section-background" style="background-image:url('dist/images/clem-onojeghuo-215220-unsplash.jpg');"></div>
     <div class="-inner grid">
         <div class="section-content">        
-            <h1 class="block-title">Find the Right Expert for Your Case</h1>
-            <p>Connect with one-of-a-kind professionals recruited to suit your needs, no matter how specific.</p>
-            <p class="block-cta"><a href="#" class="button">Expert Search</a></p>
+            <h1 class="block-title animate-in">Find the Right Expert for Your Case</h1>
+            <p class="animate-in">Connect with one-of-a-kind professionals recruited to suit your needs, no matter how specific.</p>
+            <p class="block-cta animate-in"><a href="#" class="button">Expert Search</a></p>
         </div>
     </div>
 </div>
@@ -68,9 +68,9 @@ bodyClasses: home
     <div class="-inner grid">
         <div class="section-content">
             <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
-            <h1 class="block-title">Consult Our In-House Physicians</h1>
-            <p>Collaborate with our team of doctors to confirm the merits of any medical case, unpack technical concepts, and refine your case theory.</p>
-            <p class="block-cta"><a href="#" class="button">Case Clinics</a></p>
+            <h1 class="block-title animate-in">Consult Our In-House Physicians</h1>
+            <p class="animate-in">Collaborate with our team of doctors to confirm the merits of any medical case, unpack technical concepts, and refine your case theory.</p>
+            <p class="block-cta animate-in"><a href="#" class="button">Case Clinics</a></p>
         </div>
     </div>
 </div>
@@ -80,9 +80,9 @@ bodyClasses: home
         <div class="section-background" style="background-image:url('dist/images/toa-heftiba-644511-unsplash.jpg');"></div>
         <div class="-inner grid">
             <div class="section-content">        
-                <h1 class="block-title">Uncover Gatekeeping Challenges</h1>
-                <p>We outline the admissibility history of any expert’s testimony to give you a leg up in the courtroom.</p>
-                <p class="block-cta"><a href="#" class="button">Challenge Studies</a></p>
+                <h1 class="block-title animate-in">Uncover Gatekeeping Challenges</h1>
+                <p class="animate-in">We outline the admissibility history of any expert’s testimony to give you a leg up in the courtroom.</p>
+                <p class="block-cta animate-in"><a href="#" class="button">Challenge Studies</a></p>
             </div>
         </div>
     </div>
@@ -92,8 +92,8 @@ bodyClasses: home
 <div class="section block-centered-text">
     <div class="site-wrapper">
         <div class="section-content">
-            <h1 class="block-title">Driven by Technology,<br> Powered by Expertise</h1>
-            <p>Our proprietary software identifies the perfect expert for your case, regardless of their courtroom experience.</p>
+            <h1 class="block-title animate-in">Driven by Technology,<br> Powered by Expertise</h1>
+            <p class="animate-in">Our proprietary software identifies the perfect expert for your case, regardless of their courtroom experience.</p>
         </div>
     </div>
 </div>

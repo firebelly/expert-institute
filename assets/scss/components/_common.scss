@@ -36,3 +36,24 @@
     }
   }
 }
+
+.animate-in {
+  opacity: 0;
+  transform: translate3d(0,50%,0);
+  transition: opacity 1s ease-out, transform .5s ease-out;
+
+  &.in-view {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-out {
+  opacity: 1;
+  transition: opacity 1s ease-out, transform .5s ease-out;
+
+  &.out-of-view {
+    opacity: 0;
+    transform: translate3d(0,-50%,0);
+  }
+}

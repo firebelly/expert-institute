@@ -8,6 +8,7 @@
 //=include "../bower_components/velocity/velocity.min.js"
 //=include "../bower_components/waypoints/lib/jquery.waypoints.js"
 //=include "../bower_components/waypoints/lib/shortcuts/sticky.js"
+//=include "../bower_components/waypoints/lib/shortcuts/inview.js"
 
 var Main = (function($) {
 
@@ -59,6 +60,7 @@ var Main = (function($) {
     _initAccordions();
     _initBioFunctions();
     _initStickyElements();
+    _initInviewElements();
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -421,6 +423,26 @@ var Main = (function($) {
       $('#sticky-form-container, .sticky-form').toggleClass('sticky-surpassed', direction === 'down');
     },{
       offset: 'bottom-in-view'
+    });
+  }
+
+  function _initInviewElements() {
+    $('.animate-in').each(function() {
+      var $elem = $(this);
+      $elem.waypoint(function(direction){
+        $elem.addClass('in-view', direction === 'down');
+      },{
+        offset: '85%'
+      });
+    });
+    $('.animate-out').each(function(index) {
+      var $elem = $(this);
+      var inview = new Waypoint.Inview({
+        element: $(this)[0],
+        exited: function(direction) {
+          $(this).addClass('out-of-view');
+        }
+      });
     });
   }
 
