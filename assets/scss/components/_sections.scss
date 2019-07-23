@@ -390,6 +390,12 @@
       }
     }
 
+    &.parallax-image-container {
+      .section-background {
+        height: 120%;
+      }
+    }
+
     .section-content {
       text-align: left;
       position: relative;
