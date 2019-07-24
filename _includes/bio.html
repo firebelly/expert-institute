@@ -7,14 +7,7 @@
             <h3 class="bio-name">{{ bio.nameFirst }} {{ bio.nameLast }}</h3>
             <h4 class="bio-title">{{ bio.title }}</h4>
             <h5 class="bio-department">{{ team }}</h5>
-            <div class="bio-contact">
-                {% if bio.email %}
-                    <p class="bio-email">{{ bio.email }}</p>
-                {% endif %}
-                {% if bio.phone %}
-                    <p class="bio-phone">{{ bio.phone }}</p>
-                {% endif %}
-            </div>
+            <p class="bio-contact">Meet {{ bio.nameFirst }}</p>
         </div>
     </a>
 </div>

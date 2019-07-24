@@ -1,0 +1,16 @@
+// Filters
+//
+// Row of filters used on post-type listing pages
+
+.filters {
+  @extend .grid;
+  @extend .grid.spaced;
+
+  .filter {
+    margin-bottom: $padding-sm;
+
+    @include media-lg {
+      margin-bottom: 0;
+    }
+  }
+}

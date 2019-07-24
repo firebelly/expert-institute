@@ -167,6 +167,9 @@ body.single-bio {
 // Single Bio Content
 body.single-bio {
   .page-header.swooped.-right .header-text {
+    .header-meta {
+      display: block;
+    }
     .title {
       margin-bottom: $padding-sm;
 

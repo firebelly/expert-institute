@@ -39,7 +39,7 @@ layout: default
 
 <div class="section">
     <div class="site-wrapper">
-        <div class="grid spaced">
+        <div class="filters">
             <form action="#" id="filters" class="insights-filters -outlined grid col-md-2-3">
                 <div class="col-md-1-2">                
                     <div class="select-wrap">

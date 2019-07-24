@@ -25,7 +25,7 @@ bodyClasses: our-team
 {% for team in teams %}
 <div class="section padded">
     <div class="site-wrapper">
-        <h2 class="section-label">{{ team }}</h2>
+        <h2 id="{{ team | downcase | url_encode }}" class="section-label">{{ team }}</h2>
         <div class="bio-grid">
             {% assign members = site.team_members | sort: 'nameLast' %}
             {% for bio in members %}

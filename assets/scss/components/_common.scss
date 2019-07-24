@@ -6,9 +6,12 @@
 // used in cards and in article headers
 .header-meta {
   display: flex;
+  @include h3-simple;
   padding-bottom: 5px;
+  color: color(gray-dark);
   justify-content: space-between;
   border-bottom: 1px solid color(blue-light);
+
 
   > * {
     margin: 0;

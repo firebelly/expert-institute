@@ -28,7 +28,6 @@
       }
     }
 
-
     .bio-image {
       overflow: hidden;
       position: relative;
@@ -84,7 +83,6 @@
       height: 200px;
       display: flex;
       align-items: center;
-      flex-dierction: column;
     }
 
     @include media-md {
