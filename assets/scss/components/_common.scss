@@ -37,9 +37,11 @@
   }
 }
 
-.animate-in {
+// Animate on scroll classes
+.animate-in,
+.animation-item {
   opacity: 0;
-  transform: translate3d(0,50%,0);
+  transform: translate3d(0,50px,0);
   transition: opacity 1s ease-out, transform .5s ease-out;
 
   &.in-view {
@@ -54,6 +56,17 @@
 
   &.out-of-view {
     opacity: 0;
-    transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50px,0);
+  }
+}
+
+// Animate-in-series animates in individual elements in series
+// when the container scrolls into view
+.animate-in-series {
+  &.in-view {
+    .animation-item {
+      opacity: 1;
+      transform: none;
+    }
   }
 }

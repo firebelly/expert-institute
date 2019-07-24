@@ -28,6 +28,12 @@
       }
     }
 
+    &.-wide {
+      .section-content {
+        max-width: 948px;
+      }
+    }
+
     p {
       margin: 30px 0 0;
       color: color(gray-dark);
@@ -132,6 +138,7 @@
       .flickity-page-dots {
         .dot {
           border-color: color(gold);
+          background-color: color(white);
           &.is-selected {
             background-color: color(gold);
           }

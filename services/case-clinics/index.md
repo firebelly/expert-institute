@@ -147,7 +147,7 @@ bodyClasses: case-clinics
 
 <div class="section padded block-stats padded-top-lg">
     <div class="site-wrapper">
-        <h3 class="section-label">In Numbers</h3>
+        <h3 class="section-label margin-bottom-lg">In Numbers</h3>
         <div class="grid spaced">
             <div class="stat col-md-1-2 col-lg-1-3">
                 <h4 class="figure">907</h4>
@@ -171,19 +171,7 @@ bodyClasses: case-clinics
     </div>
 </div>
 
-<div class="section padded">
-    <div class="site-wrapper">
-        <h3 class="section-label">Voted #1 Expert Witness Provider By</h3>
-        <div class="logo-carousel">
-            <a class="logo" href="https://www.law.com/nationallawjournal" rel="noopener" target="_blank"><img src="/dist/images/logos/nationallawjournal.png" alt="The National Law Journal"></a>
-            <a class="logo" href="https://www.law.com/newyorklawjournal/" rel="noopener" target="_blank"><img src="/dist/images/logos/newyorklawjournal.png" alt="New York Law Journal"></a>
-            <a class="logo" href="www.nationallawjournal.com/legaltimes/" rel="noopener" target="_blank"><img src="/dist/images/logos/legaltimes.png" alt="Legal Times"></a>
-            <a class="logo" href="https://www.law.com/texaslawyer/" rel="noopener" target="_blank"><img src="/dist/images/logos/texaslawyer.png" alt="Texas Lawyer"></a>
-            <a class="logo" href="https://www.law.com/therecorder/" rel="noopener" target="_blank"><img src="/dist/images/logos/therecorder.png" alt="The Recorder"></a>
-            <a class="logo" href="https://www.law.com/ctlawtribune/" rel="noopener" target="_blank"><img src="/dist/images/logos/connecticutlawtribune.png" alt="The Connecticut Law Tribune"></a>
-        </div>
-    </div>
-</div>
+{% include journal-logo-section.html %}
 
 <div class="section padded-top padded-bottom-lg">
     <div class="site-wrapper">    

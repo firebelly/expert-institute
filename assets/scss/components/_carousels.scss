@@ -62,7 +62,12 @@
   }
 
   @include media-md {
-    padding: $padding-md 0;
+    padding: $padding-lg 0;
     margin: 0 0 $padding-md;
+
+    .flickity-page-dots {
+      top: auto;
+      bottom: 20px;
+    }
   }
 }

@@ -10,8 +10,8 @@ bodyClasses: locations template-a
     <div class="site-wrapper">
         <h3 class="section-label">Our Offices</h3>
         <div class="section-content">            
-            <div class="module-item-showcase">
-                <div class="item col-md-1-3">
+            <div class="module-item-showcase animate-in-series">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/new-york.png" alt="Our New York Office">
                     </div>
@@ -23,7 +23,7 @@ bodyClasses: locations template-a
                         <a href="mailto:info@expertinstitute.com">info@expertinstitute.com</a>
                     </p>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/new-york.png" alt="Our Los Angeles Office">
                     </div>
@@ -35,7 +35,7 @@ bodyClasses: locations template-a
                         <a href="mailto:info@expertinstitute.com">info@expertinstitute.com</a>
                     </p>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/new-york.png" alt="Our Dallas Office">
                     </div>

@@ -55,7 +55,7 @@ bodyClasses: expert-search
     </div>
 </div>
 
-<div class="section block-centered-text">
+<div class="section block-centered-text -wide">
     <div class="site-wrapper">
         <div class="section-content">        
             <h2 class="block-title animate-in">In-Depth Expert Witness Analysis Across Every Area of Practice</h2>
@@ -84,41 +84,51 @@ bodyClasses: expert-search
     </div>
 </div>
 
+<div class="section block-centered-text -wide">
+    <div class="site-wrapper">
+        <h3 class="section-label">Testimonial</h3>
+        <div class="section-content">
+            <h2 class="block-title animate-in">The most efficient way to connect with the world’s leading expert witnesses</h2>
+            <p class="animate-in">Finding the right expert is a defining moment in every case, but with The Expert Institute’s expert search and intelligence platform, your firm will gain access to precisely-targeted expert insights throughout every stage of the litigation process. Whether you need to assemble a national team of experts for mass tort litigation, replace overused experts, or engage consultative experts, we can provide comprehensive expert solutions.</p>
+        </div>
+    </div>
+</div>
+
 <section class="section padded-bottom">
     <div class="site-wrapper">
         <div class="section-content">            
-            <div class="module-item-showcase">
-                <div class="item col-md-1-3">
+            <div class="module-item-showcase animate-in-series">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-search.svg" alt="Expert Search">
                     </div>
                     <h4 class="item-title">Reduce costs of expert searches</h4>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-select.svg" alt="Expert Search">
                     </div>
                     <h4 class="item-title">Complimentary consultations</h4>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-retain.svg" alt="Expert Search">
                     </div>
                     <h4 class="item-title">Obtain secondary opinions</h4>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-search.svg" alt="Expert Search">
                     </div>
                     <h4 class="item-title">Screen prospective cases</h4>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-select.svg" alt="Expert Search">
                     </div>
                     <h4 class="item-title">Build a national team</h4>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-retain.svg" alt="Expert Search">
                     </div>

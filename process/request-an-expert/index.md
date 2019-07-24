@@ -78,18 +78,6 @@ bodyClasses: request-an-expert
 
 </div>
 
-<div class="section padded background-gray-light">
-    <div class="site-wrapper">
-        <h3 class="section-label">Voted #1 Expert Witness Provider By</h3>
-        <div class="logo-carousel">
-            <a class="logo" href="https://www.law.com/nationallawjournal" rel="noopener" target="_blank"><img src="/dist/images/logos/nationallawjournal.png" alt="The National Law Journal"></a>
-            <a class="logo" href="https://www.law.com/newyorklawjournal/" rel="noopener" target="_blank"><img src="/dist/images/logos/newyorklawjournal.png" alt="New York Law Journal"></a>
-            <a class="logo" href="www.nationallawjournal.com/legaltimes/" rel="noopener" target="_blank"><img src="/dist/images/logos/legaltimes.png" alt="Legal Times"></a>
-            <a class="logo" href="https://www.law.com/texaslawyer/" rel="noopener" target="_blank"><img src="/dist/images/logos/texaslawyer.png" alt="Texas Lawyer"></a>
-            <a class="logo" href="https://www.law.com/therecorder/" rel="noopener" target="_blank"><img src="/dist/images/logos/therecorder.png" alt="The Recorder"></a>
-            <a class="logo" href="https://www.law.com/ctlawtribune/" rel="noopener" target="_blank"><img src="/dist/images/logos/connecticutlawtribune.png" alt="The Connecticut Law Tribune"></a>
-        </div>
-    </div>
-</div>
+{% include journal-logo-section.html %}
 
-{% include page-bottom-showcase.html color="teal" image-path="/dist/images/clem-onojeghuo-215220-unsplash.jpg" title="Measurable<br> Impact" description="Learn how our best-in-class experts have helped attorneys recover billions of dollars for their clients." page-path="/measurable-impact" button-text="Explore the Outcomes" %}
+{% include page-bottom-showcase.html color="teal" image-path="/dist/images/clem-onojeghuo-215220-unsplash.jpg" title="Measurable<br> Impact" description="Learn how our best-in-class experts have helped attorneys recover billions of dollars for their clients." page-path="/results//measurable-impact" button-text="Explore the Outcomes" %}

@@ -429,19 +429,34 @@ var Main = (function($) {
   function _initInviewElements() {
     $('.animate-in').each(function() {
       var $elem = $(this);
-      $elem.waypoint(function(direction){
+      $elem.waypoint(function(direction) {
         $elem.addClass('in-view', direction === 'down');
       },{
         offset: '85%'
       });
     });
-    $('.animate-out').each(function(index) {
+    $('.animate-out').each(function() {
       var $elem = $(this);
       var inview = new Waypoint.Inview({
         element: $(this)[0],
         exited: function(direction) {
           $(this).addClass('out-of-view');
         }
+      });
+    });
+
+    $('.animate-in-series').each(function() {
+      var $container = $(this);
+      $container.waypoint(function(direction) {
+        $container.addClass('in-view', direction === 'down');
+      },{
+        offset: '85%'
+      });
+
+      // establish transition delays
+      animationItems = $container.find('.animation-item');
+      animationItems.each(function(i) {
+        $(this).css('transition-delay', .1 * i + 's');
       });
     });
   }
@@ -474,7 +489,7 @@ var Main = (function($) {
           return;
         }
 
-        var speed = 0.1;
+        var speed = 0.125;
         var $thisSection = $(this).closest('.parallax-image-container');
         var scrollRate = st - ($thisSection.offset().top);
         var yPos = scrollRate * speed;

@@ -19,22 +19,22 @@ bodyClasses: challenge-study
 <section class="section padded-bottom-lg">
     <div class="site-wrapper">
         <div class="section-content">            
-            <div class="module-item-showcase">
-                <div class="item col-md-1-3">
+            <div class="module-item-showcase animate-in-series">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-search.svg" alt="Expert Search">
                     </div>
                     <h2 class="item-title">Gain total confidence in your experts</h2>
                     <p class="item-text">Select the best experts for your case based on challenge history data. Develop your trial strategy and limit exposure to admissibility challenges.</p>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-select.svg" alt="Expert Search">
                     </div>
                     <h2 class="item-title">Extract intelligence on opposing expertise</h2>
                     <p class="item-text">Capitalize on gatekeeping challenges and prior testimony of opposing experts. Identify winning strategies and questions for deposition and cross examination.</p>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-retain.svg" alt="Expert Search">
                     </div>
@@ -120,19 +120,9 @@ bodyClasses: challenge-study
     </div>
 </div>
 
-<div class="section padded">
-    <div class="site-wrapper">
-        <h3 class="section-label">Voted #1 Expert Witness Provider By</h3>
-        <div class="logo-carousel">
-            <a class="logo" href="https://www.law.com/nationallawjournal" rel="noopener" target="_blank"><img src="/dist/images/logos/nationallawjournal.png" alt="The National Law Journal"></a>
-            <a class="logo" href="https://www.law.com/newyorklawjournal/" rel="noopener" target="_blank"><img src="/dist/images/logos/newyorklawjournal.png" alt="New York Law Journal"></a>
-            <a class="logo" href="www.nationallawjournal.com/legaltimes/" rel="noopener" target="_blank"><img src="/dist/images/logos/legaltimes.png" alt="Legal Times"></a>
-            <a class="logo" href="https://www.law.com/texaslawyer/" rel="noopener" target="_blank"><img src="/dist/images/logos/texaslawyer.png" alt="Texas Lawyer"></a>
-            <a class="logo" href="https://www.law.com/therecorder/" rel="noopener" target="_blank"><img src="/dist/images/logos/therecorder.png" alt="The Recorder"></a>
-            <a class="logo" href="https://www.law.com/ctlawtribune/" rel="noopener" target="_blank"><img src="/dist/images/logos/connecticutlawtribune.png" alt="The Connecticut Law Tribune"></a>
-        </div>
-    </div>
-</div>
+{% include journal-logos-section.html %}
+
+{% include testimonials-section.html carousel-style="two-up" %}
 
 <div class="section padded-top padded-bottom-lg">
     <div class="site-wrapper">    
