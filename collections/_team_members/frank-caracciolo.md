@@ -9,7 +9,7 @@ social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/frank-caracciolo-nj/
 phone: 646-362-4597
-imageUrl: /dist/images/bios/Frank-Caracciolo.jpg
+imagePath: /dist/images/bios/Frank-Caracciolo.jpg
 bioExcerpt: Donec ullamcorper nulla non metus auctor fringilla.
 layout: bio
 ---

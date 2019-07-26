@@ -55,6 +55,32 @@
     position: relative;
   }
 
+  // Card Header Tags/Categories
+  &-header-tags {
+    @extend .semantic-list;
+    margin-bottom: $padding-sm;
+
+    &,
+    h5 {
+      @include h3-simple;
+    }
+
+    h5 {
+      margin: 0;
+      display: inline-block;
+      color: color(gray-dark);
+    }
+
+    li {
+      display: inline;
+
+      a {
+        color: color(blue-light);
+      }
+    }
+  }
+
+
   // Card Title
   &-title {
     @include p2;

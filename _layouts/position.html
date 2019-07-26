@@ -1,0 +1,32 @@
+---
+layout: default
+bodyClasses: single-post single-position
+---
+
+<div class="page-header swooped parallax-image-container -right">
+  <div class="site-wrapper grid">
+    <div class="header-swoop">
+      <svg class="swoop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 673.8 756"><path d="M673.8 756H0c87.7 0 169.9-42.6 220.5-114.2L673.8 0v756z"/></svg>
+    </div>
+    <div class="header-text">
+      <div class="-inner">
+        <header>
+          <div class="header-meta">
+            <a href="/about/careers">Careers</a> / <a href="/about/careers/#{{ page.team | downcase | url_encode }}">{{ page.team }}</a>
+          </div>
+          <h1 class="title">{{ page.title }}</h1>
+        </header>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section padded-bottom site-wrapper">
+  <div class="post-content">
+    {{ content }}
+  </div>
+</div>
+
+<div class="section padded-bottom-lg site-wrapper">
+  <p class="cta"><a href="/about/careers/#open-positions" class="button">Back to Open Positions</a></p>
+</div>

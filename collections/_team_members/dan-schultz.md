@@ -9,7 +9,7 @@ social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/frank-caracciolo-nj/
 phone: 816-319-2652
-imageUrl: /dist/images/bios/Dan-Shultz-600x400.jpg
+imagePath: /dist/images/bios/Dan-Shultz-600x400.jpg
 bioExcerpt: Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 layout: bio
 ---

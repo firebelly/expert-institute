@@ -55,7 +55,36 @@ bodyClasses: expert-witness-directory
 <div class="section padded">
     <div class="site-wrapper">
         <div class="card-grid">
-
+            {% for expert in site.experts %}
+                <article class="card col-sm-1-2 col-lg-1-3">
+                    <div class="-inner">
+                        <header class="card-header">
+                            <div class="header-meta">
+                                <h5 class="state"><span class="label">State:</span> <a href="#">{{ expert.state }}</a></h5>
+                            </div>
+                            <ul class="card-header-tags">
+                                <h5>Specialties:</h5>
+                                {% for specialty in expert.specialties %}
+                                    <li><a href="#">{{ specialty }}</a>{% if forloop.last == false %}, {% endif %}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="expert-image">
+                                <img src="{{ expert.imagePath }}" alt="Expert {{ expert.expertId }}">
+                            </div>
+                            <h1 class="card-title"><a href="{{ expert.url }}">{{ expert.headline }}</a></h1>
+                            <h2 class="expert-id">{{ expert.expertId }}</h2>
+                        </header>
+                        <div class="card-body">
+                            <div class="card-text"> 
+                                <p>{{ expert.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+                            </div>
+                        </div>
+                        <div class="card-cta">
+                            <a href="{{ expert.url }}" class="button hollow">View Profile</a>
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
         </div>
     </div>
 </div>

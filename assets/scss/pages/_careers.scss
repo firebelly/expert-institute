@@ -1,0 +1,54 @@
+// Careers
+
+.positions {
+  @extend .grid;
+  @extend .grid.spaced;
+
+  .position {
+    margin-bottom: $padding-sm;
+
+    > .-inner {
+      border-top: 1px solid color(gray);
+    }
+
+    &-title {
+      @include h2;
+      margin-bottom: 12px;
+
+      @include media-md {
+        @include paragraph-style(36,42);
+      }
+    }
+
+    &-meta {
+      display: flex;
+      justify-content: space-between;
+
+      h5 {
+        margin: 0;
+        @include h3-simple;
+        color: color(gray-dark);
+      }
+    }
+
+    .cta {
+      margin-top: $padding-sm;
+    }
+
+    @include media-md {
+      margin-bottom: $padding-md;
+
+      > .-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .cta {
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+}

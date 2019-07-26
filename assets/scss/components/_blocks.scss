@@ -40,6 +40,16 @@
       @include ginto-normal-light;
     }
 
+    ul {
+      text-align: left;
+      @include list-style;
+      color: color(gray-dark);
+
+      li {
+        margin-bottom: $padding-sm / 2;
+      }
+    }
+
     .accordions {
       max-width: 1020px;
       margin-left: auto;
@@ -54,6 +64,10 @@
     @include media-md {
       .section-content {
         margin: 296px auto;
+
+        ul.two-column {
+          columns: 2;
+        }
 
         + .section-content,
         + .accordions {

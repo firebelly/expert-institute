@@ -9,7 +9,7 @@ social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/faizapatten
 phone: 646-278-6074
-imageUrl: /dist/images/bios/Faiza-1-1.jpg
+imagePath: /dist/images/bios/Faiza-1-1.jpg
 bioExcerpt: Aenean lacinia bibendum nulla sed consectetur.
 layout: bio
 ---

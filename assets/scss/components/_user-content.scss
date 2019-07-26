@@ -9,7 +9,10 @@
   h1, h2 {
     @include h2;
     margin: 76px 0 20px;
-    color: color(blue-light);
+
+    &:not[class*='color-'] {
+      color: color(blue-light);
+    }
 
     @include media-md {
       @include paragraph-style(36, 42);
@@ -17,12 +20,15 @@
   }
 
   h3, h4, h5, h6 {
-    margin-bottom: 0;
     @include h3-simple;
-    color: color(blue-light);
+    margin-bottom: 12px;
+
+    &:not[class*='color-'] {
+      color: color(blue-light);
+    }
   }
 
-  a {
+  a:not(.button) {
     color: color(blue-light);
     &:hover,
     &:focus {
@@ -43,21 +49,7 @@
   }
 
   ul {
-    li {
-      list-style: none;
-      position: relative;
-      &::before {
-        top: .5em;
-        width: 1px;
-        left: -1em;
-        height: 1px;
-        content: '';
-        line-height: 1em;
-        border: 3px solid;
-        position: absolute;
-        border-radius: 50%;
-      }
-    }
+    @include list-style;
   }
 
   blockquote {

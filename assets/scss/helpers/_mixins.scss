@@ -9,6 +9,25 @@
   }
 }
 
+// Custom Li Disc style
+@mixin list-style {
+  li {
+    list-style: none;
+    position: relative;
+    &::before {
+      top: .5em;
+      width: 1px;
+      left: -1em;
+      height: 1px;
+      content: '';
+      line-height: 1em;
+      border: 3px solid;
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+}
+
 // Smooth text
 @mixin font-smoothing {
   -webkit-font-smoothing: antialiased;

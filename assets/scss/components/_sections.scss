@@ -245,7 +245,7 @@
 
       // With Image
       &.with-image {
-        // Middle sections get inverse setion colored
+        // Middle sections get inverse section colored
         &.-middle {
           background-color: color(white);
           .section-background {
@@ -302,12 +302,6 @@
       @include ginto-normal-light;
     }
   }
-  // Dark Blue sections get gold buttons
-  &.-blue-dark {
-    .block-cta .button {
-      @extend .-gold;
-    }
-  }
 
   .section-background {
     left: 0;
@@ -353,6 +347,10 @@
 
       .block-cta {
         margin-bottom: 0;
+
+        .button + .button {
+          margin-top: $padding-sm;
+        }
       }
     }
 
@@ -451,6 +449,15 @@
 
       .block-cta {
         margin: 100px 0 0;
+
+        .button:first-of-type {
+          margin-right: $padding-md;
+          margin-bottom: $padding-sm;
+        }
+
+        .button + .button {
+          margin-top: 0;
+        }
       }
     }
 
@@ -571,9 +578,53 @@
         transform-origin: top right;
       }
     }
+
+    // Sections with an after shape that overlaps into
+    // the next section (always on the -bottom section)
+    &.with-after-shape {
+      overflow: visible;
+
+      .overflow-wrap {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .after-shape {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+        &::before {
+          top: 0;
+          left: 50%;
+          z-index: 1;
+          width: 88%;
+          content: "";
+          height: 400%;
+          position: absolute;
+          transform-origin: top left;
+          background-color: color(gray);
+          transform: rotate(35deg) translate(-100%, 30%);
+        }
+
+        @each $color, $value in $colors {
+          &.-#{$color} {
+            &::before {
+              background-color: $value;
+            }
+          }
+        }
+      }
+    }
   }
 
   @include media-lg {
+    > .-inner {
+      padding: 0 $padding-lg;
+    }
+
     .section-background {
       img {
         left: $padding-lg;

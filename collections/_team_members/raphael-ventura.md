@@ -9,7 +9,7 @@ social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/raphael-ventura-3325a939
 phone: 646-278-6072
-imageUrl: /dist/images/bios/Raphael-3.jpg
+imagePath: /dist/images/bios/Raphael-3.jpg
 bioExcerpt: Sed posuere consectetur est at lobortis.
 layout: bio
 ---

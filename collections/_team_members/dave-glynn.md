@@ -9,7 +9,7 @@ social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/david-glynn-3b201123
 phone: 646-278-6073
-imageUrl: /dist/images/bios/Glynn.jpg
+imagePath: /dist/images/bios/Glynn.jpg
 bioExcerpt: Donec id elit non mi porta gravida at eget metus.
 layout: bio
 ---

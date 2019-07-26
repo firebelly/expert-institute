@@ -171,7 +171,7 @@ bodyClasses: case-clinics
     </div>
 </div>
 
-{% include journal-logo-section.html %}
+{% include journal-logos-section.html %}
 
 <div class="section padded-top padded-bottom-lg">
     <div class="site-wrapper">    

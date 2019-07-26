@@ -219,4 +219,56 @@ body.single-bio {
       }
     }
   }
+
+  .post-content {
+    .tags {
+      margin-top: $padding-sm;
+
+      h3 {
+        color: color(gray-dark);
+      }
+
+      ul {
+        @extend .semantic-list;
+        li::before {
+          display: none;
+        }
+
+        a {
+          @include h3-simple;
+        }
+      }
+    }
+
+    .cta {
+      margin-top: $padding-md;
+
+      @include media-md {
+        margin-top: $padding-lg;
+      }
+    }
+  }
+}
+
+// Single Expert Bio
+body.single-expert-bio {
+  .bio-snapshot {
+    margin-top: $padding-sm;
+
+    h3 {
+      color: color(gray-dark);
+
+    }
+    ul {
+      @extend .semantic-list;
+
+      li::before {
+        display: none;
+      }
+    }
+
+    @include media-md {
+      margin-top: $padding-md;
+    }
+  }
 }

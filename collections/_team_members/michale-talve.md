@@ -9,7 +9,7 @@ social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/michael-talve-03aaa12
 phone: 888-858-9511
-imageUrl: /dist/images/bios/Talve-2015-B.jpg
+imagePath: /dist/images/bios/Talve-2015-B.jpg
 bioExcerpt: Sed posuere consectetur est at lobortis.
 layout: bio
 ---

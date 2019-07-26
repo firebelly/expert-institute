@@ -494,6 +494,24 @@
     }
   }
 
+  // Headers styled like the middle showcase sections,
+  // with the elbows
+  &.showcase-section {
+
+    @include media-md {
+      .section-content {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: columns(9,23);
+        flex-basis: columns(9,23);
+      }
+
+      .section-background {
+        width: columns(14,23);
+      }
+    }
+  }
+
   // Header Articles
   // as appears as carousel items on the insights page
   .header-article {

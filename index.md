@@ -9,7 +9,7 @@ bodyClasses: home
     <div class="-inner grid">
         <div class="section-content">
             <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.8 852"><path d="M239.8 852L49.2 581.5c-65.7-93.2-65.7-217.7 0-310.9L239.8 0"/></svg></div>
-            <h3 class="section-label">Elite expertise, tailored to every case</h3>
+            <h3 class="section-label margin-bottom">Elite expertise, tailored to every case</h3>
             <h1 class="block-title">Connect with the expert witness you need to win your case.</h1>
             <p class="block-cta"><a href="#" class="button -teal">Request an expert</a></p>
         </div>
@@ -72,7 +72,7 @@ bodyClasses: home
     </div>
 </div>
 
-<div class="showcase-section -bottom section parallax-image-container -teal">
+<div class="showcase-section with-after-shape -bottom section parallax-image-container -teal">
     <div class="overflow-wrap">    
         <div class="section-background parallax-image" style="background-image:url('/dist/images/toa-heftiba-644511-unsplash.jpg');"></div>
         <div class="-inner grid">
@@ -134,49 +134,4 @@ bodyClasses: home
     </div>
 </div>
 
-<div class="section block-testimonials block">
-    <div class="site-wrapper">
-        <h3 class="section-label">Testimonials</h3>
-        <div class="section-content">
-            <div class="carousel two-up carousel-fadein">
-                <blockquote class="testimonial">
-                    <div class="-inner">                    
-                        <p>Expert Institute helps me tackle some of my most difficult cases. They quickly respond to my inquiries and schedule appointments to accommodate my deadlines.</p>
-                        <footer>
-                            <div class="testimonial-image"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
-                            <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
-                        </footer>
-                    </div>
-                </blockquote>
-                <blockquote class="testimonial">
-                    <div class="-inner">                    
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                        <footer>
-                            <div class="testimonial-image"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
-                            <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
-                        </footer>
-                    </div>
-                </blockquote>
-                <blockquote class="testimonial">
-                    <div class="-inner">
-                        <p>Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                        <footer>
-                            <div class="testimonial-image"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
-                            <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
-                        </footer>
-                    </div>
-                </blockquote>
-                <blockquote class="testimonial">
-                    <div class="-inner">                    
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod..</p>
-                        <footer>
-                            <div class="testimonial-image"><img src="/dist/images/avatar.jpg" alt="Portrait of Terry Garmey"></div>
-                            <cite><span class="name">Terry Garmey, Esq.,</span> <span class="business">Terry Garmey & Associates</span></cite>
-                        </footer>
-                    </div>
-                </blockquote>
-            </div>
-        </div>
-        <p class="block-cta align-center"><a href="results/measurable-impact" class="button -gold">Our Impact</a></p>
-    </div>
-</div>
+{% include testimonials-section.html carousel-style="two-up" %}

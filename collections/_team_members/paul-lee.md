@@ -9,7 +9,7 @@ social:
   - label: LinkedIn
     url: https://www.linkedin.com/in/paul-lee-a663b430
 phone: 646-216-2337
-imageUrl: /dist/images/bios/Paul-5.jpg
+imagePath: /dist/images/bios/Paul-5.jpg
 bioExcerpt: Aenean lacinia bibendum nulla sed consectetur.
 layout: bio
 ---

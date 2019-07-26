@@ -23,13 +23,17 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 destination: _build
 markdown: kramdown
 plugins:
+  - jekyll-contentblocks
 
 # Collections
 collections_dir: collections
 collections:
   team_members:
     output: true
-
+  experts:
+    output: true
+  positions:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -24,7 +24,39 @@
 
   @include media-md {
     line-height: 1;
-    padding: 13px 30px 17px;
+    padding: 12px 30px 16px;
+  }
+
+  // Buttons with icons
+  .button-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 24px;
+    margin: -1px 24px -6px -18px;
+    background-color: color(white );
+
+    svg {
+      margin: auto;
+      fill: color(blue-light);
+
+      &.icon-play {
+        width: 9px;
+        right: -1px;
+        height: 12px;
+        position: relative;
+      }
+    }
+  }
+
+  // Hollow play icon
+  > .icon-play-hollow {
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    fill: color(white);
+    margin: -1px 24px -6px -18px;
   }
 
   // Style Variations
@@ -42,6 +74,10 @@
     &.-#{$color} {
       border-color: $value;
       background-color: $value;
+
+      .button-icon {
+        background-color: $value;
+      }
 
       &.-hover,
       &:hover,
