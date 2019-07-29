@@ -550,10 +550,12 @@ var Main = (function($) {
     $body.removeClass('modal-open');
     _enableScroll();
     $('.modal').removeClass('-active');
-    $('.modal').velocity(
-      { opacity: 0 }, {
-      display: "none",
-    });
+    setTimeout(function() {
+      $('.modal').velocity(
+        { opacity: 0 }, {
+        display: "none",
+      });
+    },150);
   }
 
   // Disabling transitions on certain elements on resize
