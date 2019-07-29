@@ -518,12 +518,12 @@ var Main = (function($) {
     });
 
     // Close when clicking on background overlay
-    $(document).on('click', 'body.modal-open', function(e) {
+    $(document).on('click', '.modal', function(e) {
       var $target = $(e.target);
 
-      // if (!$target.parents('.featured-project').length && !$target.is('#project-modal .project-image') && !$target.is('#project-modal .project-content') && !$target.parents('.project-content').length && !$target.is('.project-modal-close') && !$target.parents('.project-modal-close').length && !$target.parents('.project-modal-nav').length) {
-      //   _closeModal();
-      // }
+      if (!$target.parents('.modal-inner').length && !$target.is('.modal-close') && !$target.parents('.modal-close').length) {
+        _closeModal();
+      }
     });
 
     $(document).on('click', '.modal-close', _closeModal);
