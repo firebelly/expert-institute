@@ -27,7 +27,8 @@
     border-radius: 14px;
     max-width: $sitewrapper;
     transform: translateY(-100px);
-    max-height: calc(100vh - #{$padding-md});
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - #{$padding-sm * 3});
     transition: transform .3s ease-out, opacity .3s ease-out;
   }
 
