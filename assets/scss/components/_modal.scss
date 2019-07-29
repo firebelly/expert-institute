@@ -22,12 +22,17 @@
     opacity: 0;
     @extend .grid;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     border-radius: 14px;
     max-width: $sitewrapper;
     transform: translateY(-100px);
+    max-height: calc(100vh - #{$padding-md});
     transition: transform .3s ease-out, opacity .3s ease-out;
+  }
+
+  .modal-overflow {
+
   }
 
   .modal-close {
