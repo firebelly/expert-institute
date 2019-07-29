@@ -43,6 +43,26 @@
   }
 }
 
+// Circular Bio Image
+@mixin circular-image($size: 180px) {
+  width: $size;
+  height: $size;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto $padding-sm;
+
+  img {
+    top: 0;
+    left: 50%;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+}
+
 // Animate on scroll classes
 .animate-in,
 .animation-item {

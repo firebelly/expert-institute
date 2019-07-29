@@ -1,0 +1,111 @@
+// Modals
+
+.modal {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  z-index: 10;
+  position: fixed;
+  padding: $padding-sm 0;
+  background-color: rgba(color(gray),.9);
+
+  &.-active {
+    .modal-inner {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .modal-inner {
+    opacity: 0;
+    @extend .grid;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 14px;
+    max-width: $sitewrapper;
+    transform: translateY(-100px);
+    transition: transform .3s ease-out, opacity .3s ease-out;
+  }
+
+  .modal-close {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    top: $padding-sm;
+    right: $padding-sm;
+    position: absolute;
+    @extend .button-reset;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: color(blue-light);
+    }
+  }
+}
+
+// Expert Witness Modal
+.contact-expert-modal {
+  .expert-bio,
+  .contact-form {
+    padding: $padding-sm;
+  }
+
+  .expert-bio {
+    text-align: center;
+    background-color: color(white);
+
+    .expert-meta {
+      @include h3-simple;
+
+      .id {
+        color: color(gray-dark);
+      }
+
+      .state {
+        color: color(blue-light);
+      }
+    }
+
+    .title {
+      max-width: 300px;
+      @include h2-small;
+      margin: 0 auto 48px;
+    }
+
+    .bio-image {
+      @include circular-image;
+    }
+
+    p {
+      max-width: 300px;
+      margin: 0 auto $padding-sm;
+    }
+  }
+
+  .contact-form {
+    background-color: color(gray-light);
+
+    .cta {
+      margin: 0;
+    }
+  }
+
+  @include media-md {
+    .expert-bio,
+    .contact-form {
+      max-width: 50%;
+      flex-basis: 50%;
+      padding: $padding-md;
+    }
+
+    .contact-form {
+      padding-top: $padding-lg;
+      padding-bottom: $padding-lg;
+    }
+  }
+}

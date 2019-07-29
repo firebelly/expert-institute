@@ -61,11 +61,13 @@ var Main = (function($) {
     _initStickyElements();
     _initInviewElements();
     _initImageParallax();
+    _initModal();
 
     // Esc handlers
     $(document).keyup(function(e) {
       if (e.keyCode === 27) {
         _closeSiteNav();
+        _closeModal();
       }
     });
 
@@ -499,6 +501,59 @@ var Main = (function($) {
         });
       });
     }
+  }
+
+  function _initModal() {
+    // Only set up on the projects page
+    if (!$('.modal').length) {
+      return;
+    }
+
+    var $modal = $('#modal');
+
+    // Activate when clicking on contact expert button
+    $('.modal-open').on('click', function(e) {
+      e.preventDefault();
+      _openModal();
+    });
+
+    // Close when clicking on background overlay
+    $(document).on('click', 'body.modal-open', function(e) {
+      var $target = $(e.target);
+
+      // if (!$target.parents('.featured-project').length && !$target.is('#project-modal .project-image') && !$target.is('#project-modal .project-content') && !$target.parents('.project-content').length && !$target.is('.project-modal-close') && !$target.parents('.project-modal-close').length && !$target.parents('.project-modal-nav').length) {
+      //   _closeModal();
+      // }
+    });
+
+    $(document).on('click', '.modal-close', _closeModal);
+  }
+
+  function _openModal() {
+    $body.addClass('modal-open');
+    _disableScroll();
+    $('.modal').velocity(
+      { opacity: 1 }, {
+      display: "block",
+        complete: function() {
+          $('.modal').addClass('-active');
+        }
+    });
+  }
+
+  function _closeModal() {
+    if (!$body.is('.modal-open')) {
+      return;
+    }
+
+    var st = $(window).scrollTop();
+    $body.removeClass('modal-open');
+    _enableScroll();
+    $('.modal').removeClass('-active');
+    $('.modal').velocity(
+      { opacity: 0 }, {
+      display: "none",
+    });
   }
 
   // Disabling transitions on certain elements on resize

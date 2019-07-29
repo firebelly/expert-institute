@@ -128,6 +128,19 @@
   @include h2;
 }
 
+// h2
+@mixin h2-small {
+  @include font-display;
+  @include paragraph-style(32, 36);
+
+  @include media-md {
+    @include paragraph-style(36, 42);
+  }
+}
+.h2-small {
+  @include h2;
+}
+
 // h3
 @mixin h3 {
   @include ginto-nord;

@@ -54,16 +54,7 @@ bodyClasses: careers
         <h3 class="section-label margin-bottom-lg">View Positions</h3>
         <div class="positions">
         {% for position in site.positions %}        
-            <article class="position col-md-1-2">
-                <div class="-inner">                
-                    <h2 class="position-title">{{ position.title }}</h2>
-                    <div class="position-meta">
-                        <h5 class="team">{{ position.team }}</h5>
-                        <h5 class="location">{{ position.location }}</h5>
-                    </div>
-                    <p class="cta"><a href="{{ position.url }}" class="button">Apply</a></p>
-                </div>
-            </article>
+            {% include position.html %}
         {% endfor %}
         </div>
     </div>

@@ -58,7 +58,7 @@
   // Card Header Tags/Categories
   &-header-tags {
     @extend .semantic-list;
-    margin-bottom: $padding-sm;
+    margin: 4px 0 $padding-sm;
 
     &,
     h5 {
@@ -66,7 +66,7 @@
     }
 
     h5 {
-      margin: 0;
+      margin: 0 0 2px;
       display: inline-block;
       color: color(gray-dark);
     }
@@ -246,6 +246,45 @@
           width: auto;
           right: $padding-md;
         }
+      }
+    }
+  }
+
+  // Expert Card
+  // used for expert listing on expert witness directory page
+  &.expert-card {
+    .expert-image {
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 50%;
+      margin: 0 auto $padding-sm;
+
+      img {
+        top: 0;
+        left: 50%;
+        width: auto;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        transform: translateX(-50%);
+      }
+    }
+
+    .card-title {
+      margin: 0;
+      @include paragraph-style(30,36);
+    }
+
+    .expert-id {
+      @include h3-simple;
+      color: color(gray-dark);
+    }
+
+    .card-body {
+      .card-text {
+        color: color(gray-dark);
       }
     }
   }

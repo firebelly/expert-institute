@@ -339,6 +339,15 @@
         text-align: center;
         width: columns(23,9);
       }
+
+      // Right-aligned image
+      &.-right {
+        .flickity-page-dots {
+          left: 0;
+          right: auto;
+          width: columns(23,11);
+        }
+      }
     }
   }
 
