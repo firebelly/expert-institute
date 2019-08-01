@@ -166,7 +166,7 @@ body.single-bio {
 
 // Single Bio Content
 body.single-bio {
-  .page-header.swooped.-right .header-text {
+  .page-header.swooped .header-text {
     .header-meta {
       display: block;
     }
@@ -176,6 +176,12 @@ body.single-bio {
       @include media-md {
         margin-bottom: $padding-lg;
       }
+    }
+  }
+
+  .page-header.angled .header-text {
+    .header-meta {
+      display: block;
     }
   }
 
@@ -236,6 +242,7 @@ body.single-bio {
 
         a {
           @include h3-simple;
+          color: color(blue-light);
         }
       }
     }
@@ -252,6 +259,53 @@ body.single-bio {
 
 // Single Expert Bio
 body.single-expert-bio {
+  .page-header {
+    .header-background {
+      background-color: color(gray-light);
+    }
+
+    .profile-image {
+      top: 20px;
+      left: 50%;
+      z-index: 2;
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      border-radius: 50%;
+      background-size: cover;
+      transform: translateX(-50%);
+    }
+
+    .after-shape::before {
+      background-color: color(gray-light);
+    }
+
+    @include media-md {
+      .profile-image {
+        height: 0;
+        top: 162px;
+        transform: none;
+        left: columns(12,23);
+        width: columns(7,23);
+        padding-bottom: columns(7,23);
+      }
+
+      .header-text {
+        padding-bottom: $padding-lg;
+      }
+    }
+  }
+
+  .post-content {
+    @include media-lg {
+      > {
+        p, h1, h2, h3, h4, h5, h6 {
+          padding-right: columns(11,23);
+        }
+      }
+    }
+  }
+
   .bio-snapshot {
     margin-top: $padding-sm;
 

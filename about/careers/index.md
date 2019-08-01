@@ -12,7 +12,7 @@ bodyClasses: careers
             <h3 class="section-label margin-bottom">Careers</h3>
             <h1 class="block-title">Grow with the Expert Institute</h1>
             <p>We're changing the legal industry. And we want you to join us.</p>
-            <p class="block-cta"><a href="#open-positions" class="button -teal">View Open Positions</a> <a href="#" class="button -white hollow video-toggle"><svg class="icon icon-play-hollow" aria-hidden="true" role="presentation"><use xlink:href="#icon-play-hollow"/></svg>Watch Video</a></p>
+            <p class="block-cta"><a href="#open-positions" class="button -teal smooth-scroll">View Open Positions</a> <a href="#" class="button -white hollow video-toggle"><svg class="icon icon-play-hollow" aria-hidden="true" role="presentation"><use xlink:href="#icon-play-hollow"/></svg>Watch Video</a></p>
         </div>
     </div>
 </div>
@@ -22,7 +22,7 @@ bodyClasses: careers
         <div class="section-content animate-in">
             <h2 class="block-title align-center">Current Openings</h2>
         </div>
-        <div class="section-content animate-in">            
+        <div class="filters-section section-content animate-in">            
             <form action="#" id="filters" class="filters -outlined grid spaced">
                 <div class="filter col-md-1-2">                
                     <div class="select-wrap">

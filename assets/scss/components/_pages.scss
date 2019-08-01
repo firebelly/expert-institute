@@ -157,7 +157,7 @@
       height: 230px;
       position: relative;
       background-size: cover;
-      background-position: center center;
+      background-position: top center;
       &::before {
         left: 0;
         bottom: 0;
@@ -194,6 +194,7 @@
         position: absolute;
         max-width: columns(15,23);
         flex-basis: columns(15,23);
+        background-position: center center;
         &::before {
           display: none;
         }

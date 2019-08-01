@@ -1,5 +1,11 @@
 // Careers
 
+.filters-section.section-content {
+  @include media-md {
+    padding-bottom: 180px;
+  }
+}
+
 .positions {
   @extend .grid;
   @extend .grid.spaced;

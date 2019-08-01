@@ -60,11 +60,11 @@
   .expert-bio,
   .contact-form {
     padding: $padding-sm;
+    background-color: color(gray-light);
   }
 
   .expert-bio {
     text-align: center;
-    background-color: color(white);
 
     .expert-meta {
       @include h3-simple;
@@ -86,6 +86,7 @@
 
     .bio-image {
       @include circular-image;
+      margin-bottom: 0;
     }
 
     p {
@@ -95,10 +96,21 @@
   }
 
   .contact-form {
-    background-color: color(gray-light);
-
     .cta {
       margin: 0;
+    }
+  }
+
+  .message-copy {
+    text-align: center;
+
+    &.-small {
+      padding: 0 $padding-sm;
+      margin-top: $padding-md;
+    }
+
+    &.-medium {
+      display: none;
     }
   }
 
@@ -110,9 +122,26 @@
       padding: $padding-md;
     }
 
+    .expert-bio {
+      background-color: color(white);
+
+      .bio-image {
+        margin-bottom: $padding-sm;
+      }
+    }
+
     .contact-form {
       padding-top: $padding-lg;
       padding-bottom: $padding-lg;
+    }
+
+    .message-copy {
+      &.-medium {
+        display: block;
+      }
+      &.-small {
+        display: none;
+      }
     }
   }
 }
