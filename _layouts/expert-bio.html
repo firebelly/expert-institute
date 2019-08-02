@@ -51,7 +51,8 @@ bodyClasses: single-bio single-expert-bio
 <div class="section padded site-wrapper">
   <h3 class="section-label margin-bottom-md">Related Experts</h3>
   <div class="card-grid">
-    {% for expert in site.experts limit: 3 %}
+    {% assign experts = site.experts | sample:3 %}
+    {% for expert in experts %}
         {% include expert-card.html %}
     {% endfor %}
   </div>
@@ -113,4 +114,8 @@ bodyClasses: single-bio single-expert-bio
       </div>
     </div>
   </div>
+</div>
+
+<div class="section padded-bottom site-wrapper">
+  <p class="align-center"><a href="/resources/expert-witness-directory" class="button">New Search</a></p>
 </div>

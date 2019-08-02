@@ -56,7 +56,12 @@
     height: 24px;
     margin-right: 24px;
     fill: color(white);
-    margin: -1px 24px -6px -18px;
+    margin: -2px 24px -6px -10px;
+
+    @include media-md {
+      margin-top: -1px;
+      margin-left: -18px;
+    }
   }
 
   // Style Variations

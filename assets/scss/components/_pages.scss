@@ -504,6 +504,31 @@
     }
   }
 
+  // Background videos
+  .background-video {
+    overflow: hidden;
+
+    &::before {
+      z-index: 1;
+    }
+
+    video {
+      left: 0;
+      width: 100%;
+      height: auto;
+      position: absolute;
+    }
+
+    @include media-md {
+      video {
+        left: 50%;
+        width: auto;
+        height: 100%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
   // Headers styled like the middle showcase sections,
   // with the elbows
   &.showcase-section {

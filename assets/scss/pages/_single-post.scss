@@ -16,7 +16,7 @@ body.single-bio {
       max-width: 1020px;
 
       > {
-        p, h1, h2, h3, h4, h5, h6 {
+        p, ul, h1, h2, h3, h4, h5, h6 {
           padding-right: columns(4,17);
         }
       }
@@ -285,9 +285,9 @@ body.single-expert-bio {
         height: 0;
         top: 162px;
         transform: none;
-        left: columns(12,23);
-        width: columns(7,23);
-        padding-bottom: columns(7,23);
+        left: columns(13,23);
+        width: columns(6,23);
+        padding-bottom: columns(6,23);
       }
 
       .header-text {
@@ -298,8 +298,9 @@ body.single-expert-bio {
 
   .post-content {
     @include media-lg {
-      > {
-        p, h1, h2, h3, h4, h5, h6 {
+      >,
+      .bio-snapshot > {
+        p, ul, h1, h2, h3, h4, h5, h6 {
           padding-right: columns(11,23);
         }
       }
@@ -316,8 +317,13 @@ body.single-expert-bio {
     ul {
       @extend .semantic-list;
 
-      li::before {
-        display: none;
+      li {
+        + li {
+          margin-top: .5em;
+        }
+        &::before {
+          display: none;
+        }
       }
     }
 
