@@ -129,6 +129,16 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('dist/fonts'));
 });
 
+// ### Videos
+// `gulp fonts` - Just copies fonts over to dist.
+gulp.task('videos', function() {
+  return gulp.src([
+      'assets/videos/**/*'
+    ])
+    .pipe(gulp.dest('dist/videos'));
+});
+
+
 // SVGs to defs
 gulp.task('svgs', function() {
   return gulp.src('assets/svgs/*.svg')
@@ -167,7 +177,7 @@ gulp.task('clean', require('del').bind(null, ['dist']));
 gulp.task('build', function(callback) {
   runSequence(
     'clean',
-    ['styles','scripts','images','fonts','svgs'],
+    ['styles','scripts','images','fonts', 'videos', 'svgs'],
     callback
   );
 });
@@ -187,6 +197,7 @@ gulp.task('serve', ['build'], function() {
   gulp.watch('assets/js/**/*.js', ['scripts']);
   gulp.watch('assets/images/**/*', ['images']);
   gulp.watch('assets/fonts/**/*', ['fonts']);
+  gulp.watch('assets/videos/**/*', ['videos']);
   gulp.watch('assets/svgs/**/*.svg', ['svgs']);
 });
 
