@@ -7,7 +7,7 @@ bodyClasses: careers
 <div class="page-header showcase-section parallax-image-container -blue-dark">
     <div class="section-background background-video">
         <video autoplay loop muted>
-            <source src="/dist/videos/CareerClip_Promo-workwithTEI.mp4" type="video/mp4">
+            <source src="/dist/videos/careers-background-video.mp4" type="video/mp4">
         </video>
     </div>
     <div class="-inner grid">
@@ -75,22 +75,22 @@ bodyClasses: careers
 </div>
 
 <div class="showcase-section -top section parallax-image-container -gray-light">
-    <div class="section-background parallax-image" style="background-image:url('/dist/images/careers-impact.jpg');"></div>
+    <div class="section-background parallax-image" style="background-image:url('/dist/images/careers-learning.jpg');"></div>
     <div class="-inner grid">
         <div class="section-content">        
-            <h1 class="block-title animate-in">Impact</h1>
-            <p class="animate-in">Work on something that matters. Everyday, we connect the world’s best attorneys with leading thinkers in every field, and have a direct influence on the most important litigation matters in the country.</p>
+            <h1 class="block-title animate-in">Learning</h1>
+            <p class="animate-in">We’re students as well as teachers, empowering the world’s legal professionals with knowledge while constantly learning ourselves. We might not know all the answers, but we know how to find them.</p>
         </div>
     </div>
 </div>
 
 <div class="showcase-section -middle section parallax-image-container -gray-light">
-    <div class="section-background parallax-image" style="background-image:url('/dist/images/careers-learning.jpg');"></div>
+    <div class="section-background parallax-image" style="background-image:url('/dist/images/careers-impact.jpg');"></div>
     <div class="-inner grid">
         <div class="section-content">
             <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
-            <h1 class="block-title animate-in">Learning</h1>
-            <p class="animate-in">We’re students as well as teachers, empowering the world’s legal professionals with knowledge while constantly learning ourselves. We might not know all the answers, but we know how to find them.</p>
+            <h1 class="block-title animate-in">Impact</h1>
+            <p class="animate-in">Work on something that matters. Everyday, we connect the world’s best attorneys with leading thinkers in every field, and have a direct influence on the most important litigation matters in the country.</p>
         </div>
     </div>
 </div>
@@ -135,6 +135,43 @@ bodyClasses: careers
             </ul>
         </div>
     </div>
+</div>
+
+<div class="section padded site-wrapper">
+
+    <div class="post-carousel carousel-fadein">
+        <figure class="landscape">
+            <div class="image">
+                <img data-flickity-lazyload="/dist/images/careers-carousel_01.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+            </div>
+            <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Cras justo odio.</figcaption>
+        </figure>
+        <figure class="landscape">
+            <div class="image">
+                <img data-flickity-lazyload="/dist/images/careers-carousel_02.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+            </div>
+            <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</figcaption>
+        </figure>
+        <figure class="portrait">
+            <div class="image">
+                <img data-flickity-lazyload="/dist/images/careers-carousel_03.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+            </div>
+            <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</figcaption>
+        </figure>
+        <figure class="landscape">
+            <div class="image">
+                <img data-flickity-lazyload="/dist/images/careers-carousel_04.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+            </div>
+            <figcaption>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</figcaption>
+        </figure>
+        <figure class="square">
+            <div class="image">
+                <img data-flickity-lazyload="/dist/images/careers-carousel_05.jpg" alt="Fusce dapibus, tellus ac cursus commodo">
+            </div>
+            <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</figcaption>
+        </figure>
+    </div>
+
 </div>
 
 {% include testimonials-section.html %}
