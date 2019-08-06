@@ -52,12 +52,15 @@ bodyClasses: expert-witness-directory
     </div>
 </div>
 
-<div class="section padded-lg">
+<div class="section padded-top-lg">
     <div class="site-wrapper">
         <div class="card-grid">
             {% for expert in site.experts %}
                 {% include expert-card.html %}
             {% endfor %}
         </div>
+        {% include post-navigation.html total=5 %}
     </div>
 </div>
+
+{% include trust-pilot-section.html %}

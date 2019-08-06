@@ -50,6 +50,6 @@ bodyClasses: testimonials
                 {% include testimonial-card.html style=testimonial.style %}
             {% endfor %}
         </div>
-        {% include post-navigation.html total="4" %}
+        {% include post-navigation.html total=4 %}
     </div>
 </div>

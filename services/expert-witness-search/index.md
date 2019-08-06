@@ -161,11 +161,7 @@ bodyClasses: expert-search
     </div>
 </div>
 
-<div class="trust-pilot-section section padded-bottom-lg">
-    <div class="site-wrapper">
-        <img src="/dist/images/trust-pilot-screenshot.jpg">
-    </div>
-</div>
+{% include trust-pilot-section.html %}
 
 <div class="section padded-top padded-bottom-lg">
     <div class="site-wrapper">    
