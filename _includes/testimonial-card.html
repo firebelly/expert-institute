@@ -1,0 +1,22 @@
+<article class="card col-lg-1-2 col-xl-1-3 testimonial-{{ testimonial.style }}{% if testimonial.style == 'blog-post' %} with-image{% endif %}">
+  <div class="-inner">
+    {% if testimonial.style == 'blog-post' %}
+      <header class="card-header">
+        <h1 class="card-title">{{ testimonial.postTitle }}</h1>
+        <h4 class="testimonial-organization">{{ testimonial.organization }}</h4>
+      </header>
+      <div class="card-cta">
+        <a href="#" class="button -gold">Read More</a>
+      </div>
+      <div class="card-image"><div class="image" style="background-image:url('{{ testimonial.cardImage }}');"></div></div>
+    {% else if testimonial.style == 'quote' %}
+      <blockquote class="card-text">
+        <p>{{ testimonial.quote }}</p>
+        <footer class="quote-citation">
+          <div class="testimonial-image"><img src="{{ testimonial.cardImage }}" alt=""></div>
+          <cite><span class="name">{{ testimonial.author }}</span> <span class="business">{{ testimonial.organization }}</span></cite>
+        </footer>
+      </blockquote>
+    {% endif %}
+  </div>
+</article>

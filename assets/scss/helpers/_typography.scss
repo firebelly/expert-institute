@@ -115,6 +115,18 @@
   @include h1;
 }
 
+@mixin h1-alt {
+  @include ginto-normal;
+  @include paragraph-style(40, 42);
+
+  @include media-md {
+    @include paragraph-style(63, 66);
+  }
+}
+.h1-alt {
+  @include h1-alt;
+}
+
 // h2
 @mixin h2 {
   @include font-display;

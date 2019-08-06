@@ -1,0 +1,49 @@
+// Testimonials page
+
+body.testimonials {
+  .carousel-header {
+    @include media-lg {
+      .text-carousel {
+        min-height: 1px;
+        padding-bottom: 102px;
+      }
+
+      &.-right {
+        .header-text {
+          .header-meta {
+            margin-bottom: $padding-sm;
+          }
+        }
+      }
+    }
+  }
+
+  .header-article {
+    blockquote {
+      margin: 0;
+
+      > p {
+        @include h1-alt;
+        color: color(blue-dark);
+      }
+
+      cite {
+        display: block;
+        font-style: normal;
+        margin: $padding-sm 0 0;
+        h5 {
+          margin: 0;
+        }
+      }
+    }
+
+    .testimonial-author {
+      @include p1;
+      color: color(gold);
+    }
+
+    .testimonial-organization {
+      @include h3-simple;
+    }
+  }
+}

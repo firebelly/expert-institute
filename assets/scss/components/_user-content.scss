@@ -55,15 +55,7 @@
   blockquote {
     padding: 0;
     margin: $padding-md 0;
-
-    &::before {
-      content: '“';
-      display: block;
-      @include font-display;
-      color: color(blue-light);
-      margin-bottom: -$padding-sm;
-      @include paragraph-style(90, 90);
-    }
+    @include open-quote(color(blue-light));
 
     p {
       margin: 0;

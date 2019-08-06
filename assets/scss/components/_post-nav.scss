@@ -1,0 +1,123 @@
+// Post Navigation
+.post-navigation {
+  text-align: center;
+  padding: $padding-md 0;
+
+  @include media-lg {
+    padding: $padding-lg 0;
+  }
+
+  ul {
+    @include clearfix;
+    display: inline-block;
+    @extend .semantic-list;
+
+    li {
+      float: left;
+      width: 36px;
+      height: 36px;
+      border-top: 1px solid color(blue-light);
+      border-left: 1px solid color(blue-light);
+      border-bottom: 1px solid color(blue-light);
+      &:last-of-type {
+        border-right: 1px solid color(blue-light);
+      }
+
+      &.-current {
+        a {
+          color: color(white);
+          background-color: color(blue-light);
+        }
+      }
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      line-height: 32px;
+      padding: 0 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      color: color(blue-light);
+      &:hover {
+        color: color(white);
+        background-color: color(blue-light);
+      }
+    }
+  }
+
+  .utility-nav {
+    width: 108px;
+    display: flex;
+    margin: 36px auto 0;
+    align-items: center;
+    color: color(gray-dark);
+    justify-content: space-between;
+  }
+
+  .page-status {
+    vertical-align: top;
+    display: inline-block;
+    @include paragraph-style(14,36);
+
+    input {
+      width: 18px;
+      height: 18px;
+      text-align: center;
+      padding-bottom: 2px;
+      @extend .input-reset;
+      display: inline-block;
+      color: color(gray-dark);
+      border: 1px solid color(gray);
+      @include paragraph-style(14,36);
+    }
+  }
+
+  .page-traverse {
+    @include clearfix;
+
+    a {
+      float: left;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      padding: 2px 0 2px 4px;
+      border: 1px solid color(gray-dark);
+      svg {
+        width: 7px;
+        height: 13px;
+        display: inline-block;
+        fill: color(gray-dark);
+      }
+
+      &.next {
+        padding-right: 0;
+        margin-left: -1px;
+        padding-left: 4px;
+      }
+
+      &.-disabled {
+        cursor: auto;
+        border-color: color(gray);
+
+        svg {
+          fill: color(gray);
+        }
+      }
+
+      &:not(.-disabled) {
+        &:hover,
+        &:focus {
+          background-color: color(gray);
+          border-color: color(blue-light);
+
+          svg {
+            fill: color(blue-light);
+          }
+        }
+      }
+
+    }
+  }
+}

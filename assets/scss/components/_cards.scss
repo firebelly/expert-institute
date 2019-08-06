@@ -122,7 +122,7 @@
 
   // Card Text
   &-text {
-    margin-bottom: 67px;
+    margin: 0 0 67px;
 
     p {
       margin: 0;
@@ -173,6 +173,29 @@
       }
       .card-body {
         padding-right: 35%;
+      }
+
+      // 3-Up Cards
+      &.col-md-1-3 {
+        .card-image {
+          top: 50%;
+        }
+      }
+    }
+
+    @include media-lg {
+      &.col-lg-1-3 {
+        .card-image {
+          top: 50%;
+        }
+      }
+    }
+
+    @include media-xl {
+      &.col-xl-1-3 {
+        .card-image {
+          top: 50%;
+        }
       }
     }
   }
@@ -285,6 +308,80 @@
     .card-body {
       .card-text {
         color: color(gray-dark);
+      }
+    }
+  }
+}
+
+// Testimonail Cards
+&.testimonial-quote {
+  > .-inner {
+    padding-top: 60px;
+    @include media-md {
+      padding-top: 60px;
+    }
+  }
+
+  .card-text {
+    height: 100%;
+    display: flex;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      @include p2;
+      @include open-quote;
+      &::before {
+        height: 20px;
+      }
+
+      @include media-md {
+        @include paragraph-style(24,30);
+      }
+
+      @include media-lg {
+        @include paragraph-style(36,42);
+      }
+    }
+
+    .quote-citation {
+      margin-top: 42px;
+    }
+  }
+}
+&.testimonial-blog-post {
+  .testimonial-organization {
+    margin: 0;
+    @include h3-simple;
+  }
+
+  .card-title {
+    margin: 36px 0 25px;
+
+    @include media-md {
+      @include paragraph-style(24,30);
+    }
+
+    @include media-lg {
+      @include paragraph-style(36,42);
+    }
+  }
+
+  .testimonial-organization {
+    @include media-md {
+      padding-right: 25%;
+    }
+  }
+
+  .card-cta {
+    margin-top: $padding-md;
+  }
+
+  &.with-image {
+    .card-title {
+      @include media-xl {
+        padding-right: 0;
       }
     }
   }

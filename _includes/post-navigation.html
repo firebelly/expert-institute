@@ -1,0 +1,17 @@
+<nav class="post-navigation">
+  <ul>
+    {% for i in (1..include.total) %}
+      <li{% if i == 1 %} class="-current"{% endif %}><a href="#">{{ i }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <div class="utility-nav">
+    <div class="page-status">
+      <input type="text" value="1"> / <span>{{ include.total }}</span>
+    </div>
+    <div class="page-traverse">
+      <a href="#" class="previous -disabled"><span class="visuallyhidden">Previous Page</span><svg class="icon icon-arrow-left" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-left"/></svg></a>
+      <a href="#" class="next"><span class="visuallyhidden">Next Page</span><svg class="icon icon-arrow-right" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-right"/></svg></a>
+    </div>
+  </div>
+</nav>
