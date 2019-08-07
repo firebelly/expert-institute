@@ -138,7 +138,6 @@ bodyClasses: careers
 </div>
 
 <div class="section padded site-wrapper">
-
     <div class="post-carousel carousel-fadein">
         <figure class="landscape">
             <div class="image">
@@ -171,10 +170,9 @@ bodyClasses: careers
             <figcaption>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</figcaption>
         </figure>
     </div>
-
 </div>
 
-{% include testimonials-section.html %}
+{% include meet-tei-section.html %}
 
 <section class="section padded-bottom">
     <div class="site-wrapper">

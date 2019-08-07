@@ -749,3 +749,71 @@
     }
   }
 }
+
+// Meet The Expert Institute Section
+// https://d.pr/i/6GZTZK
+.meet-tei-section {
+
+  .section-content {
+    padding: $padding-md 0;
+  }
+
+  .carousel {
+    margin-left: -$padding-sm;
+    padding-bottom: $padding-md;
+    width: calc(100% + #{$padding-md});
+  }
+
+  .flickity-page-dots {
+    .dot {
+      border-color: color(gold);
+      &.is-selected {
+        background-color: color(gold);
+      }
+    }
+  }
+
+  .team-member {
+    width: 50%;
+    padding: 0 $padding-sm;
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .member-image {
+      height: 0;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 20px;
+      padding-bottom: 100%;
+      background-size: cover;
+      border-radius: 0 0 50% 0;
+      background-position: top center;
+    }
+
+    .member-name {
+      margin: 0;
+      @include p1;
+      color: color(gold);
+    }
+
+    .member-title {
+      margin: 0;
+      @include h3-simple;
+    }
+  }
+
+  @include media-md {
+    .carousel {
+      padding-bottom: $padding-lg;
+    }
+  }
+
+  @include media-lg {
+    .team-member {
+      width: columns(1,3);
+    }
+  }
+}
