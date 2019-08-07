@@ -418,13 +418,16 @@
     @include media-md {
       overflow: visible;
 
-      + .section:not(.block-centered-text) {
+      + .section {
         .section-label {
           position: relative;
           transform: translateY(-100%);
         }
-        .section-content {
-          padding-top: $padding-lg;
+
+        &:not(.centered-text-section):not(.stats-section) {
+          .section-content {
+            padding-top: $padding-lg;
+          }
         }
       }
 

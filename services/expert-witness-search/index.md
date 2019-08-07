@@ -6,10 +6,10 @@ bodyClasses: expert-search
 
 {% include page-header_angled.html color="gold" image-url="/dist/images/expert-search-banner.jpg" headline="The best way to connect with expert witnesses" description="Our unique combination of experienced researchers, on-staff medical doctors, and a data-driven recruitment platform gives attorneys access to the world’s top experts in any field." %}
 
-<div class="section block-centered-text">
+<div class="section centered-text-section">
     <div class="site-wrapper">
         <div class="section-content">
-            <h2 class="block-title animate-in">The most efficient way to connect with the world’s leading expert witnesses</h2>
+            <h2 class="section-title animate-in">The most efficient way to connect with the world’s leading expert witnesses</h2>
             <p class="animate-in">Finding the right expert is a defining moment in every case, but with The Expert Institute’s expert search and intelligence platform, your firm will gain access to precisely-targeted expert insights throughout every stage of the litigation process. Whether you need to assemble a national team of experts for mass tort litigation, replace overused experts, or engage consultative experts, we can provide comprehensive expert solutions.</p>
         </div>
     </div>
@@ -19,7 +19,7 @@ bodyClasses: expert-search
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">        
-            <h1 class="block-title">Customize Your Expert Search</h1>
+            <h1 class="section-title">Customize Your Expert Search</h1>
             <p>The Expert Institute’s team of experienced researchers and medical doctors are full partners throughout the lifetime of your expert witness search.</p>
         </div>
         <div class="section-image -vertical">
@@ -33,7 +33,7 @@ bodyClasses: expert-search
     <div class="-inner grid">
         <div class="section-content">
             <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
-            <h1 class="block-title">Background Checks On Every Expert</h1>
+            <h1 class="section-title">Background Checks On Every Expert</h1>
             <p>Our multi-point compliance process ensures each expert candidate we present can withstand the closest scrutiny.</p>
         </div>
         <div class="section-image">
@@ -46,7 +46,7 @@ bodyClasses: expert-search
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">        
-            <h1 class="block-title">Choose the best expert — with conviction</h1>
+            <h1 class="section-title">Choose the best expert — with conviction</h1>
             <p>Participate in conference calls with the most qualified candidates to ensure a perfect match before you retain. </p>
         </div>
         <div class="section-image">
@@ -55,10 +55,10 @@ bodyClasses: expert-search
     </div>
 </div>
 
-<div class="section block-centered-text -wide">
+<div class="section centered-text-section -wide">
     <div class="site-wrapper">
         <div class="section-content">        
-            <h2 class="block-title animate-in">In-Depth Expert Witness Analysis Across Every Area of Practice</h2>
+            <h2 class="section-title animate-in">In-Depth Expert Witness Analysis Across Every Area of Practice</h2>
             <p class="animate-in">With our team of experienced researchers and extensive network of expert candidates, The Expert Institute is uniquely equipped to tackle critical searches for experts in any area of practice. In addition, our comprehensive vetting and screening procedures ensure that each expert referral will be pivotal to your case.</p>
         </div>
     </div>
@@ -84,11 +84,11 @@ bodyClasses: expert-search
     </div>
 </div>
 
-<div class="section block-centered-text -wide">
+<div class="section centered-text-section -wide">
     <div class="site-wrapper">
         <h3 class="section-label">Testimonial</h3>
         <div class="section-content">
-            <h2 class="block-title animate-in">The most efficient way to connect with the world’s leading expert witnesses</h2>
+            <h2 class="section-title animate-in">The most efficient way to connect with the world’s leading expert witnesses</h2>
             <p class="animate-in">Finding the right expert is a defining moment in every case, but with The Expert Institute’s expert search and intelligence platform, your firm will gain access to precisely-targeted expert insights throughout every stage of the litigation process. Whether you need to assemble a national team of experts for mass tort litigation, replace overused experts, or engage consultative experts, we can provide comprehensive expert solutions.</p>
         </div>
     </div>
@@ -141,7 +141,7 @@ bodyClasses: expert-search
 
 {% include testimonials-section.html %}
 
-<div class="section padded block-stats">
+<div class="section padded stats-section">
     <div class="site-wrapper">
         <h3 class="section-label margin-bottom-lg">In Numbers</h3>
         <div class="grid spaced">

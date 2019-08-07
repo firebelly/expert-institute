@@ -7,10 +7,10 @@ bodyClasses: challenge-study
 {% include page-header_angled.html color="teal" image-url="/dist/images/challenge-study-banner.jpg" headline="Expert witness challenge study" description="The landscape of legal expertise is constantly evolving. Stay ahead of the curve with detailed intelligence. Leverage a team of experienced research attorneys
 " %}
 
-<div class="section block-centered-text">
+<div class="section centered-text-section">
     <div class="site-wrapper">
         <div class="section-content">
-            <h2 class="block-title animate-in">Transform Your Expert Search and Diligence Process</h2>
+            <h2 class="section-title animate-in">Transform Your Expert Search and Diligence Process</h2>
             <p class="animate-in">Expert Witness Challenge Studies from The Expert Institute give you the tools to make confident choices with expert candidates and gain case-winning insights into opposing expertise - all while cutting costs and administrative overhead.</p>
         </div>
     </div>
@@ -50,7 +50,7 @@ bodyClasses: challenge-study
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">        
-            <h1 class="block-title">Detailed graphical breakdown of challenge history data</h1>
+            <h1 class="section-title">Detailed graphical breakdown of challenge history data</h1>
             <p>Gain instant clarity on any expert.</p>
         </div>
         <div class="section-image">
@@ -64,7 +64,7 @@ bodyClasses: challenge-study
     <div class="-inner grid">
         <div class="section-content">
             <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
-            <h1 class="block-title">Immediate Insights</h1>
+            <h1 class="section-title">Immediate Insights</h1>
             <p>Expert Challenge Studies give you at-a-glance access to decisive data on the past performance of expert witnesses, with snapshot overviews that summarize events by grounds of challenge and outcome.</p>
         </div>
         <div class="section-image">
@@ -77,7 +77,7 @@ bodyClasses: challenge-study
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">        
-            <h1 class="block-title">Strategic Clarity</h1>
+            <h1 class="section-title">Strategic Clarity</h1>
             <p>Make quick decisions when assessing the value of potential experts and steer development of cross examination strategies.</p>
         </div>
         <div class="section-image">
@@ -86,16 +86,16 @@ bodyClasses: challenge-study
     </div>
 </div>
 
-<div class="section block-centered-text">
+<div class="section centered-text-section">
     <div class="site-wrapper">
         <div class="section-content">        
-            <h2 class="block-title animate-in">In-Depth Expert Witness Analysis Across Every Area of Practice</h2>
+            <h2 class="section-title animate-in">In-Depth Expert Witness Analysis Across Every Area of Practice</h2>
             <p class="animate-in">With our team of experienced researchers and extensive network of expert candidates, The Expert Institute is uniquely equipped to tackle critical searches for experts in any area of practice. In addition, our comprehensive vetting and screening procedures ensure that each expert referral will be pivotal to your case.</p>
         </div>
     </div>
 </div>
 
-<div class="section padded block-stats padded-top-lg">
+<div class="section padded stats-section padded-top-lg">
     <div class="site-wrapper">
         <div class="grid spaced">
             <div class="stat col-md-1-2 col-lg-1-3">

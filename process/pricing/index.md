@@ -118,10 +118,10 @@ bodyClasses: pricing template-a
     </div>
 </div>
 
-<div class="section block-centered-text">
+<div class="section centered-text-section">
     <div class="site-wrapper">
         <div class="section-content">
-            <h1 class="block-title animate-in">Flexible Billing To Keep Costs In Check</h1>
+            <h1 class="section-title animate-in">Flexible Billing To Keep Costs In Check</h1>
             <p class="animate-in">Bill back expenses to designated client files so our services never impact your overhead.</p>
         </div>
     </div>

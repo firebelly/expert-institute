@@ -40,15 +40,15 @@ bodyClasses: how-it-works template-a
     </div>
 </section>
 
-<div class="section block-centered-text">
+<div class="section centered-text-section">
     <div class="site-wrapper">
         <h3 class="section-label">The Expert Edge</h3>
         <div class="section-content">
-            <h2 class="block-title animate-in">Best in Class Technology</h2>
+            <h2 class="section-title animate-in">Best in Class Technology</h2>
             <p class="animate-in">When you work with Expert Institute, you gain access to an advanced recruiting system, built from the ground up, to identify the best experts for any given criteria, anywhere in the nation. </p>
         </div>
         <div class="section-content">
-            <h2 class="block-title animate-in">Complete<br> Research Staff</h2>
+            <h2 class="section-title animate-in">Complete<br> Research Staff</h2>
             <p class="animate-in">Every expert witness search is conducted by our internal research team. We work with clients to determine a framework for their search and maintain active communication as the search progresses.</p>
         </div>
     </div>

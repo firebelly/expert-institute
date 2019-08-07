@@ -188,6 +188,18 @@
   }
 }
 
+// Glboal Block Elements
+
+// Section Titles
+.section-title {
+  @include h1;
+  margin: 0 0 $padding-sm;
+
+  @include media-md {
+    margin-bottom: $padding-md - 16px;
+  }
+}
+
 // Section Label
 .section-label {
   @include h3;
@@ -213,6 +225,202 @@
     }
     &.margin-bottom-lg {
       margin-bottom: $padding-lg;
+    }
+  }
+}
+
+// Centered Text Sections
+.centered-text-section {
+
+  .section-content {
+    margin: 0 auto;
+    padding: 96px 0;
+    max-width: 660px;
+    text-align: center;
+
+    + .accordions {
+      margin-bottom: 96px;
+      margin-top: -$padding-md;
+    }
+
+    + .section-content {
+      padding-top: 0;
+    }
+  }
+
+  &.-wide {
+    .section-content {
+      max-width: 948px;
+    }
+  }
+
+  p {
+    margin: 30px 0 0;
+    color: color(gray-dark);
+    @include ginto-normal-light;
+  }
+
+  ul {
+    text-align: left;
+    @include list-style;
+    color: color(gray-dark);
+
+    li {
+      margin-bottom: $padding-sm / 2;
+    }
+  }
+
+  .accordions {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $padding-md;
+
+    .accordion-list + .accordion-list {
+      margin-top: -1px;
+    }
+  }
+
+  @include media-md {
+    .section-content {
+      margin: 0 auto;
+      padding: 296px 0;
+
+      ul.two-column {
+        columns: 2;
+      }
+
+      + .section-content,
+      + .accordions {
+        padding-top: 0;
+        margin-top: -116px;
+      }
+
+      + .accordions {
+        margin-bottom: 296px;
+      }
+    }
+
+    p {
+      margin: 52px #{columns(2,23)} 0;
+    }
+
+    .accordions {
+      margin-top: $padding-lg;
+
+      .accordion-list + .accordion-list {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include media-lg {
+    .accordions {
+      .col-md-1-2 {
+        padding-right: columns(3,34);
+
+        + .col-md-1-2 {
+          padding-right: $padding-sm;
+          padding-left: columns(3,34);
+        }
+      }
+    }
+  }
+}
+
+// Stats Sections
+.stats-section {
+  .stat {
+    text-align: center;
+    margin-bottom: $padding-md;
+
+    .figure {
+      @include h1;
+      margin: 0 0 $padding-sm;
+    }
+
+    p {
+      color: color(gray-dark);
+      @include ginto-normal-light;
+    }
+
+    @include media-lg {
+      &[class*=col-] {
+        padding: 0 $padding-md;
+      }
+
+      .figure {
+        margin-bottom: 48px;
+        @include paragraph-style(90,90);
+      }
+    }
+  }
+
+  // Centered Stat
+  // https://d.pr/i/JIGrqt
+  &.centered-stat {
+
+    .section-content {
+      position: relative;
+      &::after {
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+        content: '';
+        position: absolute;
+        background-color: color(gray-dark);
+      }
+    }
+
+    .stat {
+      z-index: 1;
+      margin: 96px auto;
+      position: relative;
+      background-color: color(white);
+      max-width: calc(660px + #{columns(2,23)});
+
+      .figure {
+        margin: 0;
+        padding: 0 columns(1,23);
+      }
+
+      p {
+        margin: 0;
+        @include h1;
+        line-height: .9;
+        color: color(blue-dark);
+
+        &.-small {
+          @include p1;
+          margin-top: $padding-sm;
+          color: color(gray-dark);
+        }
+      }
+
+      @include media-md {
+        margin-top: 296px;
+        margin-bottom: 296px;
+
+        p {
+          line-height: .9;
+          padding: 0 columns(2,23);
+        }
+      }
+
+      @include media-lg {
+        .figure {
+          @include paragraph-style(114,118);
+        }
+      }
+    }
+  }
+
+  + .centered-stat  .stat {
+    margin-top: 28px;
+
+    @include media-md {
+      margin-top: 148px;
     }
   }
 }

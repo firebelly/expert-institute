@@ -71,3 +71,269 @@
     }
   }
 }
+
+// Custom Carousels
+
+// Post Carousels
+.post-carousel {
+  margin: $padding-md 0;
+
+  + .post-content {
+    z-index: 1;
+    position: relative;
+  }
+
+  .flickity-viewport {
+    height: 0;
+    opacity: 0;
+    overflow: visible;
+    padding-bottom: 66.6666%;
+    transition: height .2s ease-out, opacity .4s ease-out;
+  }
+
+  &.layout-ready {
+    .flickity-viewport {
+      opacity: 1;
+      padding-bottom: 0;
+    }
+  }
+
+  figure {
+    width: 100%;
+    display: table;
+    margin: 0 #{$padding-sm / 4};
+
+    &.portrait,
+    &.square {
+      .image {
+        position: relative;
+        &::after {
+          left: 0;
+          bottom: 0;
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          pointer-events: none;
+          transition: opacity .2s ease-out;
+          background-position: 0 0;
+        }
+      }
+    }
+
+    &.portrait .image::after {
+      background-image: linear-gradient(to top, color(white) 50%, rgba(color(white),0) 60%, rgba(color(white),0));
+    }
+    &.square .image::after {
+      background-image: linear-gradient(to top, color(white) 33%, rgba(color(white),0) 43%, rgba(color(white),0));
+    }
+
+    .image {
+      min-width: 100%;
+      max-width: 1020px;
+    }
+
+    img {
+      max-width: 100%;
+      vertical-align: top;
+      display: inline-block;
+    }
+
+    figcaption {
+      opacity: 0;
+      margin-top: 34px;
+      max-width: 1020px;
+      @include h3-simple;
+      caption-side: bottom;
+      display: table-caption;
+      color: color(gray-dark);
+      transition: opacity .2s ease-out;
+    }
+
+    &.is-selected {
+      .image {
+        height: auto;
+        overflow: visible;
+        padding-bottom: 0;
+
+        &::after {
+          opacity: 0;
+        }
+      }
+      figcaption {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include media-md {
+    margin: 90px 0 100px;
+
+    figure {
+      width: auto;
+      margin: 0 columns(.5,27);
+
+      &.landscape {
+        width: 100%;
+        .image {
+          padding-bottom: 66.6666%;
+        }
+      }
+
+      &.portrait {
+        width: 50%;
+        .image {
+          padding-bottom: 133.3333%;
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      &.square {
+        width: 66.6666%;
+        .image {
+          padding-bottom: 100%;
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .image {
+        min-width: 1px;
+      }
+
+      img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+      }
+    }
+  }
+}
+
+// Testimonials
+.testimonials-section {
+  padding-bottom: 90px;
+
+  .section-label {
+    margin-bottom: 0;
+  }
+
+  .section-content {
+    overflow: hidden;
+  }
+
+  .carousel {
+    padding: $padding-sm 0 42px;
+    margin-bottom: $padding-md;
+
+    .flickity-page-dots {
+      .dot {
+        border-color: color(gold);
+        background-color: color(white);
+        &.is-selected {
+          background-color: color(gold);
+        }
+      }
+    }
+
+    &:not(.two-up) {
+      .testimonial > .-inner {
+        padding: 0 96px;
+        max-width: 852px;
+      }
+    }
+  }
+
+  .testimonial {
+    margin: 0;
+    width: 100%;
+
+    > .-inner {
+      margin: 0 auto;
+    }
+
+    p {
+      margin: 0;
+      @include p2;
+      padding-top: 26px;
+      @include open-quote;
+    }
+
+    footer {
+      margin-top: $padding-sm;
+    }
+  }
+
+  @include media-md {
+    padding-bottom: 210px;
+
+    .carousel {
+      padding: $padding-lg 0 0;
+      margin-bottom: $padding-lg;
+
+      .flickity-page-dots {
+        left: 50%;
+        bottom: 39px;
+        max-width: 660px;
+        text-align: right;
+        transform: translateX(-50%);
+      }
+
+      &:not(.two-up) {
+        .testimonial {
+          p::before {
+            top: 36px;
+            right: 100%;
+            position: absolute;
+            margin-right: $padding-md;
+          }
+        }
+      }
+    }
+
+    .testimonial {
+      p {
+        padding-top: 0;
+      }
+
+      footer {
+        margin-top: 50px;
+      }
+
+      .testimonial-photo {
+        width: 90px;
+        height: 90px;
+        min-width: 90px;
+      }
+    }
+  }
+
+  // Two-up
+  .carousel.two-up {
+
+    @include media-md {
+      padding-bottom: 100px;
+      margin-left: -#{columns(1.5,23)};
+      width: calc(100% + #{columns(3,23)});
+
+      .flickity-page-dots {
+        bottom: 0;
+        max-width: none;
+        text-align: center;
+      }
+
+      .testimonial {
+        width: 50%;
+        padding: 0 columns(1.5,26);
+
+        p {
+          padding-top: 24px;
+        }
+      }
+    }
+  }
+}

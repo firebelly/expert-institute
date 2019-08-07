@@ -6,10 +6,10 @@ bodyClasses: case-clinics
 
 {% include page-header_angled.html color="blue-sky" image-url="/dist/images/Case-Clinic-Splash-XL_Partnership.jpg" headline="Your On-Call Team of Medical Doctors" description="Augment your legal team with a panel of medical doctors. Rapidly screen cases for potential merit and develop winning strategies across the full spectrum of medical litigation." %}
 
-<div class="section block-centered-text">
+<div class="section centered-text-section">
     <div class="site-wrapper">
         <div class="section-content">
-            <h2 class="block-title animate-in">Unlock the Power of Comprehensive Medical Expertise</h2>
+            <h2 class="section-title animate-in">Unlock the Power of Comprehensive Medical Expertise</h2>
             <p class="animate-in">With Case Clinics from Expert Institute, your team will gain on-demand access to medical doctors with extensive medico-legal experience. Quickly review multiple files, validate the merits of potential cases, or develop new case theories through direct consultation with medical professionals - all without the need to formally retain an expert.</p>
             <p class="cta animate-in text-center"><a href="#" class="button">Learn More</a></p>
         </div>
@@ -20,7 +20,7 @@ bodyClasses: case-clinics
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">        
-            <h1 class="block-title">Take on The Most Valuable Cases</h1>
+            <h1 class="section-title">Take on The Most Valuable Cases</h1>
             <p>Screen potential medical cases for merit before you decide to sign clients or budget resources to new matters.</p>
         </div>
         <div class="section-image -vertical">
@@ -34,7 +34,7 @@ bodyClasses: case-clinics
     <div class="-inner grid">
         <div class="section-content">
             <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
-            <h1 class="block-title">Refine Your Case Theory</h1>
+            <h1 class="section-title">Refine Your Case Theory</h1>
             <p>Roundtable files with our team to unpack technical concepts, explore alternative case theories, and hone in on winning strategies.</p>
         </div>
         <div class="section-image">
@@ -47,7 +47,7 @@ bodyClasses: case-clinics
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">        
-            <h1 class="block-title">Enhance Your Courtroom Strategy</h1>
+            <h1 class="section-title">Enhance Your Courtroom Strategy</h1>
             <p>Work with our physicians to develop technical questions that sharpen your performance during expert depositions or cross examinations.</p>
         </div>
         <div class="section-image">
@@ -56,10 +56,10 @@ bodyClasses: case-clinics
     </div>
 </div>
 
-<div class="section block-centered-text">
+<div class="section centered-text-section">
     <div class="site-wrapper">
         <div class="section-content">
-            <h3 class="block-title animate-in">In-House Case Clinic Team Specialties:</h3>
+            <h3 class="section-title animate-in">In-House Case Clinic Team Specialties:</h3>
             <p class="animate-in">Our medical team includes physicians trained in more than 10 different medical specialties, giving your firm access to comprehensive medical assessments of any case.</p>
         </div>
         <div class="accordions">
@@ -145,7 +145,7 @@ bodyClasses: case-clinics
     </div>
 </div>
 
-<div class="section padded block-stats padded-top-lg">
+<div class="section padded stats-section padded-top-lg">
     <div class="site-wrapper">
         <h3 class="section-label margin-bottom-lg">In Numbers</h3>
         <div class="grid spaced">
