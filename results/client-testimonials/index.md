@@ -43,7 +43,7 @@ bodyClasses: testimonials
     </div>
 </div>
 
-<div class="section padded-lg">
+<div class="section padded-top-lg">
     <div class="site-wrapper">
         <div class="card-grid">
             {% for testimonial in site.testimonials %}
@@ -51,5 +51,44 @@ bodyClasses: testimonials
             {% endfor %}
         </div>
         {% include post-navigation.html total=4 %}
+    </div>
+</div>
+
+<div class="section padded-bottom-lg">
+    <div class="site-wrapper">    
+        <div class="card-grid">
+            <article class="card showcase-card with-image -blue-dark col-md-1-2">
+                <div class="-inner">
+                    <header class="card-header">
+                        <h1 class="card-title">Pricing</h1>
+                    </header>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p>Consult your expert on your terms. No hidden fees, no hourly markups.</p>
+                        </div>
+                    </div>
+                    <div class="card-cta">
+                        <a href="/process/pricing" class="button -teal">View Our Pricing Model</a>
+                    </div>
+                    <div class="card-image"><div class="image" style="background-image:url('/dist/images/toa-heftiba-644511-unsplash.jpg');"></div></div>
+                </div>
+            </article>
+            <article class="card showcase-card with-image -teal col-md-1-2">
+                <div class="-inner">
+                    <header class="card-header">
+                        <h1 class="card-title">Request An Expert</h1>
+                    </header>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p>Connect with the expert witness you need to win your case.</p>
+                        </div>
+                    </div>
+                    <div class="card-cta">
+                        <a href="/services/challenge-studies" class="button">Request Now</a>
+                    </div>
+                    <div class="card-image"><div class="image" style="background-image:url('/dist/images/request-an-expert-showcase-card.jpg');"></div></div>
+                </div>
+            </article>
+        </div>
     </div>
 </div>
