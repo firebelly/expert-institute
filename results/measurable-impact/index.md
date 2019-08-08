@@ -36,6 +36,9 @@ bodyClasses: measurable-impact
             <div class="stat col-md-1-2 col-lg-1-3">
                 <h4 class="figure">5K</h4>
                 <p>Clients Served</p>
+                <div class="stat-icon">
+                    <img src="/dist/images/trust-pilot-people.svg" width="173" aria-hidden="true">
+                </div>
             </div>
             <div class="stat col-md-1-2 col-lg-1-3">
                 <h4 class="figure">3 Million</h4>
@@ -44,6 +47,9 @@ bodyClasses: measurable-impact
             <div class="stat col-md-1-2 col-lg-1-3">
                 <h4 class="figure">1,000+</h4>
                 <p>5 Star Reviews on Trust Pilot</p>
+                <div class="stat-icon">
+                    <img src="/dist/images/5-stars.svg" width="176" aria-hidden="true">
+                </div>
             </div>
         </div>
     </div>

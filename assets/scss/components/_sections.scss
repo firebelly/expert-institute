@@ -988,6 +988,19 @@
     a {
       display: block;
       text-decoration: none;
+
+      &:hover,
+      &:focus {
+        .member-image {
+          border-radius: 50%;
+          &::before {
+            opacity: .2;
+          }
+        }
+        .member-name {
+          color: color(blue-light);
+        }
+      }
     }
 
     .member-image {
@@ -999,6 +1012,19 @@
       background-size: cover;
       border-radius: 0 0 50% 0;
       background-position: top center;
+      transition: border-radius .2s $slide-easing;
+      &::before {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        content: '';
+        width: 100%;
+        position: absolute;
+        mix-blend-mode: multiply;
+        transition: opacity .2s ease-out;
+        background-color: color(blue-dark);
+      }
     }
 
     .member-name {
