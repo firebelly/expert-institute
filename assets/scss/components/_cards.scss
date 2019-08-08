@@ -114,6 +114,13 @@
     }
   }
 
+  // Card Logo
+  // used on "in the media" cards
+  &-logo {
+    padding: $padding-sm 0;
+    border-bottom: 1px solid color(gray-mid);
+  }
+
   // Card Body
   &-body {
     z-index: 1;
@@ -147,6 +154,41 @@
       }
       @include media-xl {
         @include button-regular;
+      }
+    }
+
+    a.outbound-link {
+      display: flex;
+      @include h3-simple;
+      align-items: center;
+      color: color(blue-light);
+
+      .icon-container {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        margin-right: 12px;
+        border-radius: 50%;
+        border: 1px solid color(blue-light);
+
+        svg {
+          width: 22px;
+          height: 22px;
+          margin: auto;
+          fill: color(blue-light);
+        }
+      }
+
+      &:hover,
+      &.-hover,
+      &:focus {
+        .icon-container {
+          background-color: color(blue-light);
+
+          svg {
+            fill: color(white);
+          }
+        }
       }
     }
   }
@@ -269,6 +311,17 @@
           width: auto;
           right: $padding-md;
         }
+      }
+    }
+  }
+
+  // Media Card
+  &.media-card {
+    .card-title {
+      @include h1;
+
+      @include media-md {
+        @include paragraph-style(36,42);
       }
     }
   }
