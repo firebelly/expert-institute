@@ -1,0 +1,80 @@
+// Accolades
+.accolade {
+  margin-bottom: $padding-md;
+
+  @include media-md {
+    margin-bottom: $padding-lg;
+  }
+
+  @include media-lg {
+
+  }
+
+  > .-inner {
+    height: 100%;
+    border-bottom: 1px solid color(gray-mid);
+  }
+
+  .accolade-logo {
+    height: 60px;
+    display: flex;
+    max-width: 240px;
+    align-items: flex-end;
+
+    img {
+      vertical-align: bottom;
+    }
+  }
+
+  .accolade-body {
+    padding: $padding-sm 0;
+    margin-top: $padding-sm;
+    border-top: 1px solid color(blue-light);
+  }
+
+  table {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+    margin: 0 0 $padding-sm;
+
+    th {
+      @include h3-simple;
+      padding-bottom: 8px;
+      color: color(gray-dark);
+    }
+
+    td {
+      padding: 0 0 8px 0;
+      color: color(blue-light);
+    }
+
+    .rank-year {
+      display: flex;
+      @include h3-simple;
+
+      > span {
+        padding: 0 8px;
+        white-space: nowrap;
+        flex-basis: 33.3333%;
+
+        &:first-of-type {
+          padding-left: 0;
+        }
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .publication {
+    margin: 0 0 16px;
+    @include h3-simple;
+    color: color(gray-dark);
+  }
+
+  .publication-description {
+    margin: 0;
+  }
+}

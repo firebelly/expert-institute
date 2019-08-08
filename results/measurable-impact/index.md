@@ -67,6 +67,16 @@ bodyClasses: measurable-impact
     </div>
 </div>
 
+<div class="section accolades-section padded-bottom-lg">
+    <div class="site-wrapper">
+        <div class="grid spaced spaced-lg">
+            {% for accolade in site.accolades %}
+                {% include accolade.html %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 <div class="section padded-bottom-lg">
     <div class="site-wrapper">    
         <div class="card-grid">

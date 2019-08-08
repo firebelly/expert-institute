@@ -1,0 +1,23 @@
+<div class="accolade col-md-1-2">
+  <div class="-inner">
+    <div class="accolade-logo">
+      <img src="{{ accolade.logo }}" alt="{{ accolade.title }}">
+    </div>
+    <div class="accolade-body">
+      <table>
+        <tr>
+          <th>Award</th>
+          <th>Rank - Year Awarded</th>
+        </tr>
+        {% for award in accolade.awards %}
+          <tr>
+            <td>{{ award.title }}</td>
+            <td class="rank-year">{{ award.rankYear }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+      <h5 class="publication">Publication</h5>
+      <p class="publication-description">{{ accolade.description }}</p>
+    </div>
+  </div>
+</div>
