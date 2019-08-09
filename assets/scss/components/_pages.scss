@@ -133,7 +133,21 @@
         padding: 0 columns(1,11);
       }
     }
+
+    // Compact Headers
+    &.compact {
+      padding: $padding-sm 0;
+
+      .header-text {
+        max-width: none;
+      }
+
+      @include media-md {
+        padding: $padding-sm 0;
+      }
+    }
   }
+
 
   // With Swoop (https://d.pr/i/ii1084)
   // carousel headers share the same swoop styles

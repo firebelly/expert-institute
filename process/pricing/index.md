@@ -4,12 +4,11 @@ layout: default
 bodyClasses: pricing template-a
 ---
 
-<div class="page-header centered">
+<div class="page-header centered compact">
     <div class="site-wrapper">
         <div class="header-text">
             <h3 class="subtitle">Pricing + Fees</h3>
             <h1 class="title">Consult your expert on your terms.<br> No hidden fees, no hourly markups.</h1>
-            <p>Unlike traditional referral services, a single prepayment initiates a robust custom search. Once you’re connected, you work with your expert directly. No fees, no overcharging.</p>
         </div>
     </div>
 </div>
