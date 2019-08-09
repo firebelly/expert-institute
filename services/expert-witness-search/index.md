@@ -216,3 +216,5 @@ bodyClasses: expert-search
         </div>
     </div>
 </div>
+
+{% include expert-connect-section.html %}
