@@ -7,6 +7,18 @@ body.single-bio {
   max-width: 100%;
   overflow-x: hidden;
 
+  @include media-md {
+    .page-header.swooped {
+      &,
+      &.-right {
+        .header-text {
+          min-height: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
   .post-content {
     // User content styles defined in /components/_user-contnet.scss
     @extend .user-content;
