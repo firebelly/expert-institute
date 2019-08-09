@@ -293,6 +293,25 @@
     }
   }
 
+  // Just swooped headers (without carousels)
+  &.swooped {
+    @include media-md {
+      .header-text {
+        min-height: 600px;
+        padding-bottom: $padding-lg;
+      }
+
+      &,
+      &.-right {
+        .header-text {
+          .title {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+
   // Page headers with carousels
   &.carousel-header {
     .image-carousel {

@@ -8,6 +8,19 @@
   @include media-md {
     margin-bottom: -$padding-md;
   }
+
+  // Alternation Cards Style
+  &.alternating-cards {
+    .card:nth-of-type(even) {
+      > .-inner {
+        background-color: color(white);
+        border: 1px solid color(gray-mid);
+      }
+      .card-image::after {
+        background-image: linear-gradient(to right bottom, color(white) 0%, color(white) 50%, transparent 50%);
+      }
+    }
+  }
 }
 
 .card {
@@ -136,6 +149,13 @@
 
       + p {
         margin-top: 1em;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: color(blue-light);
+        }
       }
     }
   }

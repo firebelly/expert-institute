@@ -1,0 +1,25 @@
+<article class="card case-study-card with-image col-lg-1-2 col-xl-1-3">
+  <div class="-inner">
+    <header class="card-header">
+      <div class="header-meta">
+        <h5>{{ case_study.practiceArea }}</h5>
+      </div>
+      <h1 class="card-title"><a href="{{ case_study.url }}">{{ case_study.title }}</a></h1>
+    </header>
+    <div class="card-body">
+      <div class="card-text">
+      {% if case_study.categories %}
+        <p>
+        {% for category in case_study.categories %}
+          <a href="#">{{ category }}</a>{% if forloop.index != case_study.categories.size %}, {% endif %}
+        {% endfor %}
+        </p>
+      {% endif %}
+      </div>
+    </div>
+    <div class="card-cta">
+      <a href="{{ cast_study.url }}" class="button hollow">Read More</a>
+    </div>
+    <div class="card-image"><div class="image" style="background-image:url('{{ case_study.imagePath }}');"></div></div>
+  </div>
+</article>
