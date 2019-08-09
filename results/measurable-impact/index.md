@@ -127,11 +127,7 @@ bodyClasses: measurable-impact
   </div>
 </div>
 
-<div class="section background-blue-dark color-white padded-lg">
-  <div class="site-wrapper">
-    <h2 class="section-title">Connect with the expert witness you need to win your case.</h2>
-  </div>
-</div>
+{% include expert-connect-section.html %}
 
 <div class="section padded-lg">
   <div class="site-wrapper">    

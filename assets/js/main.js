@@ -277,6 +277,18 @@ var Main = (function($) {
     $('.select-wrap select').on('change', function() {
       $(this).closest('.select-wrap').addClass('-filled');
     });
+
+    // Multi-step forms
+    var $formCarousel = $('form.multi-step').flickity({
+      prevNextButtons: false,
+      adaptiveHeight: true,
+      draggable: false
+    });
+
+    $('.form-advance').on('click', function(e) {
+      e.preventDefault();
+      $formCarousel.flickity('next');
+    });
   }
 
   function _initHoverPairs() {

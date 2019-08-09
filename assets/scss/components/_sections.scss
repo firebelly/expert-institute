@@ -260,7 +260,7 @@
     @include ginto-normal-light;
   }
 
-  ul {
+  ul:not(.accordion-list) {
     text-align: left;
     @include list-style;
     color: color(gray-dark);
@@ -954,6 +954,28 @@
         margin-top: 0;
         margin-left: $padding-md;
       }
+    }
+  }
+}
+
+// Connect with an Expert Section
+.expert-connect-section {
+  background-color: color(blue-dark);
+
+  .section-content {
+    display: flex;
+    align-items: center;
+    color: color(white);
+    margin-bottom: $padding-sm;
+  }
+
+  @include media-md {
+    .section-content {
+      margin-bottom: 0;
+    }
+
+    .section-form {
+      padding: 0 columns(2,23);
     }
   }
 }

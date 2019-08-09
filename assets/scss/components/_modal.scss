@@ -86,7 +86,7 @@
 
     .bio-image {
       @include circular-image;
-      margin-bottom: 0;
+      margin: 0 auto 0;
     }
 
     p {

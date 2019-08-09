@@ -172,5 +172,50 @@ form {
       }
     }
   }
+}
 
+// Multi-step forms
+form.multi-step {
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .flickity-page-dots {
+    bottom: 114px;
+
+    .dot {
+      border-color: color(teal);
+
+      &.is-selected {
+        background-color: color(teal);
+      }
+    }
+  }
+
+  .form-step {
+    opacity: 0;
+    width: 100%;
+    transition: opacity .3s 0s ease-out;
+
+    &.is-selected {
+      opacity: 1;
+      transition: opacity .3s .3s ease-out;
+    }
+  }
+
+  .form-cta {
+    margin-top: 114px;
+    text-align: center;
+
+    button {
+      cursor: pointer;
+
+      svg {
+        width: 6px;
+        height: 12px;
+        fill: color(blue-dark);
+      }
+    }
+  }
 }
