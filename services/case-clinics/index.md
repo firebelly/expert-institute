@@ -4,7 +4,7 @@ layout: default
 bodyClasses: case-clinics
 ---
 
-{% include page-header_angled.html color="blue-sky" image-url="/dist/images/Case-Clinic-Splash-XL_Partnership.jpg" headline="Your On-Call Team of Medical Doctors" description="Augment your legal team with a panel of medical doctors. Rapidly screen cases for potential merit and develop winning strategies across the full spectrum of medical litigation." %}
+{% include page-header_angled.html after-shape="true" color="blue-sky" image-url="/dist/images/Case-Clinic-Splash-XL_Partnership.jpg" headline="Your On-Call Team of Medical Doctors" description="Augment your legal team with a panel of medical doctors. Rapidly screen cases for potential merit and develop winning strategies across the full spectrum of medical litigation." %}
 
 <div class="section centered-text-section">
     <div class="site-wrapper">

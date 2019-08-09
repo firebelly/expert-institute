@@ -1,15 +1,17 @@
 <div class="page-header angled parallax-image-container{% if include.color %} -{{ include.color }}{% endif %}">
-    <div class="overflow-wrap">
-        <div class="header-background parallax-image" style="background-image:url('{{ include.image-url }}');"></div>
-        <div class="site-wrapper grid">
-            <div class="header-text">
-                <div class="-inner">
-                    <h3 class="subtitle">{{ page.title }}</h3>
-                    <h1 class="title">{{ include.headline }}</h1>
-                    <p>{{ include.description }}</p>
-                </div>
-            </div>
+  <div class="overflow-wrap">
+    <div class="header-background parallax-image" style="background-image:url('{{ include.image-url }}');"></div>
+    <div class="site-wrapper grid">
+      <div class="header-text">
+        <div class="-inner">
+          <h3 class="subtitle">{% if include.subtitle %}{{ include.subtitle }}{% else %}{{ page.title }}{% endif %}</h3>
+          <h1 class="title">{{ include.headline }}</h1>
+          <p>{{ include.description }}</p>
         </div>
+      </div>
     </div>
-    <div class="after-shape"></div>
+  </div>
+{% if include.after-shape %}
+  <div class="after-shape"></div>
+{% endif %}
 </div>

@@ -4,7 +4,7 @@ layout: default
 bodyClasses: measurable-impact
 ---
 
-{% include page-header_angled.html image-url="/dist/images/measurable-impact-banner.jpg" headline="Measurable,<br> Impact" description="Learn how our best-in-class experts have helped attorneys recover billions of dollars for their clients." %}
+{% include page-header_angled.html after-shape="true" image-url="/dist/images/measurable-impact-banner.jpg" headline="Measurable,<br> Impact" description="Learn how our best-in-class experts have helped attorneys recover billions of dollars for their clients." %}
 
 <div class="section stats-section centered-stat">
   <div class="site-wrapper">

@@ -188,7 +188,7 @@
   }
 }
 
-// Glboal Block Elements
+// Glboal Section Elements
 
 // Section Titles
 .section-title {
@@ -226,6 +226,83 @@
     &.margin-bottom-lg {
       margin-bottom: $padding-lg;
     }
+  }
+}
+
+// Section Video
+.section-video {
+  position: relative;
+
+  .video-label {
+    margin: 0 0 16px;
+    @include h3-simple;
+    color: color(gray-dark);
+  }
+
+  .video-still {
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 1140px;
+    position: relative;
+    &::before {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      content: '';
+      position: absolute;
+      mix-blend-mode: multiply;
+      transition: background-color .2s ease-out;
+      background-color: rgba(color(blue-dark),.51);
+    }
+
+    &.-hover,
+    &:hover,
+    &:focus {
+      &::before {
+        mix-blend-mode: normal;
+        background-color: rgba(color(gray-light),.25);
+      }
+      .watch-video {
+        color: color(blue-light);
+        svg {
+          fill: color(blue-light);
+        }
+      }
+    }
+
+    img {
+      vertical-align: top;
+    }
+
+    .watch-video {
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      @include p2;
+      display: flex;
+      cursor: pointer;
+      position: absolute;
+      align-items: center;
+      color: color(white);
+      @extend .button-reset;
+      transition: color .2s ease-out;
+      transform: translate(-50%, -50%);
+
+      svg {
+        width: 36px;
+        height: 36px;
+        bottom: -2px;
+        fill: color(white);
+        margin-right: 16px;
+        position: relative;
+        transition: fill .2s ease-out;
+      }
+    }
+  }
+
+  @include media-lg {
+    padding: 0 columns(2,23);
   }
 }
 

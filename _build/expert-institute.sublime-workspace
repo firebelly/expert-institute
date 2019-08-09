@@ -1,0 +1,2373 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for\tliquid for loop"
+			],
+			[
+				"include",
+				"include\tliquid include"
+			],
+			[
+				"prev",
+				"prevNextButtons"
+			],
+			[
+				"if",
+				"if\tliquid if"
+			],
+			[
+				"open",
+				"openNavSearch"
+			],
+			[
+				"_closeNav",
+				"_closeNavBackdrop"
+			],
+			[
+				"_clos",
+				"_closeNavSearch"
+			],
+			[
+				"close",
+				"closeSubNavBackdrop"
+			],
+			[
+				"_disa",
+				"_disableScroll"
+			],
+			[
+				"redactor",
+				"redactoralignment"
+			],
+			[
+				"initial",
+				"initialAlignment"
+			],
+			[
+				"scholar",
+				"scholarship_post"
+			],
+			[
+				"top_ance",
+				"top_ancestor_link"
+			],
+			[
+				"feaut",
+				"featured_competition"
+			],
+			[
+				"exclud",
+				"excluded_competition_posts"
+			],
+			[
+				"featured_po",
+				"featured_post_one"
+			],
+			[
+				"featured",
+				"featured_post_two"
+			],
+			[
+				"featured_",
+				"featured_post_one"
+			],
+			[
+				"featured_pos",
+				"featured_post_two"
+			],
+			[
+				"medal_",
+				"medal_winners_args"
+			],
+			[
+				"_cmb2_",
+				"_cmb2_gallery_images"
+			],
+			[
+				"par",
+				"parent_post_title"
+			],
+			[
+				"indiv",
+				"individual_memberships_group"
+			],
+			[
+				"indivi",
+				"individual-memberships"
+			],
+			[
+				"annuL",
+				"annual_membership"
+			],
+			[
+				"annual",
+				"annual_membership"
+			],
+			[
+				"auto",
+				"autorenew_membership"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"_cmb2_compet",
+				"_cmb2_competition_public"
+			],
+			[
+				"related",
+				"related_posts_args"
+			],
+			[
+				"the",
+				"the-events-calendar"
+			],
+			[
+				"sponsorship_",
+				"sponsorship_opportunities_description"
+			],
+			[
+				"spons",
+				"sponshorhip_opportunities_description"
+			],
+			[
+				"pages",
+				"pages_to_show_on"
+			],
+			[
+				"applic",
+				"application_open_date"
+			],
+			[
+				"app",
+				"applications_open_text"
+			],
+			[
+				"circle",
+				"circleTypeElements"
+			],
+			[
+				"_hideLoad",
+				"_hideLoadingSpinner"
+			],
+			[
+				"_enable",
+				"_enableScroll"
+			],
+			[
+				"more",
+				"more_container"
+			],
+			[
+				"competion",
+				"competition_post_id"
+			],
+			[
+				"rotation",
+				"rotationInterval"
+			],
+			[
+				"circ",
+				"circleTypeElements"
+			],
+			[
+				"_hide",
+				"_hideSiteNav"
+			],
+			[
+				"sub",
+				"sub-nav-background"
+			],
+			[
+				"sitN",
+				"siteNavMenus"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"topic",
+				"topic_taxonomy"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"header",
+				"headerSearch"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"person_cag",
+				"person_categories"
+			],
+			[
+				"person_cat",
+				"person_category"
+			],
+			[
+				"story",
+				"session_destroy"
+			],
+			[
+				"story-conten",
+				"story-content-carousel"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"hea",
+				"headerHeightMd"
+			],
+			[
+				"_enabl",
+				"_enableScroll"
+			],
+			[
+				"_dis",
+				"_disableScroll"
+			],
+			[
+				"modal",
+				"modal-open"
+			],
+			[
+				"_close",
+				"_closeProjectModal"
+			],
+			[
+				"currentPr",
+				"currentProjectIndex"
+			],
+			[
+				"button",
+				"buttonHeightMd"
+			],
+			[
+				"data-project",
+				"data-projectId"
+			],
+			[
+				"set",
+				"set\tTwig : Set"
+			],
+			[
+				"social",
+				"socilMediaLinks"
+			],
+			[
+				"_sec",
+				"_updateSectionNavPos"
+			],
+			[
+				"section",
+				"sectionNavAtBottom"
+			],
+			[
+				"section-nav",
+				"section-navigation-wrap"
+			],
+			[
+				"offset",
+				"navOffset"
+			],
+			[
+				"block",
+				"block\tTwig : Block"
+			],
+			[
+				"stick",
+				"stickyElements"
+			],
+			[
+				"mainNavH",
+				"mainNavHeightMd"
+			],
+			[
+				"adminbar",
+				"adminbarHeightMd"
+			],
+			[
+				"admin",
+				"adminbarHeightMd"
+			],
+			[
+				"priori",
+				"prioritiesNav"
+			],
+			[
+				"prior",
+				"prioritiesNavCarousel"
+			],
+			[
+				"click",
+				"clickToDeactivateElements"
+			],
+			[
+				"main",
+				"mainNavHeightMd"
+			],
+			[
+				"mainNav",
+				"mainNavHeightMd"
+			],
+			[
+				"eas",
+				"easeInOutSine"
+			],
+			[
+				"backgron",
+				"background-color"
+			],
+			[
+				"u",
+				"utilityNavHeight"
+			],
+			[
+				"manNavHe",
+				"mainNavHeightSm"
+			],
+			[
+				"infinit",
+				"infiniteScrollLoad"
+			],
+			[
+				"infi",
+				"infiniteScrollLoad"
+			],
+			[
+				"disa",
+				"dsiabled"
+			],
+			[
+				"promtp",
+				"prompts"
+			],
+			[
+				"_ini",
+				"_initMasonry"
+			],
+			[
+				"posts",
+				"postsPerPage"
+			],
+			[
+				"curator",
+				"curator-load-more"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"tr",
+				"translateX"
+			],
+			[
+				"_get",
+				"_getYTVideoId"
+			],
+			[
+				"_hid",
+				"_hideLoadingSpinner"
+			],
+			[
+				"_show",
+				"_showLoadingSpinner"
+			],
+			[
+				"fade",
+				"fadeAndShow"
+			],
+			[
+				"li",
+				"lightboxYPos"
+			],
+			[
+				"yt",
+				"ytApiReady"
+			],
+			[
+				"_load",
+				"_loadYoutubeVideo"
+			],
+			[
+				"position",
+				"positionLightboxNav"
+			],
+			[
+				"jsdo",
+				"jsdocumentation"
+			],
+			[
+				"unstopp",
+				"unstoppable-lightbox"
+			],
+			[
+				"prevLightbo",
+				"prevLightboxContent"
+			],
+			[
+				"nextItem",
+				"nextItemId"
+			],
+			[
+				"currentLightBox",
+				"currentLightBoxItemId"
+			],
+			[
+				"current",
+				"currentLightBoxItemId"
+			],
+			[
+				"unstop",
+				"unstoppable-lightbox"
+			],
+			[
+				"light",
+				"Lightbox"
+			],
+			[
+				"lightboxCont",
+				"lightboxContentContainer"
+			],
+			[
+				"append",
+				"appendTo"
+			],
+			[
+				"active",
+				"active-issue-container"
+			],
+			[
+				"Share",
+				"ShareManifestoPlugin"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"Instagra",
+				"InstagramStoriesPlugin"
+			],
+			[
+				"else",
+				"else\tTwig : Else"
+			],
+			[
+				"white",
+				"white-dark"
+			],
+			[
+				"pr",
+				"primary_org_name"
+			],
+			[
+				"hub_",
+				"hub_sponsor_url"
+			],
+			[
+				"hub_sp",
+				"hub_sponsor_name"
+			],
+			[
+				"frst",
+				"first-of-type"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "---\ntitle: Our Story\nlayout: default\nbodyClasses: our-story\n---\n\n{% include page-header_angled.html image-url=\"/dist/images/our-story-banner.jpg\" subtitle=\"About Us\" headline=\"Our Story\" description=\"The Expert Institute partners with AmLaw 100 leaders, boutique firms, and solo practitioners to deliver expert witness solutions across every area of practice.\" %}\n\n<div class=\"section centered-text\">\n    <div class=\"site-wrapp\">\n        \n    </div>\n</div>",
+			"file": "about/our-story/index.md",
+			"file_size": 363,
+			"file_write_time": 132098516759039833,
+			"settings":
+			{
+				"buffer_size": 456,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/page-header_angled.html",
+			"settings":
+			{
+				"buffer_size": 702,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/components/_carousels.scss",
+			"settings":
+			{
+				"buffer_size": 5606,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/components/_sections.scss",
+			"settings":
+			{
+				"buffer_size": 19173,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/main.js",
+			"settings":
+			{
+				"buffer_size": 19429,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/components/_forms.scss",
+			"settings":
+			{
+				"buffer_size": 3485,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/components/_buttons.scss",
+			"settings":
+			{
+				"buffer_size": 2687,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/components/_accolades.scss",
+			"settings":
+			{
+				"buffer_size": 1240,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/helpers/_grid.scss",
+			"settings":
+			{
+				"buffer_size": 6283,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/main.scss",
+			"settings":
+			{
+				"buffer_size": 1084,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/components/_pages.scss",
+			"settings":
+			{
+				"buffer_size": 11531,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/components/_post-nav.scss",
+			"settings":
+			{
+				"buffer_size": 3186,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "// Post Navigation"
+			}
+		},
+		{
+			"file": "assets/scss/components/_cards.scss",
+			"settings":
+			{
+				"buffer_size": 7770,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/pages/_single-post.scss",
+			"settings":
+			{
+				"buffer_size": 3325,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 338.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"liqui",
+				"Set Syntax: Liquid HTML"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"case",
+				"Convert Case: Lower Case"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"titl",
+				"Convert Case: Title Case"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"liquid",
+				"Set Syntax: Liquid HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"markdo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"rename",
+				"Rename File"
+			],
+			[
+				"renem",
+				"Rename File"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"diff",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"renm",
+				"File: Rename"
+			],
+			[
+				" pastry rang",
+				"Text Pastry: Range (numeric)"
+			],
+			[
+				"pastry",
+				"Text Pastry: Range (numeric)"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"de",
+				"File: Delete"
+			],
+			[
+				"pasty",
+				"Text Pastry: Range (numeric)"
+			],
+			[
+				"mov",
+				"File: Move"
+			],
+			[
+				"revel",
+				"File: Reveal"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"scs",
+				"Set Syntax: SCSS"
+			],
+			[
+				"snippe",
+				"Snippet: svg-icon"
+			],
+			[
+				"craft",
+				"Set Syntax: Craft-Twig"
+			],
+			[
+				"tw",
+				"Set Syntax: Craft-Twig"
+			],
+			[
+				"twig",
+				"Set Syntax: Craft-Twig"
+			],
+			[
+				"renma",
+				"File: Rename"
+			],
+			[
+				"RENAM",
+				"Rename File"
+			],
+			[
+				"REN\t",
+				"Rename File"
+			],
+			[
+				"delet",
+				"File: Delete"
+			],
+			[
+				"html\t",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"d",
+				"File: Delete"
+			],
+			[
+				"CASE",
+				"Convert Case: Upper Case"
+			],
+			[
+				"project se",
+				"Preferences: Project Manager Settings"
+			],
+			[
+				"ind",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"broswer",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"py",
+				"Set Syntax: Python3"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python3"
+			],
+			[
+				"django for",
+				"Snippet: Django template for loop"
+			],
+			[
+				"synta ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"synt py",
+				"Set Syntax: Python3"
+			],
+			[
+				"ren\t",
+				"File: Rename"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"synta htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"synt htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"cra",
+				"Set Syntax: Craft-Twig"
+			],
+			[
+				"crft",
+				"Set Syntax: Craft-Twig"
+			],
+			[
+				"craf",
+				"Set Syntax: Craft-Twig"
+			],
+			[
+				"conver",
+				"Convert Case: Title Case"
+			],
+			[
+				"new fold",
+				"File: New Folder Relative to Current View"
+			],
+			[
+				"mxpnl",
+				"Markdown Preview: Export HTML in Sublime Text"
+			],
+			[
+				"refre",
+				"Project: Refresh Folders"
+			],
+			[
+				"DELE",
+				"File: Delete"
+			],
+			[
+				"snipp",
+				"Snippet: media-md"
+			],
+			[
+				"lowerca",
+				"Convert Case: Lower Case"
+			],
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"file ",
+				"File: Delete"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			]
+		],
+		"width": 442.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/developer/Sites/expert-institute",
+		"/Users/developer/Sites/expert-institute/collections",
+		"/Users/developer/Sites/expert-institute/collections/_case_studies"
+	],
+	"file_history":
+	[
+		"/Users/developer/Sites/expert-institute/process/how-it-works/index.md",
+		"/Users/developer/Sites/expert-institute/resources/case-studies/index.md",
+		"/Users/developer/Sites/expert-institute/collections/_case_studies/court-finds-firearm-experts-opinion-reliable-in-spite-of-his-methodology.md",
+		"/Users/developer/Sites/expert-institute/_includes/case_study-card.html",
+		"/Users/developer/Sites/expert-institute/collections/_case_studies/customer-is-injured-by-push-cart.md",
+		"/Users/developer/Sites/expert-institute/collections/_case_studies/negligent-design-engineering-allegedly-causes-off-road-vehicle-accident.md",
+		"/Users/developer/Sites/expert-institute/resources/insights/index.md",
+		"/Users/developer/Sites/expert-institute/_includes/testimonial-card.html",
+		"/Users/developer/Sites/expert-institute/_layouts/post.html",
+		"/Users/developer/Sites/expert-institute/resources/expert-witness-directory/index.md",
+		"/Users/developer/Sites/expert-institute/_config.yml",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_cards.scss",
+		"/Users/developer/Sites/expert-institute/results/client-testimonials/index.md",
+		"/Users/developer/Sites/expert-institute/services/expert-witness-search/index.md",
+		"/Users/developer/Sites/expert-institute/process/pricing/index.md",
+		"/Users/developer/Sites/expert-institute/results/measurable-impact/index.md",
+		"/Users/developer/Sites/expert-institute/process/request-an-expert/index.md",
+		"/Users/developer/Sites/expert-institute/_includes/expert-connect-section.html",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_buttons.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_modal.scss",
+		"/Users/developer/Sites/expert-institute/node_modules/gulp-scss/vendor/bundle/ruby/1.9.1/gems/sass-3.4.22/test/sass/templates/cached_import_option.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_sections.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_modules.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/helpers/_typography.scss",
+		"/Users/developer/Sites/expert-institute/collections/_accolades/new-york-law-journal.md",
+		"/Users/developer/Sites/expert-institute/collections/_accolades/connecticut-law-tribune.md",
+		"/Users/developer/Sites/expert-institute/collections/_accolades/texas-lawyer.md",
+		"/Users/developer/Sites/expert-institute/collections/_accolades/the-legal-intelligencer.md",
+		"/Users/developer/Sites/expert-institute/collections/_accolades/corporate-counsel.md",
+		"/Users/developer/Sites/expert-institute/collections/_accolades/the-recorder.md",
+		"/Users/developer/Sites/expert-institute/_includes/accolade.html",
+		"/Users/developer/Sites/expert-institute/collections/_accolades/national-law-journal.md",
+		"/Users/developer/Sites/expert-institute/assets/scss/helpers/_variables.scss",
+		"/Users/developer/Sites/expert-institute/about/our-team/index.md",
+		"/Users/developer/Sites/expert-institute/_includes/meet-tei-section.html",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_user-content.scss",
+		"/Users/developer/Sites/expert-institute/services/challenge-studies/index.md",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_pages.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/pages/_testimonials.scss",
+		"/Users/developer/Sites/expert-institute/assets/js/main.js",
+		"/Users/developer/Sites/expert-institute/assets/scss/main.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_blocks.scss",
+		"/Users/developer/Sites/expert-institute/services/case-clinics/index.md",
+		"/Users/developer/Sites/expert-institute/index.md",
+		"/Users/developer/Sites/expert-institute/about/careers/index.md",
+		"/Users/developer/Sites/expert-institute/about/locations/index.md",
+		"/Users/developer/Sites/expert-institute/_includes/page-bottom-showcase.html",
+		"/Users/developer/Sites/expert-institute/_includes/testimonials-section.html",
+		"/Users/developer/Sites/expert-institute/_includes/post-navigation.html",
+		"/Users/developer/Sites/expert-institute/assets/scss/helpers/_utility.scss",
+		"/Users/developer/Sites/expert-institute/_includes/trust-pilot-section.html",
+		"/Users/developer/Sites/expert-institute/collections/_testimonials/testimonial-6.md",
+		"/Users/developer/Sites/expert-institute/collections/_testimonials/testimonial-4.md",
+		"/Users/developer/Sites/expert-institute/_build/testimonials/testimonial-4.html",
+		"/Users/developer/Sites/expert-institute/collections/_testimonials/testimonial-5.md",
+		"/Users/developer/Sites/expert-institute/collections/_testimonials/testimonial-3.md",
+		"/Users/developer/Sites/expert-institute/collections/_testimonials/testimonial-2.md",
+		"/Users/developer/Sites/expert-institute/collections/_testimonials/testimonial-1.md",
+		"/Users/developer/Sites/expert-institute/assets/scss/pages/_careers.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_common.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/pages/_single-post.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_carousels.scss",
+		"/Users/developer/Sites/expert-institute/_includes/page-header_angled.html",
+		"/Users/developer/Sites/expert-institute/_layouts/expert-bio.html",
+		"/Users/developer/Sites/expert-institute/gulpfile.js",
+		"/Users/developer/Sites/expert-institute/_includes/bio.html",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_base.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/helpers/_mixins.scss",
+		"/Users/developer/Sites/expert-institute/_includes/searchform.html",
+		"/Users/developer/Sites/expert-institute/collections/_experts/e-462918.md",
+		"/Users/developer/Sites/expert-institute/collections/_experts/e-388883.md",
+		"/Users/developer/Sites/expert-institute/collections/_experts/e-387631.md",
+		"/Users/developer/Sites/expert-institute/collections/_experts/e-372735.md",
+		"/Users/developer/Sites/expert-institute/collections/_experts/e-368863.md",
+		"/Users/developer/Sites/expert-institute/collections/_experts/e-356489.md",
+		"/Users/developer/Sites/expert-institute/results/client-testimonials.md",
+		"/Users/developer/Sites/expert-institute/_includes/expert-card.html",
+		"/Users/developer/Sites/expert-institute/_includes/position.html",
+		"/Users/developer/Sites/expert-institute/collections/_positions/executive-office-administrator_1.md",
+		"/Users/developer/Sites/expert-institute/collections/_positions/customer-success-specialist_1.md",
+		"/Users/developer/Sites/expert-institute/collections/_positions/customer-success-manager_1.md",
+		"/Users/developer/Sites/expert-institute/collections/_positions/sales-development-representative_1.md",
+		"/Users/developer/Sites/expert-institute/assets/scss/pages/_home.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/pages/_request-an-expert.scss",
+		"/Users/developer/Sites/expert-institute/_layouts/position.html",
+		"/Users/developer/Sites/expert-institute/collections/_positions/account-executive_1.md",
+		"/Users/developer/Sites/expert-institute/_layouts/bio.html",
+		"/Users/developer/Sites/expert-institute/node_modules/lodash/mixin.js",
+		"/Users/developer/Sites/expert-institute/_includes/head.html",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_forms.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/helpers/_grid.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/helpers/_colors.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_footer.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_filters.scss",
+		"/Users/developer/Sites/expert-institute/.todo",
+		"/Users/developer/Sites/expert-institute/Gemfile",
+		"/Users/developer/Sites/expert-institute/.notes",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_bios.scss",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/raphael-ventura.md",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/philipp-stanislowski.md",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/paul-lee.md",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/michale-talve.md",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/frank-caracciolo.md",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/faiza-jibril.md",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/dave-glynn.md",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/dan-schultz.md",
+		"/Users/developer/Sites/expert-institute/_includes/header.html",
+		"/Users/developer/Sites/expert-institute/_includes/journal-logos-section.html",
+		"/Users/developer/Sites/expert-institute/home-alt/index.md",
+		"/Users/developer/Sites/expert-institute/home-alt.md",
+		"/Users/developer/Sites/expert-institute/_includes/footer.html",
+		"/Users/developer/Sites/expert-institute/_layouts/default.html",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_accordions.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_pricing-tiers.scss",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_header.scss",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/nate-beaty.md",
+		"/Users/developer/Sites/expert-institute/_build/team_members/nate-beaty.html",
+		"/Users/developer/Sites/expert-institute/collections/_team_members/matt-soria.md",
+		"/Users/developer/Sites/expert-institute/_posts/2019-04-30-an-attorneys-guide-to-finding-retaining-and-consulting-neurosurgery-expert-witnesses.md",
+		"/Users/developer/Sites/expert-institute/_posts/2019-05-07-legal-cannabis-gives-rise-to-product-liability-class-actions-in-the-us-and-canada.md",
+		"/Users/developer/Sites/expert-institute/_layouts/posts.html",
+		"/Users/developer/Sites/expert-institute/assets/svgs/icon-arrow-down.svg",
+		"/Users/developer/Sites/expert-institute/_data/navigation.yaml",
+		"/Users/developer/Sites/expert-institute/assets/bower.json",
+		"/Users/developer/Sites/expert-institute/_build/news/2019/05/07/legal-cannabis-gives-rise-to-product-liability-class-actions-in-the-us-and-canada.html",
+		"/Users/developer/Sites/expert-institute/assets/scss/components/_articles.scss",
+		"/Users/developer/Sites/expert-institute/.gitignore",
+		"/Users/developer/Sites/expert-institute/assets/svgs/search-retain.svg"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+			"*.html",
+			"*.md",
+			"*.html",
+			"*.md",
+			"*.html",
+			"*.md",
+			"",
+			"*.md",
+			"*.scss",
+			"",
+			"*.scss",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"page",
+			" ",
+			"$value",
+			" ",
+			"\u0003",
+			"testimonial",
+			" ",
+			"testimonial",
+			"specialty",
+			"Specialty",
+			"postType",
+			"Post Type",
+			"region",
+			"button-icon",
+			"lawFirm",
+			"number",
+			"label",
+			"md",
+			"#1 -",
+			"th",
+			"page",
+			"include",
+			"meet-tei",
+			"block-stats",
+			"+ .section",
+			"block-centered-text",
+			"page-bottom-showcase",
+			"block-title",
+			"block-testimonials",
+			"block-title",
+			"<div class=\"member-image\"",
+			"testimonials",
+			"article",
+			"card-image",
+			"showcase-card",
+			"col-xl-1-3",
+			"left",
+			"header-text",
+			"c9d3d3",
+			"sr-only",
+			"36px",
+			"div",
+			"6",
+			"4",
+			"2",
+			"@include media-lg",
+			"card-title",
+			"lg",
+			"            <footer>",
+			"testimonial",
+			"div",
+			"expert",
+			"div",
+			"h1",
+			"div",
+			"carousel",
+			"section-background",
+			"video",
+			"fonts",
+			"image",
+			"7",
+			"swooped",
+			"modal-close",
+			"180px",
+			"bio",
+			"First",
+			"div",
+			"post",
+			"region",
+			"Region",
+			"specialty",
+			"Specialty",
+			"col-lg-1-3",
+			"label",
+			"col-md-0.9",
+			"h1",
+			"showcase-section",
+			"block-cta",
+			"1em",
+			"play",
+			"blue-dark",
+			"<li>",
+			"bioshapshot",
+			"sepcialty",
+			"imageUrl",
+			"i",
+			"E-462918",
+			"team_member",
+			"include",
+			"div",
+			"header",
+			"header-meta",
+			"col-md-1-2 col-lg-1-3",
+			"centered",
+			"specialty",
+			"Specialty",
+			"specialty",
+			"Specialty",
+			"postType",
+			"Post Type",
+			"col-md-1-2",
+			"page-path=\"/measurable-impact\"",
+			"section-label",
+			"<div class=\"item col-md-1-3\">",
+			"div class=\"item",
+			"The most effic",
+			" animation-item",
+			"\u0003",
+			"In-Depth",
+			"color(white)",
+			"angled",
+			"div",
+			"h2",
+			"images/expert-search",
+			"section-label",
+			"h2",
+			"showcase",
+			"\u0003",
+			"select",
+			".1s",
+			"sT",
+			"src=\"dist/",
+			"dist",
+			" parallax-image",
+			" parallax-image-container",
+			"<img",
+			"url('dist/",
+			" parallax-image"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"stats-section",
+			"centered-text-section",
+			"testimonials-section",
+			"section-title",
+			"page-path=\"/results//measurable-impact\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "about/our-story/index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								438
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/MarkdownEditing/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/page-header_angled.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								620,
+								620
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Liquid/Syntaxes/Liquid-HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 11,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "assets/scss/components/_carousels.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5606,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2836,
+								2836
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2097.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/scss/components/_sections.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17122,
+								17122
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13272.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9258,
+								9258
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3704.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/scss/components/_forms.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3175,
+								3175
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2236.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/scss/components/_buttons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1007,
+								1007
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "assets/scss/components/_accolades.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								888,
+								888
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 421.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "assets/scss/helpers/_grid.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1408,
+								1408
+							],
+							[
+								1633,
+								1633
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 609.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "assets/scss/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								775,
+								775
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "assets/scss/components/_pages.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5963,
+								5963
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"history_list_is_closing": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3778.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "assets/scss/components/_post-nav.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_name": "// Post Navigation",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "assets/scss/components/_cards.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7770,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2557,
+								2557
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1694.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "assets/scss/pages/_single-post.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "expert-institute.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"page-header",
+				"_includes/page-header_angled.html"
+			],
+			[
+				"how-it",
+				"process/how-it-works/index.md"
+			],
+			[
+				"singlescss",
+				"assets/scss/pages/_single-post.scss"
+			],
+			[
+				"cardsc",
+				"assets/scss/components/_cards.scss"
+			],
+			[
+				"insights",
+				"resources/insights/index.md"
+			],
+			[
+				"pagescss",
+				"assets/scss/components/_pages.scss"
+			],
+			[
+				"expert-witn",
+				"resources/expert-witness-directory/index.md"
+			],
+			[
+				"insight",
+				"resources/insights/index.md"
+			],
+			[
+				"post",
+				"_layouts/post.html"
+			],
+			[
+				"testimonials",
+				"results/client-testimonials/index.md"
+			],
+			[
+				"page",
+				"assets/scss/components/_pages.scss"
+			],
+			[
+				"pricing",
+				"process/pricing/index.md"
+			],
+			[
+				"expert-search",
+				"services/expert-witness-search/index.md"
+			],
+			[
+				"buttonscss",
+				"assets/scss/components/_buttons.scss"
+			],
+			[
+				"sectionscs",
+				"assets/scss/components/_sections.scss"
+			],
+			[
+				"modal",
+				"assets/scss/components/_modal.scss"
+			],
+			[
+				"_button",
+				"assets/scss/components/_buttons.scss"
+			],
+			[
+				"ubttonscss",
+				"node_modules/gulp-scss/vendor/bundle/ruby/1.9.1/gems/sass-3.4.22/test/sass/templates/cached_import_option.scss"
+			],
+			[
+				"formsc",
+				"assets/scss/components/_forms.scss"
+			],
+			[
+				"main.js",
+				"assets/js/main.js"
+			],
+			[
+				"request-an-",
+				"process/request-an-expert/index.md"
+			],
+			[
+				"_ty",
+				"assets/scss/helpers/_typography.scss"
+			],
+			[
+				"_typ",
+				"assets/scss/helpers/_typography.scss"
+			],
+			[
+				"cardscss",
+				"assets/scss/components/_cards.scss"
+			],
+			[
+				"gridscss",
+				"assets/scss/helpers/_grid.scss"
+			],
+			[
+				"_var",
+				"assets/scss/helpers/_variables.scss"
+			],
+			[
+				"_module",
+				"assets/scss/components/_modules.scss"
+			],
+			[
+				"mainscs",
+				"assets/scss/main.scss"
+			],
+			[
+				"our-team",
+				"about/our-team/index.md"
+			],
+			[
+				"secti",
+				"assets/scss/components/_sections.scss"
+			],
+			[
+				"challenge-studies",
+				"services/challenge-studies/index.md"
+			],
+			[
+				"mainscss",
+				"assets/scss/main.scss"
+			],
+			[
+				"pagescs",
+				"assets/scss/components/_pages.scss"
+			],
+			[
+				"carouse",
+				"assets/scss/components/_carousels.scss"
+			],
+			[
+				"measurable-",
+				"results/measurable-impact/index.md"
+			],
+			[
+				"_blocks",
+				"assets/scss/components/_blocks.scss"
+			],
+			[
+				"",
+				"assets/scss/components/_cards.scss"
+			],
+			[
+				"index",
+				"index.md"
+			],
+			[
+				"testimonials.md",
+				"results/client-testimonials/index.md"
+			],
+			[
+				"how-it-works",
+				"process/how-it-works/index.md"
+			],
+			[
+				"blockscss",
+				"assets/scss/components/_blocks.scss"
+			],
+			[
+				"testimon",
+				"_includes/testimonials-section.html"
+			],
+			[
+				"sections",
+				"assets/scss/components/_sections.scss"
+			],
+			[
+				"testimono",
+				"_includes/testimonials-section.html"
+			],
+			[
+				"testimonial",
+				"_includes/testimonial-card.html"
+			],
+			[
+				"blocks",
+				"assets/scss/components/_blocks.scss"
+			],
+			[
+				"sectionscss",
+				"assets/scss/components/_sections.scss"
+			],
+			[
+				"careers",
+				"about/careers/index.md"
+			],
+			[
+				"card",
+				"assets/scss/components/_cards.scss"
+			],
+			[
+				"expert-witness",
+				"services/expert-witness-search/index.md"
+			],
+			[
+				"utili",
+				"assets/scss/helpers/_utility.scss"
+			],
+			[
+				"_util",
+				"assets/scss/helpers/_utility.scss"
+			],
+			[
+				"testimonial-6",
+				"collections/_testimonials/testimonial-6.md"
+			],
+			[
+				"testimonial-4.",
+				"collections/_testimonials/testimonial-4.md"
+			],
+			[
+				"testimonial-4",
+				"_build/testimonials/testimonial-4.html"
+			],
+			[
+				"testimonial-5",
+				"collections/_testimonials/testimonial-5.md"
+			],
+			[
+				"testimonial-3",
+				"collections/_testimonials/testimonial-3.md"
+			],
+			[
+				"_typo",
+				"assets/scss/helpers/_typography.scss"
+			],
+			[
+				"user-conte",
+				"assets/scss/components/_user-content.scss"
+			],
+			[
+				"expert-witness-se",
+				"services/expert-witness-search/index.md"
+			],
+			[
+				"testimonials-",
+				"_includes/testimonials-section.html"
+			],
+			[
+				"commonscs",
+				"assets/scss/components/_common.scss"
+			],
+			[
+				"testimonia",
+				"_includes/testimonials-section.html"
+			],
+			[
+				"insig",
+				"resources/insights/index.md"
+			],
+			[
+				"_typog",
+				"assets/scss/helpers/_typography.scss"
+			],
+			[
+				"single",
+				"assets/scss/pages/_single-post.scss"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"modalscs",
+				"assets/scss/components/_modal.scss"
+			],
+			[
+				"career",
+				"assets/scss/pages/_careers.scss"
+			],
+			[
+				"blockscs",
+				"assets/scss/components/_blocks.scss"
+			],
+			[
+				"main.",
+				"assets/js/main.js"
+			],
+			[
+				"page-heae",
+				"_includes/page-header_angled.html"
+			],
+			[
+				"expert-witne",
+				"resources/expert-witness-directory/index.md"
+			],
+			[
+				"our-tea",
+				"about/our-team/index.md"
+			],
+			[
+				"utility",
+				"assets/scss/helpers/_utility.scss"
+			],
+			[
+				"basescss",
+				"assets/scss/components/_base.scss"
+			],
+			[
+				"common",
+				"assets/scss/components/_common.scss"
+			],
+			[
+				"_mixins",
+				"assets/scss/helpers/_mixins.scss"
+			],
+			[
+				"form.ht",
+				"_includes/searchform.html"
+			],
+			[
+				"bio.html",
+				"_includes/bio.html"
+			],
+			[
+				"main.j",
+				"assets/js/main.js"
+			],
+			[
+				"expert-bio",
+				"_layouts/expert-bio.html"
+			],
+			[
+				"config",
+				"_config.yml"
+			],
+			[
+				"client-tet",
+				"results/client-testimonials/index.md"
+			],
+			[
+				"client-te",
+				"results/client-testimonials.md"
+			],
+			[
+				"pagess",
+				"assets/scss/components/_pages.scss"
+			],
+			[
+				"_career",
+				"assets/scss/pages/_careers.scss"
+			],
+			[
+				"block",
+				"assets/scss/components/_blocks.scss"
+			],
+			[
+				"expert-car",
+				"_includes/expert-card.html"
+			],
+			[
+				"bio.htm",
+				"_includes/bio.html"
+			],
+			[
+				"team/ind",
+				"about/our-team/index.md"
+			],
+			[
+				"expert-wit",
+				"resources/expert-witness-directory/index.md"
+			],
+			[
+				"posi",
+				"_layouts/position.html"
+			],
+			[
+				"bio.ht",
+				"_includes/bio.html"
+			],
+			[
+				"_mis",
+				"assets/scss/helpers/_mixins.scss"
+			],
+			[
+				"mixin",
+				"node_modules/lodash/mixin.js"
+			],
+			[
+				"user-cont",
+				"assets/scss/components/_user-content.scss"
+			],
+			[
+				"location",
+				"about/locations/index.md"
+			],
+			[
+				"utilit",
+				"assets/scss/helpers/_utility.scss"
+			],
+			[
+				"buttons",
+				"assets/scss/components/_buttons.scss"
+			],
+			[
+				"_basescss",
+				"assets/scss/components/_base.scss"
+			],
+			[
+				"homescss",
+				"assets/scss/pages/_home.scss"
+			],
+			[
+				"head.ht",
+				"_includes/head.html"
+			],
+			[
+				"colorsscss",
+				"assets/scss/helpers/_colors.scss"
+			],
+			[
+				"biosc",
+				"assets/scss/components/_bios.scss"
+			],
+			[
+				"request",
+				"process/request-an-expert/index.md"
+			],
+			[
+				"case-",
+				"services/case-clinics/index.md"
+			],
+			[
+				"bioscss",
+				"assets/scss/components/_bios.scss"
+			],
+			[
+				"pages",
+				"assets/scss/components/_pages.scss"
+			],
+			[
+				"bio",
+				"_layouts/bio.html"
+			],
+			[
+				"our-t",
+				"about/our-team/index.md"
+			],
+			[
+				"filterscss",
+				"assets/scss/components/_filters.scss"
+			],
+			[
+				"searchform",
+				"_includes/searchform.html"
+			],
+			[
+				"pricin",
+				"process/pricing/index.md"
+			],
+			[
+				"testi",
+				"_includes/testimonials-section.html"
+			],
+			[
+				"headerhtml",
+				"_includes/header.html"
+			],
+			[
+				"carou",
+				"assets/scss/components/_carousels.scss"
+			],
+			[
+				"case-clinics",
+				"services/case-clinics/index.md"
+			],
+			[
+				"locations",
+				"about/locations/index.md"
+			],
+			[
+				"section",
+				"assets/scss/components/_sections.scss"
+			],
+			[
+				"_vari",
+				"assets/scss/helpers/_variables.scss"
+			],
+			[
+				"how-it-w",
+				"process/how-it-works/index.md"
+			],
+			[
+				"case-clini",
+				"services/case-clinics/index.md"
+			],
+			[
+				"how-it-wo",
+				"process/how-it-works/index.md"
+			],
+			[
+				"how-it-",
+				"process/how-it-works/index.md"
+			],
+			[
+				"case-clin",
+				"services/case-clinics/index.md"
+			],
+			[
+				"request-",
+				"process/request-an-expert/index.md"
+			],
+			[
+				"home-alt",
+				"home-alt/index.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

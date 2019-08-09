@@ -4,7 +4,7 @@ layout: default
 bodyClasses: locations template-a
 ---
 
-{% include page-header_angled.html image-url="/dist/images/Expert_112087205_L.jpg" headline="A national firm that works where you are." description="The Expert Institute has 3 locations to help serve our clients in all 50 states." %}
+{% include page-header_angled.html after-shape="true" image-url="/dist/images/Expert_112087205_L.jpg" headline="A national firm that works where you are." description="The Expert Institute has 3 locations to help serve our clients in all 50 states." %}
 
 <section class="section padded-bottom">
     <div class="site-wrapper">

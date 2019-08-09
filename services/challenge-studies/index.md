@@ -4,7 +4,7 @@ layout: default
 bodyClasses: challenge-study
 ---
 
-{% include page-header_angled.html color="teal" image-url="/dist/images/challenge-study-banner.jpg" headline="Expert witness challenge study" description="The landscape of legal expertise is constantly evolving. Stay ahead of the curve with detailed intelligence. Leverage a team of experienced research attorneys
+{% include page-header_angled.html after-shape="true" color="teal" image-url="/dist/images/challenge-study-banner.jpg" headline="Expert witness challenge study" description="The landscape of legal expertise is constantly evolving. Stay ahead of the curve with detailed intelligence. Leverage a team of experienced research attorneys
 " %}
 
 <div class="section centered-text-section">

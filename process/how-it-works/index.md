@@ -4,7 +4,7 @@ layout: default
 bodyClasses: how-it-works template-a
 ---
 
-{% include page-header_angled.html image-url="/dist/images/rawpixel-384899-unsplash.jpg" headline="Search, Select,<br> and Retain" description="Expert Institute blends cutting-edge technology with a seasoned research staff to deliver expert witness solutions for firms in every area of practice." %}
+{% include page-header_angled.html after-shape="true" image-url="/dist/images/rawpixel-384899-unsplash.jpg" headline="Search, Select,<br> and Retain" description="Expert Institute blends cutting-edge technology with a seasoned research staff to deliver expert witness solutions for firms in every area of practice." %}
 
 <section class="section padded-bottom">
     <div class="site-wrapper">
