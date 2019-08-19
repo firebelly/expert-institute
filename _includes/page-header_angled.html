@@ -1,7 +1,20 @@
-<div class="page-header angled parallax-image-container{% if include.color %} -{{ include.color }}{% endif %}">
+<div class="page-header angled parallax-image-container{% if include.color %} -{{ include.color }}{% endif %}{% if include.caption-text %} with-caption{% endif %}">
   <div class="overflow-wrap">
     <div class="header-background parallax-image" style="background-image:url('{{ include.image-url }}');"></div>
+  {% if include.caption-text %}
+    <div class="header-caption-background"></div>
+  {% endif %}
     <div class="site-wrapper grid">
+      {% if include.caption-text %}
+        <div class="header-caption">
+        {% if include.caption-image %}
+          <div class="caption-image">
+            <img src="{{ include.caption-image }}" alt="">
+          </div>
+        {% endif %}
+          {{ include.caption-text %}}
+        </div>
+      {% endif %}
       <div class="header-text">
         <div class="-inner">
           <h3 class="subtitle">{% if include.subtitle %}{{ include.subtitle }}{% else %}{{ page.title }}{% endif %}</h3>

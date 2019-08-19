@@ -4,7 +4,7 @@ layout: default
 bodyClasses: our-story
 ---
 
-{% include page-header_angled.html image-url="/dist/images/our-story-banner.jpg" subtitle="About Us" headline="Our Story" description="The Expert Institute partners with AmLaw 100 leaders, boutique firms, and solo practitioners to deliver expert witness solutions across every area of practice." %}
+{% include page-header_angled.html after-shape="true" image-url="/dist/images/our-story-banner.jpg" caption-text="<h5 class=\"caption-title\">Dr. Wendy Ketner</h5><p>Litiquest<br> 2019</p>" caption-image="/dist/images/wendy-ketner.jpg" subtitle="About Us" headline="Our Story" description="The Expert Institute partners with AmLaw 100 leaders, boutique firms, and solo practitioners to deliver expert witness solutions across every area of practice." %}
 
 <div class="section centered-text-section">
     <div class="site-wrapper">
