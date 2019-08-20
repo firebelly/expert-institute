@@ -76,3 +76,18 @@
 .align-right {
   text-align: right;
 }
+
+// CSS Columns
+.columns-2 {
+  @include media-md {
+    columns: 2;
+  }
+}
+.columns-3 {
+  @include media-md {
+    columns: 2;
+  }
+  @include media-lg {
+    columns: 3;
+  }
+}

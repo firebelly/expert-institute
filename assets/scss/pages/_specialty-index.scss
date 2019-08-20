@@ -1,0 +1,33 @@
+// Specialty Index Page
+
+.specialty-list {
+  .letter-section {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: $padding-sm;
+
+    .letter {
+      @include p2;
+      margin: 0 0 12px;
+    }
+
+    ul {
+      @extend .semantic-list;
+      li {
+        + li {
+          margin-top: 12px;
+        }
+
+        a {
+          text-decoration: none;
+
+          &:hover,
+          &:focus {
+            color: color(blue-light);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
