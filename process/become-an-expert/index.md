@@ -58,7 +58,7 @@ bodyClasses: become-an-expert
         <div class="section-content">
             <h1 class="section-title animate-in">Join Our Expert Network</h1>
             <p class="animate-in">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-            <p class="section-cta"><a href="#" class="button">Begin</a></p>
+            <p class="section-cta"><a href="#apply" class="button smooth-scroll">Begin</a></p>
         </div>
     </div>
 </div>
