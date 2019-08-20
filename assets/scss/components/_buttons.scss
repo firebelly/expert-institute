@@ -20,6 +20,10 @@
   &:focus {
     color: color(blue-light);
     background-color: transparent;
+
+    svg {
+      fill: color(blue-light);
+    }
   }
 
   @include media-md {
@@ -30,12 +34,26 @@
   // Buttons with icons
   .button-icon {
     float: left;
+    fill: color(white);
+    transform: translateY(50%);
+    margin: -3px 24px -6px -10px;
+
+    &.-right {
+      float: right;
+      margin-left: 24px;
+      margin-right: -10px;
+    }
+  }
+
+  // Buttons with circular icons
+  .button-icon-container {
+    float: left;
     width: 24px;
     height: 24px;
     display: flex;
     border-radius: 50%;
     margin: -3px 24px -6px -10px;
-    background-color: color(white );
+    background-color: color(white);
 
     &.-right {
       float: right;
@@ -85,9 +103,37 @@
   &.-full {
     width: 100%;
   }
+  &.-large {
+    padding-left: $padding-sm;
+    padding-right: $padding-sm;
+    @include media-md {
+      padding-left: $padding-md;
+      padding-right: $padding-md;
+    }
+  }
   &.-small {
     font-size: 16px;
     padding: 6px 16px 10px;
+  }
+  &.-circular {
+    width: 36px;
+    height: 36px;
+    padding: 12px;
+    position: relative;
+
+    .button-icon {
+      top: 50%;
+      left: 50%;
+      margin: 0;
+      float: none;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+
+    @include media-md {
+      width: 48px;
+      height: 48px;
+    }
   }
 
   // Color Variations
@@ -96,7 +142,7 @@
       border-color: $value;
       background-color: $value;
 
-      .button-icon {
+      .button-icon-container {
         background-color: $value;
       }
 
@@ -105,6 +151,9 @@
       &:focus {
         color: $value;
         background-color: transparent;
+        svg {
+          fill: $value;
+        }
       }
 
       &.hollow {
@@ -112,6 +161,9 @@
         &:hover,
         &:focus {
           color: color(white);
+          svg {
+            fill: color(white);
+          }
         }
       }
     }
@@ -119,6 +171,9 @@
 
   &.-teal {
     color: color(blue-dark);
+    svg {
+      fill: color(blue-dark);
+    }
   }
   &.-gold {
     color: color(white);
@@ -130,17 +185,29 @@
     color: color(blue-light);
     background-color: transparent;
 
+    svg {
+      fill: color(blue-light);
+    }
+
     &.-hover,
     &:hover,
     &:focus {
       color: color(white);
       border-color: color(blue-light);
       background-color: color(blue-light);
+
+      svg {
+        fill: color(white);
+      }
     }
 
     @each $color, $value in $colors {
       &.-#{$color} {
         color: $value;
+
+        svg {
+          fill: $value;
+        }
       }
     }
   }

@@ -282,13 +282,26 @@ var Main = (function($) {
     var $formCarousel = $('form.multi-step').flickity({
       prevNextButtons: false,
       adaptiveHeight: true,
-      draggable: false
+      draggable: false,
+      cellSelector: '.form-step'
     });
 
-    $('.form-advance').on('click', function(e) {
+    $('.form-next').on('click', function(e) {
       e.preventDefault();
       $formCarousel.flickity('next');
     });
+
+    $('.form-previous').on('click', function(e) {
+      e.preventDefault();
+      $formCarousel.flickity('previous');
+    });
+
+    if ($formCarousel.length) {
+      _updateFlickityStatus($formCarousel);
+      $formCarousel.on( 'change.flickity', function() {
+        _updateFlickityStatus($formCarousel);
+      });
+    }
   }
 
   function _initHoverPairs() {
@@ -310,6 +323,13 @@ var Main = (function($) {
     });
   }
 
+  function _updateFlickityStatus($carousel) {
+    var flkty = $carousel.data('flickity');
+    var $carouselStatus = $carousel.find('.carousel-status');
+    var cellNumber = flkty.selectedIndex + 1;
+    $carouselStatus.text( cellNumber + ' / ' +  flkty.slides.length );
+  }
+
   function _initFlickityCarousels() {
     // Fade in carousel to hide FOUC
     var $fadeInCarousels = $('.carousel-fadein');
@@ -326,6 +346,14 @@ var Main = (function($) {
       cellAlign: 'center',
       adaptiveHeight: true,
       autoPlay: 4000,
+      wrapAround: true
+    });
+
+    $('.carousel--no-autoplay').flickity({
+      groupCells: true,
+      prevNextButtons: false,
+      cellAlign: 'center',
+      adaptiveHeight: true,
       wrapAround: true
     });
 

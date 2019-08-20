@@ -11,7 +11,7 @@ bodyClasses: home
             <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.8 852"><path d="M239.8 852L49.2 581.5c-65.7-93.2-65.7-217.7 0-310.9L239.8 0"/></svg></div>
             <h3 class="section-label margin-bottom">Elite expertise, tailored to every case</h3>
             <h1 class="section-title">Connect with the expert witness you need to win your case.</h1>
-            <p class="block-cta"><a href="#" class="button -teal">Request an expert</a></p>
+            <p class="section-cta"><a href="/process/request-an-expert" class="button -teal">Request an expert</a></p>
         </div>
     </div>
 </div>
@@ -55,7 +55,7 @@ bodyClasses: home
         <div class="section-content">        
             <h1 class="section-title animate-in">Find the Right Expert for Your Case</h1>
             <p class="animate-in">Connect with one-of-a-kind professionals recruited to suit your needs, no matter how specific.</p>
-            <p class="block-cta animate-in"><a href="#" class="button">Expert Search</a></p>
+            <p class="section-cta animate-in"><a href="/services/expert-witness-search" class="button">Expert Search</a></p>
         </div>
     </div>
 </div>
@@ -67,7 +67,7 @@ bodyClasses: home
             <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
             <h1 class="section-title animate-in">Consult Our In-House Physicians</h1>
             <p class="animate-in">Collaborate with our team of doctors to confirm the merits of any medical case, unpack technical concepts, and refine your case theory.</p>
-            <p class="block-cta animate-in"><a href="#" class="button">Case Clinics</a></p>
+            <p class="section-cta animate-in"><a href="/services/case-clinics" class="button">Case Clinics</a></p>
         </div>
     </div>
 </div>
@@ -79,7 +79,7 @@ bodyClasses: home
             <div class="section-content">        
                 <h1 class="section-title animate-in">Uncover Gatekeeping Challenges</h1>
                 <p class="animate-in">We outline the admissibility history of any expert’s testimony to give you a leg up in the courtroom.</p>
-                <p class="block-cta animate-in"><a href="#" class="button">Challenge Studies</a></p>
+                <p class="section-cta animate-in"><a href="/services/challenge-studies" class="button">Challenge Studies</a></p>
             </div>
         </div>
     </div>

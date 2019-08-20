@@ -4,9 +4,9 @@ layout: default
 bodyClasses: expert-search
 ---
 
-{% include page-header_angled.html after-shape="true" color="gold" image-url="/dist/images/expert-search-banner.jpg" headline="The best way to connect with expert witnesses" description="Our unique combination of experienced researchers, on-staff medical doctors, and a data-driven recruitment platform gives attorneys access to the world’s top experts in any field." %}
+{% include page-header_angled.html after-shape="true" color="gold" image-url="/dist/images/expert-search-banner.jpg" headline="The best way to connect with expert witnesses" description="Our unique combination of experienced researchers, on-staff medical doctors, and a data-driven recruitment platform gives attorneys access to the world’s top experts in any field." cta="<a href=\"#intro\" class=\"button smooth-scroll\">Learn More</a>" %}
 
-<div class="section centered-text-section">
+<div id="intro" class="section centered-text-section">
     <div class="site-wrapper">
         <div class="section-content">
             <h2 class="section-title animate-in">The most efficient way to connect with the world’s leading expert witnesses</h2>

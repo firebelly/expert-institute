@@ -127,3 +127,5 @@ bodyClasses: pricing template-a
 </div>
 
 {% include testimonials-section.html %}
+
+{% include page-bottom-showcase.html color="teal" image-path="/dist/images/clem-onojeghuo-215220-unsplash.jpg" title="Measurable<br> Impact" description="Learn how our best-in-class experts have helped attorneys recover billions of dollars for their clients." page-path="/results/measurable-impact" button-text="Explore the Outcomes" %}

@@ -1,6 +1,6 @@
-// Page Styles
+// Page Headers
 //
-// common page elements, such as page headers (and variations)
+// there are many variations on page header styles, all contained here
 
 // Page Header
 .page-header {
@@ -89,6 +89,7 @@
 
     @include media-md {
       margin-bottom: $padding-md;
+      padding-right: columns(1,9);
 
       a {
         &.-hover,
@@ -397,8 +398,8 @@
           background-image: linear-gradient(to right top, $value 0%, $value 50%, transparent 50%);
         }
 
-        .header-caption {
-          background-color: $value;
+        .header-caption-background {
+          background-color: lighten($value,30%);
         }
 
         .header-text {
@@ -445,6 +446,11 @@
     }
 
     // Header with Caption
+    &.with-caption {
+      .after-shape::before {
+        background-color: color(gray-light);
+      }
+    }
     .header-caption-background {
       right: 0;
       bottom: 0;
@@ -452,7 +458,7 @@
       height: 197px;
       display: none;
       position: absolute;
-      background-color: color(gray);
+      background-color: color(gray-light);
 
       @include media-md {
         display: block;
@@ -497,6 +503,10 @@
       padding: 0 0 $padding-sm;
 
       .title {
+        margin-top: $padding-md;
+      }
+
+      .section-cta {
         margin-top: $padding-md;
       }
     }
@@ -547,7 +557,7 @@
         max-width: 50%;
         flex-basis: 50%;
         position: relative;
-        padding: $padding-lg columns(2,23) 280px 0;
+        padding: $padding-lg columns(2,23) 174px 0;
         &::after {
           top: 0;
           left: 100%;
@@ -586,7 +596,7 @@
           height: 400%;
           position: absolute;
           transform-origin: top right;
-          background-color: color(gray);
+          background-color: color(gray-light);
           transform: rotate(-35deg) translate(100%,30%);
         }
       }

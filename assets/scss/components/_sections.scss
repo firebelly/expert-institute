@@ -229,6 +229,18 @@
   }
 }
 
+// Section CTA
+.section-cta {
+  .button:first-of-type {
+    margin-right: 24px;
+    margin-bottom: $padding-sm;
+  }
+
+  .button + .button {
+    margin-top: 0;
+  }
+}
+
 // Section Video
 .section-video {
   position: relative;
@@ -368,7 +380,8 @@
       }
 
       + .section-content,
-      + .accordions {
+      + .accordions,
+      + .section-video {
         padding-top: 0;
         margin-top: -116px;
       }
@@ -614,7 +627,7 @@
       @include h2;
     }
 
-    .block-cta {
+    .section-cta {
       margin: 42px 0 -42px;
     }
   }
@@ -630,7 +643,7 @@
     .section-content {
       background-color: transparent;
 
-      .block-cta {
+      .section-cta {
         margin-bottom: 0;
 
         .button + .button {
@@ -732,17 +745,8 @@
         margin: 0;
       }
 
-      .block-cta {
+      .section-cta {
         margin: 100px 0 0;
-
-        .button:first-of-type {
-          margin-right: $padding-md;
-          margin-bottom: $padding-sm;
-        }
-
-        .button + .button {
-          margin-top: 0;
-        }
       }
     }
 

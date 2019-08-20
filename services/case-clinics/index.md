@@ -4,14 +4,20 @@ layout: default
 bodyClasses: case-clinics
 ---
 
-{% include page-header_angled.html after-shape="true" color="blue-sky" image-url="/dist/images/Case-Clinic-Splash-XL_Partnership.jpg" headline="Your On-Call Team of Medical Doctors" description="Augment your legal team with a panel of medical doctors. Rapidly screen cases for potential merit and develop winning strategies across the full spectrum of medical litigation." %}
+{% include page-header_angled.html after-shape="true" color="blue-sky" image-url="/dist/images/Case-Clinic-Splash-XL_Partnership.jpg" headline="Your On-Call Team of Medical Doctors" description="Augment your legal team with a panel of medical doctors. Rapidly screen cases for potential merit and develop winning strategies across the full spectrum of medical litigation." cta="<a href=\"#intro\" class=\"button smooth-scroll\">Learn More</a>" %}
 
-<div class="section centered-text-section">
+<div id="intro" class="section centered-text-section padded-bottom-lg">
     <div class="site-wrapper">
         <div class="section-content">
             <h2 class="section-title animate-in">Unlock the Power of Comprehensive Medical Expertise</h2>
             <p class="animate-in">With Case Clinics from Expert Institute, your team will gain on-demand access to medical doctors with extensive medico-legal experience. Quickly review multiple files, validate the merits of potential cases, or develop new case theories through direct consultation with medical professionals - all without the need to formally retain an expert.</p>
-            <p class="cta animate-in text-center"><a href="#" class="button">Learn More</a></p>
+        </div>
+        <div class="section-video">
+            <h5 class="video-label">Case Clinics</h5>
+            <div class="video-still">
+                <button class="watch-video"><svg class="icon icon-play-hollow" aria-hidden="true" role="presentation"><use xlink:href="#icon-play-hollow"/></svg> Watch Video</button>
+                <img src="/dist/images/our-story-video-still.jpg" alt="Still from video">
+            </div>
         </div>
     </div>
 </div>

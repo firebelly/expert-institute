@@ -27,6 +27,7 @@
 }
 
 .carousel,
+.carousel--no-autoplay
 .carousel-header {
   .flickity-viewport {
     transition: height .2s ease-out;
@@ -226,7 +227,8 @@
     overflow: hidden;
   }
 
-  .carousel {
+  .carousel,
+  .carousel--no-autoplay {
     padding: $padding-sm 0 42px;
     margin-bottom: $padding-md;
 
@@ -271,7 +273,8 @@
   @include media-md {
     padding-bottom: 210px;
 
-    .carousel {
+    .carousel,
+    .carousel--no-autoplay {
       padding: $padding-lg 0 0;
       margin-bottom: $padding-lg;
 

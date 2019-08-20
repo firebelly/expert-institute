@@ -20,6 +20,9 @@
           <h3 class="subtitle">{% if include.subtitle %}{{ include.subtitle }}{% else %}{{ page.title }}{% endif %}</h3>
           <h1 class="title">{{ include.headline }}</h1>
           <p>{{ include.description }}</p>
+          {% if include.cta %}
+            <p class="section-cta">{{ include.cta }}</p>
+          {% endif %}
         </div>
       </div>
     </div>

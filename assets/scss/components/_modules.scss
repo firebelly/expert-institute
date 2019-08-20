@@ -10,6 +10,15 @@
 
   .item {
     margin-bottom: $padding-md;
+
+    &.col-md-1-2 {
+      @include media-md {
+        > .-inner {
+          margin: 0 auto;
+          max-width: 360px;
+        }
+      }
+    }
   }
 
   .item-image,
