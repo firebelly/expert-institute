@@ -68,7 +68,7 @@ bodyClasses: case-studies
 </div>
 
 <div class="section padded-bottom-lg">
-  <div class="site-wrapper">    
+  <div class="site-wrapper">
     <div class="card-grid">
       <article class="card showcase-card with-image -teal col-md-1-2">
         <div class="-inner">

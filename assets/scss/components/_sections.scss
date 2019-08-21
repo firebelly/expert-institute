@@ -198,35 +198,25 @@
   @include media-md {
     margin-bottom: $padding-md - 16px;
   }
+
+  &-small {
+    margin: 0;
+    @include p2;
+    text-align: center;
+  }
+
+  &,
+  &-small {
+    @include margin-classes;
+  }
 }
 
 // Section Label
 .section-label {
-  @include h3;
   margin: 0;
+  @include h3;
   color: color(gray-mid);
-
-  &.margin-bottom {
-    margin-bottom: 24px;
-  }
-  &.margin-bottom-md {
-    margin-bottom: $padding-sm;
-  }
-  &.margin-bottom-lg {
-    margin-bottom: $padding-md;
-  }
-
-  @include media-md {
-    &.margin-bottom {
-      margin-bottom: 42px;
-    }
-    &.margin-bottom-md {
-      margin-bottom: $padding-md;
-    }
-    &.margin-bottom-lg {
-      margin-bottom: $padding-lg;
-    }
-  }
+  @include margin-classes;
 }
 
 // Section CTA

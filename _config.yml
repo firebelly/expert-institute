@@ -24,6 +24,7 @@ destination: _build
 markdown: kramdown
 plugins:
   - jekyll-contentblocks
+permalink: pretty
 
 # Collections
 collections_dir: collections
@@ -39,6 +40,8 @@ collections:
   accolades:
     output: true
   case_studies:
+    output: true
+  specialties:
     output: true
 
 # Exclude from processing.

@@ -1,0 +1,80 @@
+---
+layout: default
+bodyClasses: single-specialty
+---
+
+<div class="page-header tag-header">
+  <div class="-inner site-wrapper">
+    <div class="header-text">
+      <h3 class="subtitle"><a href="/resources/expert-witness-directory-specialty-index">Expert Witness Specialty Index</a></h3>
+      <h1 class="title">{{ page.title }} Expert Witness</h1>
+      <p>{{ page.description }}</p>
+      <p>You can also contact our team to initiate a custom search for the perfect expert.</p>
+      <div>
+        <img src="/dist/images/trustpilot-specialty-screenshot.jpg" alt="">
+      </div>
+    </div>
+    <div class="header-cta">
+      <a href="#" class="button">Request A {{ page.title }} Expert</a>
+    </div>
+  </div>
+</div>
+
+<div class="section witnesses-section padded-bottom-lg">
+  <div class="site-wrapper">
+    <h2 class="section-title-small">{{ page.title }} Expert Witnesses</h2>
+    <div class="card-grid">
+      {% for expert in site.experts %}
+        {% include expert-card.html %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="section padded-top-lg">
+  <div class="site-wrapper">
+    <h3 class="section-title-small margin-bottom-md">{{ page.title }} Expert Witness Case Studies</h3>
+    <div class="card-grid alternating-cards">
+      {% for case_study in site.case_studies %}
+      {% include case_study-card.html %}
+      {% endfor %}
+    </div>
+    {% include post-navigation.html total=23 %}
+  </div>
+</div>
+
+<div class="section disciplines-section padded-bottom-lg">
+  <div class="site-wrapper">
+    <h4 class="section-label margin-bottom-lg">Top Level Disciplines</h4>
+    <div class="section-content">
+      <h3 class="section-title">{{ page.title }} Disciplines</h3>
+      <p class="">Engage experts with unparalleled credentials, demeanor, and experience to deliver case winning performances at deposition and trial.</p>
+    </div>
+    <ul class="columns-2">
+      <li><a href="#">Arteriovenous Malformations</a></li>
+      <li><a href="#">Cauda Equina Syndrome</a></li>
+      <li><a href="#">Cavernoma</a></li>
+      <li><a href="#">Cavernous Angioma</a></li>
+      <li><a href="#">Cerebral Aneurysms</a></li>
+      <li><a href="#">Cerebrovascular Disease</a></li>
+      <li><a href="#">Critical Care</a></li>
+      <li><a href="#">Endoscopic Neurosurgery</a></li>
+      <li><a href="#">General Neurological Surgery</a></li>
+      <li><a href="#">Head and Brain Injuries</a></li>
+      <li><a href="#">Laser Surgery</a></li>
+      <li><a href="#">Microneurosurgery</a></li>
+      <li><a href="#">Neuronavigation</a></li>
+      <li><a href="#">Neurospine Surgery</a></li>
+      <li><a href="#">Neurosurgical Errors</a></li>
+      <li><a href="#">Neurosurgical Intensive Care</a></li>
+      <li><a href="#">Peripheral Nerve Lesions</a></li>
+      <li><a href="#">Paralysis</a></li>
+      <li><a href="#">Spinal Cord Injuries</a></li>
+      <li><a href="#">Spinal Medicine</a></li>
+      <li><a href="#">Trauma Neurosurgery</a></li>
+      <li><a href="#">Vascular Neurosurgery</a></li>
+    </ul>
+  </div>
+</div>
+
+{% include expert-connect-section.html %}

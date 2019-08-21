@@ -53,7 +53,7 @@ bodyClasses: specialty-index
     </div>
 </div>
 
-<div class="section">
+<div class="section padded-bottom">
     <div class="site-wrapper">
         <div class="specialty-list specialty-list-alphabetical columns-3">
             <div id="letter-a" class="letter-section">
@@ -320,6 +320,7 @@ bodyClasses: specialty-index
             <div id="letter-s" class="letter-section">
                 <h4 class="letter">S</h4>
                 <ul>                
+                    <li><a href="/specialties/sepsis">Sepsis</a></li>
                     <li><a href="#">Sleep Medicine</a></li>
                     <li><a href="#">Spine Surgery & Spine Care</a></li>
                     <li><a href="#">Sports Medicine</a></li>
@@ -385,7 +386,7 @@ bodyClasses: specialty-index
 <div id="states" class="section states-section padded-bottom-lg">
     <div class="site-wrapper">
         <div class="align-center">            
-            <h3>States</h3>
+            <h3 class="section-title-small">States</h3>
             <p>A-Z</p>
         </div>   
         <ul class="specialty-list specialty-list-state columns-3">

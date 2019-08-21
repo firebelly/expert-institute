@@ -143,3 +143,46 @@
     }
   }
 }
+
+// Global Margin Classes
+@mixin margin-classes {
+  &.margin-bottom {
+    margin-bottom: 24px;
+  }
+  &.margin-bottom-md {
+    margin-bottom: $padding-sm;
+  }
+  &.margin-bottom-lg {
+    margin-bottom: $padding-md;
+  }
+  &.margin-top {
+    margin-top: 24px;
+  }
+  &.margin-top-md {
+    margin-top: $padding-sm;
+  }
+  &.margin-top-lg {
+    margin-top: $padding-md;
+  }
+
+  @include media-md {
+    &.margin-bottom {
+      margin-bottom: 42px;
+    }
+    &.margin-bottom-md {
+      margin-bottom: $padding-md;
+    }
+    &.margin-bottom-lg {
+      margin-bottom: $padding-lg;
+    }
+    &.margin-top {
+      margin-top: 42px;
+    }
+    &.margin-top-md {
+      margin-top: $padding-md;
+    }
+    &.margin-top-lg {
+      margin-top: $padding-lg;
+    }
+  }
+}

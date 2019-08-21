@@ -1,4 +1,4 @@
-// Single Post
+// Single Posts
 //
 // This template is shared between single blog posts and bio posts
 
@@ -201,6 +201,45 @@ body.single-expert-bio {
 
     @include media-md {
       margin-top: $padding-md;
+    }
+  }
+}
+
+body.single-specialty {
+  .witnesses-section {
+    .section-title-small {
+      margin-bottom: $padding-md;
+    }
+  }
+
+  .disciplines-section {
+    .section-content {
+      max-width: 900px;
+      text-align: center;
+      margin: 0 auto $padding-lg;
+
+      p {
+        color: color(gray-dark);
+      }
+    }
+
+    ul {
+      margin: 0 auto;
+      max-width: 900px;
+      @extend .semantic-list;
+
+      li + li {
+        margin-top: 12px;
+      }
+
+      a {
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          color: color(blue-light);
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

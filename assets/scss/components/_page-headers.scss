@@ -154,6 +154,48 @@
     }
   }
 
+  // Simplified Tag Header
+  &.tag-header {
+    padding-top: $padding-sm;
+
+    .header-text {
+      margin-bottom: $padding-sm;
+    }
+
+    .subtitle {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    .header-cta {
+      text-align: center;
+      margin-bottom: $padding-md;
+    }
+
+    @include media-md {
+      > .-inner {
+        display: flex;
+      }
+
+      .header-text {
+        max-width: columns(16,23);
+        flex-basis: columns(16,23);
+        padding-right: columns(2,23);
+      }
+
+      .header-cta {
+        display: flex;
+        align-items: center;
+        max-width: columns(7,23);
+        flex-basis: columns(7,23);
+      }
+    }
+  }
 
   // With Swoop (https://d.pr/i/ii1084)
   // carousel headers share the same swoop styles

@@ -10,11 +10,6 @@ body.specialty-index {
 
   // States Section
   .states-section {
-    h3 {
-      margin: 0;
-      @include p2;
-    }
-
     .specialty-list {
       margin-top: $padding-md;
     }
