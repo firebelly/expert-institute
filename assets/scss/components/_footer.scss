@@ -129,6 +129,13 @@
       }
     }
 
+    // Current Page
+    li.-current {
+      a {
+        color: color(blue-light);
+      }
+    }
+
     a {
       display: inline-block;
       span {

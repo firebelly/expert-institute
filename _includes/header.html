@@ -11,7 +11,7 @@
             {% if navItem.children %}
               <ul class="nav-sub-level">
                 {% for childItem in navItem.children %}
-                  <li {% if page.url == childItem.path %} class="-current" {% endif %}>
+                  <li class="nav-{{ childItem.title | slugify }}{% if page.url == childItem.path %} -current{% endif %}">
                     <a href="{{ childItem.path }}"><span>{{ childItem.title }}</span></a>
                   </li>
                 {% endfor %}
@@ -37,7 +37,7 @@
               {% if navItem.children %}
                 <ul class="nav-sub-level">
                   {% for childItem in navItem.children %}
-                    <li {% if page.url == childItem.path %} class="-current" {% endif %}>
+                    <li class="nav-{{ childItem.title | slugify }}{% if page.url == childItem.path %} -current{% endif %}">
                       <a href="{{ childItem.path }}"><span>{{ childItem.title }}</span></a>
                     </li>
                   {% endfor %}

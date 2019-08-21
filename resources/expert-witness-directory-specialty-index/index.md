@@ -14,10 +14,49 @@ bodyClasses: specialty-index
     </div>
 </div>
 
-<div class="section padded-lg">
+<div class="section filter-section padded">
     <div class="site-wrapper">
-        <div class="specialty-list columns-3">
-            <div id="a" class="letter-section">
+        <div class="search-container">
+            {% include searchform.html label="Search by Keyword" %}
+        </div>
+        <div class="specialty-letter-index">
+            <h2>Specialty Fields</h2>
+            <ul>
+                <li><a href="#letter-a" class="smooth-scroll">A</a></li>
+                <li><a href="#letter-b" class="smooth-scroll">B</a></li>
+                <li><a href="#letter-c" class="smooth-scroll">C</a></li>
+                <li><a href="#letter-d" class="smooth-scroll">D</a></li>
+                <li><a href="#letter-e" class="smooth-scroll">E</a></li>
+                <li><a href="#letter-f" class="smooth-scroll">F</a></li>
+                <li><a href="#letter-g" class="smooth-scroll">G</a></li>
+                <li><a href="#letter-h" class="smooth-scroll">H</a></li>
+                <li><a href="#letter-i" class="smooth-scroll">I</a></li>
+                <li><a href="#letter-j" class="smooth-scroll">J</a></li>
+                <li><a href="#letter-k" class="smooth-scroll">K</a></li>
+                <li><a href="#letter-l" class="smooth-scroll">L</a></li>
+                <li><a href="#letter-m" class="smooth-scroll">M</a></li>
+                <li><a href="#letter-n" class="smooth-scroll">N</a></li>
+                <li><a href="#letter-o" class="smooth-scroll">O</a></li>
+                <li><a href="#letter-p" class="smooth-scroll">P</a></li>
+                <li><a href="#letter-q" class="smooth-scroll">Q</a></li>
+                <li><a href="#letter-r" class="smooth-scroll">R</a></li>
+                <li><a href="#letter-s" class="smooth-scroll">S</a></li>
+                <li><a href="#letter-t" class="smooth-scroll">T</a></li>
+                <li><a href="#letter-u" class="smooth-scroll">U</a></li>
+                <li><a href="#letter-v" class="smooth-scroll">V</a></li>
+                <li><a href="#letter-w" class="smooth-scroll">W</a></li>
+                <li><a href="#letter-x" class="smooth-scroll">X</a></li>
+                <li><a href="#letter-y" class="smooth-scroll">Y</a></li>
+                <li><a href="#letter-z" class="smooth-scroll">Z</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="site-wrapper">
+        <div class="specialty-list specialty-list-alphabetical columns-3">
+            <div id="letter-a" class="letter-section">
                 <h4 class="letter">A</h4>
                 <ul>                
                     <li><a href="#">Acupuncturist</a></li>
@@ -30,7 +69,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="b" class="letter-section">
+            <div id="letter-b" class="letter-section">
                 <h4 class="letter">B</h4>
                 <ul>
                     <li><a href="#">Bariatric Surgery</a></li>
@@ -38,7 +77,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="c" class="letter-section">
+            <div id="letter-c" class="letter-section">
                 <h4 class="letter">C</h4>
                 <ul>                
                     <li><a href="#">Cardiothoracic Surgery</a></li>
@@ -53,7 +92,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="d" class="letter-section">
+            <div id="letter-d" class="letter-section">
                 <h4 class="letter">D</h4>
                 <ul>                
                     <li><a href="#">Dentist</a></li>
@@ -66,7 +105,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="e" class="letter-section">
+            <div id="letter-e" class="letter-section">
                 <h4 class="letter">E</h4>
                 <ul>                
                     <li><a href="#">Electrodiagnostic Medicine</a></li>
@@ -79,7 +118,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="f" class="letter-section">
+            <div id="letter-f" class="letter-section">
                 <h4 class="letter">F</h4>
                 <ul>                
                     <li><a href="#">Family Loss</a></li>
@@ -92,7 +131,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="g" class="letter-section">
+            <div id="letter-g" class="letter-section">
                 <h4 class="letter">G</h4>
                 <ul>                
                     <li><a href="#">Gastroenterology</a></li>
@@ -105,7 +144,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="h" class="letter-section">
+            <div id="letter-h" class="letter-section">
                 <h4 class="letter">H</h4>
                 <ul>                
                     <li><a href="#">Hand Surgery</a></li>
@@ -119,7 +158,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="i" class="letter-section">
+            <div id="letter-i" class="letter-section">
                 <h4 class="letter">I</h4>
                 <ul>                
                     <li><a href="#">Independent Medical Examinations</a></li>
@@ -128,19 +167,19 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="j" class="letter-section">
+            <div id="letter-j" class="letter-section">
                 <h4 class="letter">J</h4>
                 <ul>  
                 </ul>
             </div>
 
-            <div id="k" class="letter-section">
+            <div id="letter-k" class="letter-section">
                 <h4 class="letter">K</h4>
                 <ul>  
                 </ul>
             </div>
 
-            <div id="l" class="letter-section">
+            <div id="letter-l" class="letter-section">
                 <h4 class="letter">L</h4>
                 <ul>                
                     <li><a href="#">Laser Surgery</a></li>
@@ -151,7 +190,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="m" class="letter-section">
+            <div id="letter-m" class="letter-section">
                 <h4 class="letter">M</h4>
                 <ul>                
                     <li><a href="#">Maternal & Fetal Medicine</a></li>
@@ -166,7 +205,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="n" class="letter-section">
+            <div id="letter-n" class="letter-section">
                 <h4 class="letter">N</h4>
                 <ul>                
                     <li><a href="#">Neonatal - Perinatal Medicine</a></li>
@@ -191,7 +230,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="o" class="letter-section">
+            <div id="letter-o" class="letter-section">
                 <h4 class="letter">O</h4>
                 <ul>                
                     <li><a href="#">Obesity</a></li>
@@ -212,7 +251,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="p" class="letter-section">
+            <div id="letter-p" class="letter-section">
                 <h4 class="letter">P</h4>
                 <ul>                
                     <li><a href="#">Pain Management - Medicine</a></li>
@@ -261,13 +300,13 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="q" class="letter-section">
+            <div id="letter-q" class="letter-section">
                 <h4 class="letter">Q</h4>
                 <ul>  
                 </ul>
             </div>
 
-            <div id="r" class="letter-section">
+            <div id="letter-r" class="letter-section">
                 <h4 class="letter">R</h4>
                 <ul>                
                     <li><a href="#">Radiation Oncology</a></li>
@@ -278,7 +317,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="s" class="letter-section">
+            <div id="letter-s" class="letter-section">
                 <h4 class="letter">S</h4>
                 <ul>                
                     <li><a href="#">Sleep Medicine</a></li>
@@ -288,7 +327,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="t" class="letter-section">
+            <div id="letter-t" class="letter-section">
                 <h4 class="letter">T</h4>
                 <ul>                
                     <li><a href="#">Thoracic Surgery</a></li>
@@ -297,7 +336,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="u" class="letter-section">
+            <div id="letter-u" class="letter-section">
                 <h4 class="letter">U</h4>
                 <ul>                
                     <li><a href="#">Ultrasound</a></li>
@@ -306,7 +345,7 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="v" class="letter-section">
+            <div id="letter-v" class="letter-section">
                 <h4 class="letter">V</h4>
                 <ul>                
                     <li><a href="#">Vascular & Interventional Radiology</a></li>
@@ -315,26 +354,26 @@ bodyClasses: specialty-index
                 </ul>
             </div>
 
-            <div id="w" class="letter-section">
+            <div id="letter-w" class="letter-section">
                 <h4 class="letter">W</h4>
                 <ul>
                     <li><a href="#">Wound Care</a></li>
                 </ul>
             </div>
 
-            <div id="x" class="letter-section">
+            <div id="letter-x" class="letter-section">
                 <h4 class="letter">X</h4>
                 <ul>  
                 </ul>
             </div>
 
-            <div id="y" class="letter-section">
+            <div id="letter-y" class="letter-section">
                 <h4 class="letter">Y</h4>
                 <ul>  
                 </ul>
             </div>
 
-            <div id="z" class="letter-section">
+            <div id="letter-z" class="letter-section">
                 <h4 class="letter">Z</h4>
                 <ul>  
                 </ul>
@@ -342,3 +381,67 @@ bodyClasses: specialty-index
         </div>
     </div>
 </div>
+
+<div id="states" class="section states-section padded-bottom-lg">
+    <div class="site-wrapper">
+        <div class="align-center">            
+            <h3>States</h3>
+            <p>A-Z</p>
+        </div>   
+        <ul class="specialty-list specialty-list-state columns-3">
+            <li><a href="#">Alabama</a></li>
+            <li><a href="#">Alaska</a></li>
+            <li><a href="#">Arizona</a></li>
+            <li><a href="#">Arkansas</a></li>
+            <li><a href="#">California</a></li>
+            <li><a href="#">Colorado</a></li>
+            <li><a href="#">Connecticut</a></li>
+            <li><a href="#">Delaware</a></li>
+            <li><a href="#">District Of Columbia</a></li>
+            <li><a href="#">Florida</a></li>
+            <li><a href="#">Georgia</a></li>
+            <li><a href="#">Hawaii</a></li>
+            <li><a href="#">Idaho</a></li>
+            <li><a href="#">Illinois</a></li>
+            <li><a href="#">Indiana</a></li>
+            <li><a href="#">Iowa</a></li>
+            <li><a href="#">Kansas</a></li>
+            <li><a href="#">Kentucky</a></li>
+            <li><a href="#">Louisiana</a></li>
+            <li><a href="#">Maine</a></li>
+            <li><a href="#">Maryland</a></li>
+            <li><a href="#">Massachusetts</a></li>
+            <li><a href="#">Michigan</a></li>
+            <li><a href="#">Minnesota</a></li>
+            <li><a href="#">Mississippi</a></li>
+            <li><a href="#">Missouri</a></li>
+            <li><a href="#">Montana</a></li>
+            <li><a href="#">Nebraska</a></li>
+            <li><a href="#">Nevada</a></li>
+            <li><a href="#">New Hampshire</a></li>
+            <li><a href="#">New Jersey</a></li>
+            <li><a href="#">New Mexico</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">North Carolina</a></li>
+            <li><a href="#">North Dakota</a></li>
+            <li><a href="#">Ohio</a></li>
+            <li><a href="#">Oklahoma</a></li>
+            <li><a href="#">Oregon</a></li>
+            <li><a href="#">Pennsylvania</a></li>
+            <li><a href="#">Rhode Island</a></li>
+            <li><a href="#">South Carolina</a></li>
+            <li><a href="#">South Dakota</a></li>
+            <li><a href="#">Tennessee</a></li>
+            <li><a href="#">Texas</a></li>
+            <li><a href="#">Utah</a></li>
+            <li><a href="#">Vermont</a></li>
+            <li><a href="#">Virginia</a></li>
+            <li><a href="#">Washington</a></li>
+            <li><a href="#">West Virginia</a></li>
+            <li><a href="#">Wisconsin</a></li>
+            <li><a href="#">Wyoming</a></li>
+        </ul>
+    </div>
+</div>
+
+{% include expert-connect-section.html %}

@@ -1,33 +1,89 @@
 // Specialty Index Page
 
-.specialty-list {
-  .letter-section {
-    width: 100%;
-    display: inline-block;
-    margin-bottom: $padding-sm;
+body.specialty-index {
+  .filter-section {
+    .search-container {
+      margin: 0 auto;
+      max-width: 420px;
+    }
+  }
 
-    .letter {
+  // States Section
+  .states-section {
+    h3 {
+      margin: 0;
       @include p2;
-      margin: 0 0 12px;
     }
 
-    ul {
-      @extend .semantic-list;
-      li {
-        + li {
-          margin-top: 12px;
-        }
+    .specialty-list {
+      margin-top: $padding-md;
+    }
+  }
+}
 
-        a {
-          text-decoration: none;
+.specialty-letter-index {
+  text-align: center;
+  margin-top: $padding-md;
 
-          &:hover,
-          &:focus {
-            color: color(blue-light);
-            text-decoration: underline;
-          }
+  h2 {
+    @include p2;
+  }
+
+  ul {
+    @extend .semantic-list;
+
+    li {
+      margin: 0 8px 24px;
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        color: color(blue-light);
+        &:hover,
+        &:focus {
+          text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+.specialty-list {
+  &, ul {
+    @extend .semantic-list;
+
+    li + li {
+      margin-top: 12px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: color(blue-light);
+      text-decoration: underline;
+    }
+  }
+
+  &-alphabetical {
+    .letter-section {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: $padding-sm;
+
+      .letter {
+        @include p2;
+        margin: 0 0 12px;
+      }
+    }
+  }
+
+  &-state {
+    li {
+      width: 100%;
+      display: inline-block;
     }
   }
 }

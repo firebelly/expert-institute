@@ -52,6 +52,8 @@ secondaryNav:
     children:
       - title: Expert Witness Directory
         path: /resources/expert-witness-directory/
+      - title: Expert Search Index
+        path: /resources/expert-witness-directory-specialty-index/
       - title: Expert Witness Fees
         path: /resources/expert-witness-fees/
       - title: White Papers

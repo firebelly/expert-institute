@@ -387,6 +387,7 @@
       }
     }
 
+    // Secondary Nav
     .secondary-nav {
       margin: 56px 0 0;
 
@@ -410,6 +411,11 @@
         .icon-arrow-down {
           fill: color(gray-mid);
         }
+      }
+
+      // Hide The Search Index Page in Header Nav
+      li.nav-expert-search-index {
+        display: none;
       }
 
       .search-toggle {

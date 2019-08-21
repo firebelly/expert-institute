@@ -126,6 +126,11 @@
       margin: 0 auto $padding-sm;
     }
 
+    p {
+      margin: 0 auto;
+      max-width: 900px;
+    }
+
     @include media-md {
       padding: 114px 0 180px;
 
