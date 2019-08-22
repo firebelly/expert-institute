@@ -48,7 +48,6 @@ bodyClasses: home
     </div>
 </div>
 
-
 <div class="showcase-section -top section parallax-image-container -gold">
     <div class="section-background parallax-image" style="background-image:url('/dist/images/clem-onojeghuo-215220-unsplash.jpg');"></div>
     <div class="-inner grid">

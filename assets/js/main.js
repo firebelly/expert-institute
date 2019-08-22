@@ -62,6 +62,7 @@ var Main = (function($) {
     _initInviewElements();
     _initImageParallax();
     _initModal();
+    _initPartnershipProgramFunctions()
 
     // Esc handlers
     $(document).keyup(function(e) {
@@ -396,6 +397,67 @@ var Main = (function($) {
     });
   }
 
+  function _initPartnershipProgramFunctions() {
+    // Partnership Benefits Carousel
+    // Establish Services Carousel in global scope
+    var $servicesCarousel = $('.services-carousel').flickity({
+      cellSelector: '.service',
+      adaptiveHeight: true,
+      arrowShape: 'M69.8 0l10.4 10.4L40.7 50l39.6 39.6L69.8 100l-50-50 50-50z'
+    });
+
+    if ($servicesCarousel.length) {
+      // Carousel Nav Vars
+      $servicesCarouselNav = $('.services-nav ol');
+      $servicesCarouselButtons = $('.services-nav li');
+      // Services Carousel Data
+      var servicesCarouselData = $servicesCarousel.data('flickity');
+
+      // Update carousel status
+      _updateFlickityStatus($servicesCarousel);
+      $servicesCarousel.on( 'change.flickity', function() {
+        _updateFlickityStatus($servicesCarousel);
+      });
+
+      // Update selected button
+      $servicesCarousel.on( 'select.flickity', function() {
+        $servicesCarouselButtons.filter('.-active')
+          .removeClass('-active');
+        $servicesCarouselButtons.eq(servicesCarouselData.selectedIndex)
+          .addClass('-active');
+      });
+
+      // select cell on button click
+      $servicesCarouselNav.on( 'click', 'button', function() {
+        var index = $(this).closest('li').index();
+        $servicesCarousel.flickity('select', index);
+      });
+
+      // Expand/contract on small-screen
+      var $servicesToggle = $('.services-nav > button');
+      var $servicesContent = $('.services-content');
+      $servicesToggle.on('click', function() {
+        if ($(this).closest('.accordion').is('.-active')) {
+          $servicesContent.velocity('slideDown', {
+            duration: 250,
+            easing: 'easeOutSine',
+            complete: function() {
+              $servicesCarousel.flickity('resize');
+            }
+          });
+        } else {
+          $servicesContent.velocity('slideUp', { duration: 250, easing: 'easeOutSine' });
+        }
+      });
+    }
+  }
+
+  function _resetPartnershipProgramCarousel() {
+    if (!$('.services-nav').is('.-active')) {
+      $('.services-content').velocity('slideUp', { duration: 250, easing: 'easeOutSine' });
+    }
+  }
+
   function _initAccordions() {
     // Activate/deactive functions
     $('.accordion').each(function() {
@@ -575,9 +637,9 @@ var Main = (function($) {
     $('.modal').velocity(
       { opacity: 1 }, {
       display: "block",
-        complete: function() {
-          $('.modal').addClass('-active');
-        }
+      complete: function() {
+        $('.modal').addClass('-active');
+      }
     });
   }
 
@@ -641,6 +703,11 @@ var Main = (function($) {
     if (breakpoint_nav && $('.site-nav .nav-sub-level')[0].hasAttribute('style')) {
       $('.site-nav .nav-parent-label.-active').removeClass('-active');
       $('.site-nav .nav-sub-level[style]').attr('style', '');
+    }
+
+    // Reset Services Carousel on small screen
+    if($('.services-carousel').length && !breakpoint_md) {
+      _resetPartnershipProgramCarousel();
     }
 
     // Functions to run on resize end

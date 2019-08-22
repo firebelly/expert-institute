@@ -1,0 +1,445 @@
+// Partnership Program Page
+
+body.partnership-program {
+
+}
+
+.partnership-benefits {
+  overflow: hidden;
+
+  > div > .-inner {
+    @include media-md {
+      margin: 0 auto;
+      padding: 0 $padding-md;
+      max-width: $sitewrapper;
+    }
+    @include media-lg {
+      padding: 0 $padding-lg;
+    }
+  }
+}
+
+.partnership-benefits-top {
+  overflow: hidden;
+  position: relative;
+  background-color: color(blue);
+  padding: $padding-md $padding-sm 228px;
+
+  .section-background {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    background-size: cover;
+    &::before {
+      top: 0;
+      right: 0;
+      width: 100%;
+      content: '';
+      bottom: 50px;
+      position: absolute;
+      background-image: linear-gradient(to right bottom, color(blue) 0%, color(blue) 50%, transparent 50%);
+    }
+  }
+
+  .section-content {
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    color: color(white);
+  }
+
+  .section-cta {
+    text-align: center;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      transition: color .2s ease-out;
+
+      &:hover {
+        color: color(gold);
+        .icon {
+          fill: color(gold);
+          animation: hover 1s infinite alternate;
+        }
+      }
+    }
+
+    .icon {
+      height: 6px;
+      width: 12px;
+      fill: color(white);
+      transition: fill .2s ease-out;
+    }
+  }
+
+  .block-title {
+    @include h2;
+  }
+
+  @include media-md {
+    padding: 0;
+
+    .section-background {
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: columns(1,2);
+      background-position: center center;
+      &::before {
+        display: none;
+      }
+    }
+
+    &.parallax-image-container {
+      .section-background {
+        height: 120%;
+      }
+    }
+
+    .section-content {
+      text-align: left;
+      position: relative;
+      max-width: columns(1,2);
+      flex-basis: columns(1,2);
+      background-color: color(blue);
+      padding: 180px #{columns(1,23)} 180px 0;
+      &::after {
+        bottom: 0;
+        left: 100%;
+        width: 400%;
+        content: '';
+        height: 100%;
+        position: absolute;
+        background-color: inherit;
+        transform: rotate(-55deg);
+        transform-origin: bottom left;
+      }
+
+      > * {
+        z-index: 1;
+        position: relative;
+      }
+
+      .block-title {
+        margin-bottom: 45px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  @include media-lg {
+    .section-content {
+      padding-bottom: 350px;
+    }
+  }
+}
+
+.partnership-benefits-bottom {
+  @include media-md {
+    z-index: 1;
+    position: relative;
+    &::before {
+      top: 0;
+      right: 50%;
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: color(blue);
+    }
+
+    > .-inner {
+      overflow: hidden;
+    }
+
+    // After Shape
+    .after-shape {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      position: absolute;
+      &::before {
+        top: 0;
+        left: 50%;
+        z-index: 1;
+        width: 88%;
+        content: "";
+        height: 400%;
+        position: absolute;
+        transform-origin: top left;
+        background-color: color(white);
+        transform: rotate(35deg) translate(-100%, 30%);
+      }
+    }
+  }
+
+  .services-nav {
+    .accordion-toggle {
+      width: 100%;
+      font-size: 24px;
+      text-align: left;
+      color: color(blue-light);
+      padding: 20px $padding-sm;
+
+      .expand-contract {
+        right: $padding-sm;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      @extend .button-reset;
+    }
+
+    ol {
+      @extend .semantic-list;
+      margin: 0;
+      padding: 0;
+
+      li {
+        button {
+          width: 100%;
+          font-size: 18px;
+          text-align: left;
+          padding: 20px $padding-sm;
+          background-color: color(gray-light);
+        }
+
+        &.-active {
+          button {
+            color: color(blue-light);
+            background-color: color(white);
+          }
+        }
+      }
+    }
+
+    @include media-md {
+      position: relative;
+      background-color: color(blue);
+      padding-top: $padding-lg + $padding-sm;
+
+      .accordion-toggle {
+        display: none;
+      }
+      .accordion-content {
+        height: auto;
+        display: block!important;
+      }
+
+      ol {
+        margin-top: -12px;
+
+        li {
+          margin: #{$padding-sm / 2} 0;
+          transition: margin .2s ease-out;
+
+          button {
+            padding: 4px 0;
+            font-size: 24px;
+            color: color(white);
+            background-color: transparent;
+          }
+
+          &.-active {
+            margin: $padding-sm 0;
+
+            button {
+              color: color(gold);
+              background-color: transparent;
+            }
+          }
+
+          &:first-of-type.-active {
+            margin-top: $padding-sm / 2;
+          }
+          &:last-of-type.-active {
+            margin-bottom: $padding-sm / 2;
+          }
+        }
+      }
+    }
+  }
+
+  .services-content {
+    @include media-md {
+      position: relative;
+      display: block!important;
+      padding-bottom: $padding-sm;
+      &::after {
+        bottom: 0;
+        right: 100%;
+        width: 400%;
+        content: '';
+        height: 100%;
+        position: absolute;
+        transform: rotate(-55deg);
+        transform-origin: top right;
+        background-color: color(white);
+      }
+
+      > * {
+        z-index: 1;
+        position: relative;
+      }
+    }
+  }
+
+  .services-carousel {
+    .flickity-viewport {
+      transition: height .2s ease-out;
+    }
+    .flickity-button {
+      top: auto;
+      width: 36px;
+      height: 36px;
+      bottom: $padding-sm;
+      background: color(gold);
+
+      svg {
+        top: 50%;
+        left: 50%;
+        width: 13px;
+        height: 13px;
+        margin: auto;
+        fill: color(white);
+        transform: translate(-60%, -50%);
+      }
+
+      &.previous {
+        left: $padding-sm;
+      }
+      &.next {
+        right: $padding-sm;
+        svg {
+          transform: translate(-40%, -50%);
+        }
+      }
+    }
+    .flickity-page-dots {
+      bottom: $padding-sm;
+      .dot {
+        border-color: color(gold);
+        &.is-selected {
+          background-color: color(gold)
+        }
+      }
+    }
+
+    .carousel-status {
+      left: 50%;
+      bottom: 0;
+      @include h3-simple;
+      position: absolute;
+      color: color(gray-dark);
+      transform: translateX(-50%);
+    }
+
+    .service {
+      opacity: 0;
+      width: 100%;
+      transition: opacity .75s ease-out;
+      padding: $padding-sm $padding-sm $padding-lg;
+      &.is-selected {
+        opacity: 1;
+        transition: opacity .75s .25s ease-out;
+      }
+
+      .service-icon {
+        text-align: center;
+        margin-bottom: 50px;
+
+        img {
+          max-width: 120px;
+        }
+      }
+
+      .service-title {
+        @include h2;
+        margin: 0 0 20px;
+
+        .number {
+          @include p1;
+          font-size: 24px;
+          color: color(gold);
+        }
+      }
+
+      .benefits {
+        margin-top: $padding-sm;
+
+        h4 {
+          margin: 0;
+          @include p2;
+        }
+
+        ul {
+          padding: 0 0 0 1em;
+          @include list-style;
+        }
+      }
+    }
+
+    @include media-md {
+      .flickity-button {
+        &.previous {
+          left: 0;
+        }
+        &.next {
+          right: 0;
+        }
+      }
+
+      .service {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: $padding-lg;
+        transition: opacity .2s ease-out;
+
+        .service-icon {
+          right: 100%;
+          position: absolute;
+          bottom: $padding-lg;
+          margin-right: $padding-sm;
+        }
+
+        .service-title {
+          padding-top: 30px;
+          position: relative;
+          margin-bottom: $padding-md;
+          .number {
+            top: 0;
+            position: absolute;
+          }
+        }
+
+        .benefits {
+          margin-top: $padding-sm * 3;
+        }
+      }
+    }
+  }
+}
+
+.partner-benefits-trial {
+  text-align: center;
+  padding: $padding-md 0;
+  background-color: color(gray-light);
+
+  h3 {
+    @include h2-small;
+    margin: 0 0 $padding-sm;
+  }
+
+  .section-cta {
+    margin: 0;
+  }
+}
