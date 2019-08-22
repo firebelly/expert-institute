@@ -270,10 +270,11 @@ body.partnership-program {
   }
 
   .services-content {
+    padding-bottom: $padding-sm;
+
     @include media-md {
       position: relative;
       display: block!important;
-      padding-bottom: $padding-sm;
       &::after {
         bottom: 0;
         right: 100%;
