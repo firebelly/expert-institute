@@ -5,7 +5,7 @@ bodyClasses: partnership-program
 ---
 
 {% include page-header_angled.html after-shape="true" image-url="/dist/images/partnership-program-banner.jpg" headline="Your all-in-one source for expertise" description="Three services, two designated support specialists, and one online portal - working together for your firm.
-" cta="<a href=\"#trial-signup\" class=\"button smooth-scroll\">Start your trial</a>" %}
+" cta="<a href=\"#trial-access\" class=\"button smooth-scroll\">Start your trial</a>" %}
 
 <div class="section centered-text-section">
     <div class="site-wrapper">
@@ -14,22 +14,22 @@ bodyClasses: partnership-program
             <h2 class="section-title animate-in">Personalized support for the entire firm</h2>
             <p class="animate-in">With a subscription to our Partnership Program, your firm can access all three expert solutions, lean on our customer success team for requests and troubleshooting, and manage your expert witness casework through an online portal.</p>
         </div>
-        <div class="module-item-showcase">
-            <div class="item col-md-1-3">
+        <div class="module-item-showcase animate-in-series">
+            <div class="item animation-item col-md-1-3">
                 <div class="item-image">
                     <img src="/dist/images/search-select.svg">
                 </div>
                 <h2 class="item-title">Priority<br> status</h2>
                 <p class="item-text">Expect quicker turnarounds on all your expert requests</p>
             </div>
-            <div class="item col-md-1-3">
+            <div class="item animation-item col-md-1-3">
                 <div class="item-image">
                     <img src="/dist/images/search-retain.svg">
                 </div>
                 <h2 class="item-title">High-touch<br> support</h2>
                 <p class="item-text">Consult your designated research manager, your designated customer success manager, and our medical team on-demand</p>
             </div>
-            <div class="item col-md-1-3">
+            <div class="item animation-item col-md-1-3">
                 <div class="item-image">
                     <img src="/dist/images/key-icon.svg" alt="Expert Search">
                 </div>
@@ -163,10 +163,55 @@ bodyClasses: partnership-program
 
 {% include testimonials-section.html section-classes="padded-top" %}
 
-<div id="trial-access" class="section">
-    <div class="site-wrapper">
-        <div class="section-content">
-            <h1 class="section-title">Trial Access</h1>
-        </div>
+<div id="trial-access" class="trial-access-section section colored-swoop -gray-light">
+  <div class="-inner site-wrapper grid">
+    <h2 class="sub-title">Access Course</h2>
+    <div class="text -left">
+      <h1 class="section-title">Trial Access</h1>
+      <p>Starting at $15,000 for 6 months</p>
+      <p><img src="/dist/images/trustpilot-specialty-screenshot.jpg"></p>
     </div>
+    <div class="text -right">        
+    <form id="trial-access-form" action="">
+      <div class="input-wrap">
+        <label for="nameFirst">First Name*</label>
+        <input id="nameFirst" type="text" required>
+      </div>
+      <div class="input-wrap">
+        <label for="nameLast">Last Name*</label>
+        <input id="nameLast" type="text" required>
+      </div>
+      <div class="input-wrap">
+        <label for="email">Email*</label>
+        <input id="email" type="email" required>
+      </div>
+      <div class="input-wrap">
+        <label for="number">Phone Number</label>
+        <input id="number" type="tel">
+      </div>
+      <div class="input-wrap">
+        <label for="companyName">Company Name</label>
+        <input id="companyName" type="text">
+      </div>
+      <div class="input-wrap select-wrap">
+        <label for="companySize">Company Size</label>
+        <select name="companySize" id="companySize">
+          <option value="small">1-20</option>
+          <option value="medium">21-50</option>
+          <option value="large">51+</option>
+        </select>
+      </div>
+      <div class="input-wrap">
+        <label for="practiceArea">Practice Area</label>
+        <input id="practiceArea" type="text">
+      </div>
+      <button class="submit button" type="submit">Star your trial</button>
+    </form>
+    </div>
+    <div class="swoop">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 673.8 756"><path d="M673.8 756H0c87.7 0 169.9-42.6 220.5-114.2L673.8 0v756z"/></svg>
+    </div>
+  </div>
 </div>
+
+<div class="section padded background-gray-light"></div>

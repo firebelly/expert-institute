@@ -163,6 +163,7 @@
 
         &.-right {
           padding-top: 0;
+          padding-left: columns(2.25,23);
           &::before {
             display: none;
           }
@@ -371,7 +372,8 @@
 
       + .section-content,
       + .accordions,
-      + .section-video {
+      + .section-video,
+      + .module-item-showcase {
         padding-top: 0;
         margin-top: -116px;
       }

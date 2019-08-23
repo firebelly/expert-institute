@@ -16,10 +16,9 @@ bodyClasses: request-an-expert
       <div class="text -right">
         <div class="sticky-form">            
           <form action="">
-            <div class="input-wrap error">
+            <div class="input-wrap">
               <label for="name-first">First Name*</label>
               <input id="name-first" type="text" required>
-              <p class="error-message">Error message</p>
             </div>
             <div class="input-wrap">
               <label for="name-last">Last Name*</label>
@@ -75,8 +74,9 @@ bodyClasses: request-an-expert
       </div>
     </div>
   </div>
-
 </div>
+
+<div class="section padded background-gray-light"></div>
 
 {% include journal-logos-section.html %}
 

@@ -62,7 +62,7 @@ var Main = (function($) {
     _initInviewElements();
     _initImageParallax();
     _initModal();
-    _initPartnershipProgramFunctions()
+    _initPartnershipProgramFunctions();
 
     // Esc handlers
     $(document).keyup(function(e) {

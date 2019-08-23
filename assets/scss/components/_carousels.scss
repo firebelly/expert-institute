@@ -241,13 +241,6 @@
         }
       }
     }
-
-    &:not(.two-up) {
-      .testimonial > .-inner {
-        padding: 0 96px;
-        max-width: 852px;
-      }
-    }
   }
 
   .testimonial {
@@ -288,6 +281,11 @@
 
       &:not(.two-up) {
         .testimonial {
+          > .-inner {
+            padding: 0 96px;
+            max-width: 852px;
+          }
+
           p::before {
             top: 36px;
             right: 100%;

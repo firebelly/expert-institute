@@ -558,6 +558,12 @@
       }
     }
 
+    + .section:not(.centered-text-section):not(.stats-section) {
+      .section-content {
+        padding-top: $padding-md;
+      }
+    }
+
     @include media-md {
       overflow: visible;
 

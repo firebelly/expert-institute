@@ -507,3 +507,28 @@ body.partnership-program {
     margin: 0;
   }
 }
+
+.trial-access-section {
+  .sub-title {
+    color: color(blue-light);
+  }
+
+  > .-inner {
+    .text {
+      .section-title {
+        margin-bottom: 0;
+      }
+
+      p {
+        color: color(blue-light);
+        + p {
+          margin-top: $padding-sm;
+
+          @include media-md {
+            margin-top: $padding-md;
+          }
+        }
+      }
+    }
+  }
+}

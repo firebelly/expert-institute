@@ -10,8 +10,8 @@ bodyClasses: how-it-works template-a
     <div class="site-wrapper">
         <h3 class="section-label">The Right Witness for Your Case</h3>
         <div class="section-content">            
-            <div class="module-item-showcase">
-                <div class="item col-md-1-3">
+            <div class="module-item-showcase animate-in-series">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-search.svg" alt="Expert Search">
                     </div>
@@ -19,7 +19,7 @@ bodyClasses: how-it-works template-a
                     <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, animi. Ex veritatis veniam sapiente voluptas vitae, facilis nam quaerat molestiae hic culpa praesentium quis labore adipisci, nemo amet vero necessitatibus!</p>
                     <p class="item-cta"><a href="/services/expert-witness-search" class="button">Expert Search</a></p>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-select.svg" alt="Expert Search">
                     </div>
@@ -27,7 +27,7 @@ bodyClasses: how-it-works template-a
                     <p class="item-text">Our team of on-staff medical doctors is standing by. With Case Clinics, you can validate potential cases for merit, refine your case theory, or prepare for depositions.</p>
                     <p class="item-cta"><a href="/services/case-clinics" class="button">Case Clinics</a></p>
                 </div>
-                <div class="item col-md-1-3">
+                <div class="item animation-item col-md-1-3">
                     <div class="item-image">
                         <img src="/dist/images/search-retain.svg" alt="Expert Search">
                     </div>
