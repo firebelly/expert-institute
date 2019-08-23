@@ -34,36 +34,4 @@ bodyClasses: single-post
   {{ content }}
 </div>
 
-<div class="section padded related-posts">
-  <div class="site-wrapper">
-    <h3 class="section-label">Related Posts</h3>
-    <div class="card-grid">
-      {% for post in site.categories.news limit:2 %}
-      <article class="card col-lg-1-2{% if post.imageUrl %} with-image{% endif %}">
-        <div class="-inner">
-          <header class="card-header">
-            <div class="header-meta">
-              <h5 class="date">{{ post.date | date: "%B %d, %Y" }}</h5>
-              <h5 class="tag"><a href="#">{{ post.categories[0] }}</a></h5>
-            </div>
-            <h1 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-          </header>
-          <div class="card-body">
-            <div class="card-text">
-              <p>{{ post.postExcerpt | truncate: 160 }}</p>
-            </div>
-          </div>
-          <div class="card-cta">
-            <a href="{{ post.url }}" class="button hollow -gray-mid">Read More</a>
-          </div>
-          {% if post.imageUrl %}
-          <div class="card-image">
-            <div class="image" style="background-image:url('{{ post.imageUrl }}');"></div>
-          </div>
-          {% endif %}
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+{% include related-posts-section.html %}

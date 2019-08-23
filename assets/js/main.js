@@ -395,6 +395,12 @@ var Main = (function($) {
       groupCells: true,
       contain: true
     });
+
+    // Most Requested Fees Carousel
+    $('.most-requested-fees-carousel').flickity({
+      prevNextButtons: false,
+      adaptiveHeight: true
+    });
   }
 
   function _initPartnershipProgramFunctions() {

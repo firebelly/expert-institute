@@ -1,0 +1,108 @@
+// Fee Calculator Page
+
+.fee {
+  margin-bottom: $padding-md;
+
+  > .-inner {
+    border-radius: 24px;
+    padding: $padding-sm;
+    background-color: color(gray-light);
+
+    @include media-md {
+      padding: $padding-md;
+    }
+  }
+
+  .fee-title {
+    margin: 0;
+    @include h2-small;
+    text-align: center;
+  }
+
+  .fee-price {
+    line-height: 1;
+    font-size: 76px;
+    text-align: center;
+    font-weight: normal;
+    margin: 24px 0 $padding-sm;
+    @include media-md {
+      margin: $padding-sm 0 $padding-md;
+    }
+  }
+
+  .accordion {
+    border-top: 1px solid color(gray);
+    .accordion-toggle {
+      @extend .button-reset;
+      @include h3-simple;
+      width: 100%;
+      text-align: left;
+      color: color(blue-light);
+      text-decoration: underline;
+    }
+    .accordion-content {
+      margin: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+// Most Requested Expert Witness Fees Carousel
+.most-requested-fees-carousel {
+  .carousel-item {
+    width: 100%;
+
+    .slide-text {
+      margin: 0 auto;
+      max-width: 660px;
+      text-align: center;
+
+      h2 {
+        margin: 0;
+        @include h1;
+      }
+
+      p {
+        text-align: center;
+        color: color(gray-dark);
+      }
+    }
+
+
+    table {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+      border-radius: 24px;
+      padding: $padding-sm 0;
+      margin-top: $padding-md;
+      border-spacing: $padding-sm 0;
+      background-color: color(gray-light);
+
+      th {
+        @include p2;
+        text-align: left;
+        vertical-align: top;
+        padding-bottom: 12px;
+      }
+
+      th, td {
+        border-spacing: 12px;
+        border-bottom: 1px solid color(gray);
+      }
+
+      td {
+        padding: 10px 0;
+      }
+
+      @include media-md {
+        padding: $padding-md $padding-sm;
+
+        th {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}

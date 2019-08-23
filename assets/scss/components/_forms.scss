@@ -203,12 +203,11 @@ form {
     }
 
     select {
-      padding-top: 0;
       padding-bottom: 0;
+      padding-top: 10px;
       color: transparent;
       &:focus {
         outline: none;
-
       }
     }
 
@@ -222,7 +221,7 @@ form {
     &.-focus,
     &:focus {
       label {
-        top: -8px;
+        // top: -8px;
       }
     }
   }
