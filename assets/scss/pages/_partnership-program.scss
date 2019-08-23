@@ -6,40 +6,51 @@ body.partnership-program {
 
 .partnership-benefits {
   overflow: hidden;
-
-  > div > .-inner {
-    @include media-md {
-      margin: 0 auto;
-      padding: 0 $padding-md;
-      max-width: $sitewrapper;
-    }
-    @include media-lg {
-      padding: 0 $padding-lg;
-    }
-  }
 }
 
 .partnership-benefits-top {
   overflow: hidden;
   position: relative;
   background-color: color(blue);
-  padding: $padding-md $padding-sm 228px;
+  padding: $padding-md 0 228px;
+
+  > .-inner {
+    @include media-md {
+      margin: 0 auto;
+      padding: 0 $padding-md;
+      max-width: $sitewrapper;
+    }
+    @include media-nav {
+      padding: 0 $padding-lg;
+    }
+  }
 
   .section-background {
     right: 0;
     bottom: 0;
     width: 100%;
     height: 230px;
+    overflow: hidden;
     position: absolute;
-    background-size: cover;
+    background-size: 0 0;
     &::before {
       top: 0;
       right: 0;
+      z-index: 1;
       width: 100%;
       content: '';
       bottom: 50px;
       position: absolute;
       background-image: linear-gradient(to right bottom, color(blue) 0%, color(blue) 50%, transparent 50%);
+    }
+
+    .image {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-size: cover;
     }
   }
 
@@ -80,6 +91,14 @@ body.partnership-program {
   }
 
   @include media-md {
+    .section-background {
+      .image {
+        height: 250%;
+      }
+    }
+  }
+
+  @include media-nav {
     padding: 0;
 
     .section-background {
@@ -91,10 +110,8 @@ body.partnership-program {
       &::before {
         display: none;
       }
-    }
 
-    &.parallax-image-container {
-      .section-background {
+      .image {
         height: 120%;
       }
     }
@@ -102,10 +119,11 @@ body.partnership-program {
     .section-content {
       text-align: left;
       position: relative;
+      padding-bottom: 350px;
       max-width: columns(1,2);
       flex-basis: columns(1,2);
       background-color: color(blue);
-      padding: 180px #{columns(1,23)} 180px 0;
+      padding: 180px #{columns(1,23)} 360px 0;
       &::after {
         bottom: 0;
         left: 100%;
@@ -132,16 +150,20 @@ body.partnership-program {
       }
     }
   }
-
-  @include media-lg {
-    .section-content {
-      padding-bottom: 350px;
-    }
-  }
 }
 
 .partnership-benefits-bottom {
-  @include media-md {
+  > .-inner {
+    @include media-md {
+      margin: 0 auto;
+      max-width: $sitewrapper;
+    }
+    @include media-nav {
+      padding: 0 $padding-lg;
+    }
+  }
+
+  @include media-nav {
     z-index: 1;
     position: relative;
     &::before {
@@ -223,6 +245,22 @@ body.partnership-program {
     }
 
     @include media-md {
+      .accordion-toggle {
+        padding-left: $padding-md;
+        padding-right: $padding-md;
+      }
+
+      ol {
+        li {
+          button {
+            padding-left: $padding-md;
+            padding-right: $padding-md;
+          }
+        }
+      }
+    }
+
+    @include media-nav {
       position: relative;
       background-color: color(blue);
       padding-top: $padding-lg + $padding-sm;
@@ -244,7 +282,6 @@ body.partnership-program {
 
           button {
             padding: 4px 0;
-            font-size: 24px;
             color: color(white);
             background-color: transparent;
           }
@@ -267,12 +304,22 @@ body.partnership-program {
         }
       }
     }
+
+    @include media-xl {
+      ol {
+        li {
+          button {
+            font-size: 24px;
+          }
+        }
+      }
+    }
   }
 
   .services-content {
     padding-bottom: $padding-sm;
 
-    @include media-md {
+    @include media-nav {
       position: relative;
       display: block!important;
       &::after {
@@ -390,6 +437,22 @@ body.partnership-program {
     }
 
     @include media-md {
+      .flickity-button {
+        &.previous {
+          left: $padding-md;
+        }
+        &.next {
+          right: $padding-md;
+        }
+      }
+
+      .service {
+        padding-left: $padding-md;
+        padding-right: $padding-md;
+      }
+    }
+
+    @include media-nav {
       .flickity-button {
         &.previous {
           left: 0;

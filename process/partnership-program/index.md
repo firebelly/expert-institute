@@ -47,8 +47,8 @@ bodyClasses: partnership-program
 </div>
 
 <div id="partnership-benefits" class="partnership-benefits">
-    <div class="partnership-benefits-top section parallax-image-container">
-        <div class="section-background parallax-image" style="background-image:url('/dist/images/partnership-benefits-1.jpg');"></div>
+    <div class="partnership-benefits-top section">
+        <div class="section-background parallax-image-container" style="background-image:url('/dist/images/partnership-benefits-1.jpg');"><div class="image parallax-image" style="background-image:url('/dist/images/partnership-benefits-1.jpg');"></div></div>
         <div class="-inner grid">
             <div class="section-content">        
                 <h1 class="section-title animate-in">Partnership benefits at a glance</h1>
@@ -59,7 +59,7 @@ bodyClasses: partnership-program
 
     <div id="services" class="partnership-benefits-bottom section">
         <div class="-inner grid">
-            <nav class="services-nav accordion col-md-1-2" aria-hidden="true">
+            <nav class="services-nav accordion col-nav-1-2" aria-hidden="true">
                 <button class="accordion-toggle">Services included</button>
                 <ol class="accordion-content">
                     <li class="-active"><button>01 Expert Search</button></li>
@@ -69,7 +69,7 @@ bodyClasses: partnership-program
                     <li><button>05 Support Team</button></li>
                 </ol>
             </nav>
-            <div class="services-content col-md-1-2">
+            <div class="services-content col-nav-1-2">
                 <div class="services-carousel">
                     <div class="service">
                         <div class="service-icon" aria-hidden="true">
