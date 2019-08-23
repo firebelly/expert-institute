@@ -103,7 +103,7 @@ bodyClasses: partnership-program
                     </div>
                     <div class="service">
                         <div class="service-icon" aria-hidden="true">
-                            <img src="/dist/images/icon-challenge-studies.svg" alt="Service Icon" width="90">
+                            <img src="/dist/images/icon-challenge-studies.svg" alt="Service Icon" width="72">
                         </div>
                         <h2 class="service-title"><span class="number">03</span> Challenge Studies</h2>
                         <p class="service-description">Research reports on the challenge history of any opposing expert</p>
@@ -118,7 +118,7 @@ bodyClasses: partnership-program
                     </div>
                     <div class="service">
                         <div class="service-icon" aria-hidden="true">
-                            <img src="/dist/images/icon-challenge-studies.svg" alt="Service Icon" width="90">
+                            <img src="/dist/images/icon-expert-iq.svg" alt="Service Icon" width="105">
                         </div>
                         <h2 class="service-title"><span class="number">04</span> Expert IQ™</h2>
                         <p class="service-description">Your personalized, online portal for managing expert witness casework</p>
@@ -133,7 +133,7 @@ bodyClasses: partnership-program
                     </div>
                     <div class="service">
                         <div class="service-icon" aria-hidden="true">
-                            <img src="/dist/images/icon-challenge-studies.svg" alt="Service Icon" width="90">
+                            <img src="/dist/images/icon-support-team.svg" alt="Service Icon" width="112">
                         </div>
                         <h2 class="service-title"><span class="number">05</span> Support Team</h2>
                         <p class="service-description">On-demand access to our entire team throughout every case</p>
