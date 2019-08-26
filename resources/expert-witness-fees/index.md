@@ -141,7 +141,7 @@ layout: default
     </div>
 </div>
 
-<div class="section most-requested-fees-section padded-top-lg">
+<div id="most-request-witness-fees" class="section most-requested-fees-section padded-top-lg">
     <div class="site-wrapper">
         <div class="most-requested-fees-carousel">
             <div class="carousel-status"></div>
