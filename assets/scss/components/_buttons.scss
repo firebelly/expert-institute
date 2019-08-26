@@ -43,6 +43,14 @@
       margin-left: 24px;
       margin-right: -10px;
     }
+
+    // Arrow Icons
+    // commonly used
+    &.icon-arrow-right,
+    &.icon-arrow-left {
+      width: 8px;
+      height: 13px;
+    }
   }
 
   // Buttons with circular icons

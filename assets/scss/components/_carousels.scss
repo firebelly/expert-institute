@@ -34,6 +34,11 @@
   }
 }
 
+// Carousel Status
+.carousel-status {
+  @include h3-simple;
+}
+
 // Logo Carousel
 .logo-carousel {
   padding: $padding-sm 0;

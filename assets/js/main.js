@@ -397,10 +397,29 @@ var Main = (function($) {
     });
 
     // Most Requested Fees Carousel
-    $('.most-requested-fees-carousel').flickity({
+    var $mostRequestedFeesCarousel = $('.most-requested-fees-carousel').flickity({
       prevNextButtons: false,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      draggable: false,
+      cellSelector: '.carousel-item'
     });
+
+    if ($mostRequestedFeesCarousel.length) {
+      _updateFlickityStatus($mostRequestedFeesCarousel);
+      $mostRequestedFeesCarousel.on( 'change.flickity', function() {
+        _updateFlickityStatus($mostRequestedFeesCarousel);
+      });
+
+      $('.carousel-next').on('click', function(e) {
+        e.preventDefault();
+        $mostRequestedFeesCarousel.flickity('next');
+      });
+
+      $('.carousel-previous').on('click', function(e) {
+        e.preventDefault();
+        $mostRequestedFeesCarousel.flickity('previous');
+      });
+    }
   }
 
   function _initPartnershipProgramFunctions() {

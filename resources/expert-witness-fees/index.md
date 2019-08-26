@@ -144,153 +144,168 @@ layout: default
 <div class="section most-requested-fees-section padded-top-lg">
     <div class="site-wrapper">
         <div class="most-requested-fees-carousel">
+            <div class="carousel-status"></div>
             <div class="carousel-item">
                 <div class="slide-text">                
                     <h2>Most Requested Medical Expert Witness Fees</h2>
                     <p>This table shows national averages for the most requested expert specialties.</p>
-                </div>   
-                <table>
-                    <tr>
-                        <th>Specialy</th>
-                        <th>Initial Review Fee</th>
-                        <th>Deposition Fee</th>
-                        <th>Trial Fee</th>
-                    </tr>
-                    <tr>
-                        <td>Orthopedic Surgery</td>
-                        <td>$595</td>
-                        <td>$930</td>
-                        <td>$976</td>
-                    </tr>
-                    <tr>
-                        <td>Neurology</td>
-                        <td>$479</td>
-                        <td>$595</td>
-                        <td>$644</td>
-                    </tr>
-                    <tr>
-                        <td>Obstetrics</td>
-                        <td>$439</td>
-                        <td>$531</td>
-                        <td>$597</td>
-                    </tr>
-                    <tr>
-                        <td>Neurosurgery</td>
-                        <td>$741</td>
-                        <td>$1,074</td>
-                        <td>$1,134</td>
-                    </tr>
-                    <tr>
-                        <td>Emergency Medicine</td>
-                        <td>$381</td>
-                        <td>$453</td>
-                        <td>$494</td>
-                    </tr>
-                    <tr>
-                        <td>Internal Medicine</td>
-                        <td>$412</td>
-                        <td>$533</td>
-                        <td>$567</td>
-                    </tr>
-                    <tr>
-                        <td>General Surgery</td>
-                        <td>$472</td>
-                        <td>$594</td>
-                        <td>$673</td>
-                    </tr>
-                    <tr>
-                        <td>Cardiology</td>
-                        <td>$456</td>
-                        <td>$568</td>
-                        <td>$587</td>
-                    </tr>
-                    <tr>
-                        <td>Nursing</td>
-                        <td>$190</td>
-                        <td>$263</td>
-                        <td>$286</td>
-                    </tr>
-                    <tr>
-                        <td>Anesthesiology</td>
-                        <td>$403</td>
-                        <td>$485</td>
-                        <td>$556</td>
-                    </tr>
-                </table>
+                </div>
+                <div class="table-container">
+                    <div class="table-overflow">
+                        <table>
+                            <tr>
+                                <th>Specialy</th>
+                                <th>Initial Review Fee</th>
+                                <th>Deposition Fee</th>
+                                <th>Trial Fee</th>
+                            </tr>
+                            <tr>
+                                <td>Orthopedic Surgery</td>
+                                <td>$595</td>
+                                <td>$930</td>
+                                <td>$976</td>
+                            </tr>
+                            <tr>
+                                <td>Neurology</td>
+                                <td>$479</td>
+                                <td>$595</td>
+                                <td>$644</td>
+                            </tr>
+                            <tr>
+                                <td>Obstetrics</td>
+                                <td>$439</td>
+                                <td>$531</td>
+                                <td>$597</td>
+                            </tr>
+                            <tr>
+                                <td>Neurosurgery</td>
+                                <td>$741</td>
+                                <td>$1,074</td>
+                                <td>$1,134</td>
+                            </tr>
+                            <tr>
+                                <td>Emergency Medicine</td>
+                                <td>$381</td>
+                                <td>$453</td>
+                                <td>$494</td>
+                            </tr>
+                            <tr>
+                                <td>Internal Medicine</td>
+                                <td>$412</td>
+                                <td>$533</td>
+                                <td>$567</td>
+                            </tr>
+                            <tr>
+                                <td>General Surgery</td>
+                                <td>$472</td>
+                                <td>$594</td>
+                                <td>$673</td>
+                            </tr>
+                            <tr>
+                                <td>Cardiology</td>
+                                <td>$456</td>
+                                <td>$568</td>
+                                <td>$587</td>
+                            </tr>
+                            <tr>
+                                <td>Nursing</td>
+                                <td>$190</td>
+                                <td>$263</td>
+                                <td>$286</td>
+                            </tr>
+                            <tr>
+                                <td>Anesthesiology</td>
+                                <td>$403</td>
+                                <td>$485</td>
+                                <td>$556</td>
+                            </tr>
+                        </table>
+                    </div>                
+                </div>
+                <p class="slide-cta">
+                    <button class="carousel-next button">Next <svg class="button-icon -right icon-arrow-right" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-right"/></svg></button>
+                </p>
             </div>
             <div class="carousel-item">
                 <div class="slide-text">                
                     <h2>Most Requested Non-Medical Expert Witness Fees</h2>
                     <p>This table shows national averages for the most requested expert specialties.</p>
-                </div>       
-                <table>
-                    <tr>
-                        <th>Specialy</th>
-                        <th>Initial Review Fee</th>
-                        <th>Deposition Fee</th>
-                        <th>Trial Fee</th>
-                    </tr>
-                    <tr>
-                        <td>General Engineering</td>
-                        <td>$264</td>
-                        <td>$309</td>
-                        <td>$318</td>
-                    </tr>
-                    <tr>
-                        <td>Banking</td>
-                        <td>$362</td>
-                        <td>$444</td>
-                        <td>$467</td>
-                    </tr>
-                    <tr>
-                        <td>Accident Reconstruction</td>
-                        <td>$234</td>
-                        <td>$267</td>
-                        <td>$263</td>
-                    </tr>
-                    <tr>
-                        <td>Software</td>
-                        <td>$315</td>
-                        <td>$362</td>
-                        <td>$392</td>
-                    </tr>
-                    <tr>
-                        <td>Retail</td>
-                        <td>$270</td>
-                        <td>$307</td>
-                        <td>$307</td>
-                    </tr>
-                    <tr>
-                        <td>Economics</td>
-                        <td>$356</td>
-                        <td>$406</td>
-                        <td>$408</td>
-                    </tr>
-                    <tr>
-                        <td>Automotive</td>
-                        <td>$243</td>
-                        <td>$286</td>
-                        <td>$293</td>
-                    </tr>
-                    <tr>
-                        <td>OSHA</td>
-                        <td>$235</td>
-                        <td>$271</td>
-                        <td>$281</td>
-                    </tr>
-                    <tr>
-                        <td>Law Enforcement</td>
-                        <td>$242</td>
-                        <td>$285</td>
-                        <td>$295</td>
-                    </tr>
-                    <tr>
-                        <td>Employment</td>
-                        <td>$282</td>
-                        <td>$224</td>
-                        <td>$356</td>
-                    </tr>
-                </table>
+                </div>
+                <div class="table-container">
+                    <div class="table-overflow">
+                        <table>
+                            <tr>
+                                <th>Specialy</th>
+                                <th>Initial Review Fee</th>
+                                <th>Deposition Fee</th>
+                                <th>Trial Fee</th>
+                            </tr>
+                            <tr>
+                                <td>General Engineering</td>
+                                <td>$264</td>
+                                <td>$309</td>
+                                <td>$318</td>
+                            </tr>
+                            <tr>
+                                <td>Banking</td>
+                                <td>$362</td>
+                                <td>$444</td>
+                                <td>$467</td>
+                            </tr>
+                            <tr>
+                                <td>Accident Reconstruction</td>
+                                <td>$234</td>
+                                <td>$267</td>
+                                <td>$263</td>
+                            </tr>
+                            <tr>
+                                <td>Software</td>
+                                <td>$315</td>
+                                <td>$362</td>
+                                <td>$392</td>
+                            </tr>
+                            <tr>
+                                <td>Retail</td>
+                                <td>$270</td>
+                                <td>$307</td>
+                                <td>$307</td>
+                            </tr>
+                            <tr>
+                                <td>Economics</td>
+                                <td>$356</td>
+                                <td>$406</td>
+                                <td>$408</td>
+                            </tr>
+                            <tr>
+                                <td>Automotive</td>
+                                <td>$243</td>
+                                <td>$286</td>
+                                <td>$293</td>
+                            </tr>
+                            <tr>
+                                <td>OSHA</td>
+                                <td>$235</td>
+                                <td>$271</td>
+                                <td>$281</td>
+                            </tr>
+                            <tr>
+                                <td>Law Enforcement</td>
+                                <td>$242</td>
+                                <td>$285</td>
+                                <td>$295</td>
+                            </tr>
+                            <tr>
+                                <td>Employment</td>
+                                <td>$282</td>
+                                <td>$224</td>
+                                <td>$356</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p class="slide-cta">
+                    <button class="carousel-previous button"><svg class="button-icon -left icon-arrow-left" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-left"/></svg> Previous</button>
+                </p>
             </div>
         </div>
     </div>
