@@ -420,6 +420,30 @@ var Main = (function($) {
         $mostRequestedFeesCarousel.flickity('previous');
       });
     }
+
+    // FAQ Carousel
+    var $faqCarousel = $('.faq-carousel').flickity({
+      prevNextButtons: false,
+      adaptiveHeight: true,
+      cellSelector: '.carousel-item'
+    });
+
+    if ($faqCarousel.length) {
+      _updateFlickityStatus($faqCarousel);
+      $faqCarousel.on( 'change.flickity', function() {
+        _updateFlickityStatus($faqCarousel);
+      });
+
+      $('.carousel-next').on('click', function(e) {
+        e.preventDefault();
+        $faqCarousel.flickity('next');
+      });
+
+      $('.carousel-previous').on('click', function(e) {
+        e.preventDefault();
+        $faqCarousel.flickity('previous');
+      });
+    }
   }
 
   function _initPartnershipProgramFunctions() {

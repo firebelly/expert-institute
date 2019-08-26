@@ -222,7 +222,7 @@ layout: default
                         </table>
                     </div>                
                 </div>
-                <p class="slide-cta">
+                <p class="carousel-cta">
                     <button class="carousel-next button">Next <svg class="button-icon -right icon-arrow-right" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-right"/></svg></button>
                 </p>
             </div>
@@ -303,7 +303,7 @@ layout: default
                         </table>
                     </div>
                 </div>
-                <p class="slide-cta">
+                <p class="carousel-cta">
                     <button class="carousel-previous button"><svg class="button-icon -left icon-arrow-left" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-left"/></svg> Previous</button>
                 </p>
             </div>
@@ -321,6 +321,88 @@ layout: default
                 <p class="animate-in">Some experts list their rates as flat fees or day rates, especially for deposition and trial testimony. In those cases, day rates, flat fees, and half-day rates are represented in the calculator data by an hourly figure derived from a standard 8 hour work day.</p>
                 <p class="pullquote animate-in">The overwhelming majority of experts who are paired with attorneys through The Expert Institute are practicing professionals who do not advertise their services as expert witnesses</p>
                 <p class="animate-in">In addition, these experts may only testify on 1-5 cases annually due to their careers as academic department heads, industry leaders, and medical chiefs, and can command higher fees than their less-qualified counterparts.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="faq" class="faq-section section padded-bottom-lg">
+    <div class="site-wrapper">
+        <h4 class="section-label margin-bottom-md">Frequently Asked Questions</h4>
+        <div class="faq-carousel">
+            <div class="faq-status">Question <span class="carousel-status"></span></div>
+            <div class="question carousel-item">
+                <h4 class="question-label">Question</h4>
+                <p class="question-description">What are the average national fees for all expert witnesses?</p>
+                <div class="answer">
+                    <div class="faq-fees">
+                        <h5 class="faq-fees-label">Average National Fees - All Experts</h5>
+                        <div class="grid spaced">
+                            <div class="faq-fee col-md-1-3">
+                                <h5>Initial Review<br> $372</h5>
+                            </div>
+                            <div class="faq-fee col-md-1-3">
+                                <h5>Deposition<br> $475</h5>
+                            </div>
+                            <div class="faq-fee col-md-1-3">
+                                <h5>Trial Testimony<br> $507</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <p>These figures represent the average hourly fees charged by experts in any subject area. Expert witness fees can vary wildly based on a number of factors, including their chosen specialty, the quality of their credentials, their location, as well as other circumstances that can change on a case-by-case basis. When considering an expert candidate for retention, it is important to evaluate their fees in light of their individual skills, credentials, and experience before making a judgement. An expert with higher fees than average may be far more valuable to your case than a less-expensive counterpart.</p>
+                </div>
+                <p class="carousel-cta">
+                    <button class="carousel-next button">Next <svg class="button-icon -right icon-arrow-right" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-right"/></svg></button>
+                </p>
+            </div>
+            <div class="question carousel-item">
+                <h4 class="question-label">Question 2</h4>
+                <p class="question-description">What are the average national fees for all expert witnesses?</p>
+                <div class="answer">
+                    <div class="faq-fees">
+                        <h5 class="faq-fees-label">Average National Fees - All Experts</h5>
+                        <div class="grid spaced">
+                            <div class="faq-fee col-md-1-3">
+                                <h5>Initial Review<br> $372</h5>
+                            </div>
+                            <div class="faq-fee col-md-1-3">
+                                <h5>Deposition<br> $475</h5>
+                            </div>
+                            <div class="faq-fee col-md-1-3">
+                                <h5>Trial Testimony<br> $507</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <p>These figures represent the average hourly fees charged by experts in any subject area. Expert witness fees can vary wildly based on a number of factors, including their chosen specialty, the quality of their credentials, their location, as well as other circumstances that can change on a case-by-case basis. When considering an expert candidate for retention, it is important to evaluate their fees in light of their individual skills, credentials, and experience before making a judgement. An expert with higher fees than average may be far more valuable to your case than a less-expensive counterpart.</p>
+                </div>
+                <p class="carousel-cta">
+                    <button class="carousel-previous button"><svg class="button-icon -left icon-arrow-left" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-left"/></svg> Previous</button>
+                    <button class="carousel-next button">Next <svg class="button-icon -right icon-arrow-right" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-right"/></svg></button>
+                </p>
+            </div>
+            <div class="question carousel-item">
+                <h4 class="question-label">Question 3</h4>
+                <p class="question-description">What are the average national fees for all expert witnesses?</p>
+                <div class="answer">
+                    <div class="faq-fees">
+                        <h5 class="faq-fees-label">Average National Fees - All Experts</h5>
+                        <div class="grid spaced">
+                            <div class="faq-fee col-md-1-3">
+                                <h5>Initial Review<br> $372</h5>
+                            </div>
+                            <div class="faq-fee col-md-1-3">
+                                <h5>Deposition<br> $475</h5>
+                            </div>
+                            <div class="faq-fee col-md-1-3">
+                                <h5>Trial Testimony<br> $507</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <p>These figures represent the average hourly fees charged by experts in any subject area. Expert witness fees can vary wildly based on a number of factors, including their chosen specialty, the quality of their credentials, their location, as well as other circumstances that can change on a case-by-case basis. When considering an expert candidate for retention, it is important to evaluate their fees in light of their individual skills, credentials, and experience before making a judgement. An expert with higher fees than average may be far more valuable to your case than a less-expensive counterpart.</p>
+                </div>
+                <p class="carousel-cta">
+                    <button class="carousel-previous button"><svg class="button-icon -left icon-arrow-left" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-left"/></svg> Previous</button>
+                </p>
             </div>
         </div>
     </div>

@@ -39,6 +39,13 @@
   @include h3-simple;
 }
 
+// Carousel CTA
+.carousel-cta {
+  > * + * {
+    margin-left: $padding-sm;
+  }
+}
+
 // Logo Carousel
 .logo-carousel {
   padding: $padding-sm 0;

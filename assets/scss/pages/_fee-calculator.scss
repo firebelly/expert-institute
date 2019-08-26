@@ -47,7 +47,25 @@
   }
 }
 
-// Most Requested Expert Witness Fees Carousel
+// Most Requested Expert Witness Fees + FAQ Carousels
+.most-requested-fees-carousel,
+.faq-carousel {
+  .carousel-item {
+    opacity: 0;
+    width: 100%;
+    transition: opacity .75s ease-out;
+    &.is-selected {
+      opacity: 1;
+      transition: opacity .75s .25s ease-out;
+    }
+
+    .carousel-cta {
+      padding: 42px 0;
+      text-align: center;
+    }
+  }
+}
+
 .most-requested-fees-carousel {
   .carousel-status {
     text-align: center;
@@ -60,14 +78,6 @@
   }
 
   .carousel-item {
-    opacity: 0;
-    width: 100%;
-    transition: opacity .75s ease-out;
-    &.is-selected {
-      opacity: 1;
-      transition: opacity .75s .25s ease-out;
-    }
-
     .slide-text {
       margin: 0 auto;
       max-width: 660px;
@@ -145,10 +155,74 @@
         }
       }
     }
+  }
+}
 
-    .slide-cta {
-      padding: 42px 0;
-      text-align: center;
+// FAQ Carousel
+.faq-carousel {
+  .faq-status {
+    @include h3-simple;
+    text-align: center;
+    color: color(blue-light);
+    margin-bottom: $padding-sm;
+
+    @include media-md {
+      margin-bottom: $padding-md;
+    }
+  }
+
+  .question {
+    .question-label {
+      margin: 0;
+      @include h1;
+      color: color(gold);
+    }
+
+    .question-description {
+      @include p2;
+    }
+
+    .faq-fees {
+      padding: $padding-sm 0;
+      margin-bottom: $padding-sm;
+      border-top: 1px solid color(gold);
+      border-bottom: 1px solid color(gold);
+
+      .faq-fees-label {
+        @include p2;
+        margin: 0 0 20px;
+        text-align: center;
+        color: color(gold);
+      }
+
+      .faq-fee {
+        text-align: center;
+
+        + .faq-fee {
+          margin-top: $padding-sm;
+        }
+
+        > * {
+          margin: 0;
+          @include p2;
+        }
+
+        @include media-md {
+          text-align: left;
+          + {
+            .faq-fee {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    @include media-lg {
+      .question-description {
+        width: columns(1,2);
+        padding-right: columns(1.5,23);
+      }
     }
   }
 }
