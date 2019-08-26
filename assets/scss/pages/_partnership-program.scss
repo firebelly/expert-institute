@@ -469,10 +469,14 @@ body.partnership-program {
         transition: opacity .2s ease-out;
 
         .service-icon {
-          right: 100%;
+          margin: 0;
+          left: 42px;
           position: absolute;
-          bottom: $padding-lg;
-          margin-right: $padding-sm;
+          top: $padding-lg + 24px;
+          transform: translateY(-100%);
+          img {
+            max-width: 100px;
+          }
         }
 
         .service-title {
