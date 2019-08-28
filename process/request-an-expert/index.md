@@ -31,6 +31,7 @@ bodyClasses: request-an-expert
             <div class="input-wrap select-wrap">
               <label for="caseType">Case Type</label>
               <select name="caseType" id="caseType">
+                <option value="null">Case Type</option>
                 <option value="one">One</option>
                 <option value="two">Two</option>
                 <option value="three">Three</option>

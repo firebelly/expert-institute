@@ -189,6 +189,7 @@ form {
 
     label {
       z-index: 1;
+      opacity: 0;
       padding: 0 2px;
       &::before {
         left: 0;
@@ -203,25 +204,25 @@ form {
     }
 
     select {
-      padding-bottom: 0;
-      padding-top: 10px;
-      color: transparent;
+      padding-bottom: 10px;
       &:focus {
         outline: none;
       }
-    }
 
-    &.-filled {
-      select {
-        color: color(blue-dark);
+      // Hide arrows in IE
+      &::-ms-expand {
+        display: none;
       }
     }
 
     &.-filled,
     &.-focus,
     &:focus {
+      select {
+        padding-bottom: 0;
+      }
       label {
-        // top: -8px;
+        opacity: 1;
       }
     }
   }
