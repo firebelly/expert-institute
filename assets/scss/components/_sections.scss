@@ -759,10 +759,12 @@
       display: flex;
       max-width: 50%;
       flex-basis: 50%;
+      align-items: flex-end;
       justify-content: flex-end;
       padding-right: columns(1.5,23);
 
       img {
+        flex: 1 1 0;
         margin: auto;
       }
 

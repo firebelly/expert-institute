@@ -37,7 +37,7 @@ bodyClasses: expert-search
             <p>Our multi-point compliance process ensures each expert candidate we present can withstand the closest scrutiny.</p>
         </div>
         <div class="section-image">
-            <img class="parallax-image" src="/dist/images/expert-search-2.png" width="637" height="468" alt="">
+            <img class="parallax-image" src="/dist/images/expert-search-2.png" alt="">
         </div>
     </div>
 </div>
@@ -50,7 +50,7 @@ bodyClasses: expert-search
             <p>Participate in conference calls with the most qualified candidates to ensure a perfect match before you retain. </p>
         </div>
         <div class="section-image">
-            <img class="parallax-image" src="/dist/images/expert-search-3.png" width="721" height="463" alt="">
+            <img class="parallax-image" src="/dist/images/expert-search-3.png" alt="">
         </div>
     </div>
 </div>

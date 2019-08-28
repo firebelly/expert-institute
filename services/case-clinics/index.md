@@ -44,7 +44,7 @@ bodyClasses: case-clinics
             <p>Roundtable files with our team to unpack technical concepts, explore alternative case theories, and hone in on winning strategies.</p>
         </div>
         <div class="section-image">
-            <img class="parallax-image" src="/dist/images/case-clinics-2.png" width="601" height="348" alt="">
+            <img class="parallax-image" src="/dist/images/case-clinics-2.png" alt="">
         </div>
     </div>
 </div>
