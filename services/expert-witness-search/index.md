@@ -32,7 +32,7 @@ bodyClasses: expert-search
     <div class="section-background"></div>
     <div class="-inner grid">
         <div class="section-content">
-            <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
+            <div class="section-elbow"><svg class="elbow" viewBox="0 0 239.9 852" preserveAspectRatio="xMinYMin meet"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
             <h1 class="section-title">Background Checks On Every Expert</h1>
             <p>Our multi-point compliance process ensures each expert candidate we present can withstand the closest scrutiny.</p>
         </div>

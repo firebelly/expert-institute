@@ -8,7 +8,7 @@ bodyClasses: home
     <div class="section-background parallax-image" style="background-image:url('/dist/images/jc-gellidon-1386352-unsplash.jpg');"></div>
     <div class="-inner grid">
         <div class="section-content">
-            <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.8 852"><path d="M239.8 852L49.2 581.5c-65.7-93.2-65.7-217.7 0-310.9L239.8 0"/></svg></div>
+            <div class="section-elbow"><svg class="elbow" viewBox="0 0 239.8 852" preserveAspectRatio="xMaxYMax meet"><path d="M239.8 852L49.2 581.5c-65.7-93.2-65.7-217.7 0-310.9L239.8 0"/></svg></div>
             <h3 class="section-label margin-bottom">Elite expertise, tailored to every case</h3>
             <h1 class="section-title">Connect with the expert witness you need to win your case.</h1>
             <p class="section-cta"><a href="/process/request-an-expert" class="button -teal">Request an expert</a></p>
@@ -63,7 +63,7 @@ bodyClasses: home
     <div class="section-background parallax-image" style="background-image:url('/dist/images/377224.jpg');"></div>
     <div class="-inner grid">
         <div class="section-content">
-            <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
+            <div class="section-elbow"><svg class="elbow" viewBox="0 0 239.9 852" preserveAspectRatio="xMinYMin meet"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
             <h1 class="section-title animate-in">Consult Our In-House Physicians</h1>
             <p class="animate-in">Collaborate with our team of doctors to confirm the merits of any medical case, unpack technical concepts, and refine your case theory.</p>
             <p class="section-cta animate-in"><a href="/services/case-clinics" class="button">Case Clinics</a></p>

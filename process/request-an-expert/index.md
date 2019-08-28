@@ -54,7 +54,7 @@ bodyClasses: request-an-expert
         </div>
       </div>
       <div class="swoop">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 673.8 756"><path d="M673.8 756H0c87.7 0 169.9-42.6 220.5-114.2L673.8 0v756z"/></svg>
+        <svg viewBox="0 0 673.8 756" height="756" preserveAspectRatio="xMaxYMax meet"><path d="M673.8 756H0c87.7 0 169.9-42.6 220.5-114.2L673.8 0v756z"/></svg>
       </div>
     </div>
   </div>

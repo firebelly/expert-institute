@@ -66,11 +66,12 @@ body.home {
         flex-basis: columns(9,23);
 
         .section-elbow {
+          left: auto;
+          right: 100%;
           margin-right: -1px;
-          &,
           .elbow {
+            right: 0;
             left: auto;
-            right: 100%;
           }
         }
       }

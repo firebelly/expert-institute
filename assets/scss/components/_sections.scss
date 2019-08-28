@@ -118,14 +118,11 @@
 
     .swoop {
       display: none;
-
-      svg {
-        height: 100%;
-      }
     }
 
     @include media-md {
       > .-inner {
+        position: static;
         padding: $padding-lg $padding-md 0;
       }
 
@@ -134,14 +131,20 @@
       }
 
       .swoop {
+        top: 0;
         bottom: 0;
-        right: 50%;
         width: 100%;
-        height: 100%;
         display: block;
         text-align: right;
         position: absolute;
-        margin-right: -#{columns(2.5,23)};
+        right: 50% - columns(2.5,23);
+
+        svg {
+          top: 0;
+          right: 0;
+          height: 100%;
+          position: absolute;
+        }
 
         &::after {
           top: 0;
@@ -723,14 +726,16 @@
 
       .section-elbow {
         top: 0;
+        bottom: 0;
         left: 100%;
-        height: 100%;
+        width: 100%;
         display: block;
         margin-left: -1px;
         position: absolute;
         .elbow {
           top: 0;
-          left: 100%;
+          left: 0;
+          width: 100%;
           height: 100%;
           position: absolute;
         }

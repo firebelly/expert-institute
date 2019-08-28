@@ -370,7 +370,8 @@ var Main = (function($) {
     $('.carousel-header .text-carousel').flickity({
       prevNextButtons: false,
       autoPlay: 4000,
-      wrapAround: true
+      wrapAround: true,
+      cellSelector: 'article'
     });
 
     // Post Carousels

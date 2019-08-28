@@ -12,7 +12,7 @@ bodyClasses: careers
     </div>
     <div class="-inner grid">
         <div class="section-content">
-            <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
+            <div class="section-elbow"><svg class="elbow" viewBox="0 0 239.9 852" preserveAspectRatio="xMinYMin meet"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
             <h3 class="section-label margin-bottom">Careers</h3>
             <h1 class="section-title">Grow with the Expert Institute</h1>
             <p>We're changing the legal industry. And we want you to join us.</p>
@@ -88,7 +88,7 @@ bodyClasses: careers
     <div class="section-background parallax-image" style="background-image:url('/dist/images/careers-impact.jpg');"></div>
     <div class="-inner grid">
         <div class="section-content">
-            <div class="section-elbow"><svg class="elbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.9 852"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
+            <div class="section-elbow"><svg class="elbow" viewBox="0 0 239.9 852" preserveAspectRatio="xMinYMin meet"><path d="M0 0l190.6 270.5c65.7 93.2 65.7 217.7 0 310.9L0 852"/></svg></div>
             <h1 class="section-title animate-in">Impact</h1>
             <p class="animate-in">Work on something that matters. Everyday, we connect the world’s best attorneys with leading thinkers in every field, and have a direct influence on the most important litigation matters in the country.</p>
         </div>

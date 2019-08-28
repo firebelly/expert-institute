@@ -233,19 +233,18 @@
     }
 
     .header-swoop {
-      position: relative;
-
+      display: none;
       .swoop {
-        right: 0;
-        bottom: -1px;
-        height: 100%;
-        position: absolute;
         fill: color(white);
       }
     }
 
     @include media-lg {
       margin-bottom: $padding-lg;
+
+      > .grid {
+        flex-direction: row-reverse;
+      }
 
       .header-background {
         top: 0;
@@ -262,10 +261,21 @@
         }
       }
 
+      .header-text {
+        z-index: 1;
+        position: relative;
+        padding-top: 200px;
+        max-width: columns(9,23);
+        flex-basis: columns(9,23);
+      }
+
       .header-swoop {
-        max-width: columns(15,23);
-        flex-basis: columns(15,23);
-        margin-right: -#{columns(1,23)};
+        top: 0;
+        bottom: -1px;
+        display: block;
+        width: 255.5555%;
+        position: absolute;
+        right: columns(19,23);
 
         &::after {
           top: 0;
@@ -276,19 +286,23 @@
           width: columns(8,15);
           background-color: color(white);
         }
-      }
 
-      .header-text {
-        z-index: 1;
-        position: relative;
-        padding-top: 200px;
-        max-width: columns(9,23);
-        flex-basis: columns(9,23);
+        .swoop {
+          top: 0;
+          right: 0;
+          width: auto;
+          height: 100%;
+          position: absolute;
+        }
       }
     }
 
     // And right-sided swooped headers
     &.-right {
+      > .grid {
+        flex-direction: row;
+      }
+
       .header-text {
         .header-meta {
           margin-bottom: $padding-sm;
@@ -303,11 +317,25 @@
           left: auto;
         }
 
-        .header-swoop {
-          order: 1;
-          max-width: columns(13,23);
-          flex-basis: columns(13,23);
+        .header-text {
+          order: 0;
+          padding-top: 120px;
+          max-width: columns(11, 23);
+          flex-basis: columns(11, 23);
 
+          .header-meta {
+            margin-bottom: 86px;
+            margin-right: columns(2,11);
+          }
+
+          .title {
+            margin-bottom: 0;
+          }
+        }
+
+        .header-swoop {
+          right: auto;
+          left: columns(9,23);
           &::after {
             left: auto;
             right: 100%;
@@ -318,23 +346,6 @@
             left: -1px;
             right: auto;
             transform: scaleX(-1);
-          }
-        }
-
-        .header-text {
-          order: 0;
-          padding-top: 120px;
-          max-width: columns(11, 23);
-          flex-basis: columns(11, 23);
-          margin-right: -#{columns(2,23)};
-
-          .header-meta {
-            margin-bottom: 86px;
-            margin-right: columns(2,11);
-          }
-
-          .title {
-            margin-bottom: 0;
           }
         }
       }
