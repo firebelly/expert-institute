@@ -23,7 +23,7 @@ bodyClasses: expert-search
             <p>The Expert Institute’s team of experienced researchers and medical doctors are full partners throughout the lifetime of your expert witness search.</p>
         </div>
         <div class="section-image -vertical">
-            <img class="parallax-image" src="/dist/images/expert-search-1.svg" alt="" width="421" height="721">
+            <img class="parallax-image" src="/dist/images/expert-search-1.svg" alt="" height="721">
         </div>
     </div>
 </div>

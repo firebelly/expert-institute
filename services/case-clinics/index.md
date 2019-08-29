@@ -30,7 +30,7 @@ bodyClasses: case-clinics
             <p>Screen potential medical cases for merit before you decide to sign clients or budget resources to new matters.</p>
         </div>
         <div class="section-image -vertical">
-            <img class="parallax-image" src="/dist/images/case-clinics-1.svg" alt="" width="421" height="624">
+            <img class="parallax-image" src="/dist/images/case-clinics-1.svg" alt="" height="624">
         </div>
     </div>
 </div>
@@ -57,7 +57,7 @@ bodyClasses: case-clinics
             <p>Work with our physicians to develop technical questions that sharpen your performance during expert depositions or cross examinations.</p>
         </div>
         <div class="section-image">
-            <img class="parallax-image" src="/dist/images/case-clinics-3.svg" width="721" height="526" alt="">
+            <img class="parallax-image" src="/dist/images/case-clinics-3.svg" height="526" alt="">
         </div>
     </div>
 </div>

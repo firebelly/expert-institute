@@ -53,7 +53,7 @@ bodyClasses: challenge-study
             <p>Gain instant clarity on any expert.</p>
         </div>
         <div class="section-image">
-            <img class="parallax-image" src="/dist/images/challenge-study-1.svg" alt="" width="661" height="442">
+            <img class="parallax-image" src="/dist/images/challenge-study-1.svg" alt="" height="442">
         </div>
     </div>
 </div>
@@ -67,7 +67,7 @@ bodyClasses: challenge-study
             <p>Expert Challenge Studies give you at-a-glance access to decisive data on the past performance of expert witnesses, with snapshot overviews that summarize events by grounds of challenge and outcome.</p>
         </div>
         <div class="section-image">
-            <img class="parallax-image" src="/dist/images/challenge-study-2.svg" width="722" height="426" alt="">
+            <img class="parallax-image" src="/dist/images/challenge-study-2.svg" height="426" alt="">
         </div>
     </div>
 </div>
@@ -80,7 +80,7 @@ bodyClasses: challenge-study
             <p>Make quick decisions when assessing the value of potential experts and steer development of cross examination strategies.</p>
         </div>
         <div class="section-image">
-            <img class="parallax-image" src="/dist/images/challenge-study-3.svg" width="720" height="420" alt="">
+            <img class="parallax-image" src="/dist/images/challenge-study-3.svg" height="420" alt="">
         </div>
     </div>
 </div>
