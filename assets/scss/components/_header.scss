@@ -422,25 +422,55 @@
         width: 50px;
         display: none;
         cursor: pointer;
+        position: relative;
         height: $header-md;
         @extend .button-reset;
         padding: 0 10px 0 26px;
 
-        .icon {
+        .icon-search,
+        .icon-close-sm {
           top: 1px;
-          fill: none;
           width: 14px;
-          height: 14px;
-          display: block;
           position: relative;
           fill: color(blue-dark);
         }
+        .icon-search {
+          height: 14px;
+          display: block;
+        }
+        .icon-close-sm {
+          height: 12px;
+          display: none;
+        }
+
+        .icon-arrow-down {
+          bottom: 0;
+          opacity: 0;
+          right: 10px;
+          width: 14px;
+          height: 7px;
+          position: absolute;
+          fill: color(blue-light);
+          transform: rotate(180deg);
+          transition: transform .2s ease-out;
+        }
 
         &:hover,
-        &:focus,
-        &.search-active {
+        &:focus {
           .icon {
             fill: color(blue-light);
+          }
+        }
+
+        &.search-active {
+          .icon-search {
+            display: none;
+          }
+          .icon-close-sm {
+            display: block;
+          }
+          .icon-arrow-down {
+            opacity: 1;
           }
         }
       }
