@@ -350,22 +350,8 @@
   // used for expert listing on expert witness directory page
   &.expert-card {
     .expert-image {
-      width: 180px;
-      height: 180px;
-      overflow: hidden;
-      position: relative;
-      border-radius: 50%;
+      @include circular-image;
       margin: 0 auto $padding-sm;
-
-      img {
-        top: 0;
-        left: 50%;
-        width: auto;
-        min-width: 100%;
-        min-height: 100%;
-        position: absolute;
-        transform: translateX(-50%);
-      }
     }
 
     .card-title {

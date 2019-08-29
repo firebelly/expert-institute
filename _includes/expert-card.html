@@ -10,9 +10,7 @@
         <li><a href="#">{{ specialty }}</a>{% if forloop.last == false %}, {% endif %}</li>
         {% endfor %}
       </ul>
-      <div class="expert-image">
-        <img src="{{ expert.imagePath }}" alt="Expert {{ expert.expertId }}">
-      </div>
+      <div class="expert-image" style="background-image:url('{{ expert.imagePath }}');"></div>
       <h1 class="card-title"><a href="{{ expert.url }}">{{ expert.headline }}</a></h1>
       <h2 class="expert-id">{{ expert.expertId }}</h2>
     </header>

@@ -67,9 +67,7 @@ bodyClasses: single-bio single-expert-bio
           <span class="id">Expert ID: #{{ page.expertId }}</span> <span class="state">State: {{ page.stateAbbr }}</span>
         </p>
         <h2 class="title">{{ page.headline }}</h2>
-        <div class="bio-image">
-           <img src="{{ page.imagePath }}" alt="Portrait of expert witness ID {{ page.expertId }}">
-        </div>
+        <div class="bio-image" style="background-image:url('{{ page.imagePath }}');"></div>
         <div class="message-copy -medium">
           <p>Send a message to this expert and get started right away.</p>
           <p>There’s no risk or obligation to submit a request. Questions?<br> Call us at (888)-858-9511</p>

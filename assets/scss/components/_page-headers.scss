@@ -25,22 +25,8 @@
       align-items: center;
       margin-top: $padding-sm;
 
-      .author-photo {
-        overflow: hidden;
-        position: relative;
-        border-radius: 50%;
-        width: $padding-sm * 3;
-        height: $padding-sm * 3;
-
-        img {
-          top: 0;
-          left: 50%;
-          width: auto;
-          min-width: 100%;
-          min-height: 100%;
-          position: absolute;
-          transform: translateX(-50%);
-        }
+      .author-image {
+        @include circular-image($padding-sm * 3);
       }
 
       .author-text {
