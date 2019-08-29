@@ -166,6 +166,7 @@
 
         &.-right {
           padding-top: 0;
+          background-color: transparent;
           padding-left: columns(2.25,23);
           &::before {
             display: none;
