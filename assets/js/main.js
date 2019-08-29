@@ -69,6 +69,7 @@ var Main = (function($) {
       if (e.keyCode === 27) {
         _closeSiteNav();
         _closeModal();
+        _closeNavSearch(true);
       }
     });
 
@@ -171,6 +172,8 @@ var Main = (function($) {
       if ($(this).parents('#secondary-nav').length && !breakpoint_xl) {
         return;
       }
+      // if search is open, close it
+      _closeNavSearch();
       window.clearTimeout(closeSubNavBackdrop);
       var subNavHeight = $(this).find('.nav-sub-level').outerHeight();
       _expandNavBackdrop(subNavHeight);
@@ -178,20 +181,19 @@ var Main = (function($) {
       _closeNavBackdrop();
     });
 
-    // Expanding nav search when hovering over search toggle
-    $('.search-toggle').on('mouseenter', function(){
-      _openNavSearch();
-    }).on('mouseleave', function() {
-      if (!$('.nav-search').is(':hover')) {
-        _closeNavSearch();
+    // Expanding nav search when clicking search toggle
+    $('.search-toggle').on('click', function(){
+      if ($(this).is('.search-active')) {
+        _closeNavSearch(true);
+      } else {
+        _openNavSearch();
       }
-    }).on('click', function() {
-      $navSearch.find('input').focus();
     });
-
-    $('.nav-search').on('mouseleave', function() {
-      if (!$('.search-toggle').is(':hover')) {
-        _closeNavSearch();
+    // Closing nav search when clicking away
+    $(document).on('click', 'body.search-active', function(e) {
+      var $target = $(e.target);
+      if (!$target.is('.search-toggle') && !$target.parents('.search-toggle').length && !$target.is('.nav-search') && !$target.parents('.nav-search').length) {
+        _closeNavSearch(true);
       }
     });
 
@@ -249,17 +251,19 @@ var Main = (function($) {
   }
 
   function _openNavSearch() {
-    $('.search-toggle').addClass('search-active');
+    $('body, .search-toggle').addClass('search-active');
     $navSearch.addClass('-active');
-    window.clearTimeout(closeSubNavBackdrop);
+    $navSearch.find('input').focus();
     var navSearchHeight = $navSearch.outerHeight();
     _expandNavBackdrop(navSearchHeight);
   }
 
-  function _closeNavSearch() {
-    $('.search-toggle').removeClass('search-active');
+  function _closeNavSearch(closeNavBackdrop) {
+    $('body, .search-toggle').removeClass('search-active');
     $navSearch.removeClass('-active');
-    _closeNavBackdrop();
+    if (closeNavBackdrop === true) {
+      _closeNavBackdrop();
+    }
   }
 
   function _initFormFunctions() {
