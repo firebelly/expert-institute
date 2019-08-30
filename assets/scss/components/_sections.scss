@@ -351,12 +351,30 @@
   }
 
   ul:not(.accordion-list) {
+    list-style: none;
     text-align: left;
-    @include list-style;
     color: color(gray-dark);
 
     li {
+      overflow: hidden;
       margin-bottom: $padding-sm / 2;
+      > span {
+        display: block;
+        padding-left: 1em;
+        position: relative;
+        &::before {
+          left: 0;
+          top: .5em;
+          width: 1px;
+          z-index: 1;
+          height: 1px;
+          content: '';
+          line-height: 1em;
+          border: 3px solid;
+          position: absolute;
+          border-radius: 50%;
+        }
+      }
     }
   }
 

@@ -17,6 +17,7 @@
     &::before {
       top: .5em;
       width: 1px;
+      z-index: 1;
       left: -1em;
       height: 1px;
       content: '';
