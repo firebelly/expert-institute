@@ -106,8 +106,9 @@
       @extend .input-reset;
       display: inline-block;
       color: color(gray-dark);
+      box-sizing: content-box;
       border: 1px solid color(gray);
-      @include paragraph-style(14,36);
+      @include paragraph-style(14,14);
     }
   }
 
