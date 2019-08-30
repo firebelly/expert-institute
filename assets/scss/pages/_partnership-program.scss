@@ -472,11 +472,14 @@ body.partnership-program {
         .service-icon {
           margin: 0;
           left: 42px;
+          width: 100%;
+          max-width: 100px;
           position: absolute;
           top: $padding-lg + 24px;
           transform: translateY(-100%);
+
           img {
-            max-width: 100px;
+            max-height: 100px;
           }
         }
 
