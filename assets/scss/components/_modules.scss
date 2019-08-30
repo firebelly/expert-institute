@@ -82,6 +82,7 @@
     .item-cta {
       flex-grow: 1;
       display: flex;
+      align-items: center;
       flex-direction: column;
       margin-top: $padding-md;
       justify-content: flex-end;
