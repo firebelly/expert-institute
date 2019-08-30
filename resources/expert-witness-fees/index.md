@@ -146,7 +146,6 @@ layout: default
 <div id="most-requested-witness-fees" class="section most-requested-fees-section padded-top-lg">
     <div class="site-wrapper">
         <div class="most-requested-fees-carousel">
-            <div class="carousel-status"></div>
             <div class="carousel-item">
                 <div class="slide-text">                
                     <h2>Most Requested Medical Expert Witness Fees</h2>
@@ -225,7 +224,7 @@ layout: default
                     </div>                
                 </div>
                 <p class="carousel-cta">
-                    <button class="carousel-next button">Next <svg class="button-icon -right icon-arrow-right" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-right"/></svg></button>
+                    <button class="carousel-next button">Non-Medical Fees <svg class="button-icon -right icon-arrow-right" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-right"/></svg></button>
                 </p>
             </div>
             <div class="carousel-item">
@@ -306,9 +305,10 @@ layout: default
                     </div>
                 </div>
                 <p class="carousel-cta">
-                    <button class="carousel-previous button"><svg class="button-icon -left icon-arrow-left" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-left"/></svg> Previous</button>
+                    <button class="carousel-previous button"><svg class="button-icon -left icon-arrow-left" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-left"/></svg> Medical Fees</button>
                 </p>
             </div>
+            <div class="carousel-status"></div>
         </div>
     </div>
 </div>

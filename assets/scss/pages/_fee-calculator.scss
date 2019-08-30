@@ -67,14 +67,18 @@
 }
 
 .most-requested-fees-carousel {
-  .carousel-status {
-    text-align: center;
-    color: color(blue-light);
-    margin-bottom: $padding-sm;
+  padding-bottom: $padding-sm;
 
-    @include media-md {
-      margin-bottom: $padding-md;
-    }
+  .flickity-page-dots {
+    bottom: $padding-sm;
+  }
+
+  .carousel-status {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: color(blue-light);
   }
 
   .carousel-item {
