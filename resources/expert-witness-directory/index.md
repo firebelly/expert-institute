@@ -22,6 +22,7 @@ bodyClasses: expert-witness-directory
                 <div class="select-wrap">
                     <label for="specialty">Specialty</label>
                     <select name="specialty" id="specialty">
+                        <option value="null">Specialty</option>
                         <option value="specialtyOne">Specialty One</option>
                         <option value="specialtyTwo">Specialty Two</option>
                         <option value="specialtyThree">Specialty Three</option>
@@ -32,6 +33,7 @@ bodyClasses: expert-witness-directory
                 <div class="select-wrap">
                     <label for="region">Region</label>
                     <select name="region" id="region">
+                        <option value="null">Region</option>
                         <option value="regionOne">Region One</option>
                         <option value="regionTwo">Region Two</option>
                         <option value="regionThree">Region Three</option>
@@ -42,6 +44,7 @@ bodyClasses: expert-witness-directory
                 <div class="select-wrap">
                     <label for="state">State</label>
                     <select name="state" id="state">
+                        <option value="null">State</option>
                         <option value="stateOne">State One</option>
                         <option value="stateTwo">State Two</option>
                         <option value="stateThree">State Three</option>

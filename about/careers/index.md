@@ -32,6 +32,7 @@ bodyClasses: careers
                     <div class="select-wrap">
                         <label for="location">Location</label>
                         <select name="location" id="location">
+                            <option value="null">Location</option>
                             <option value="locationOne">Location One</option>
                             <option value="locationTwo">Location Two</option>
                             <option value="locationThree">Location Three</option>
@@ -42,6 +43,7 @@ bodyClasses: careers
                     <div class="select-wrap">
                         <label for="team">Team</label>
                         <select name="team" id="team">
+                            <option value="null">Team</option>
                             <option value="teamOne">Team One</option>
                             <option value="teamTwo">Team Two</option>
                             <option value="teamThree">Team Three</option>

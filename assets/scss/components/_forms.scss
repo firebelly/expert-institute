@@ -210,6 +210,10 @@ form {
       }
 
       // Hide arrows in IE
+      &::-ms-value {
+        color: color(blue-dark);
+        background-color: color(white);
+      }
       &::-ms-expand {
         display: none;
       }

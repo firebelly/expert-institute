@@ -45,6 +45,7 @@ layout: default
                     <div class="select-wrap">
                         <label for="postType">Post Type</label>
                         <select name="postType" id="postType">
+                            <option value="null">Post Type</option>
                             <option value="postTypeOne">Post Type One</option>
                             <option value="postTypeTwo">Post Type Two</option>
                             <option value="postTypeThree">Post Type Three</option>
@@ -55,6 +56,7 @@ layout: default
                     <div class="select-wrap">
                         <label for="specialty">Specialty</label>
                         <select name="specialty" id="specialty">
+                            <option value="null">Specialty</option>
                             <option value="specialtyOne">Specialty One</option>
                             <option value="specialtyTwo">Specialty Two</option>
                             <option value="specialtyThree">Specialty Three</option>

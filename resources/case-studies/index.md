@@ -32,6 +32,7 @@ bodyClasses: case-studies
           <div class="select-wrap">
             <label for="expertSpecialty">Expert Specialty</label>
             <select name="expertSpecialty" id="expertSpecialty">
+              <option value="null">Expert Specialty</option>
               <option value="expertSpecialty">Expert Specialty One</option>
               <option value="expertSpecialty">Expert Specialty Two</option>
               <option value="expertSpecialty">Expert Specialty Three</option>
@@ -42,6 +43,7 @@ bodyClasses: case-studies
           <div class="select-wrap">
             <label for="practiceArea">Practice Area</label>
             <select name="practiceArea" id="practiceArea">
+              <option value="null">Practice Area</option>
               <option value="practiceAreaOne">Practice Area One</option>
               <option value="practiceAreaTwo">Practice Area Two</option>
               <option value="practiceAreaThree">Practice Area Three</option>

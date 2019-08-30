@@ -106,6 +106,7 @@ bodyClasses: home
                     <div class="select-wrap">
                         <label for="medicalExpertSearch">Medical</label>
                         <select name="medicalExpertSearch" id="medicalExpertSearch">
+                            <option value="null">Medical</option>
                             <option value="option1">Option One</option>
                             <option value="option2">Option Two</option>
                             <option value="option3">Option Three</option>
@@ -119,6 +120,7 @@ bodyClasses: home
                     <div class="select-wrap">
                         <label for="nonMedicalExpertSearch">Non-Medical</label>
                         <select name="nonMedicalExpertSearch" id="nonMedicalExpertSearch">
+                            <option value="null">Non-Medical</option>
                             <option value="option1">Option One</option>
                             <option value="option2">Option Two</option>
                             <option value="option3">Option Three</option>
