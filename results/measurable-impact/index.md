@@ -33,18 +33,18 @@ bodyClasses: measurable-impact
 <div class="section stats-section padded-bottom-lg">
   <div class="site-wrapper">
     <div class="grid spaced">
-      <div class="stat col-md-1-2 col-lg-1-3">
+      <div class="stat col-xl-1-3">
         <h4 class="figure">5K</h4>
         <p>Clients Served</p>
         <div class="stat-icon">
           <img src="/dist/images/trust-pilot-people.svg" width="173" aria-hidden="true">
         </div>
       </div>
-      <div class="stat col-md-1-2 col-lg-1-3">
+      <div class="stat col-xl-1-3">
         <h4 class="figure">3 Million</h4>
         <p>A Global Network of<br> 3,000,000 Experts</p>
       </div>
-      <div class="stat col-md-1-2 col-lg-1-3">
+      <div class="stat col-xl-1-3">
         <h4 class="figure">1,000+</h4>
         <p>5 Star Reviews on Trust Pilot</p>
         <div class="stat-icon">

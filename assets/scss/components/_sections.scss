@@ -454,7 +454,13 @@
       @include ginto-normal-light;
     }
 
-    @include media-lg {
+    @include media-md {
+      .figure {
+        @include paragraph-style(63, 66);
+      }
+    }
+
+    @include media-xl {
       &[class*=col-] {
         padding: 0 $padding-md;
       }
