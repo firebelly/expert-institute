@@ -48,12 +48,12 @@ bodyClasses: paid-search header-dark
                 <input id="name-last" type="text" required>
               </div>
               <div class="input-wrap">
-                <label for="number">Phone Number</label>
-                <input id="number" type="tel">
+                <label for="email">Email*</label>
+                <input id="email" type="email" required>
               </div>
               <div class="input-wrap">
-                <label for="email">Email</label>
-                <input id="email" type="email">
+                <label for="number">Phone Number</label>
+                <input id="number" type="tel">
               </div>
               <p class="form-para">Give us a call (888) 858-9511</p>
               <div class="form-cta">
