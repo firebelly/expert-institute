@@ -14,6 +14,10 @@ body.paid-search {
   }
 
   .page-header {
+    .trust-pilot-module {
+      margin: $padding-md 0;
+    }
+
     form {
       textarea {
         min-height: 1px;

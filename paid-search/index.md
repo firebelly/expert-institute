@@ -11,6 +11,9 @@ bodyClasses: paid-search header-dark
       <div class="header-text">
         <div class="-inner">
           <h1 class="title">Connect with expert witnesses in New York</h1>
+          <div class="trust-pilot-module">
+              <img src="/dist/images/trustpilot-paid-search-screenshot.jpg" alt="Trust Pilot Screenshot">
+          </div>
           <form action="#" id="expert-connect-form" class="multi-step">
             <div class="form-step">
               <div class="input-wrap select-wrap">
