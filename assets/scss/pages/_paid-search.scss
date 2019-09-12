@@ -1,0 +1,66 @@
+// Paid Search Page
+// this page does not have the global navigation,
+// and a modified footer
+
+body.paid-search {
+  padding-top: 0;
+
+  .module-item-showcase {
+    .item-image {
+      img {
+        max-width: 160px;
+      }
+    }
+  }
+
+  .page-header {
+    form {
+      textarea {
+        min-height: 1px;
+      }
+
+      .form-cta {
+        .button {
+          min-width: 192px;
+        }
+      }
+
+      .flickity-page-dots {
+        min-width: 192px;
+      }
+    }
+
+    @include media-md {
+      .header-text {
+        padding-bottom: $padding-md;
+      }
+    }
+  }
+}
+
+.witnesses-section {
+  .section-content {
+    text-align: center;
+    margin-bottom: $padding-md;
+
+    .section-title {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 0;
+      color: color(gray-dark);
+    }
+  }
+  .section-cta {
+    text-align: center;
+    margin: $padding-md 0 0;
+  }
+
+  @include media-md {
+    .section-cta {
+      margin-top: $padding-lg;
+    }
+  }
+}
+

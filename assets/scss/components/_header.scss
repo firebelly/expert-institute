@@ -819,3 +819,43 @@
     }
   }
 }
+
+// Minimal Site Header
+// only includes the logo
+.site-header-minimal {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+
+  .logo {
+    svg {
+      width: 182px;
+      height: 18px;
+      display: block;
+    }
+  }
+
+  @include media-nav {
+  padding-top: $padding-md;
+
+    .logo {
+      svg {
+        height: 24px;
+        width: 243px;
+      }
+    }
+  }
+}
+// Dark/Light body classes
+body.header-dark {
+  .site-header-minimal .logo svg {
+    fill: color(white);
+  }
+}
+body.header-light {
+  .site-header-minimal .logo svg {
+    fill: color(blue-dark);
+  }
+}

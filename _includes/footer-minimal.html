@@ -1,0 +1,63 @@
+<footer class="site-footer -minimal" role="contentinfo">
+
+  <div class="-top site-wrapper">
+    <div class="-inner grid spaced">
+
+      <div class="site-info col-md-1-2">
+        <div class="grid">
+          <div class="contact col-lg-1-2 lg-order-0">
+            <h4>Contact</h4>
+            <p class="address">
+              <span class="street-address">48 Wall Street<br> 32nd Floor</span><br>
+              <span class="city">New York</span>, <span class="region">NY</span> <span class="postal-code">10005</span>
+            </p>
+            <div>
+              <p class="phone">1-888-858-9511</p>
+              <p class="email"><a href="mailto:info@expertinstitute.com">info@expertinstitute.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="-bottom site-wrapper">
+    <div class="-inner">
+
+      <div>
+        <p class="copyright">© {{ 'now' | date: "%Y" }} {{ site.title }}</p>
+
+        <nav class="footer-utility-nav" id="footer-utility-nav">
+          <ul class="legal-nav">
+            {% for navItem in site.data.navigation.footerNav %}
+              <li {% if page.url contains navItem.path %} class="current" {% endif %}>
+                <a href="{{ navItem.path }}">{{ navItem.title }}</a>
+                {% if navItem.children %}
+                  <ul class="children">
+                    <div class="children-wrap">
+                      {% for childItem in navItem.children %}
+                        <li {% if page.url == childItem.path %} class="current" {% endif %}>
+                          <a href="{{ childItem.path }}">{{ childItem.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </div>
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+
+      <ul class="social-links">
+        <li class="col-1-2 md-auto"><a href="https://www.facebook.com/TheExpertInstitute" target="_blank" rel="noopener"><span class="visuallyhidden">facebook</span><svg class="icon icon-facebook" aria-hidden="true" role="presentation"><use xlink:href="#icon-facebook"/></svg></a></li>
+        <li class="col-1-2 md-auto"><a href="https://twitter.com/TheExpertInst" target="_blank" rel="noopener"><span class="visuallyhidden">twitter</span><svg class="icon icon-twitter" aria-hidden="true" role="presentation"><use xlink:href="#icon-twitter"/></svg></a></li>
+        <li class="col-1-2 md-auto"><a href="https://www.linkedin.com/company/the-expert-institute/" target="_blank" rel="noopener"><span class="visuallyhidden">linkedin</span><svg class="icon icon-linkedin" aria-hidden="true" role="presentation"><use xlink:href="#icon-linkedin"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+<script src="{{ 'dist/js/main.js' | absolute_url }}"></script>

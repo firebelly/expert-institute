@@ -287,4 +287,19 @@
       }
     }
   }
+
+  // Minimal Variation
+  &.-minimal {
+    padding-top: $padding-sm;
+
+    .-bottom {
+      margin-top: $padding-md;
+    }
+
+    @include media-md {
+      .-bottom {
+        margin-top: $padding-lg;
+      }
+    }
+  }
 }

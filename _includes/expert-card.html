@@ -19,8 +19,10 @@
         <p>{{ expert.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
       </div>
     </div>
-    <div class="card-cta">
-      <a href="{{ expert.url }}" class="button hollow">View Profile</a>
-    </div>
+    {% if include.no-cta != "true" %}
+      <div class="card-cta">
+        <a href="{{ expert.url }}" class="button hollow">View Profile</a>
+      </div>
+    {% endif %}
   </div>
 </article>

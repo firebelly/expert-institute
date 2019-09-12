@@ -1,0 +1,19 @@
+<!doctype html>
+  <!--[if IE 9 ]> <html lang="en" class="ie9 lt-ie10"> <![endif]-->
+  <!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body class="{{ page.bodyClasses }} {{ layout.bodyClasses }}">
+    <div id="breakpoint-indicator"></div>
+
+    {% include header-minimal.html %}
+
+    <main class="site-main" role="main">
+      {{ content }}
+    </main>
+
+    {% include footer-minimal.html %}
+
+  </body>
+</html>

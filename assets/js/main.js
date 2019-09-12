@@ -754,7 +754,7 @@ var Main = (function($) {
     }
 
     // Reset inline styles for navigation for medium breakpoint
-    if (breakpoint_nav && $('.site-nav .nav-sub-level')[0].hasAttribute('style')) {
+    if (breakpoint_nav && $('.site-nav').length && $('.site-nav .nav-sub-level')[0].hasAttribute('style')) {
       $('.site-nav .nav-parent-label.-active').removeClass('-active');
       $('.site-nav .nav-sub-level[style]').attr('style', '');
     }

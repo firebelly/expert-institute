@@ -140,6 +140,24 @@
     }
   }
 
+  // Forms in Headers
+  form {
+    .form-para {
+      margin: 20px 0 0;
+    }
+    &.multi-step {
+      padding-bottom: $padding-md;
+      .form-cta {
+        text-align: left;
+        margin-top: $padding-sm;
+      }
+      .flickity-page-dots {
+        bottom: 0;
+        width: auto;
+      }
+    }
+  }
+
   // Simplified Tag Header
   &.tag-header {
     padding-top: $padding-sm;
@@ -466,6 +484,15 @@
         + .section {
           .section-label {
             color: color(blue-dark);
+          }
+        }
+      }
+
+      &.-blue-dark {
+        .header-text {
+          .subtitle,
+          p {
+            color: color(white);
           }
         }
       }
