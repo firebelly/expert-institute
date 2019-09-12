@@ -20,7 +20,8 @@ body.paid-search {
 
     form {
       textarea {
-        min-height: 1px;
+        resize: none;
+        min-height: 48px;
       }
 
       .form-cta {

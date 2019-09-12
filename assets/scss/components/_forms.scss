@@ -17,8 +17,10 @@ form {
     label {
       top: 13px;
       left: 20px;
+      right: 20px;
       position: absolute;
       pointer-events: none;
+      background-color: color(white);
     }
 
     .error-message {

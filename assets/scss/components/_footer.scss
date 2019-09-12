@@ -255,9 +255,11 @@
     label {
       left: 0;
       top: 13px;
+      right: auto;
       @include p1-small;
       color: color(gray-dark);
       @include ginto-normal-light;
+      background-color: transparent;
     }
 
     input {
