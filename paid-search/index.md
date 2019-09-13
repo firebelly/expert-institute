@@ -31,7 +31,7 @@ bodyClasses: paid-search header-dark
               </div>
               <div class="input-wrap">
                 <label for="message">Tell Us About Your Case</label>
-                <textarea id="message" rows="1"></textarea>
+                <textarea id="message" rows="5"></textarea>
               </div>
               <p class="form-para">Give us a call (888) 858-9511</p>
               <div class="form-cta">
@@ -57,7 +57,7 @@ bodyClasses: paid-search header-dark
               </div>
               <p class="form-para">Give us a call (888) 858-9511</p>
               <div class="form-cta">
-                <button class="submit button -teal" type="submit">Submit Request</button>
+                <button class="submit button -teal" type="submit">Request an expert</button>
               </div>
             </div>
           </form>

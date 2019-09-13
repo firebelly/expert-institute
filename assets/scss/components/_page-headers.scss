@@ -146,16 +146,9 @@
       margin: 20px 0 0;
     }
     &.multi-step {
-      padding-bottom: $padding-md;
 
       .form-para {
         text-align: center;
-      }
-      .form-cta {
-        margin-top: $padding-sm;
-      }
-      .flickity-page-dots {
-        bottom: 0;
       }
 
       @include media-md {
