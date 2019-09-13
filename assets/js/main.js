@@ -612,7 +612,7 @@ var Main = (function($) {
       });
 
       // establish transition delays
-      animationItems = $container.find('.animation-item');
+      var animationItems = $container.find('.animation-item');
       animationItems.each(function(i) {
         $(this).css('transition-delay', 0.1 * i + 's');
       });

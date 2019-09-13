@@ -16,45 +16,45 @@ bodyClasses: paid-search header-dark
           </div>
           <form action="#" id="expert-connect-form" class="multi-step">
             <div class="form-step">
-              <div class="input-wrap select-wrap">
-                <label for="caseType">Case Type:</label>
-                <select name="caseType" id="caseType">
-                  <option value="null">Case Type:</option>
-                  <option value="one">One</option>
-                  <option value="two">Two</option>
-                  <option value="three">Three</option>
-                </select>
-              </div>
-              <div class="input-wrap">
-                <label for="lawFirm">Law Firm</label>
-                <input id="lawFirm" name="lawFirm" type="text">
-              </div>
-              <div class="input-wrap">
-                <label for="message">Tell Us About Your Case</label>
-                <textarea id="message" rows="5"></textarea>
-              </div>
-              <p class="form-para">Give us a call (888) 858-9511</p>
-              <div class="form-cta">
-                <button class="form-next button -teal">Next <svg class="button-icon -right icon-arrow-right" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-right"/></svg></button>
-              </div>
+                <div class="input-wrap">
+                  <label for="name-first">First Name*</label>
+                  <input id="name-first" type="text" required>
+                </div>
+                <div class="input-wrap">
+                  <label for="name-last">Last Name*</label>
+                  <input id="name-last" type="text" required>
+                </div>
+                <div class="input-wrap">
+                  <label for="email">Email*</label>
+                  <input id="email" type="email" required>
+                </div>
+                <div class="input-wrap">
+                  <label for="number">Phone Number</label>
+                  <input id="number" type="tel">
+                </div>
+                <p class="form-para">Give us a call (888) 858-9511</p>
+                <div class="form-cta">
+                    <button class="form-next button -teal">Next <svg class="button-icon -right icon-arrow-right" aria-hidden="true" role="presentation"><use xlink:href="#icon-arrow-right"/></svg></button>
+                </div>
             </div>
             <div class="form-step">
-              <div class="input-wrap">
-                <label for="name-first">First Name*</label>
-                <input id="name-first" type="text" required>
-              </div>
-              <div class="input-wrap">
-                <label for="name-last">Last Name*</label>
-                <input id="name-last" type="text" required>
-              </div>
-              <div class="input-wrap">
-                <label for="email">Email*</label>
-                <input id="email" type="email" required>
-              </div>
-              <div class="input-wrap">
-                <label for="number">Phone Number</label>
-                <input id="number" type="tel">
-              </div>
+                <div class="input-wrap select-wrap">
+                    <label for="caseType">Case Type:</label>
+                    <select name="caseType" id="caseType">
+                        <option value="null">Case Type:</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                    </select>
+                </div>
+                <div class="input-wrap">
+                    <label for="lawFirm">Law Firm</label>
+                    <input id="lawFirm" name="lawFirm" type="text">
+                </div>
+                <div class="input-wrap">
+                    <label for="message">Tell Us About Your Case</label>
+                    <textarea id="message" rows="5"></textarea>
+                </div>
               <p class="form-para">Give us a call (888) 858-9511</p>
               <div class="form-cta">
                 <button class="submit button -teal" type="submit">Request an expert</button>
